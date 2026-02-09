@@ -1,0 +1,50 @@
+
+/* Contenedor principal que ocupa todo el ancho */
+.marquee-wrapper {
+    width: 100%;
+    background-color: #b31d1d; /* Color corporativo */
+    overflow: hidden;
+    position: relative;
+    padding: 8px 0;
+    display: flex;
+}
+
+/* Contenedor del movimiento */
+.marquee-content {
+    display: flex;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee-infinite 25s linear infinite;
+}
+
+/* Estilo de cada bloque de texto */
+.marquee-group {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+.marquee-item {
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0 30px;
+    text-transform: uppercase;
+}
+
+/* Animación del bucle infinito */
+@keyframes marquee-infinite {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        /* Se desplaza exactamente la mitad (el primer grupo) */
+        transform: translateX(-50%);
+    }
+}
+
+/* Pausa al pasar el ratón para facilitar la lectura si el usuario quiere */
+.marquee-wrapper:hover .marquee-content {
+    animation-play-state: paused;
+}

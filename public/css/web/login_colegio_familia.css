@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap');
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    overflow: hidden;
+}
+
+.bg-animated {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0F2749;
+    z-index: -1;
+}
+
+.bg-animated::before, .bg-animated::after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    animation: float 8s ease-in-out infinite;
+}
+
+.bg-animated::before { top: -150px; left: -150px; }
+.bg-animated::after { bottom: -150px; right: -150px; animation-delay: 1s; }
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px) scale(1); }
+    50% { transform: translateY(-30px) scale(1.1); }
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.text-custom-blue { color: #040669; }
+
+.btn-gradient-fade {
+    background: linear-gradient(135deg, #020335 0%, #040669 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.shadow-custom-blue {
+    box-shadow: 0 10px 25px -5px rgba(4, 6, 105, 0.5);
+}
+
+.btn-gradient-fade::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    transition: all 0.6s;
+}
+
+.btn-gradient-fade:hover::before { left: 100%; }
