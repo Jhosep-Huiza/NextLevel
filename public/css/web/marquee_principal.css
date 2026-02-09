@@ -1,50 +1,54 @@
+/* ============================= */
+/* 🔴 BARRA SUPERIOR MARQUEE PRO */
+/* ============================= */
 
-/* Contenedor principal que ocupa todo el ancho */
-.marquee-wrapper {
+.top-bar{
     width: 100%;
-    background-color: #b31d1d; /* Color corporativo */
+    background: rgb(176, 16, 48); /* rojo elegante */
+    backdrop-filter: blur(6px);
+    height: 55px; /* mismo alto que navbar */
+    display: flex;
+    align-items: center;
     overflow: hidden;
     position: relative;
-    padding: 8px 0;
-    display: flex;
+    z-index: 9999;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
 }
 
-/* Contenedor del movimiento */
-.marquee-content {
+
+/* contenedor */
+.marquee-wrapper{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* pista */
+.marquee-track{
     display: flex;
     white-space: nowrap;
     will-change: transform;
-    animation: marquee-infinite 25s linear infinite;
 }
 
-/* Estilo de cada bloque de texto */
-.marquee-group {
-    display: flex;
-    flex-shrink: 0;
-    align-items: center;
-}
+/* texto */
+.marquee-item{
+    display: inline-block;
+    color: #ffffff;
 
-.marquee-item {
-    color: white;
-    font-family: 'Arial', sans-serif;
-    font-weight: 700;
-    font-size: 0.9rem;
-    padding: 0 30px;
-    text-transform: uppercase;
-}
+    /* tamaño igual al nav */
+    font-size: 18px;
+    font-weight: 600;
 
-/* Animación del bucle infinito */
-@keyframes marquee-infinite {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        /* Se desplaza exactamente la mitad (el primer grupo) */
-        transform: translateX(-50%);
-    }
-}
+    /* fuente moderna */
+    font-family: "Poppins", "Segoe UI", sans-serif;
+    letter-spacing: 0.5px;
 
-/* Pausa al pasar el ratón para facilitar la lectura si el usuario quiere */
-.marquee-wrapper:hover .marquee-content {
-    animation-play-state: paused;
+    /* espaciado entre frases */
+    padding-right: 120px;
+
+    /* centrado vertical */
+    line-height: 70px;
+
+    /* efecto premium */
+    text-shadow: 0 1px 2px rgba(0,0,0,0.25);
 }
