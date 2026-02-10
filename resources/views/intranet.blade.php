@@ -52,7 +52,7 @@
                         Portal para estudiantes preuniversitarios. Accede a tus simulacros, clases y
                         material de estudio.
                     </p>
-                    <a href="{{ route('login.academia.familia') }}" class="btn">
+                    <a href="{{ route('login.academia') }}" class="btn">
                         Ingresar
                     </a>
                 </div>
