@@ -37,7 +37,7 @@
                         Accede al portal educativo para estudiantes de nivel escolar. Consulta tus notas,
                         horarios y tareas.
                     </p>
-                    <a href="{{ route('login.familia') }}" class="btn">
+                    <a href="{{ route('login.colegio') }}" class="btn">
                         Ingresar
                     </a>
                 </div>
