@@ -18,7 +18,7 @@ html, body {
     width: 100vw;
     height: 100vh;
     position: relative;
-    background-color: #000; /* Fondo base para evitar fugas de luz */
+    background-color: #000;
 }
 
 .portal-section {
@@ -33,20 +33,14 @@ html, body {
 .portal-section.colegio { background-color: #0F2749; }
 .portal-section.academia { background-color: #B01030; }
 
-/* --- DIVISOR CENTRAL REFORZADO --- */
 .central-divider {
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 2px; /* Aumentado a 2px para que se note */
+    width: 2px;
     height: 70%;
-    background: linear-gradient(
-        to bottom,
-        transparent,
-        rgba(255, 255, 255, 0.5), /* Opacidad aumentada al 50% */
-        transparent
-    );
+    background: linear-gradient(to bottom, transparent, rgba(255, 255, 255, 0.5), transparent);
     z-index: 10;
     pointer-events: none;
 }
@@ -59,7 +53,6 @@ html, body {
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Imágenes originales de tus capturas */
 .colegio .image-header { background-image: url('https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1200'); }
 .academia .image-header { background-image: url('https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=1200'); }
 
@@ -73,7 +66,6 @@ html, body {
     color: white;
 }
 
-/* --- BADGE GLASSMORPHISM --- */
 .badge {
     display: inline-block;
     padding: 12px 24px;
@@ -112,7 +104,6 @@ html, body {
     max-width: 500px;
 }
 
-/* --- BOTÓN MARAVILLA: SHIMMER + ELEVACIÓN --- */
 .btn-main {
     position: relative;
     display: inline-block;
@@ -125,12 +116,12 @@ html, body {
     overflow: hidden;
     transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
     box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    text-align: center;
 }
 
 .colegio .btn-main { color: #0F2749; }
 .academia .btn-main { color: #B01030; }
 
-/* Efecto Shimmer (Destello) */
 .btn-main::after {
     content: '';
     position: absolute;
@@ -151,9 +142,8 @@ html, body {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
-/* --- BOTÓN VOLVER --- */
 .back-home-btn {
-    position: fixed;
+    position: absolute;
     top: 30px;
     left: 30px;
     z-index: 100;
@@ -174,17 +164,91 @@ html, body {
     transform: rotate(-10deg) scale(1.1);
 }
 
-/* Responsive */
+.footer-copyright {
+    position: fixed;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    pointer-events: none;
+}
+
+.footer-copyright p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    white-space: nowrap;
+}
+
+/* --- RESPONSIVE OPTIMIZADO --- */
+
 @media (max-width: 1200px) {
     .main-title { font-size: 3.5rem; }
+    .btn-main { padding: 22px 100px; }
 }
 
 @media (max-width: 768px) {
-    .main-split-viewport { flex-direction: column; }
-    .portal-section { height: 50vh; }
-    .main-title { font-size: 2.5rem; }
-    .central-divider {
-        width: 80%; height: 20px; left: 50%; top: 50%;
-        background: linear-gradient(to right, transparent, rgb(255, 255, 255), transparent);
+    html, body {
+        overflow-y: auto;
+        height: auto;
+    }
+
+    .main-split-viewport {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    .portal-section {
+        height: auto;
+        min-height: 60vh;
+        padding-bottom: 60px;
+    }
+
+    .central-divider { display: none; }
+
+    .image-header { height: 300px; }
+
+    .info-container {
+        align-items: center;
+        text-align: center;
+        padding: 40px 10%;
+    }
+
+    .main-title { font-size: 3.5rem; }
+
+    .btn-main {
+        padding: 20px 0;
+        width: 100%;
+        max-width: 320px;
+        font-size: 1.3rem;
+    }
+
+    .back-home-btn {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    /* --- FOOTER CENTRADO EN MÓVIL --- */
+    .footer-copyright {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        transform: none; /* Quitamos el translateX(-50%) */
+        padding: 25px 15px;
+        background: #000;
+        pointer-events: auto;
+        width: 100%; /* Asegura que ocupe todo el ancho para centrar el texto */
+        text-align: center; /* Centra el texto del copyright */
+    }
+
+    .footer-copyright p {
+        white-space: normal;
+        font-size: 12px;
+        text-align: center; /* Refuerzo de centrado */
+        width: 100%;
     }
 }

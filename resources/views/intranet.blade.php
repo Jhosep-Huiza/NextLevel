@@ -44,5 +44,9 @@
             </div>
         </section>
     </div>
+
+    <footer class="footer-copyright">
+        <p>&copy; 2026 Next Level. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
