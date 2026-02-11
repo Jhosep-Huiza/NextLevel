@@ -1,10 +1,25 @@
 document.addEventListener("DOMContentLoaded", function () {
+    const track = document.querySelector(".marquee-track");
 
-    const marquee = document.querySelector(".marquee-track");
+    if (track) {
 
-    if (!marquee) return;
+        const content = track.innerHTML;
+        track.innerHTML = content.repeat(10);
 
-    // duplicar contenido para loop infinito real
-    const content = marquee.innerHTML;
-    marquee.innerHTML += content;
+        let pos = 0;
+        const velocidad = 1.8;
+
+        function animar() {
+            pos -= velocidad;
+            track.style.transform = `translateX(${pos}px)`;
+
+            if (Math.abs(pos) >= track.scrollWidth / 2) {
+                pos = 0;
+            }
+
+            requestAnimationFrame(animar);
+        }
+
+        animar();
+    }
 });

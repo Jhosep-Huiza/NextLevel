@@ -33,15 +33,25 @@
                     </button>
                 </form>
 
-                <div class="mt-12">
+                <div class="mt-8">
                     <a href="#" class="text-xl font-bold text-slate-400 hover:text-custom-blue transition-colors">¿Olvidaste tu contraseña?</a>
                 </div>
 
-                <div class="social-icons-wrapper">
+                <div class="social-icons-wrapper !mt-8">
                     <a href="https://www.tiktok.com/@next_level_novus?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fab fa-tiktok"></i></a>
                     <a href="https://www.instagram.com/next_level_novus/" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fab fa-instagram"></i></a>
                     <a href="https://wa.me/51923317625?text=Hola,%20quiero%20información" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fab fa-whatsapp"></i></a>
                     <a href="https://www.facebook.com/profile.php?id=61581492196914" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fab fa-facebook"></i></a>
+                </div>
+
+                <div class="mt-6 flex flex-col items-center">
+                    <div class="text-slate-400 text-[11px] font-bold uppercase tracking-widest flex items-center gap-3 whitespace-nowrap">
+                        <a href="#" class="hover:text-custom-blue underline decoration-1 underline-offset-4 transition-colors">Términos y condiciones</a>
+                        <span class="text-slate-300">/</span>
+                        <a href="#" class="hover:text-custom-blue underline decoration-1 underline-offset-4 transition-colors">Política de protección de datos personales</a>
+                    </div>
+                    <p class="text-slate-400 text-[10px] font-bold uppercase tracking-[0.2em] mt-4"> © 2026 Next Level. Todos los derechos reservados.
+                    </p>
                 </div>
             </div>
         </div>
@@ -87,16 +97,28 @@
                     </button>
                 </form>
 
-                <div class="mt-12">
+                <div class="mt-8">
                     <a href="#" class="text-xl font-bold text-slate-400 hover:text-custom-blue transition-colors">¿Olvidaste tu contraseña?</a>
                 </div>
 
-                <div class="social-icons-wrapper">
+                <div class="social-icons-wrapper !mt-8">
                     <a href="https://www.tiktok.com/@next_level_novus?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fab fa-tiktok"></i></a>
                     <a href="https://www.instagram.com/next_level_novus/" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fab fa-instagram"></i></a>
                     <a href="https://wa.me/51923317625?text=Hola,%20quiero%20información" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fab fa-whatsapp"></i></a>
                     <a href="https://www.facebook.com/profile.php?id=61581492196914" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fab fa-facebook"></i></a>
                 </div>
+
+                <div class="mt-6 flex flex-col items-center">
+                    <div class="text-slate-400 text-[11px] font-bold uppercase tracking-widest flex items-center gap-3 whitespace-nowrap">
+                        <a href="#" class="hover:text-custom-blue underline decoration-1 underline-offset-4 transition-colors">Términos y condiciones</a>
+                        <span class="text-slate-300">/</span>
+                        <a href="#" class="hover:text-custom-blue underline decoration-1 underline-offset-4 transition-colors">Política de protección de datos personales</a>
+                    </div>
+                    <p class="text-slate-400 text-[10px] font-bold uppercase tracking-[0.2em] mt-4">
+                        © 2026 Next Level. Todos los derechos reservados.
+                    </p>
+                </div>
+
             </div>
         </div>
 

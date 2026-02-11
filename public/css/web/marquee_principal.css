@@ -1,12 +1,8 @@
-/* ============================= */
-/* 🔴 BARRA SUPERIOR MARQUEE PRO */
-/* ============================= */
-
 .top-bar{
     width: 100%;
-    background: rgb(176, 16, 48); /* rojo elegante */
+    background: rgb(176, 16, 48);
     backdrop-filter: blur(6px);
-    height: 55px; /* mismo alto que navbar */
+    height: 55px;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -15,40 +11,31 @@
     border-bottom: 1px solid rgba(255,255,255,0.15);
 }
 
-
-/* contenedor */
 .marquee-wrapper{
     width: 100%;
     overflow: hidden;
     position: relative;
 }
 
-/* pista */
 .marquee-track{
     display: flex;
     white-space: nowrap;
     will-change: transform;
 }
 
-/* texto */
 .marquee-item{
     display: inline-block;
     color: #ffffff;
 
-    /* tamaño igual al nav */
     font-size: 18px;
     font-weight: 600;
 
-    /* fuente moderna */
     font-family: "Poppins", "Segoe UI", sans-serif;
     letter-spacing: 0.5px;
 
-    /* espaciado entre frases */
     padding-right: 120px;
 
-    /* centrado vertical */
     line-height: 70px;
 
-    /* efecto premium */
     text-shadow: 0 1px 2px rgba(0,0,0,0.25);
 }

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // 1. Mostrar/Ocultar Contraseña
+
     const passwordInput = document.getElementById('passwordInput');
     const togglePassword = document.getElementById('togglePassword');
     const eyeOpen = document.getElementById('eyeOpen');
@@ -17,7 +17,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // 2. Lógica del Panel Deslizable (Unificado)
     const container = document.getElementById('mainContainer');
     const toggleBtn = document.getElementById('toggleBtn');
     const title = document.getElementById('overlayTitle');
@@ -30,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
             title.innerText = isActive ? "¿Eres Familia?" : "¿Eres Alumno?";
 
-            // Detectar si el usuario está en la sección de Academia o Colegio
             const isAcademia = document.body.innerText.includes('Academia');
 
             if (isActive) {

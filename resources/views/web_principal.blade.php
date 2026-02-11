@@ -12,20 +12,16 @@
 
 <body>
 
-    <!-- 🔴 MARQUEE SUPERIOR INFINITO REAL -->
     <div class="top-bar">
         <div class="marquee-wrapper">
             <div class="marquee-track" id="marqueeTrack">
-
                 <div class="marquee-item">
                     📝 ¡Matrícula 2026! &nbsp;&nbsp;&nbsp;&nbsp;
                     🎓 Inicio de clases: 4 de marzo &nbsp;&nbsp;&nbsp;&nbsp;
                 </div>
-
             </div>
         </div>
     </div>
-
 
     <nav class="main-nav">
         <div class="nav-container">
@@ -109,33 +105,7 @@
         </div>
     </footer>
 
-
-    <!-- 🔥 SCRIPT MARQUEE INFINITO REAL SIN CORTES -->
-    <script>
-        const track = document.getElementById("marqueeTrack");
-
-        const contenido = track.innerHTML;
-        for (let i = 0; i < 12; i++) {
-            track.innerHTML += contenido;
-        }
-
-        let pos = 0;
-        const velocidad = 1.8;
-
-        function animar() {
-            pos -= velocidad;
-            track.style.transform = `translateX(${pos}px)`;
-
-            if (Math.abs(pos) >= track.scrollWidth / 2) {
-                pos = 0;
-            }
-
-            requestAnimationFrame(animar);
-        }
-
-        animar();
-    </script>
-
+    <script src="{{ asset('js/marquee_principal.js') }}"></script>
 </body>
-</html>
 
+</html>
