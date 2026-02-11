@@ -6,271 +6,185 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    min-height: 100vh;
-    position: relative;
-    overflow-x: hidden;
-}
-
-.split-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+html, body {
     height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.main-split-viewport {
     display: flex;
-    z-index: 0;
-}
-
-.split-left {
-    width: 50%;
-    background: #0F2749;
+    width: 100vw;
+    height: 100vh;
     position: relative;
-    overflow: hidden;
+    background-color: #000; /* Fondo base para evitar fugas de luz */
 }
 
-.split-right {
-    width: 50%;
-    background: #B01030;
-    position: relative;
-    overflow: hidden;
-}
-
-.split-left::before,
-.split-right::before {
-    content: '';
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.05);
-    animation: float 8s ease-in-out infinite;
-}
-
-.split-left::before { top: -100px; left: -100px; }
-.split-right::before { bottom: -100px; right: -100px; animation-delay: 1s; }
-
-.split-left::after,
-.split-right::after {
-    content: '';
-    position: absolute;
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.03);
-    animation: float 10s ease-in-out infinite reverse;
-}
-
-.split-left::after { bottom: -50px; right: -50px; animation-delay: 0.5s; }
-.split-right::after { top: -50px; left: -50px; animation-delay: 1.5s; }
-
-@keyframes float {
-    0%, 100% { transform: translateY(0px) scale(1); }
-    50% { transform: translateY(-30px) scale(1.1); }
-}
-
-@keyframes cardFloatingAction {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
-}
-
-.container {
-    position: relative;
-    z-index: 1;
-    min-height: 100vh;
+.portal-section {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 40px 20px;
-    justify-content: center;
-}
-
-.portal-title {
-    text-align: center;
-    margin-bottom: 60px;
-    animation: fadeInDown 1s ease-out;
-}
-
-.portal-title h1 {
-    font-size: 56px;
-    font-weight: 800;
-    background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    margin-bottom: 10px;
-    letter-spacing: 2px;
-}
-
-.portal-title p {
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 18px;
-    font-weight: 300;
-    letter-spacing: 1px;
-}
-
-@keyframes fadeInDown {
-    from { opacity: 0; transform: translateY(-50px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-.cards-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0;
-    width: 100%;
-    flex: 1;
-    align-items: center;
-}
-
-.card {
-    background: white;
-    border-radius: 20px;
-    overflow: hidden;
-    max-width: 520px;
-    width: 100%;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    animation-fill-mode: both;
+    height: 100%;
     position: relative;
+    z-index: 1;
 }
 
-.card.colegio {
-    margin: 0 auto;
-    animation: fadeInScale 1s ease-out forwards, cardFloatingAction 6s ease-in-out infinite 1s;
+.portal-section.colegio { background-color: #0F2749; }
+.portal-section.academia { background-color: #B01030; }
+
+/* --- DIVISOR CENTRAL REFORZADO --- */
+.central-divider {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px; /* Aumentado a 2px para que se note */
+    height: 70%;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgba(255, 255, 255, 0.5), /* Opacidad aumentada al 50% */
+        transparent
+    );
+    z-index: 10;
+    pointer-events: none;
 }
 
-.card.academia {
-    margin: 0 auto;
-    animation: fadeInScale 1s ease-out forwards, cardFloatingAction 6s ease-in-out infinite 1.5s;
-}
-
-@keyframes fadeInScale {
-    from { opacity: 0; transform: scale(0.8) translateY(50px); }
-    to { opacity: 1; transform: scale(1) translateY(0); }
-}
-
-.card:hover { box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4); }
-
-.card-image {
+.image-header {
     width: 100%;
-    height: 220px;
-    background: #f5f5f5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    border-bottom: 1px solid #e0e0e0;
+    height: 50%;
     background-size: cover;
     background-position: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-.card.colegio .card-image { background-image: url('https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&q=80'); }
-.card.academia .card-image { background-image: url('https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=800&q=80'); }
+/* Imágenes originales de tus capturas */
+.colegio .image-header { background-image: url('https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1200'); }
+.academia .image-header { background-image: url('https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=1200'); }
 
-.card-image::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.2);
+.info-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 10%;
+    color: white;
 }
 
-.card-content { padding: 35px; position: relative; }
-
-.card-badge {
+/* --- BADGE GLASSMORPHISM --- */
+.badge {
     display: inline-block;
-    background: linear-gradient(135deg, #0F2749 0%, #1a4d8f 100%);
-    color: white;
-    padding: 6px 16px;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 600;
-    margin-bottom: 12px;
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 800;
     text-transform: uppercase;
-}
-
-.card.academia .card-badge { background: linear-gradient(135deg, #B01030 0%, #dc3a5a 100%); }
-
-.card-title {
-    font-size: 32px;
-    font-weight: 700;
-    color: #2c3e50;
-    margin-bottom: 15px;
-}
-
-.card-description {
-    color: #7f8c8d;
-    font-size: 15px;
-    margin-bottom: 20px;
-    line-height: 1.6;
-}
-
-.btn {
-    display: block;
-    width: 100%;
-    padding: 16px;
-    background: linear-gradient(135deg, #0F2749 0%, #1a4d8f 100%);
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     color: white;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 12px;
-    font-weight: 600;
-    font-size: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(15, 39, 73, 0.4);
-    position: relative;
-    overflow: hidden;
 }
 
-.btn::before {
+.badge:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(5px);
+}
+
+.main-title {
+    font-size: 5rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    line-height: 1;
+}
+
+.main-description {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    opacity: 0.95;
+    max-width: 500px;
+}
+
+/* --- BOTÓN MARAVILLA: SHIMMER + ELEVACIÓN --- */
+.btn-main {
+    position: relative;
+    display: inline-block;
+    padding: 22px 200px;
+    background-color: white;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.colegio .btn-main { color: #0F2749; }
+.academia .btn-main { color: #B01030; }
+
+/* Efecto Shimmer (Destello) */
+.btn-main::after {
     content: '';
     position: absolute;
-    top: 0; left: -100%;
-    width: 100%; height: 100%;
-    background: rgba(255, 255, 255, 0.2);
-    transition: left 0.5s ease;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
 }
 
-.btn:hover::before { left: 100%; }
-.btn:hover { transform: translateY(-2px); box-shadow: 0 6px 25px rgba(15, 39, 73, 0.6); }
-
-.card.academia .btn {
-    background: linear-gradient(135deg, #B01030 0%, #dc3a5a 100%);
-    box-shadow: 0 4px 15px rgba(176, 16, 48, 0.4);
+.btn-main:hover::after {
+    left: 100%;
+    transition: all 0.6s ease;
 }
 
-.divider {
-    position: fixed;
-    left: 50%; top: 0; bottom: 0;
-    width: 4px;
-    background: linear-gradient(to bottom, transparent, rgba(255,255,255,0.5), transparent);
-    transform: translateX(-50%);
-    z-index: 2;
-    animation: pulse 3s ease-in-out infinite;
+.btn-main:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
 }
 
-@keyframes pulse { 0%, 100% { opacity: 0.5; } 50% { opacity: 1; } }
-
+/* --- BOTÓN VOLVER --- */
 .back-home-btn {
     position: fixed;
-    top: 25px; left: 25px;
+    top: 30px;
+    left: 30px;
     z-index: 100;
+    width: 55px;
+    height: 55px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50px; height: 50px;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(12px);
-    border-radius: 14px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: all 0.3s ease;
+    transition: 0.3s;
 }
 
-.back-home-btn:hover { background: rgba(255, 255, 255, 0.25); transform: scale(1.1); }
+.back-home-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: rotate(-10deg) scale(1.1);
+}
 
-@media (max-width: 1024px) {
-    .cards-container { grid-template-columns: 1fr; gap: 50px; }
-    .split-right, .divider { display: none; }
-    .split-left { width: 100%; }
+/* Responsive */
+@media (max-width: 1200px) {
+    .main-title { font-size: 3.5rem; }
+}
+
+@media (max-width: 768px) {
+    .main-split-viewport { flex-direction: column; }
+    .portal-section { height: 50vh; }
+    .main-title { font-size: 2.5rem; }
+    .central-divider {
+        width: 80%; height: 20px; left: 50%; top: 50%;
+        background: linear-gradient(to right, transparent, rgb(255, 255, 255), transparent);
+    }
 }

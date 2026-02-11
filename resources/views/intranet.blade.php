@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Next Level - Portal Educativo</title>
-
     <link rel="stylesheet" href="{{ asset('css/web/intranet.css') }}">
 </head>
 <body>
@@ -14,50 +13,36 @@
         </svg>
     </a>
 
-    <div class="split-background">
-        <div class="split-left"></div>
-        <div class="split-right"></div>
-    </div>
-
-    <div class="divider"></div>
-
-    <div class="container">
-        <div class="portal-title">
-            <h1>Portal Educativo</h1>
-            <p>Selecciona tu plataforma de aprendizaje</p>
-        </div>
-
-        <div class="cards-container">
-            <div class="card colegio">
-                <div class="card-image"></div>
-                <div class="card-content">
-                    <span class="card-badge">Educación Escolar</span>
-                    <h2 class="card-title">Colegio</h2>
-                    <p class="card-description">
-                        Accede al portal educativo para estudiantes de nivel escolar. Consulta tus notas,
-                        horarios y tareas.
-                    </p>
-                    <a href="{{ route('login.colegio') }}" class="btn">
-                        Ingresar
-                    </a>
-                </div>
+    <div class="main-split-viewport">
+        <section class="portal-section colegio">
+            <div class="image-header"></div>
+            <div class="info-container">
+                <span class="badge">Educación Escolar</span>
+                <h1 class="main-title">Colegio</h1>
+                <p class="main-description">
+                    Accede al portal educativo para estudiantes de nivel escolar. Consulta tus notas, horarios y tareas.
+                </p>
+                <a href="{{ route('login.colegio') }}" class="btn-main">
+                    <span>Ingresar</span>
+                </a>
             </div>
+        </section>
 
-            <div class="card academia">
-                <div class="card-image"></div>
-                <div class="card-content">
-                    <span class="card-badge">Preparación Universitaria</span>
-                    <h2 class="card-title">Academia</h2>
-                    <p class="card-description">
-                        Portal para estudiantes preuniversitarios. Accede a tus simulacros, clases y
-                        material de estudio.
-                    </p>
-                    <a href="{{ route('login.academia') }}" class="btn">
-                        Ingresar
-                    </a>
-                </div>
+        <div class="central-divider"></div>
+
+        <section class="portal-section academia">
+            <div class="image-header"></div>
+            <div class="info-container">
+                <span class="badge">Preparación Universitaria</span>
+                <h1 class="main-title">Academia</h1>
+                <p class="main-description">
+                    Portal para estudiantes preuniversitarios. Accede a tus simulacros, clases y material de estudio.
+                </p>
+                <a href="{{ route('login.academia') }}" class="btn-main">
+                    <span>Ingresar</span>
+                </a>
             </div>
-        </div>
+        </section>
     </div>
 </body>
 </html>
