@@ -8,18 +8,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('css/web/login_colegio.css') }}">
 </head>
-<body class="overflow-hidden">
+<body class="overflow-x-hidden md:overflow-hidden">
 
     <div class="main-sliding-container active" id="mainContainer">
 
         <div class="form-side family-side">
             <div class="max-w-xl w-full mx-auto text-center">
                 <div class="mb-14">
-                    <p class="text-custom-blue italic text-xl font-bold tracking-[0.4em] uppercase mb-4">Intranet</p>
-                    <h1 class="text-9xl font-black text-custom-blue tracking-tighter uppercase leading-none">Colegio</h1>
+                    <p class="text-custom-blue italic text-lg md:text-xl font-bold tracking-[0.4em] uppercase mb-4">Intranet</p>
+                    <h1 class="text-6xl md:text-9xl font-black text-custom-blue tracking-tighter uppercase leading-none">Colegio</h1>
                 </div>
 
-                <h2 class="text-4xl font-bold text-slate-800 mb-12 italic">¡Bienvenida Familia!</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-12 italic">¡Bienvenida Familia!</h2>
 
                 <form class="space-y-8 text-left" method="POST" action="#">
                     @csrf
@@ -38,26 +38,25 @@
                 </div>
 
                 <div class="social-icons-wrapper !mt-8">
-                    <a href="https://www.tiktok.com/@next_level_novus?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.tiktok.com/@next_level_novus" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fab fa-tiktok"></i></a>
                     <a href="https://www.instagram.com/next_level_novus/" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fab fa-instagram"></i></a>
-                    <a href="https://wa.me/51923317625?text=Hola,%20quiero%20información" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://wa.me/51923317625" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fab fa-whatsapp"></i></a>
                     <a href="https://www.facebook.com/profile.php?id=61581492196914" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fab fa-facebook"></i></a>
                 </div>
 
                 <div class="mt-6 flex flex-col items-center">
-                    <div class="text-slate-400 text-[11px] font-bold uppercase tracking-widest flex items-center gap-3 whitespace-nowrap">
+                    <div class="text-slate-400 text-[11px] font-bold uppercase tracking-widest flex items-center gap-3 whitespace-nowrap footer-links">
                         <a href="#" class="hover:text-custom-blue underline decoration-1 underline-offset-4 transition-colors">Términos y condiciones</a>
                         <span class="text-slate-300">/</span>
                         <a href="#" class="hover:text-custom-blue underline decoration-1 underline-offset-4 transition-colors">Política de protección de datos personales</a>
                     </div>
-                    <p class="text-slate-400 text-[10px] font-bold uppercase tracking-[0.2em] mt-4"> © 2026 Next Level. Todos los derechos reservados.
-                    </p>
+                    <p class="text-slate-400 text-[10px] font-bold uppercase tracking-[0.2em] mt-4"> © 2026 Next Level. Todos los derechos reservados.</p>
                 </div>
             </div>
         </div>
 
         <div class="form-side student-side">
-            <div class="absolute top-12 left-12">
+            <div class="absolute top-12 left-12 container-back-btn">
                 <a href="{{ route('portal') }}" class="inline-block btn-custom-effect rounded-2xl p-4 shadow-custom-blue">
                     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M7 8L3 12M3 12L7 16M3 12H17" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -66,13 +65,13 @@
                 </a>
             </div>
 
-            <div class="max-w-xl w-full mx-auto text-center">
+            <div class="max-w-xl w-full mx-auto text-center student-content-wrapper">
                 <div class="mb-14">
-                    <p class="text-custom-blue italic text-xl font-bold tracking-[0.4em] uppercase mb-4">Intranet</p>
-                    <h1 class="text-9xl font-black text-custom-blue tracking-tighter uppercase leading-none">Colegio</h1>
+                    <p class="text-custom-blue italic text-lg md:text-xl font-bold tracking-[0.4em] uppercase mb-4">Intranet</p>
+                    <h1 class="text-6xl md:text-9xl font-black text-custom-blue tracking-tighter uppercase leading-none">Colegio</h1>
                 </div>
 
-                <h2 class="text-4xl font-bold text-slate-800 mb-12 italic">¡Bienvenido Alumno!</h2>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-12 italic">¡Bienvenido Alumno!</h2>
 
                 <form class="space-y-8 text-left" method="POST" action="#">
                     @csrf
@@ -102,31 +101,28 @@
                 </div>
 
                 <div class="social-icons-wrapper !mt-8">
-                    <a href="https://www.tiktok.com/@next_level_novus?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fab fa-tiktok"></i></a>
-                    <a href="https://www.instagram.com/next_level_novus/" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fab fa-instagram"></i></a>
-                    <a href="https://wa.me/51923317625?text=Hola,%20quiero%20información" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=61581492196914" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@next_level_novus" class="social-btn"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/next_level_novus/" class="social-btn"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/51923317625" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61581492196914" class="social-btn"><i class="fab fa-facebook"></i></a>
                 </div>
 
                 <div class="mt-6 flex flex-col items-center">
-                    <div class="text-slate-400 text-[11px] font-bold uppercase tracking-widest flex items-center gap-3 whitespace-nowrap">
-                        <a href="#" class="hover:text-custom-blue underline decoration-1 underline-offset-4 transition-colors">Términos y condiciones</a>
+                    <div class="text-slate-400 text-[11px] font-bold uppercase tracking-widest flex items-center gap-3 footer-links">
+                        <a href="#" class="hover:text-custom-blue underline transition-colors">Términos y condiciones</a>
                         <span class="text-slate-300">/</span>
-                        <a href="#" class="hover:text-custom-blue underline decoration-1 underline-offset-4 transition-colors">Política de protección de datos personales</a>
+                        <a href="#" class="hover:text-custom-blue underline transition-colors">Política de protección de datos personales</a>
                     </div>
-                    <p class="text-slate-400 text-[10px] font-bold uppercase tracking-[0.2em] mt-4">
-                        © 2026 Next Level. Todos los derechos reservados.
-                    </p>
+                    <p class="text-slate-400 text-[10px] font-bold uppercase tracking-[0.2em] mt-4"> © 2026 Next Level. Todos los derechos reservados.</p>
                 </div>
-
             </div>
         </div>
 
         <div class="sliding-panel-container">
             <div class="sliding-panel">
-                <div class="text-white text-center px-20">
-                    <h1 class="text-8xl font-black mb-10 uppercase tracking-tighter" id="overlayTitle">¿Eres Familia?</h1>
-                    <p class="text-3xl opacity-90 mb-14 font-medium" id="overlayText">Accede con tu documento de identidad para el <br> seguimiento de tus hijos.</p>
+                <div class="text-white text-center px-10 md:px-20">
+                    <h1 class="text-5xl md:text-8xl font-black mb-10 uppercase tracking-tighter" id="overlayTitle">¿Eres Familia?</h1>
+                    <p class="text-2xl md:text-3xl opacity-90 mb-14 font-medium" id="overlayText">Accede con tu documento de identidad para el <br class="hidden md:block"> seguimiento de tus hijos.</p>
                     <button class="btn-ghost-white btn-custom-effect" id="toggleBtn">
                         <span>Soy Familia</span>
                     </button>
