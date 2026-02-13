@@ -460,7 +460,7 @@ body {
     justify-content: flex-start;
 }
 
-/* --- ICONOS ESTÁTICOS --- */
+/* --- ICONOS DINÁMICOS CON EFECTO HOVER --- */
 .social-icon {
     background: rgba(255, 255, 255, 0.05);
     width: 38px;
@@ -473,14 +473,14 @@ body {
     font-size: 16px;
     border: 1px solid rgba(255, 255, 255, 0.15);
     text-decoration: none;
-    /* Solo transición de color */
-    transition: background 0.3s ease, border-color 0.3s ease;
+    transition: background 0.3s ease, border-color 0.3s ease; /* Efecto suave de color */
 }
 
-.social-icon:hover {
-    background: var(--rojo-principal);
-    border-color: var(--rojo-principal);
-    color: var(--blanco) !important;
+/* El efecto HOVER: Cambia a rojo oscuro y anula el movimiento de 5px */
+.footer-social-icons .social-icon:hover {
+    background: #B01030 !important; /* Rojo oscuro */
+    border-color: #B01030 !important;
+    padding-left: 0 !important; /* Mantiene el icono en su sitio */
 }
 
 .footer-bottom {
