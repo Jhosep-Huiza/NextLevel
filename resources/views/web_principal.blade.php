@@ -25,13 +25,36 @@
 
     <nav class="main-nav">
         <div class="nav-container">
+            <a href="#" class="nav-brand">
+                <img src="{{ asset('images/logo_letras.png') }}" alt="Colegio y Academia Next Level" class="nav-logo-full">
+            </a>
+
             <ul class="nav-menu">
                 <li><a href="#" class="active">INICIO</a></li>
-                <li><a href="#">NOSOTROS</a></li>
-                <li><a href="#">NIVELES</a></li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-trigger">
+                        NOSOTROS <span class="arrow-icon">&#9662;</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Qué ofrecemos</a></li>
+                        <li><a href="#">Quiénes Somos</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-trigger">
+                        NIVELES <span class="arrow-icon">&#9662;</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Colegio</a></li>
+                        <li><a href="#">Academia</a></li>
+                    </ul>
+                </li>
+
                 <li><a href="#">UBICACIÓN</a></li>
                 <li><a href="#">MATRICULAS</a></li>
-                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONCURSOS</a></li>
                 <li><a href="{{ route('portal') }}">PORTAL ACADÉMICO</a></li>
             </ul>
         </div>
