@@ -367,7 +367,7 @@ body {
     line-height: 1.6;
 }
 
-/* --- FOOTER (Ajustado para alineación exacta) --- */
+/* --- FOOTER (Actualizado para alineación perfecta) --- */
 .footer {
     background: linear-gradient(135deg, var(--azul-oscuro) 0%, var(--azul-noche) 100%);
     color: var(--blanco);
@@ -380,7 +380,7 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-start; /* Alinea logo y columnas al inicio superior */
     gap: 80px;
 }
 
@@ -395,7 +395,8 @@ body {
     height: 50px;
     width: auto;
     display: block;
-    margin-left: -12px; /* Incrementado para alineación perfecta */
+    margin-left: -11.1px; /* Reset para alineación limpia */
+    margin-top: -6px; /* Compensación visual para alinear con el texto */
     margin-bottom: 30px;
 }
 
@@ -403,11 +404,10 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 24px;
+    margin-bottom: 22px;
     font-size: 12.6px;
     color: rgba(255,255,255,0.85);
     line-height: 1.5;
-    margin-left: 0;
 }
 
 .footer-contact i { color: var(--rojo-principal); font-size: 16px; width: 20px; text-align: center; }
@@ -435,6 +435,7 @@ body {
     text-transform: uppercase;
     transition: 0.3s ease;
     letter-spacing: 0.5px;
+    line-height: 1.2; /* Asegura que el texto no tenga aire arriba */
 }
 
 .footer-column a:hover {
@@ -448,8 +449,8 @@ body {
 
 .footer-social-icons {
     display: flex;
-    gap: 18.6px;
-    margin-top: 20px;
+    gap: 18.5px;
+    margin-top: 16px;
     justify-content: flex-start;
 }
 
@@ -465,16 +466,12 @@ body {
     font-size: 16px;
     border: 1px solid rgba(255, 255, 255, 0.15);
     text-decoration: none;
-    transform: none !important;
     transition: background 0.2s ease;
 }
 
 .social-icon:hover {
     background: var(--rojo-principal);
     border-color: var(--rojo-principal);
-    transform: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
     color: var(--blanco) !important;
 }
 
@@ -496,7 +493,7 @@ body {
     text-align: center;
 }
 
-/* ANIMACIONES */
+/* --- ANIMACIONES Y MEDIA QUERIES --- */
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }
