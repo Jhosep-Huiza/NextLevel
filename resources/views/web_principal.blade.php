@@ -127,23 +127,23 @@
 
             <div class="footer-right">
                 <div class="footer-column">
+                    <a href="#">UBICACIÓN</a>
+                    <a href="#">CONTÁCTANOS</a>
                     <a href="#">ADMISIÓN 2026</a>
                     <a href="#">SOBRE NOSOTROS</a>
                     <a href="#">NUESTROS VALORES</a>
-                    <a href="#">CONTÁCTANOS</a>
-                    <a href="#">UBICACIÓN</a>
                 </div>
                 <div class="footer-column">
                     <a href="#">NIVELES</a>
                     <a href="#">ACADEMIA</a>
-                    <a href="#">HORARIO DE CLASE</a>
-                    <a href="#">MATRICULA 2026</a>
                     <a href="#">PAGOS EN LÍNEA</a>
+                    <a href="#">MATRICULA 2026</a>
+                    <a href="#">HORARIO DE CLASE</a>
                 </div>
                 <div class="footer-column social-align">
+                    <a href="#">INTRANET</a>
                     <a href="#">PROTECCIÓN DE DATOS</a>
                     <a href="#">LIBROS DE RECLAMACIONES</a>
-                    <a href="#">INTRANET</a>
 
                     <div class="footer-social-icons">
                         <a href="https://www.tiktok.com/@next_level_novus" target="_blank" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>

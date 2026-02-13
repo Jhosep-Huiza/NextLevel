@@ -367,7 +367,7 @@ body {
     line-height: 1.6;
 }
 
-/* --- FOOTER --- */
+/* --- FOOTER (Ajustado para alineación exacta) --- */
 .footer {
     background: linear-gradient(135deg, var(--azul-oscuro) 0%, var(--azul-noche) 100%);
     color: var(--blanco);
@@ -393,6 +393,9 @@ body {
 
 .footer-logo-img {
     height: 50px;
+    width: auto;
+    display: block;
+    margin-left: -12px; /* Incrementado para alineación perfecta */
     margin-bottom: 30px;
 }
 
@@ -400,16 +403,17 @@ body {
     display: flex;
     align-items: center;
     gap: 12px;
-    margin-bottom: 13px;
-    font-size: 13px;
+    margin-bottom: 24px;
+    font-size: 12.6px;
     color: rgba(255,255,255,0.85);
     line-height: 1.5;
+    margin-left: 0;
 }
 
-.footer-contact i { color: var(--rojo-principal); font-size: 16px; width: 20px; }
+.footer-contact i { color: var(--rojo-principal); font-size: 16px; width: 20px; text-align: center; }
 
 .footer-right {
-    flex: 2;
+    flex: 1.2;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
@@ -444,12 +448,11 @@ body {
 
 .footer-social-icons {
     display: flex;
-    gap: 20px;
+    gap: 18.6px;
     margin-top: 20px;
     justify-content: flex-start;
 }
 
-/* --- ICONOS SOCIALES: TOTALMENTE FIJOS --- */
 .social-icon {
     background: rgba(255, 255, 255, 0.05);
     width: 38px;
@@ -462,24 +465,19 @@ body {
     font-size: 16px;
     border: 1px solid rgba(255, 255, 255, 0.15);
     text-decoration: none;
-
-    /* Importante: quitamos transformaciones heredadas */
     transform: none !important;
-    transition: background 0.2s ease; /* Solo animamos el color */
+    transition: background 0.2s ease;
 }
 
 .social-icon:hover {
     background: var(--rojo-principal);
     border-color: var(--rojo-principal);
-
-    /* Forzamos que NO haya movimiento */
     transform: none !important;
     margin: 0 !important;
     padding: 0 !important;
     color: var(--blanco) !important;
 }
 
-/* --- COPYRIGHT: CENTRADO MATEMÁTICO REAL --- */
 .footer-bottom {
     margin-top: 60px;
     padding: 40px 0;
@@ -493,7 +491,7 @@ body {
 .footer-bottom p {
     margin: 0 !important;
     font-size: 14px;
-    opacity: 0.7;
+    opacity: 1.0;
     line-height: 1.5;
     text-align: center;
 }
