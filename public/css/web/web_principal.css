@@ -23,10 +23,21 @@ body {
     background: linear-gradient(135deg, var(--azul-noche) 0%, var(--azul-oscuro) 100%);
     box-shadow: 0 4px 20px rgba(15, 39, 73, 0.4);
     padding: 10px 0;
-    position: sticky;
+    position: relative;
     top: 0;
     z-index: 1000;
     width: 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.nav-fixed {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+}
+
+.nav-hidden {
+    transform: translateY(-100%);
 }
 
 .nav-container {
@@ -106,7 +117,6 @@ body {
     color: var(--blanco);
 }
 
-/* --- SUBMENÚ DESPLEGABLE --- */
 .nav-menu li.dropdown {
     position: relative;
 }
@@ -165,7 +175,6 @@ body {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* --- HERO SECTION --- */
 .hero-section {
     background: url('/images/img2.jpeg');
     background-size: cover;
@@ -213,7 +222,6 @@ body {
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
 }
 
-/* --- VALORES SECTION --- */
 .valores-section {
     padding: 80px 20px;
     background: linear-gradient(135deg, var(--azul-noche) 0%, var(--azul-oscuro) 100%);
@@ -297,7 +305,6 @@ body {
     font-size: 16px;
 }
 
-/* --- INFO SECTION --- */
 .info-section {
     padding: 80px 20px;
     background: var(--blanco);
@@ -367,7 +374,6 @@ body {
     line-height: 1.6;
 }
 
-/* --- FOOTER (Actualizado para alineación perfecta) --- */
 .footer {
     background: linear-gradient(135deg, var(--azul-oscuro) 0%, var(--azul-noche) 100%);
     color: var(--blanco);
@@ -380,7 +386,7 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Alinea logo y columnas al inicio superior */
+    align-items: flex-start;
     gap: 80px;
 }
 
@@ -395,8 +401,8 @@ body {
     height: 50px;
     width: auto;
     display: block;
-    margin-left: -11.1px; /* Reset para alineación limpia */
-    margin-top: -6px; /* Compensación visual para alinear con el texto */
+    margin-left: -11.1px;
+    margin-top: -6px;
     margin-bottom: 30px;
 }
 
@@ -435,7 +441,7 @@ body {
     text-transform: uppercase;
     transition: 0.3s ease;
     letter-spacing: 0.5px;
-    line-height: 1.2; /* Asegura que el texto no tenga aire arriba */
+    line-height: 1.2;
 }
 
 .footer-column a:hover {
@@ -454,6 +460,7 @@ body {
     justify-content: flex-start;
 }
 
+/* --- ICONOS ESTÁTICOS --- */
 .social-icon {
     background: rgba(255, 255, 255, 0.05);
     width: 38px;
@@ -466,7 +473,8 @@ body {
     font-size: 16px;
     border: 1px solid rgba(255, 255, 255, 0.15);
     text-decoration: none;
-    transition: background 0.2s ease;
+    /* Solo transición de color */
+    transition: background 0.3s ease, border-color 0.3s ease;
 }
 
 .social-icon:hover {
@@ -493,7 +501,6 @@ body {
     text-align: center;
 }
 
-/* --- ANIMACIONES Y MEDIA QUERIES --- */
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(30px); }
     to { opacity: 1; transform: translateY(0); }

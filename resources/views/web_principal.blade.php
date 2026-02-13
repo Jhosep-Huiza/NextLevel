@@ -143,7 +143,7 @@
                 <div class="footer-column social-align">
                     <a href="#">INTRANET</a>
                     <a href="#">PROTECCIÓN DE DATOS</a>
-                    <a href="#">LIBROS DE RECLAMACIONES</a>
+                    <a href="#">LIBRO DE RECLAMACIONES</a>
 
                     <div class="footer-social-icons">
                         <a href="https://www.tiktok.com/@next_level_novus" target="_blank" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
@@ -160,6 +160,7 @@
     </footer>
 
     <script src="{{ asset('js/marquee_principal.js') }}"></script>
+    <script src="{{ asset('js/nav-scroll.js') }}"></script>
 </body>
 
 </html>
