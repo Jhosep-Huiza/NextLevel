@@ -1,8 +1,8 @@
 .top-bar{
     width: 100%;
-    background: rgb(176, 16, 48);
+    background: rgb(255, 255, 255);
     backdrop-filter: blur(6px);
-    height: 55px;
+    height: 53px;
     display: flex;
     align-items: center;
     overflow: hidden;
@@ -25,7 +25,7 @@
 
 .marquee-item{
     display: inline-block;
-    color: #ffffff;
+    color: #0F2749;
 
     font-size: 18px;
     font-weight: 600;

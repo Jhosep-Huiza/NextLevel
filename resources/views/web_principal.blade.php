@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Next Level - Centro Educativo</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('css/web/web_principal.css') }}">
     <link rel="stylesheet" href="{{ asset('css/web/marquee_principal.css') }}">
 </head>
@@ -16,8 +17,8 @@
         <div class="marquee-wrapper">
             <div class="marquee-track" id="marqueeTrack">
                 <div class="marquee-item">
-                    📝 ¡Matrícula 2026! &nbsp;&nbsp;&nbsp;&nbsp;
-                    🎓 Inicio de clases: 4 de marzo &nbsp;&nbsp;&nbsp;&nbsp;
+                    🧑🏻‍🎓 ¡MATRÍCULA 2026! &nbsp;&nbsp;&nbsp;&nbsp;
+                    📕 INICIO DE CLASES: 4 DE MARZO &nbsp;&nbsp;&nbsp;&nbsp;
                 </div>
             </div>
         </div>
@@ -114,17 +115,47 @@
     </section>
 
     <footer class="footer">
-        <div class="footer-content">
-            <p><strong>Colegio y Academia NEXT LEVEL</strong></p>
-            <p>Educación en el Próximo Nivel</p>
-            <p>📍 Carretera Federico Basadre Km. 6 (Al costado de la UNU)</p>
-            <p>📞 Más información: 923 317 626</p>
-            <div class="footer-social">
-                <a href="#" class="social-link">Facebook</a>
-                <a href="#" class="social-link">WhatsApp</a>
-                <a href="#" class="social-link">Instagram</a>
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="{{ asset('images/logo_footer.png') }}" alt="Next Level Logo" class="footer-logo-img">
+                <div class="footer-contact">
+                    <p><i class="fa-solid fa-phone"></i> 923 317 626</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Carretera Federico Basadre Km. 6 (Al costado de la UNU)</p>
+                    <p><i class="fa-solid fa-envelope"></i> contacto@nextlevel.edu.pe</p>
+                </div>
             </div>
-            <p style="margin-top: 30px; opacity: 0.7;">© 2026 Next Level. Todos los derechos reservados.</p>
+
+            <div class="footer-right">
+                <div class="footer-column">
+                    <a href="#">ADMISIÓN 2026</a>
+                    <a href="#">SOBRE NOSOTROS</a>
+                    <a href="#">NUESTROS VALORES</a>
+                    <a href="#">CONTÁCTANOS</a>
+                    <a href="#">UBICACIÓN</a>
+                </div>
+                <div class="footer-column">
+                    <a href="#">NIVELES</a>
+                    <a href="#">ACADEMIA</a>
+                    <a href="#">HORARIO DE CLASE</a>
+                    <a href="#">MATRICULA 2026</a>
+                    <a href="#">PAGOS EN LÍNEA</a>
+                </div>
+                <div class="footer-column social-align">
+                    <a href="#">PROTECCIÓN DE DATOS</a>
+                    <a href="#">LIBROS DE RECLAMACIONES</a>
+                    <a href="#">INTRANET</a>
+
+                    <div class="footer-social-icons">
+                        <a href="https://www.tiktok.com/@next_level_novus" target="_blank" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/next_level_novus/" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/51923317625" target="_blank" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61581492196914" target="_blank" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Next Level. Todos los derechos reservados.</p>
         </div>
     </footer>
 

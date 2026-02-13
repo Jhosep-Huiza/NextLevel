@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         track.innerHTML = content.repeat(10);
 
         let pos = 0;
-        const velocidad = 1.8;
+        const velocidad = 1.1;
 
         function animar() {
             pos -= velocidad;
