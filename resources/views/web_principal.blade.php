@@ -55,17 +55,45 @@
     </nav>
 
     <section class="hero-full-width">
-        <div class="hero-main-content">
-            <img src="{{ asset('images/imagen10.jpg') }}" alt="Next Level Educación" class="main-image">
-
-            <div class="diagonal-white">
-                <h1>Llevamos tu potencial al siguiente nivel.</h1>
-                <p>Desarrollando mentes curiosas y futuros brillantes desde la etapa temprana.</p>
+        <div class="hero-slide active">
+            <div class="hero-main-content">
+                <img src="{{ asset('images/imagen10.jpg') }}" alt="Next Level Educación" class="main-image">
+                <div class="diagonal-white">
+                    <h1>Llevamos tu potencial al siguiente nivel.</h1>
+                    <p>Desarrollando mentes curiosas y futuros brillantes desde la etapa temprana.</p>
+                </div>
+                <div class="diagonal-blue">
+                    <h2>Proyección Superior: El Futuro se Construye Aquí.</h2>
+                    <p>No solo transmitimos conocimiento; impulsamos una mentalidad de crecimiento constante en cada etapa académica.</p>
+                </div>
             </div>
+        </div>
 
-            <div class="diagonal-blue">
-                <h2>Proyección Superior: El Futuro se Construye Aquí.</h2>
-                <p>No solo transmitimos conocimiento; impulsamos una mentalidad de crecimiento constante en cada etapa académica.</p>
+        <div class="hero-slide">
+            <div class="hero-main-content">
+                <img src="{{ asset('images/imagen10.jpg') }}" alt="Innovación" class="main-image">
+                <div class="diagonal-white">
+                    <h1>Donde el aprendizaje no tiene límites.</h1>
+                    <p>Aprendizaje basado en proyectos y tecnología aplicada a la educación real.</p>
+                </div>
+                <div class="diagonal-blue">
+                    <h2>Innovación Constante: Preparados para el Mañana.</h2>
+                    <p>Potenciamos tus habilidades para dominar cualquier reto profesional</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-slide">
+            <div class="hero-main-content">
+                <img src="{{ asset('images/imagen10.jpg') }}" alt="Valores" class="main-image">
+                <div class="diagonal-white">
+                    <h1>Formación en Valores y Ética.</h1>
+                    <p>Creamos ciudadanos responsables, empáticos y comprometidos con su sociedad.</p>
+                </div>
+                <div class="diagonal-blue">
+                    <h2>Mentalidad Ganadora : Forjando líderes reales.</h2>
+                    <p>Nuestro enfoque integral garantiza un crecimiento tanto profesional como personal.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -163,6 +191,7 @@
 
     <script src="{{ asset('js/marquee_principal.js') }}"></script>
     <script src="{{ asset('js/nav-scroll.js') }}"></script>
+    <script src="{{ asset('js/hero-slider.js') }}"></script>
 </body>
 
 </html>
