@@ -98,25 +98,63 @@
         </div>
     </section>
 
-    <section class="info-section">
+    <section class="info-organic-section">
         <div class="info-container">
-            <h2 class="section-title-dark">¿Por Qué Elegirnos?</h2>
-            <div class="info-grid">
-                <div class="info-card">
-                    <div class="info-number">15+</div>
-                    <h3>Años de Experiencia</h3>
-                    <p>Trayectoria consolidada en educación de calidad</p>
+            <div class="info-header">
+                <h2 class="section-title-dark">¡Construimos el Futuro Educativo Contigo!</h2>
+                <p class="info-intro">Ocho razones por las que somos la mejor opción para iniciar este camino escolar en marzo.</p>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="carrusel-wrapper">
+                <button class="carrusel-btn prev" id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+
+                <div class="carrusel-container">
+                    <div class="info-grid-carrusel" id="carruselTrack">
+                        <div class="info-blob-card">
+                            <div class="blob-wrapper"><div class="blob-shape shape-1"><i class="fa-solid fa-rocket"></i></div></div>
+                            <h3>Enfoque Innovador</h3>
+                            <p>Educación de vanguardia basada en proyectos y tecnología aplicada.</p>
+                        </div>
+                        <div class="info-blob-card">
+                            <div class="blob-wrapper"><div class="blob-shape shape-2"><i class="fa-solid fa-seedling"></i></div></div>
+                            <h3>Crecimiento Conjunto</h3>
+                            <p>Iniciamos este camino en marzo, creando una comunidad donde el alumno es protagonista.</p>
+                        </div>
+                        <div class="info-blob-card">
+                            <div class="blob-wrapper"><div class="blob-shape shape-3"><i class="fa-solid fa-hand-holding-heart"></i></div></div>
+                            <h3>Valores y Liderazgo</h3>
+                            <p>Formación ética y liderazgo para los retos del mañana.</p>
+                        </div>
+                        <div class="info-blob-card">
+                            <div class="blob-wrapper"><div class="blob-shape shape-4"><i class="fa-solid fa-school"></i></div></div>
+                            <h3>Infraestructura</h3>
+                            <p>Ambientes modernos y seguros diseñados para potenciar el aprendizaje.</p>
+                        </div>
+                        <div class="info-blob-card">
+                            <div class="blob-wrapper"><div class="blob-shape shape-5"><i class="fa-solid fa-user-graduate"></i></div></div>
+                            <h3>Plana Docente</h3>
+                            <p>Profesores con amplia trayectoria académica y compromiso humano.</p>
+                        </div>
+                        <div class="info-blob-card">
+                            <div class="blob-wrapper"><div class="blob-shape shape-6"><i class="fa-solid fa-language"></i></div></div>
+                            <h3>Inglés Intensivo</h3>
+                            <p>Dominio del idioma inglés como herramienta clave para el mundo global.</p>
+                        </div>
+                        <div class="info-blob-card">
+                            <div class="blob-wrapper"><div class="blob-shape shape-7"><i class="fa-solid fa-palette"></i></div></div>
+                            <h3>Talleres Creativos</h3>
+                            <p>Desarrollo artístico y deportivo para una formación integral.</p>
+                        </div>
+                        <div class="info-blob-card">
+                            <div class="blob-wrapper"><div class="blob-shape shape-8"><i class="fa-solid fa-lock"></i></div></div>
+                            <h3>Seguridad 24/7</h3>
+                            <p>Tranquilidad total para los padres con sistemas de seguridad avanzados.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="info-card">
-                    <div class="info-number">98%</div>
-                    <h3>Tasa de Éxito</h3>
-                    <p>Estudiantes que alcanzan sus metas académicas</p>
-                </div>
-                <div class="info-card">
-                    <div class="info-number">50+</div>
-                    <h3>Profesores Calificados</h3>
-                    <p>Equipo docente comprometido y especializado</p>
-                </div>
+
+                <button class="carrusel-btn next" id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
         </div>
     </section>
@@ -203,6 +241,7 @@
     <script src="{{ asset('js/marquee_principal.js') }}"></script>
     <script src="{{ asset('js/nav-scroll.js') }}"></script>
     <script src="{{ asset('js/hero-slider.js') }}"></script>
+    <script src="{{ asset('js/carrusel-pilares.js') }}"></script>
 </body>
 
 </html>
