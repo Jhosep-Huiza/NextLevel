@@ -139,7 +139,6 @@ body {
 
 .text-custom-blue { color: #040669; }
 
-/* RESPONSIVE */
 @media (max-width: 1024px) {
     body { overflow-y: auto !important; height: auto; }
     .main-sliding-container { flex-direction: column; height: auto; }
@@ -156,7 +155,6 @@ body {
     .main-sliding-container:not(.active) .family-side { display: flex !important; opacity: 1 !important; }
     .main-sliding-container.active .student-side { display: flex !important; opacity: 1 !important; }
 
-    /* Ajuste del botón de regresar en móvil */
     .container-back-btn {
         top: 20px !important;
         left: 20px !important;
@@ -173,7 +171,6 @@ body {
         height: 22px !important;
     }
 
-    /* Evitar que el contenido choque con el botón */
     .student-content-wrapper {
         margin-top: 40px !important;
     }

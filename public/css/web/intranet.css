@@ -182,8 +182,6 @@ html, body {
     white-space: nowrap;
 }
 
-/* --- RESPONSIVE OPTIMIZADO --- */
-
 @media (max-width: 1200px) {
     .main-title { font-size: 3.5rem; }
     .btn-main { padding: 22px 100px; }
@@ -232,23 +230,22 @@ html, body {
         left: 20px;
     }
 
-    /* --- FOOTER CENTRADO EN MÓVIL --- */
     .footer-copyright {
         position: relative;
         bottom: 0;
         left: 0;
-        transform: none; /* Quitamos el translateX(-50%) */
+        transform: none;
         padding: 25px 15px;
         background: #000;
         pointer-events: auto;
-        width: 100%; /* Asegura que ocupe todo el ancho para centrar el texto */
-        text-align: center; /* Centra el texto del copyright */
+        width: 100%;
+        text-align: center;
     }
 
     .footer-copyright p {
         white-space: normal;
         font-size: 12px;
-        text-align: center; /* Refuerzo de centrado */
+        text-align: center;
         width: 100%;
     }
 }

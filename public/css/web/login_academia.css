@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap');
 
-/* --- ESTILOS ORIGINALES --- */
+
 * {
     margin: 0;
     padding: 0;
@@ -153,7 +153,6 @@ body {
 
 .text-custom-red { color: #db0808; }
 
-/* === BLOQUE RESPONSIVE ACTUALIZADO === */
 @media (max-width: 1024px) {
     body {
         overflow-y: auto !important;
@@ -169,13 +168,12 @@ body {
         position: relative !important;
         width: 100% !important;
         height: auto !important;
-        padding: 60px 5% !important; /* Ajuste para dar aire */
+        padding: 60px 5% !important;
         opacity: 1 !important;
         display: flex !important;
         transform: none !important;
     }
 
-    /* Ajuste Botón Regresar en Móvil */
     .container-back-btn {
         top: 15px !important;
         left: 15px !important;
@@ -192,7 +190,6 @@ body {
         height: 22px !important;
     }
 
-    /* Margen para evitar solapamiento con el título Intranet Academia */
     .academy-content-wrapper {
         margin-top: 40px !important;
     }

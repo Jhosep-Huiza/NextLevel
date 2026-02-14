@@ -27,44 +27,46 @@
     <nav class="main-nav">
         <div class="nav-container">
             <a href="#" class="nav-brand">
-                <img src="{{ asset('images/logo_letras.png') }}" alt="Colegio y Academia Next Level" class="nav-logo-full">
+                <img src="{{ asset('images/logo_letras.png') }}" alt="Next Level" class="nav-logo-full">
             </a>
 
             <ul class="nav-menu">
                 <li><a href="#" class="active">INICIO</a></li>
-
                 <li class="dropdown">
-                    <a href="#" class="dropdown-trigger">
-                        NOSOTROS <span class="arrow-icon">&#9662;</span>
-                    </a>
+                    <a href="#" class="dropdown-trigger">NOSOTROS <span class="arrow-icon">&#9662;</span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Qué ofrecemos</a></li>
                         <li><a href="#">Quiénes Somos</a></li>
                     </ul>
                 </li>
-
                 <li class="dropdown">
-                    <a href="#" class="dropdown-trigger">
-                        NIVELES <span class="arrow-icon">&#9662;</span>
-                    </a>
+                    <a href="#" class="dropdown-trigger">NIVELES <span class="arrow-icon">&#9662;</span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Colegio</a></li>
                         <li><a href="#">Academia</a></li>
                     </ul>
                 </li>
-
                 <li><a href="#">UBICACIÓN</a></li>
                 <li><a href="#">MATRICULAS</a></li>
                 <li><a href="#">CONCURSOS</a></li>
-                <li><a href="{{ route('portal') }}">PORTAL ACADÉMICO</a></li>
+                <li><a href="{{ route('portal') }}">INTRANET</a></li>
             </ul>
         </div>
     </nav>
 
-    <section class="hero-section">
-        <div class="hero-content">
-            <p class="subtitle">Elevando la Educación al Siguiente Nivel</p>
-            <p class="description">Formando líderes del mañana con excelencia, valores y compromiso</p>
+    <section class="hero-full-width">
+        <div class="hero-main-content">
+            <img src="{{ asset('images/imagen10.jpg') }}" alt="Next Level Educación" class="main-image">
+
+            <div class="diagonal-white">
+                <h1>Llevamos tu potencial al siguiente nivel.</h1>
+                <p>Desarrollando mentes curiosas y futuros brillantes desde la etapa temprana.</p>
+            </div>
+
+            <div class="diagonal-blue">
+                <h2>Proyección Superior: El Futuro se Construye Aquí.</h2>
+                <p>No solo transmitimos conocimiento; impulsamos una mentalidad de crecimiento constante en cada etapa académica.</p>
+            </div>
         </div>
     </section>
 
