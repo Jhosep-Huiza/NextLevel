@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Next Level - Centro Educativo</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -98,29 +98,6 @@
         </div>
     </section>
 
-    <section class="valores-section">
-        <div class="valores-container">
-            <h2 class="section-title">Nuestros Valores</h2>
-            <div class="valores-grid">
-                <div class="valor-card">
-                    <div class="valor-icon">🎓</div>
-                    <h3>Excelencia Académica</h3>
-                    <p>Compromiso con la calidad educativa y el desarrollo integral de nuestros estudiantes</p>
-                </div>
-                <div class="valor-card">
-                    <div class="valor-icon">💡</div>
-                    <h3>Innovación</h3>
-                    <p>Métodos educativos modernos y tecnología de vanguardia para el aprendizaje</p>
-                </div>
-                <div class="valor-card">
-                    <div class="valor-icon">🤝</div>
-                    <h3>Valores Humanos</h3>
-                    <p>Formación en ética, respeto y responsabilidad social</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="info-section">
         <div class="info-container">
             <h2 class="section-title-dark">¿Por Qué Elegirnos?</h2>
@@ -139,6 +116,40 @@
                     <div class="info-number">50+</div>
                     <h3>Profesores Calificados</h3>
                     <p>Equipo docente comprometido y especializado</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="valores-modern-section">
+        <div class="valores-overlay">
+            <div class="valores-container">
+                <h2 class="section-title-light">Nuestros Valores</h2>
+
+                <div class="valores-grid-custom">
+                    <div class="valor-item">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3>Excelencia Académica</h3>
+                        <p>Compromiso con la calidad educativa y el desarrollo integral de nuestros estudiantes</p>
+                    </div>
+
+                    <div class="valor-item">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <h3>Innovación</h3>
+                        <p>Métodos educativos modernos y tecnología de vanguardia para el aprendizaje</p>
+                    </div>
+
+                    <div class="valor-item">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                        </div>
+                        <h3>Valores Humanos</h3>
+                        <p>Formación en ética, respeto y responsabilidad social</p>
+                    </div>
                 </div>
             </div>
         </div>
