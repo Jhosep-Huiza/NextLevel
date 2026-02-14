@@ -193,6 +193,75 @@
         </div>
     </section>
 
+    <section class="docentes-carousel-section">
+        <div class="info-container">
+            <div class="info-header">
+                <h2 class="section-title-dark">Nuestro Cuerpo de Docentes</h2>
+                <p class="info-intro">Liderazgo y trayectoria al servicio de la formación de nuestros alumnos.</p>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="docentes-carrusel-wrapper">
+                <button class="doc-nav-btn prev" id="docPrevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+
+                <div class="docentes-overflow">
+                    <div class="docentes-track" id="docentesTrack">
+                        <div class="docente-card-modern">
+                            <div class="docente-img-box"><img src="{{ asset('images/imagen10.jpg') }}" alt="Docente"></div>
+                            <div class="docente-content">
+                                <h3>Nombre del Docente</h3>
+                                <span class="doc-tag">Especialidad</span>
+                                <p>Docente con amplia trayectoria en formación académica y valores para el éxito de nuestros alumnos.</p>
+                            </div>
+                        </div>
+                        <div class="docente-card-modern">
+                            <div class="docente-img-box"><img src="{{ asset('images/imagen10.jpg') }}" alt="Docente"></div>
+                            <div class="docente-content">
+                                <h3>Nombre del Docente</h3>
+                                <span class="doc-tag">Especialidad</span>
+                                <p>Docente con amplia trayectoria en formación académica y valores para el éxito de nuestros alumnos.</p>
+                            </div>
+                        </div>
+                        <div class="docente-card-modern">
+                            <div class="docente-img-box"><img src="{{ asset('images/imagen10.jpg') }}" alt="Docente"></div>
+                            <div class="docente-content">
+                                <h3>Nombre del Docente</h3>
+                                <span class="doc-tag">Especialidad</span>
+                                <p>Docente con amplia trayectoria en formación académica y valores para el éxito de nuestros alumnos.</p>
+                            </div>
+                        </div>
+                        <div class="docente-card-modern">
+                            <div class="docente-img-box"><img src="{{ asset('images/imagen10.jpg') }}" alt="Docente"></div>
+                            <div class="docente-content">
+                                <h3>Nombre del Docente</h3>
+                                <span class="doc-tag">Especialidad</span>
+                                <p>Docente con amplia trayectoria en formación académica y valores para el éxito de nuestros alumnos.</p>
+                            </div>
+                        </div>
+                        <div class="docente-card-modern">
+                            <div class="docente-img-box"><img src="{{ asset('images/imagen10.jpg') }}" alt="Docente"></div>
+                            <div class="docente-content">
+                                <h3>Nombre del Docente</h3>
+                                <span class="doc-tag">Especialidad</span>
+                                <p>Docente con amplia trayectoria en formación académica y valores para el éxito de nuestros alumnos.</p>
+                            </div>
+                        </div>
+                        <div class="docente-card-modern">
+                            <div class="docente-img-box"><img src="{{ asset('images/imagen10.jpg') }}" alt="Docente"></div>
+                            <div class="docente-content">
+                                <h3>Nombre del Docente</h3>
+                                <span class="doc-tag">Especialidad</span>
+                                <p>Docente con amplia trayectoria en formación académica y valores para el éxito de nuestros alumnos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="doc-nav-btn next" id="docNextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-left">
@@ -242,6 +311,7 @@
     <script src="{{ asset('js/nav-scroll.js') }}"></script>
     <script src="{{ asset('js/hero-slider.js') }}"></script>
     <script src="{{ asset('js/carrusel-pilares.js') }}"></script>
+    <script src="{{ asset('js/carrusel-docentes.js') }}"></script>
 </body>
 
 </html>
