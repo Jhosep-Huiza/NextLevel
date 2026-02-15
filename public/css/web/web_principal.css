@@ -328,14 +328,14 @@ html, body {
 }
 
 /* Colores de las Gotas */
-.shape-1 { background: linear-gradient(135deg, #0F2749, #B01030); border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
-.shape-2 { background: linear-gradient(135deg, #B01030, #0F2749); border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%; }
-.shape-3 { background: linear-gradient(135deg, #0F2749, #B01030); border-radius: 67% 33% 47% 53% / 37% 20% 80% 63%; }
-.shape-4 { background: linear-gradient(135deg, #B01030, #0F2749); border-radius: 40% 60% 74% 26% / 74% 32% 68% 26%; }
-.shape-5 { background: linear-gradient(135deg, #0F2749, #B01030); border-radius: 71% 29% 21% 79% / 52% 79% 21% 48%; }
-.shape-6 { background: linear-gradient(135deg, #B01030, #0F2749); border-radius: 20% 80% 30% 70% / 60% 30% 70% 40%; }
-.shape-7 { background: linear-gradient(135deg, #0F2749, #B01030); border-radius: 44% 56% 56% 44% / 44% 44% 56% 56%; }
-.shape-8 { background: linear-gradient(135deg, #B01030, #0F2749); border-radius: 28% 72% 44% 56% / 49% 40% 60% 51%; }
+.shape-1 { background: linear-gradient(135deg, #1B3A6B, #B01030); border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+.shape-2 { background: linear-gradient(135deg, #B01030, #1B3A6B); border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%; }
+.shape-3 { background: linear-gradient(135deg, #1B3A6B, #B01030); border-radius: 67% 33% 47% 53% / 37% 20% 80% 63%; }
+.shape-4 { background: linear-gradient(135deg, #B01030, #1B3A6B); border-radius: 40% 60% 74% 26% / 74% 32% 68% 26%; }
+.shape-5 { background: linear-gradient(135deg, #1B3A6B, #B01030); border-radius: 71% 29% 21% 79% / 52% 79% 21% 48%; }
+.shape-6 { background: linear-gradient(135deg, #B01030, #1B3A6B); border-radius: 20% 80% 30% 70% / 60% 30% 70% 40%; }
+.shape-7 { background: linear-gradient(135deg, #1B3A6B, #B01030); border-radius: 44% 56% 56% 44% / 44% 44% 56% 56%; }
+.shape-8 { background: linear-gradient(135deg, #B01030, #1B3A6B); border-radius: 28% 72% 44% 56% / 49% 40% 60% 51%; }
 
 .info-blob-card:hover .blob-shape {
     transform: scale(1.1) rotate(5deg);
@@ -376,7 +376,7 @@ html, body {
 }
 
 .carrusel-btn:hover {
-    background: var(--azul-noche);
+    background: var(--rojo-principal);
     color: var(--blanco);
 }
 
