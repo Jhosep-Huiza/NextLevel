@@ -1,0 +1,102 @@
+:root {
+    --next-dark: #1a2b4c;
+    --next-blue: #0099ff;
+}
+
+.propuesta-hero {
+    background: linear-gradient(135deg, var(--next-dark) 0%, #0d1a33 100%);
+    padding: 160px 20px 80px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.launch-badge {
+    background: var(--next-blue);
+    padding: 6px 18px;
+    border-radius: 25px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.propuesta-hero h1 {
+    font-size: 2.8rem;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.propuesta-hero p {
+    max-width: 850px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.propuesta-main {
+    max-width: 1200px;
+    margin: -50px auto 100px;
+    padding: 0 20px;
+}
+
+.modern-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.icon-wrapper {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 20px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+/* Mejora para centrado perfecto del icono */
+.icon-wrapper i {
+    display: block;
+    line-height: 1;
+}
+
+/* Colores para las 6 tarjetas */
+.color-1 { background-color: #4e73df; }
+.color-2 { background-color: #1cc88a; }
+.color-3 { background-color: #36b9cc; }
+.color-4 { background-color: #f6c23e; }
+.color-5 { background-color: #e74a3b; }
+.color-6 { background-color: #858796; }
+
+.feature-card h3 {
+    color: var(--next-dark);
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.feature-card p {
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin: 0;
+}

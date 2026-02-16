@@ -714,6 +714,162 @@ html, body {
     text-align: center;
 }
 
+.pathway-section {
+    background-color: #f8fafc;
+    padding: 100px 0;
+    width: 100%;
+}
+
+.pathway-container {
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 0 50px;
+}
+
+.pathway-grid {
+    align-items: center;
+    display: grid;
+    gap: 80px;
+    grid-template-columns: 1fr 1.2fr;
+}
+
+.pathway-title {
+    color: var(--azul-oscuro);
+    font-size: 73px;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.pathway-description {
+    color: #4b5563;
+    font-size: 23px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.pathway-list {
+    list-style: none;
+    margin-bottom: 45px;
+}
+
+.pathway-list li {
+    align-items: center;
+    color: #374151;
+    display: flex;
+    font-size: 18px;
+    font-weight: 600;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.pathway-list i {
+    color: #B01030;
+    font-size: 22px;
+}
+
+.pathway-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn-whatsapp-pathway {
+    align-items: center;
+    background-color: #B01030;
+    border-radius: 12px;
+    color: white;
+    display: flex;
+    font-size: 17px;
+    font-weight: 700;
+    gap: 12px;
+    padding: 18px 35px;
+    text-decoration: none;
+    transition: 0.3s;
+    width: fit-content;
+}
+
+.btn-whatsapp-pathway:hover {
+    box-shadow: 0 10px 20px rgba(184, 92, 92, 0.3);
+    transform: translateY(-3px);
+}
+
+.btn-proposal-pathway {
+    align-items: center;
+    color: var(--azul-noche);
+    display: flex;
+    font-size: 18px;
+    font-weight: 700;
+    gap: 10px;
+    text-decoration: none;
+}
+
+/* Tarjetas superpuestas */
+.pathway-visuals {
+    height: 600px;
+    position: relative;
+}
+
+.cards-wrapper {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.path-card {
+    border-radius: 20px;
+    box-shadow: 0 30px 60px rgba(15, 39, 73, 0.25);
+    overflow: hidden;
+    position: absolute;
+    width: 480px; /* Tamaño solicitado */
+}
+
+.path-card img {
+    height: 320px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.path-card-overlay {
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(15, 39, 73, 0.4), rgba(15, 39, 73, 0.95));
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    padding: 30px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+}
+
+.path-card-overlay h3 {
+    font-size: 38px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.path-card-overlay p {
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.path-card-top {
+    right: 0;
+    top: 0;
+    z-index: 5;
+}
+
+.path-card-bottom {
+    bottom: -10px;
+    left: 0;
+    z-index: 10;
+}
+
 /* --- RESPONSIVE DOCENTES --- */
 @media (max-width: 1200px) {
     .docente-card-modern { flex: 0 0 calc(33.33% - 16.6px); min-height: 500px; }
@@ -728,6 +884,12 @@ html, body {
     .footer-column { align-items: center; }
     .hero-full-width { height: 600px; }
     .valores-grid-custom { grid-template-columns: 1fr; gap: 60px; }
+
+    .pathway-grid { grid-template-columns: 1fr; text-align: center; }
+    .pathway-actions { align-items: center; }
+    .pathway-visuals { height: auto; margin-top: 40px; }
+    .cards-wrapper { display: flex; flex-direction: column; align-items: center; gap: 30px; }
+    .path-card { position: relative; width: 100%; max-width: 480px; top: auto; left: auto; right: auto; bottom: auto; }
 }
 
 @media (max-width: 900px) {

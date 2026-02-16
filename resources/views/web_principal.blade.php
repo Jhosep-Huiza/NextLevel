@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('css/web/web_principal.css') }}">
     <link rel="stylesheet" href="{{ asset('css/web/marquee_principal.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/web/propuesta.css') }}">
 </head>
 
 <body>
@@ -74,7 +75,7 @@
                 <img src="{{ asset('images/imagen10.jpg') }}" alt="Innovación" class="main-image">
                 <div class="diagonal-white">
                     <h1>Donde el aprendizaje no tiene límites.</h1>
-                    <p>Aprendizaje basado en proyectos y tecnología aplicada a la educación real.</p>
+                    <p>Aprendizaje basado en retos con impacto en el mundo real.</p>
                 </div>
                 <div class="diagonal-blue">
                     <h2>Innovación Constante: Preparados para el Mañana.</h2>
@@ -94,6 +95,55 @@
                     <h2>Mentalidad Ganadora : Forjando líderes reales.</h2>
                     <p>Nuestro enfoque integral garantiza un crecimiento tanto profesional como personal.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pathway-section">
+        <div class="pathway-container">
+            <div class="pathway-grid">
+
+                <div class="pathway-content">
+                    <h2 class="pathway-title">Elige tu camino al éxito</h2>
+                    <p class="pathway-description">
+                        ¿Buscas una educación escolar innovadora o potenciar tus conocimientos para la universidad? Contamos con la metodología exacta para lo que necesitas hoy.
+                    </p>
+                    <ul class="pathway-list">
+                        <li><i class="fa-regular fa-circle-check"></i> Plan curricular actualizado.</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Docentes especializados por área.</li>
+                        <li><i class="fa-regular fa-circle-check"></i> Seguimiento personalizado.</li>
+                    </ul>
+
+                    <div class="pathway-actions">
+                        <a href="https://wa.me/51923317626" target="_blank" class="btn-whatsapp-pathway">
+                            <i class="fa-brands fa-whatsapp"></i> Chatea con nosotros
+                        </a>
+                        <a href="{{ route('propuesta.educativa') }}" class="btn-proposal-pathway">
+                            <i class="fa-regular fa-square-plus"></i> Ver Propuesta Educativa
+                        </a>
+                    </div>
+                </div>
+
+                <div class="pathway-visuals">
+                    <div class="cards-wrapper">
+                        <div class="path-card path-card-top">
+                            <img src="{{ asset('images/imagen10.jpg') }}" alt="Colegio">
+                            <div class="path-card-overlay">
+                                <h3>COLEGIO</h3>
+                                <p>FORMATO NIÑOS UNIVERSITARIOS</p>
+                            </div>
+                        </div>
+
+                        <div class="path-card path-card-bottom">
+                            <img src="{{ asset('images/imagen10.jpg') }}" alt="Academia">
+                            <div class="path-card-overlay">
+                                <h3>ACADEMIA</h3>
+                                <p>RUMBO A LA UNIVERSIDAD</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
