@@ -765,14 +765,14 @@ html, body {
     position: absolute;
     bottom: -30px;
     right: -30px;
-    background: var(--azul-noche);
+    background: var(--rojo-principal);
     color: var(--blanco);
     padding: 25px;
     border-radius: 20px;
     text-align: center;
     z-index: 3;
     box-shadow: 0 10px 30px rgba(27, 58, 107, 0.3);
-    border-bottom: 5px solid var(--rojo-principal);
+    border-bottom: 5px solid var(--azul-noche);
 }
 
 .experience-badge .number {
@@ -812,7 +812,7 @@ html, body {
 
 .welcome-description {
     font-size: 18px;
-    color: #555;
+    color: #0F2749;
     line-height: 1.8;
     margin-bottom: 30px;
 }
@@ -840,7 +840,7 @@ html, body {
 .btn-welcome {
     display: inline-block;
     padding: 18px 40px;
-    background: var(--azul-noche);
+    background: var(--rojo-principal);
     color: var(--blanco);
     text-decoration: none;
     font-weight: 700;
@@ -849,7 +849,7 @@ html, body {
 }
 
 .btn-welcome:hover {
-    background: var(--rojo-principal);
+    background: var(--azul-noche);
     transform: translateY(-5px);
 }
 
