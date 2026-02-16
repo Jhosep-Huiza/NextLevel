@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // --- Lógica de Automático ---
 
     const startAutoPlay = () => {
-        autoPlayInterval = setInterval(moveNext, 5000); // Cambia cada 5 segundos
+        autoPlayInterval = setInterval(moveNext, 4000); // Cambia cada 5 segundos
     };
 
     const stopAutoPlay = () => {

@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let autoPlay = setInterval(() => {
         index++;
         moveCarrusel();
-    }, 5000);
+    }, 4000);
 
     // Detener autoplay al interactuar
     const stopAutoPlay = () => clearInterval(autoPlay);

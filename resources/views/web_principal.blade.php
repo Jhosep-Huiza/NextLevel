@@ -146,7 +146,7 @@
                     </ul>
 
                     <div class="pathway-actions">
-                        <a href="https://wa.me/51923317626" target="_blank" class="btn-whatsapp-pathway">
+                        <a href="https://wa.me/51923317625?text=Hola%20Next%20Level,%20deseo%20más%20información" target="_blank" class="btn-whatsapp-pathway">
                             <i class="fa-brands fa-whatsapp"></i> Chatea con nosotros
                         </a>
                         <a href="{{ route('propuesta.educativa') }}" class="btn-proposal-pathway">
@@ -175,6 +175,40 @@
                     </div>
                 </div>
 
+            </div>
+        </div>
+    </section>
+
+    <section class="valores-modern-section">
+        <div class="valores-overlay">
+            <div class="valores-container">
+                <h2 class="section-title-light">Nuestros Valores</h2>
+
+                <div class="valores-grid-custom">
+                    <div class="valor-item">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3>Excelencia Académica</h3>
+                        <p>Compromiso con la calidad educativa y el desarrollo integral de nuestros estudiantes</p>
+                    </div>
+
+                    <div class="valor-item">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <h3>Innovación</h3>
+                        <p>Métodos educativos modernos y tecnología de vanguardia para el aprendizaje</p>
+                    </div>
+
+                    <div class="valor-item">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                        </div>
+                        <h3>Valores Humanos</h3>
+                        <p>Formación en ética, respeto y responsabilidad social</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -236,40 +270,6 @@
                 </div>
 
                 <button class="carrusel-btn next" id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
-            </div>
-        </div>
-    </section>
-
-    <section class="valores-modern-section">
-        <div class="valores-overlay">
-            <div class="valores-container">
-                <h2 class="section-title-light">Nuestros Valores</h2>
-
-                <div class="valores-grid-custom">
-                    <div class="valor-item">
-                        <div class="icon-circle">
-                            <i class="fa-solid fa-graduation-cap"></i>
-                        </div>
-                        <h3>Excelencia Académica</h3>
-                        <p>Compromiso con la calidad educativa y el desarrollo integral de nuestros estudiantes</p>
-                    </div>
-
-                    <div class="valor-item">
-                        <div class="icon-circle">
-                            <i class="fa-solid fa-lightbulb"></i>
-                        </div>
-                        <h3>Innovación</h3>
-                        <p>Métodos educativos modernos y tecnología de vanguardia para el aprendizaje</p>
-                    </div>
-
-                    <div class="valor-item">
-                        <div class="icon-circle">
-                            <i class="fa-solid fa-hand-holding-heart"></i>
-                        </div>
-                        <h3>Valores Humanos</h3>
-                        <p>Formación en ética, respeto y responsabilidad social</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -377,7 +377,7 @@
                     <div class="footer-social-icons">
                         <a href="https://www.tiktok.com/@next_level_novus" target="_blank" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
                         <a href="https://www.instagram.com/next_level_novus/" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://wa.me/51923317625" target="_blank" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://wa.me/51923317625?text=Hola%20Next%20Level,%20deseo%20más%20información" target="_blank" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
                         <a href="https://www.facebook.com/profile.php?id=61581492196914" target="_blank" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
                     </div>
                 </div>
