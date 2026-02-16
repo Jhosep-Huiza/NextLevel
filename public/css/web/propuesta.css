@@ -110,7 +110,7 @@
     cursor: pointer;
     padding: 5px;
     z-index: 1000;
-    margin-right: 10px; /* Separación del borde derecho */
+    margin-right: 10px;
 }
 
 @media (max-width: 992px) {
@@ -132,16 +132,15 @@
         box-sizing: border-box !important;
     }
 
-    /* Redimensionar logo para que no empuje el menú en celulares pequeños */
     .nav-brand {
         flex: 0 1 auto;
-        max-width: 70%; /* Evita que el logo ocupe todo el ancho */
+        max-width: 70%;
     }
 
     .nav-logo-full {
         max-width: 100%;
         height: auto;
-        max-height: 35px; /* Altura controlada para móvil */
+        max-height: 35px;
     }
 }
 
@@ -228,3 +227,58 @@
     display: none;
 }
 .mobile-menu-overlay.show { display: block; }
+
+/* ==========================================================================
+   SOLO PARA MÓVIL: Footer alineado a la izquierda
+   (Esto no afectará la vista de PC)
+   ========================================================================== */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+
+    .footer-left {
+        width: 100% !important;
+        text-align: left !important;
+        margin-bottom: 30px !important;
+    }
+
+    .footer-logo-img {
+        margin: 0 0 20px 0 !important;
+    }
+
+    .footer-contact p {
+        justify-content: flex-start !important;
+        text-align: left !important;
+    }
+
+    .footer-right {
+        flex-direction: column !important;
+        width: 100% !important;
+        gap: 30px !important;
+        align-items: flex-start !important;
+    }
+
+    .footer-column {
+        width: 100% !important;
+        align-items: flex-start !important;
+        text-align: left !important;
+    }
+
+    .footer-column a {
+        padding: 5px 0 !important;
+    }
+
+    .footer-social-icons {
+        justify-content: flex-start !important;
+        margin-top: 15px !important;
+    }
+
+    .footer-bottom {
+        text-align: left !important;
+        padding-left: 25px !important;
+    }
+}
