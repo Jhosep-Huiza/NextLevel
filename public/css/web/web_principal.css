@@ -172,7 +172,7 @@ html, body {
 /* --- HERO SECTION --- */
 .hero-full-width {
     width: 100%;
-    height: 970px;
+    height: 601px;
     position: relative;
     overflow: hidden;
 }
@@ -212,7 +212,7 @@ html, body {
     top: 0; left: 0;
     background: rgba(255, 255, 255, 0.96);
     width: 65%;
-    padding: 80px 100px 60px 50px;
+    padding: 40px 100px 40px 50px;
     clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
     z-index: 5;
     transform: translateX(-20px);
@@ -223,7 +223,7 @@ html, body {
     transform: translateX(0);
 }
 
-.diagonal-white h1 { font-size: 55px; font-weight: 900; color: var(--azul-oscuro); margin-bottom: 10px; line-height: 1.1; }
+.diagonal-white h1 { font-size: 40px; font-weight: 900; color: var(--azul-oscuro); margin-bottom: 10px; line-height: 1.1; }
 .diagonal-white p { font-size: 20px; color: #444; max-width: 500px; }
 
 .diagonal-blue {
@@ -247,7 +247,7 @@ html, body {
     transform: translateY(0);
 }
 
-.diagonal-blue h2 { font-size: 42px; font-weight: 800; margin-bottom: 5px; }
+.diagonal-blue h2 { font-size: 22px; font-weight: 800; margin-bottom: 5px; }
 
 /* --- SECCIÓN INFO ORGÁNICA (CARRUSEL 8 PILARES) --- */
 .info-organic-section {

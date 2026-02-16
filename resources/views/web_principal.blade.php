@@ -65,7 +65,7 @@
                 </div>
                 <div class="diagonal-blue">
                     <h2>Proyección Superior: El Futuro se Construye Aquí.</h2>
-                    <p>No solo transmitimos conocimiento; impulsamos una mentalidad de crecimiento constante en cada etapa académica.</p>
+                    <p>Fomentamos el aprendizaje y la superación constante en cada etapa.</p>
                 </div>
             </div>
         </div>
