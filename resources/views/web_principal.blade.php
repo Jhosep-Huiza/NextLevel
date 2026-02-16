@@ -99,6 +99,37 @@
         </div>
     </section>
 
+    <section class="welcome-section">
+        <div class="welcome-container">
+            <div class="welcome-grid">
+                <div class="welcome-image-side">
+                    <div class="image-frame">
+                        <img src="{{ asset('images/imagen10.jpg') }}" alt="Educación Next Level">
+                    </div>
+                    <div class="experience-badge">
+                        <span class="number">2026</span>
+                        <span class="text">Matrícula</span>
+                    </div>
+                </div>
+
+                <div class="welcome-text-side">
+                    <span class="welcome-tag">BIENVENIDOS A NEXT LEVEL</span>
+                    <h2 class="welcome-title">Potenciamos el talento de la nueva generación</h2>
+                    <div class="welcome-line"></div>
+                    <p class="welcome-description">
+                        En <strong>Next Level</strong>, transformamos la educación tradicional en una experiencia dinámica y centrada en el alumno. Nuestro compromiso es brindar las herramientas necesarias para que cada estudiante descubra su propósito y alcance su máximo potencial académico y personal.
+                    </p>
+                    <ul class="welcome-list">
+                        <li><i class="fa-solid fa-circle-check"></i> Formación basada en valores sólidos.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Infraestructura moderna y tecnológica.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Docentes altamente calificados.</li>
+                    </ul>
+                    <a href="#" class="btn-welcome">CONOCE MÁS</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="pathway-section">
         <div class="pathway-container">
             <div class="pathway-grid">
