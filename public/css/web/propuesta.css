@@ -1,6 +1,6 @@
 :root {
     --next-dark: #1a2b4c;
-    --next-blue: #0099ff;
+    --next-blue: #B01030;
 }
 
 .propuesta-hero {
@@ -78,12 +78,12 @@
     line-height: 1;
 }
 
-.color-1 { background-color: #4e73df; }
-.color-2 { background-color: #1cc88a; }
-.color-3 { background-color: #36b9cc; }
-.color-4 { background-color: #f6c23e; }
-.color-5 { background-color: #e74a3b; }
-.color-6 { background-color: #858796; }
+.color-1 { background-color: #B01030; }
+.color-2 { background-color: #B01030; }
+.color-3 { background-color: #B01030; }
+.color-4 { background-color: #B01030; }
+.color-5 { background-color: #B01030; }
+.color-6 { background-color: #B01030; }
 
 .feature-card h3 {
     color: var(--next-dark);
