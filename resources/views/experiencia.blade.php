@@ -103,10 +103,10 @@
         <div class="exp-hero-overlay">
             <div class="exp-hero-content">
                 <span class="welcome-tag" style="color: white;">DESCUBRE NUESTRO MUNDO</span>
-                <h1 class="welcome-title" style="color: white; font-size: 60px;">La Experiencia Next Level</h1>
+                <h1 class="welcome-title" style="color: white; font-size: 60px;">LA EXPERIENCIA NEXT LEVEL</h1>
                 <div class="welcome-line" style="margin: 20px auto;"></div>
                 <p class="welcome-description" style="color: white; margin: 0 auto; max-width: 700px;">
-                    Más que un colegio, somos el motor de su futuro. Aquí la tecnología, los valores y el talento se encuentran.
+                    Más que un colegio, somos el espacio donde nace su propósito. Aquí el talento se cultiva con valores para formar a los líderes del mañana.
                 </p>
             </div>
         </div>
@@ -114,27 +114,27 @@
 
     <section class="pathway-section">
         <div class="pathway-container">
-            <h2 class="section-title-dark" style="text-align: center; margin-bottom: 50px;">Ambientes que Inspiran</h2>
+            <h2 class="section-title-dark" style="text-align: center; margin-bottom: 50px;">AMBIENTES QUE INSPIRAN</h2>
             <div class="exp-cards-grid">
                 <div class="path-card">
                     <img src="{{ asset('images/imagen10.jpg') }}" alt="Laboratorio">
                     <div class="path-card-overlay">
-                        <h3>INNOVACIÓN</h3>
-                        <p>LABORATORIO DE SOFTWARE E IA</p>
+                        <h3>NATACIÓN</h3>
+                        <p>DEPORTE Y FRESCURA TOTAL.</p>
                     </div>
                 </div>
                 <div class="path-card">
                     <img src="{{ asset('images/imagen10.jpg') }}" alt="Recreo">
                     <div class="path-card-overlay">
-                        <h3>RECREO</h3>
-                        <p>ESPACIOS DE CONVIVENCIA Y ARTE</p>
+                        <h3>DESARROLLO</h3>
+                        <p>TALENTO Y RECREACIÓN FÍSICA.</p>
                     </div>
                 </div>
                 <div class="path-card">
                     <img src="{{ asset('images/imagen10.jpg') }}" alt="Aulas">
                     <div class="path-card-overlay">
-                        <h3>AULAS 360°</h3>
-                        <p>TECNOLOGÍA EN CADA PUPITRE</p>
+                        <h3>DEPORTE</h3>
+                        <p>CAMPOS DEPORTIVOS.</p>
                     </div>
                 </div>
             </div>
