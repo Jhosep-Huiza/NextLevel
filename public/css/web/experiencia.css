@@ -1,0 +1,139 @@
+/* --- VARIABLES UNIFICADAS --- */
+:root {
+    --next-dark: #1a2b4c;
+    --next-blue: #B01030;
+    --rojo-principal: #B01030;
+    --azul-noche: #1B3A6B;
+    --azul-oscuro: #0F2749;
+    --blanco: #FFFFFF;
+}
+
+/* --- NUEVO: ESTILOS DE NAVEGACIÓN Y MENÚ MÓVIL (Copiado de Propuesta) --- */
+.mobile-menu-toggle {
+    display: none;
+    font-size: 26px;
+    background: transparent;
+    border: none;
+    color: #ffffff !important;
+    cursor: pointer;
+    padding: 5px;
+    z-index: 1000;
+}
+
+@media (max-width: 992px) {
+    .nav-menu { display: none !important; }
+    .mobile-menu-toggle { display: block !important; }
+
+    .nav-container {
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        width: 100% !important;
+        padding: 10px 15px !important;
+        box-sizing: border-box !important;
+    }
+    .nav-brand { flex: 0 1 auto; max-width: 70%; }
+    .nav-logo-full { max-width: 100%; height: auto; max-height: 35px; }
+}
+
+.mobile-side-menu {
+    position: fixed;
+    top: 0; left: -100%;
+    width: 80%; max-width: 300px;
+    height: 100vh; background: #fff;
+    z-index: 10001;
+    transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 5px 0 15px rgba(0,0,0,0.1);
+}
+.mobile-side-menu.open { left: 0; }
+.menu-header {
+    padding: 20px; background: var(--next-dark);
+    color: white; display: flex;
+    justify-content: space-between; align-items: center;
+}
+.close-menu { background: none; border: none; color: white; font-size: 24px; cursor: pointer; }
+.menu-panels-container { position: relative; height: calc(100% - 65px); overflow: hidden; }
+.menu-panel {
+    position: absolute; top: 0; left: 0;
+    width: 100%; height: 100%; background: #fff;
+    transform: translateX(100%); transition: transform 0.4s ease;
+}
+.menu-panel.active { transform: translateX(0); }
+.mobile-nav-list { list-style: none; padding: 0; }
+.mobile-nav-list li, .back-btn {
+    padding: 20px; border-bottom: 1px solid #f0f0f0;
+    display: flex; justify-content: space-between;
+    align-items: center; color: var(--next-dark); font-weight: 600;
+}
+.mobile-nav-list a { text-decoration: none; color: inherit; width: 100%; }
+.back-btn {
+    width: 100%; border: none; background: #f9f9f9;
+    color: var(--next-blue); justify-content: flex-start; gap: 15px; cursor: pointer;
+}
+.mobile-menu-overlay {
+    position: fixed; top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5); z-index: 10000; display: none;
+}
+.mobile-menu-overlay.show { display: block; }
+
+/* --- SECCIONES ORIGINALES MANTENIDAS (Tu CSS de Experiencia) --- */
+.exp-hero {
+    height: 500px;
+    background-image: url('../../images/imagen10.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.exp-hero-overlay {
+    background: rgba(15, 39, 73, 0.85);
+    width: 100%; height: 100%;
+    display: flex; align-items: center; justify-content: center;
+    text-align: center; padding: 0 20px;
+}
+.exp-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px; margin-top: 40px;
+}
+.exp-cards-grid .path-card {
+    position: relative !important;
+    top: auto !important; left: auto !important;
+    right: auto !important; bottom: auto !important;
+    width: 100% !important; max-width: 400px; margin: 0 auto;
+}
+.exp-blobs-container {
+    display: flex; justify-content: center; flex-wrap: wrap;
+    gap: 40px; padding: 40px 0;
+}
+.exp-cta {
+    background-color: var(--next-blue);
+    padding: 80px 20px; text-align: center; color: var(--blanco);
+}
+.exp-cta h2 { font-size: 45px; font-weight: 900; margin-bottom: 20px; }
+.exp-cta p { font-size: 20px; margin-bottom: 40px; opacity: 0.9; }
+
+/* --- NUEVO: FOOTER RESPONSIVO (Copiado de Propuesta) --- */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+    .footer-left { width: 100% !important; text-align: left !important; margin-bottom: 30px !important; }
+    .footer-logo-img { margin: 0 0 20px 0 !important; }
+    .footer-contact p { justify-content: flex-start !important; text-align: left !important; }
+    .footer-right {
+        flex-direction: column !important; width: 100% !important;
+        gap: 30px !important; align-items: flex-start !important;
+    }
+    .footer-column { width: 100% !important; align-items: flex-start !important; }
+    .footer-social-icons { justify-content: flex-start !important; }
+    .footer-bottom { text-align: left !important; padding-left: 25px !important; }
+
+    /* Ajustes específicos de Experiencia para móvil */
+    .exp-hero-content h1 { font-size: 35px !important; }
+    .exp-cta h2 { font-size: 30px; }
+}

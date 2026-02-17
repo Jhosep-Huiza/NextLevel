@@ -99,8 +99,6 @@
     margin: 0;
 }
 
-/* --- ESTILOS MENÚ MOBILE AJUSTADOS --- */
-
 .mobile-menu-toggle {
     display: none;
     font-size: 26px;
@@ -228,10 +226,6 @@
 }
 .mobile-menu-overlay.show { display: block; }
 
-/* ==========================================================================
-   SOLO PARA MÓVIL: Footer alineado a la izquierda
-   (Esto no afectará la vista de PC)
-   ========================================================================== */
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column !important;

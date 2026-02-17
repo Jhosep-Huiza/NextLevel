@@ -60,11 +60,11 @@
             <div class="hero-main-content">
                 <img src="{{ asset('images/imagen10.jpg') }}" alt="Next Level Educación" class="main-image">
                 <div class="diagonal-white">
-                    <h1>Llevamos tu potencial al siguiente nivel.</h1>
+                    <h1>LLEVAMOS TU POTENCIAL AL SIGUIENTE NIVEL.</h1>
                     <p>Desarrollando mentes curiosas y futuros brillantes desde la etapa temprana.</p>
                 </div>
                 <div class="diagonal-blue">
-                    <h2>Proyección Superior: El Futuro se Construye Aquí.</h2>
+                    <h2>PROYECCIÓN SUPERIOR: EL FUTURO SE CONTRUYE AQUÍ.</h2>
                     <p>Fomentamos el aprendizaje y la superación constante en cada etapa.</p>
                 </div>
             </div>
@@ -74,11 +74,11 @@
             <div class="hero-main-content">
                 <img src="{{ asset('images/imagen10.jpg') }}" alt="Innovación" class="main-image">
                 <div class="diagonal-white">
-                    <h1>Donde el aprendizaje no tiene límites.</h1>
+                    <h1>DONDE EL APRENDIZAJE NO TIENE LÍMITES.</h1>
                     <p>Aprendizaje basado en retos con impacto en el mundo real.</p>
                 </div>
                 <div class="diagonal-blue">
-                    <h2>Innovación Constante: Preparados para el Mañana.</h2>
+                    <h2>INNOVACIÓN CONSTANTE: PREPARADOS PARA EL MAÑANA.</h2>
                     <p>Potenciamos tus habilidades para dominar cualquier reto profesional</p>
                 </div>
             </div>
@@ -88,11 +88,11 @@
             <div class="hero-main-content">
                 <img src="{{ asset('images/imagen10.jpg') }}" alt="Valores" class="main-image">
                 <div class="diagonal-white">
-                    <h1>Formación en Valores y Ética.</h1>
+                    <h1>FORMACIÓN EN VALORES Y ÉTICA.</h1>
                     <p>Creamos ciudadanos responsables, empáticos y comprometidos con su sociedad.</p>
                 </div>
                 <div class="diagonal-blue">
-                    <h2>Mentalidad Ganadora : Forjando líderes reales.</h2>
+                    <h2>MENTALIDAD GANADORA: FORJANDO LÍDERES REALES.</h2>
                     <p>Nuestro enfoque integral garantiza un crecimiento tanto profesional como personal.</p>
                 </div>
             </div>
@@ -114,7 +114,7 @@
 
                 <div class="welcome-text-side">
                     <span class="welcome-tag">BIENVENIDOS A NEXT LEVEL</span>
-                    <h2 class="welcome-title">Potenciamos el talento de la nueva generación</h2>
+                    <h2 class="welcome-title">POTENCIAMOS EL TALENTO DE LA NUEVA GENERACIÓN</h2>
                     <div class="welcome-line"></div>
                     <p class="welcome-description">
                         En <strong>Next Level</strong>, transformamos la educación tradicional en una experiencia dinámica y centrada en el alumno. Nuestro compromiso es brindar las herramientas necesarias para que cada estudiante descubra su propósito y alcance su máximo potencial académico y personal.
@@ -124,7 +124,7 @@
                         <li><i class="fa-solid fa-circle-check"></i> Infraestructura moderna y tecnológica.</li>
                         <li><i class="fa-solid fa-circle-check"></i> Docentes altamente calificados.</li>
                     </ul>
-                    <a href="#" class="btn-welcome">CONOCE MÁS</a>
+                    <a href="{{ route('experiencia') }}" class="btn-welcome">CONOCE MÁS</a>
                 </div>
             </div>
         </div>
@@ -135,7 +135,7 @@
             <div class="pathway-grid">
 
                 <div class="pathway-content">
-                    <h2 class="pathway-title">Elige tu camino al éxito</h2>
+                    <h2 class="pathway-title">ELIGE TU CAMINO AL ÉXITO</h2>
                     <p class="pathway-description">
                         ¿Buscas una educación escolar innovadora o potenciar tus conocimientos para la universidad? Contamos con la metodología exacta para lo que necesitas hoy.
                     </p>
@@ -182,7 +182,7 @@
     <section class="valores-modern-section">
         <div class="valores-overlay">
             <div class="valores-container">
-                <h2 class="section-title-light">Nuestros Valores</h2>
+                <h2 class="section-title-light">NUESTROS VALORES</h2>
 
                 <div class="valores-grid-custom">
                     <div class="valor-item">
@@ -216,7 +216,7 @@
     <section class="info-organic-section">
         <div class="info-container">
             <div class="info-header">
-                <h2 class="section-title-dark">¡Construimos el Futuro Educativo Contigo!</h2>
+                <h2 class="section-title-dark">¡CONSTRUIMOS EL FUTURO EDUCATIVO CONTIGO!</h2>
                 <p class="info-intro">Ocho razones por las que somos la mejor opción para iniciar este camino escolar en marzo.</p>
                 <div class="title-underline"></div>
             </div>

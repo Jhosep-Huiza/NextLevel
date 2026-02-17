@@ -220,7 +220,7 @@ html, body {
     transform: translateX(0);
 }
 
-.diagonal-white h1 { font-size: 40px; font-weight: 900; color: var(--azul-oscuro); margin-bottom: 10px; line-height: 1.1; }
+.diagonal-white h1 { font-size: 35px; font-weight: 900; color: var(--azul-oscuro); margin-bottom: 10px; line-height: 1.1; }
 .diagonal-white p { font-size: 20px; color: #444; max-width: 500px; }
 
 .diagonal-blue {
@@ -244,7 +244,7 @@ html, body {
     transform: translateY(0);
 }
 
-.diagonal-blue h2 { font-size: 22px; font-weight: 800; margin-bottom: 5px; }
+.diagonal-blue h2 { font-size: 20px; font-weight: 800; margin-bottom: 5px; }
 
 .info-organic-section {
     padding: 90px 0;
@@ -260,7 +260,7 @@ html, body {
 }
 
 .section-title-dark {
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 800;
     color: var(--azul-noche);
 }
@@ -324,7 +324,6 @@ html, body {
     box-shadow: 0 15px 30px rgba(0,0,0,0.1);
 }
 
-/* Colores de las Gotas */
 .shape-1 { background: linear-gradient(135deg, #1B3A6B, #B01030); border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
 .shape-2 { background: linear-gradient(135deg, #B01030, #1B3A6B); border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%; }
 .shape-3 { background: linear-gradient(135deg, #1B3A6B, #B01030); border-radius: 67% 33% 47% 53% / 37% 20% 80% 63%; }
@@ -354,7 +353,6 @@ html, body {
     margin: 0 auto;
 }
 
-/* Botones Navegación Carrusel */
 .carrusel-btn {
     position: absolute;
     top: 50%;
@@ -380,7 +378,6 @@ html, body {
 .carrusel-btn.prev { left: 5px; }
 .carrusel-btn.next { right: 5px; }
 
-/* --- SECCIÓN VALORES --- */
 .valores-modern-section {
     position: relative;
     background-image: url('../../images/imagen10.jpg');
@@ -470,7 +467,6 @@ html, body {
     max-width: 320px;
 }
 
-/* --- SECCIÓN DOCENTES (ESTILO ALARGADO) --- */
 .docentes-carousel-section {
     padding: 90px 0;
     background-color: #f8fafc;
@@ -489,7 +485,6 @@ html, body {
     padding-top: 0 !important;
 }
 
-/* Reducimos el margen del título de docentes para que no empuje hacia arriba */
 .docentes-carousel-section .info-header {
     margin-top: 0;
     margin-bottom: 30px;
@@ -596,7 +591,6 @@ html, body {
 .doc-nav-btn.prev { left: 5px; }
 .doc-nav-btn.next { right: 5px; }
 
-/* --- FOOTER COMPLETO --- */
 .footer {
     width: 100%;
     background: linear-gradient(135deg, var(--azul-oscuro) 0%, var(--azul-noche) 100%);
@@ -792,7 +786,7 @@ html, body {
 }
 
 .welcome-title {
-    font-size: 47px;
+    font-size: 43px;
     color: var(--azul-oscuro);
     font-weight: 800;
     line-height: 1.1;
@@ -871,7 +865,7 @@ html, body {
 
 .pathway-title {
     color: var(--azul-oscuro);
-    font-size: 73px;
+    font-size: 61px;
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: 25px;
@@ -940,7 +934,6 @@ html, body {
     text-decoration: none;
 }
 
-/* Tarjetas superpuestas */
 .pathway-visuals {
     height: 600px;
     position: relative;
@@ -957,7 +950,7 @@ html, body {
     box-shadow: 0 30px 60px rgba(15, 39, 73, 0.25);
     overflow: hidden;
     position: absolute;
-    width: 480px; /* Tamaño solicitado */
+    width: 480px;
     transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), z-index 0.1s;
     cursor: pointer;
     background: var(--blanco);

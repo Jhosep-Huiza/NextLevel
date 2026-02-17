@@ -22,3 +22,6 @@ Route::get('/propuesta-educativa', function () {
     return view('propuesta');
 })->name('propuesta.educativa');
 
+Route::get('/experiencia-next-level', function () {
+    return view('experiencia');
+})->name('experiencia');
