@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const cardsPerView = getCardsPerView();
         const maxIndex = totalCards - cardsPerView;
 
-        // Ajuste para que no pase del máximo
         if (index > maxIndex) index = 0;
         if (index < 0) index = maxIndex;
 
@@ -34,17 +33,14 @@ document.addEventListener('DOMContentLoaded', () => {
         moveCarrusel();
     });
 
-    // Movimiento Automático cada 5 segundos
     let autoPlay = setInterval(() => {
         index++;
         moveCarrusel();
     }, 4000);
 
-    // Detener autoplay al interactuar
     const stopAutoPlay = () => clearInterval(autoPlay);
     nextBtn.addEventListener('mouseenter', stopAutoPlay);
     prevBtn.addEventListener('mouseenter', stopAutoPlay);
 
-    // Ajustar al redimensionar la ventana
     window.addEventListener('resize', moveCarrusel);
 });

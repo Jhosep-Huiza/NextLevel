@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     let currentSlide = 0;
     let slideInterval;
-    const timeInterval = 5000; // 7 segundos
+    const timeInterval = 5000
     function nextSlide() {
         slides[currentSlide].classList.remove('active');
         currentSlide = (currentSlide + 1) % slides.length;
@@ -21,10 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
         clearInterval(slideInterval);
     }
 
-    // Iniciar
     startAutoSlide();
 
-    // Pausar al pasar el mouse
     heroSection.addEventListener('mouseenter', stopAutoSlide);
     heroSection.addEventListener('mouseleave', startAutoSlide);
 });

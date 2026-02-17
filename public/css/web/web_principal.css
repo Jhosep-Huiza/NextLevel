@@ -6,7 +6,6 @@
     --blanco: #FFFFFF;
 }
 
-/* --- CORRECCIÓN GLOBAL --- */
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +20,6 @@ html, body {
     background-color: var(--blanco);
 }
 
-/* --- BARRA DE NAVEGACIÓN --- */
 .main-nav {
     background: linear-gradient(135deg, var(--azul-noche) 0%, var(--azul-oscuro) 100%);
     box-shadow: 0 4px 20px rgba(15, 39, 73, 0.4);
@@ -169,7 +167,6 @@ html, body {
     animation: fadeInDropdown 0.3s ease-out;
 }
 
-/* --- HERO SECTION --- */
 .hero-full-width {
     width: 100%;
     height: 601px;
@@ -249,7 +246,6 @@ html, body {
 
 .diagonal-blue h2 { font-size: 22px; font-weight: 800; margin-bottom: 5px; }
 
-/* --- SECCIÓN INFO ORGÁNICA (CARRUSEL 8 PILARES) --- */
 .info-organic-section {
     padding: 90px 0;
     background-color: var(--blanco);

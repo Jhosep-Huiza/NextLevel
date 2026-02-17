@@ -21,3 +21,4 @@ Route::get('/login-academia', function () {
 Route::get('/propuesta-educativa', function () {
     return view('propuesta');
 })->name('propuesta.educativa');
+
