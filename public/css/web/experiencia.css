@@ -1,4 +1,3 @@
-/* --- VARIABLES UNIFICADAS --- */
 :root {
     --next-dark: #1a2b4c;
     --next-blue: #B01030;
@@ -8,7 +7,7 @@
     --blanco: #FFFFFF;
 }
 
-/* --- NUEVO: ESTILOS DE NAVEGACIÓN Y MENÚ MÓVIL (Copiado de Propuesta) --- */
+/* MOBIL --- */
 .mobile-menu-toggle {
     display: none;
     font-size: 26px;
@@ -78,7 +77,6 @@
 }
 .mobile-menu-overlay.show { display: block; }
 
-/* --- SECCIONES ORIGINALES MANTENIDAS (Tu CSS de Experiencia) --- */
 .exp-hero {
     height: 500px;
     background-image: url('../../images/imagen10.jpg');
@@ -114,7 +112,6 @@
 .exp-cta h2 { font-size: 45px; font-weight: 900; margin-bottom: 20px; }
 .exp-cta p { font-size: 20px; margin-bottom: 40px; opacity: 0.9; }
 
-/* --- NUEVO: FOOTER RESPONSIVO (Copiado de Propuesta) --- */
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column !important;
@@ -133,7 +130,6 @@
     .footer-social-icons { justify-content: flex-start !important; }
     .footer-bottom { text-align: left !important; padding-left: 25px !important; }
 
-    /* Ajustes específicos de Experiencia para móvil */
     .exp-hero-content h1 { font-size: 35px !important; }
     .exp-cta h2 { font-size: 30px; }
 }
