@@ -7,7 +7,6 @@
     --blanco: #FFFFFF;
 }
 
-/* MOBIL --- */
 .mobile-menu-toggle {
     display: none;
     font-size: 26px;
@@ -78,7 +77,7 @@
 .mobile-menu-overlay.show { display: block; }
 
 .exp-hero {
-    height: 500px;
+    height: 420px;
     background-image: url('../../images/imagen10.jpg');
     background-size: cover;
     background-position: center;
@@ -90,6 +89,19 @@
     display: flex; align-items: center; justify-content: center;
     text-align: center; padding: 0 20px;
 }
+
+.welcome-description {
+    line-height: 1.2 !important;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-top: 10px !important;
+}
+
+.pathway-section {
+    padding-top: 80px !important;
+    padding-bottom: 60px;
+}
+
 .exp-cards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));

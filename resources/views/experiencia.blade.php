@@ -104,17 +104,17 @@
             <div class="exp-hero-content">
                 <span class="welcome-tag" style="color: white;">DESCUBRE NUESTRO MUNDO</span>
                 <h1 class="welcome-title" style="color: white; font-size: 60px;">LA EXPERIENCIA NEXT LEVEL</h1>
-                <div class="welcome-line" style="margin: 20px auto;"></div>
-                <p class="welcome-description" style="color: white; margin: 0 auto; max-width: 700px;">
+                <div class="welcome-line" style="margin: 10px auto;"></div>
+                <p class="welcome-description" style="color: white; margin: 0 auto; max-width: 700px; line-height: 1.2;">
                     Más que un colegio, somos el espacio donde nace su propósito. Aquí el talento se cultiva con valores para formar a los líderes del mañana.
                 </p>
             </div>
         </div>
     </header>
 
-    <section class="pathway-section">
+    <section class="pathway-section" style="padding-top: 50px;">
         <div class="pathway-container">
-            <h2 class="section-title-dark" style="text-align: center; margin-bottom: 50px;">AMBIENTES QUE INSPIRAN</h2>
+            <h2 class="section-title-dark" style="text-align: center; margin-bottom: 30px;">AMBIENTES QUE INSPIRAN</h2>
             <div class="exp-cards-grid">
                 <div class="path-card">
                     <img src="{{ asset('images/imagen10.jpg') }}" alt="Laboratorio">
