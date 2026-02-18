@@ -7,6 +7,7 @@
     --blanco: #FFFFFF;
 }
 
+/* --- ESTILOS DE NAVEGACIÓN Y MENÚ --- */
 .mobile-menu-toggle {
     display: none;
     font-size: 26px;
@@ -76,6 +77,7 @@
 }
 .mobile-menu-overlay.show { display: block; }
 
+/* --- HERO SECTION --- */
 .exp-hero {
     height: 420px;
     background-image: url('../../images/imagen10.jpg');
@@ -97,6 +99,45 @@
     margin-top: 10px !important;
 }
 
+/* --- WELCOME SECTION (AJUSTADA) --- */
+.welcome-text-side .welcome-title {
+    font-size: 3.0rem; /* Título más grande */
+    margin-top: 40px; /* Posición más arriba */
+    margin-bottom: 20px;
+    color: var(--next-dark);
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.welcome-line {
+    width: 60px;
+    height: 4px;
+    background: var(--rojo-principal);
+    margin-bottom: 30px;
+}
+
+.welcome-list {
+    list-style: none;
+    padding: 0;
+}
+
+.welcome-list li {
+    margin-bottom: 20px; /* Espacio para que respiren los 7 items */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.0rem;
+    color: #334155;
+}
+
+.welcome-list i {
+    color: var(--rojo-principal);
+    font-size: 1.2rem;
+    min-width: 30px;
+    text-align: center;
+}
+
+/* --- GRID Y CARDS --- */
 .pathway-section {
     padding-top: 87px !important;
     padding-bottom: 60px;
@@ -113,10 +154,12 @@
     right: auto !important; bottom: auto !important;
     width: 100% !important; max-width: 400px; margin: 0 auto;
 }
+
 .exp-blobs-container {
     display: flex; justify-content: center; flex-wrap: wrap;
     gap: 40px; padding: 40px 0;
 }
+
 .exp-cta {
     background-color: var(--next-blue);
     padding: 80px 20px; text-align: center; color: var(--blanco);
@@ -124,6 +167,7 @@
 .exp-cta h2 { font-size: 45px; font-weight: 900; margin-bottom: 20px; }
 .exp-cta p { font-size: 20px; margin-bottom: 40px; opacity: 0.9; }
 
+/* --- RESPONSIVE --- */
 @media (max-width: 768px) {
     .footer-container {
         flex-direction: column !important;
@@ -144,4 +188,11 @@
 
     .exp-hero-content h1 { font-size: 35px !important; }
     .exp-cta h2 { font-size: 30px; }
+
+    .welcome-text-side .welcome-title {
+        font-size: 2.5rem;
+        margin-top: 0;
+        text-align: center;
+    }
+    .welcome-line { margin: 0 auto 20px auto; }
 }

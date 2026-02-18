@@ -103,7 +103,7 @@
         <div class="exp-hero-overlay">
             <div class="exp-hero-content">
                 <span class="welcome-tag" style="color: white;">DESCUBRE NUESTRO MUNDO</span>
-                <h1 class="welcome-title" style="color: white; font-size: 60px;">LA EXPERIENCIA NEXT LEVEL</h1>
+                <h1 class="welcome-title-hero" style="color: white; font-size: 60px;">LA EXPERIENCIA NEXT LEVEL</h1>
                 <div class="welcome-line" style="margin: 10px auto;"></div>
                 <p class="welcome-description" style="color: white; margin: 0 auto; max-width: 700px; line-height: 1.2;">
                     Más que un colegio, somos el espacio donde nace su propósito. Aquí el talento se cultiva con valores para formar a los líderes del mañana.
@@ -141,7 +141,7 @@
         </div>
     </section>
 
-    <section class="welcome-section" style="background: #f8fafc;">
+    <section class="welcome-section" style="background: #f8fafc; padding: 80px 0;">
         <div class="welcome-container">
             <div class="welcome-grid">
                 <div class="welcome-text-side">
@@ -151,6 +151,10 @@
                         <li><i class="fa-solid fa-bolt"></i> <strong>Mañanas de Retos:</strong> Iniciamos el día resolviendo problemas reales.</li>
                         <li><i class="fa-solid fa-users"></i> <strong>Talleres de Liderazgo:</strong> Habilidades blandas para el éxito profesional.</li>
                         <li><i class="fa-solid fa-robot"></i> <strong>Uso Ético de IA:</strong> Aprendizaje asistido por tecnología de vanguardia.</li>
+                        <li><i class="fa-solid fa-swimmer"></i> <strong>Deporte Integral:</strong> Natación y desarrollo físico constante.</li>
+                        <li><i class="fa-solid fa-flask-vial"></i> <strong>Ciencia y Tech:</strong> Experimentación en laboratorios modernos.</li>
+                        <li><i class="fa-solid fa-palette"></i> <strong>Arte y Cultura:</strong> Espacios para la expresión y creatividad.</li>
+                        <li><i class="fa-solid fa-shield-heart"></i> <strong>Valores Novus:</strong> Formación con ética y sentido de propósito.</li>
                     </ul>
                 </div>
                 <div class="welcome-image-side">
