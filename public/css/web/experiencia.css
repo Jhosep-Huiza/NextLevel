@@ -195,8 +195,8 @@ p {
 }
 
 .pathway-section {
-    padding-top: 50px;
-    padding-bottom: 60px;
+    padding-top: 80px;
+    padding-bottom: 10px;
 }
 
 .section-title-dark-centered {
@@ -224,7 +224,7 @@ p {
 
 .welcome-section {
     background: #f8fafc;
-    padding: 75px 0;
+    padding: 150px 0;
 }
 
 .welcome-text-side .welcome-title {
