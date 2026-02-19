@@ -84,7 +84,7 @@
             <div class="menu-panel" id="submenu-nosotros">
                 <button class="back-btn" type="button"><i class="fa-solid fa-chevron-left"></i> REGRESAR</button>
                 <ul class="mobile-nav-list">
-                    <li><a href="{{ route('experiencia') }}">La Experiencia</a></li>
+                    <li><a href="#">Qué ofrecemos</a></li>
                     <li><a href="#">Quiénes Somos</a></li>
                 </ul>
             </div>
@@ -102,19 +102,19 @@
     <header class="exp-hero">
         <div class="exp-hero-overlay">
             <div class="exp-hero-content">
-                <span class="welcome-tag" style="color: white;">DESCUBRE NUESTRO MUNDO</span>
-                <h1 class="welcome-title-hero" style="color: white; font-size: 60px;">LA EXPERIENCIA NEXT LEVEL</h1>
-                <div class="welcome-line" style="margin: 10px auto;"></div>
-                <p class="welcome-description" style="color: white; margin: 0 auto; max-width: 700px; line-height: 1.2;">
+                <span class="welcome-tag">DESCUBRE NUESTRO MUNDO</span>
+                <h1 class="welcome-title-hero">LA EXPERIENCIA NEXT LEVEL</h1>
+                <div class="welcome-line-hero"></div>
+                <p class="welcome-description-hero">
                     Más que un colegio, somos el espacio donde nace su propósito. Aquí el talento se cultiva con valores para formar a los líderes del mañana.
                 </p>
             </div>
         </div>
     </header>
 
-    <section class="pathway-section" style="padding-top: 50px;">
+    <section class="pathway-section">
         <div class="pathway-container">
-            <h2 class="section-title-dark" style="text-align: center; margin-bottom: 30px;">AMBIENTES QUE INSPIRAN</h2>
+            <h2 class="section-title-dark-centered">AMBIENTES QUE INSPIRAN</h2>
             <div class="exp-cards-grid">
                 <div class="path-card">
                     <img src="{{ asset('images/imagen10.jpg') }}" alt="Laboratorio">
@@ -141,7 +141,7 @@
         </div>
     </section>
 
-    <section class="welcome-section" style="background: #f8fafc; padding: 80px 0;">
+    <section class="welcome-section">
         <div class="welcome-container">
             <div class="welcome-grid">
                 <div class="welcome-text-side">
@@ -168,7 +168,7 @@
 
     <section class="info-organic-section">
         <div class="info-header">
-            <h2 class="section-title-dark">Seguridad y Tranquilidad</h2>
+            <h2 class="section-title-dark">SESEGURIDAD Y TRANQUILIDAD</h2>
             <div class="title-underline"></div>
         </div>
         <div class="exp-blobs-container">
@@ -194,7 +194,7 @@
         <div class="exp-cta-container">
             <h2>¡VEN A CONOCERNOS!</h2>
             <p>Estamos listos para recibirte este 4 de marzo. Agenda una visita guiada hoy mismo.</p>
-            <a href="https://wa.me/51923317625" class="btn-whatsapp-pathway" style="background: var(--next-dark); margin: 0 auto; text-decoration: none; display: flex; align-items: center; justify-content: center; width: fit-content; gap: 10px; color: white; padding: 12px 25px; border-radius: 30px;">
+            <a href="https://wa.me/51923317625" class="btn-whatsapp-pathway">
                 <i class="fa-brands fa-whatsapp"></i> Chatea con nosotros
             </a>
         </div>
