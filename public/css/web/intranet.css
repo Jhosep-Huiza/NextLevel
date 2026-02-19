@@ -30,8 +30,13 @@ html, body {
     z-index: 1;
 }
 
-.portal-section.colegio { background-color: #0F2749; }
-.portal-section.academia { background-color: #B01030; }
+.portal-section.colegio {
+    background-color: #0F2749;
+}
+
+.portal-section.academia {
+    background-color: #B01030;
+}
 
 .central-divider {
     position: absolute;
@@ -53,8 +58,13 @@ html, body {
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-.colegio .image-header { background-image: url('https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1200'); }
-.academia .image-header { background-image: url('https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=1200'); }
+.colegio .image-header {
+    background-image: url('https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1200');
+}
+
+.academia .image-header {
+    background-image: url('https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=1200');
+}
 
 .info-container {
     flex: 1;
@@ -183,8 +193,13 @@ html, body {
 }
 
 @media (max-width: 1200px) {
-    .main-title { font-size: 3.5rem; }
-    .btn-main { padding: 22px 100px; }
+    .main-title {
+        font-size: 3.5rem
+    }
+
+    .btn-main {
+        padding: 22px 100px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -205,9 +220,13 @@ html, body {
         padding-bottom: 60px;
     }
 
-    .central-divider { display: none; }
+    .central-divider {
+        display: none;
+    }
 
-    .image-header { height: 300px; }
+    .image-header {
+        height: 300px;
+    }
 
     .info-container {
         align-items: center;
@@ -215,7 +234,9 @@ html, body {
         padding: 40px 10%;
     }
 
-    .main-title { font-size: 3.5rem; }
+    .main-title {
+        font-size: 3.5rem;
+    }
 
     .btn-main {
         padding: 20px 0;

@@ -306,16 +306,63 @@ p {
 }
 
 @media (max-width: 768px) {
-    .footer-container { flex-direction: column !important; align-items: flex-start !important; padding: 0 25px !important; }
-    .footer-left { width: 100% !important; text-align: left !important; margin-bottom: 30px !important; }
-    .footer-logo-img { margin: 0 0 20px 0 !important; }
-    .footer-contact p { justify-content: flex-start !important; text-align: left !important; }
-    .footer-right { flex-direction: column !important; width: 100% !important; gap: 30px !important; align-items: flex-start !important; }
-    .footer-column { width: 100% !important; align-items: flex-start !important; }
-    .footer-social-icons { justify-content: flex-start !important; }
-    .footer-bottom { text-align: left !important; padding-left: 25px !important; }
-    .exp-hero-content h1 { font-size: 35px !important; }
-    .exp-cta h2 { font-size: 30px; }
-    .welcome-text-side .welcome-title { font-size: 2.5rem; margin-top: 0; text-align: center; }
-    .welcome-line { margin: 0 auto 20px auto; }
+    .footer-container {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        padding: 0 25px !important;
+    }
+
+    .footer-left {
+        width: 100% !important;
+        text-align: left !important;
+        margin-bottom: 30px !important;
+    }
+
+    .footer-logo-img {
+        margin: 0 0 20px 0 !important;
+    }
+
+    .footer-contact p {
+        justify-content: flex-start !important;
+        text-align: left !important;
+    }
+
+    .footer-right {
+        flex-direction: column !important;
+        width: 100% !important;
+        gap: 30px !important;
+        align-items: flex-start !important;
+    }
+
+    .footer-column {
+        width: 100% !important;
+        align-items: flex-start !important;
+    }
+
+    .footer-social-icons {
+        justify-content: flex-start !important;
+    }
+
+    .footer-bottom {
+        text-align: left !important;
+        padding-left: 25px !important;
+    }
+
+    .exp-hero-content h1 {
+        font-size: 35px !important;
+    }
+
+    .exp-cta h2 {
+        font-size: 30px;
+    }
+
+    .welcome-text-side .welcome-title {
+        font-size: 2.5rem;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .welcome-line {
+        margin: 0 auto 20px auto;
+    }
 }

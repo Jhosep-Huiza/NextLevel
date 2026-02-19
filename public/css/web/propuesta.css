@@ -78,12 +78,29 @@
     line-height: 1;
 }
 
-.color-1 { background-color: #B01030; }
-.color-2 { background-color: #B01030; }
-.color-3 { background-color: #B01030; }
-.color-4 { background-color: #B01030; }
-.color-5 { background-color: #B01030; }
-.color-6 { background-color: #B01030; }
+.color-1 {
+    background-color: #B01030;
+}
+
+.color-2 {
+    background-color: #B01030;
+}
+
+.color-3 {
+    background-color: #B01030;
+}
+
+.color-4 {
+    background-color: #B01030;
+}
+
+.color-5 {
+    background-color: #B01030;
+}
+
+.color-6 {
+    background-color: #B01030;
+}
 
 .feature-card h3 {
     color: var(--next-dark);
@@ -191,9 +208,15 @@
     transition: transform 0.4s ease;
 }
 
-.menu-panel.active { transform: translateX(0); }
+.menu-panel.active {
+    transform: translateX(0);
+}
 
-.mobile-nav-list { list-style: none; padding: 0; }
+.mobile-nav-list {
+    list-style: none;
+    padding: 0;
+}
+
 .mobile-nav-list li, .back-btn {
     padding: 20px;
     border-bottom: 1px solid #f0f0f0;
@@ -204,7 +227,11 @@
     font-weight: 600;
 }
 
-.mobile-nav-list a { text-decoration: none; color: inherit; width: 100%; }
+.mobile-nav-list a {
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+}
 
 .back-btn {
     width: 100%;
@@ -224,7 +251,10 @@
     z-index: 10000;
     display: none;
 }
-.mobile-menu-overlay.show { display: block; }
+
+.mobile-menu-overlay.show {
+    display: block;
+}
 
 @media (max-width: 768px) {
     .footer-container {

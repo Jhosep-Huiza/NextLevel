@@ -35,14 +35,41 @@ body {
     background: white;
 }
 
-.family-side { right: 0; z-index: 1; opacity: 1; }
-.student-side { left: 0; z-index: 2; opacity: 1; }
+.family-side {
+    right: 0;
+    z-index: 1;
+    opacity: 1;
+}
 
-.main-sliding-container .family-side { transform: translateX(0); z-index: 5; opacity: 1; }
-.main-sliding-container .student-side { transform: translateX(0); z-index: 1; opacity: 0; }
+.student-side {
+    left: 0;
+    z-index: 2;
+    opacity: 1;
+}
 
-.main-sliding-container.active .family-side { transform: translateX(0); z-index: 1; opacity: 0; }
-.main-sliding-container.active .student-side { transform: translateX(0); z-index: 5; opacity: 1; }
+.main-sliding-container .family-side {
+    transform: translateX(0);
+    z-index: 5;
+    opacity: 1;
+}
+
+.main-sliding-container .student-side {
+    transform: translateX(0);
+    z-index: 1;
+    opacity: 0;
+}
+
+.main-sliding-container.active .family-side {
+    transform: translateX(0);
+    z-index: 1;
+    opacity: 0;
+}
+
+.main-sliding-container.active .student-side {
+    transform: translateX(0);
+    z-index: 5;
+    opacity: 1;
+}
 
 .sliding-panel-container {
     position: absolute;
@@ -55,8 +82,13 @@ body {
     z-index: 100;
 }
 
-.main-sliding-container.active .sliding-panel-container { transform: translateX(0); }
-.main-sliding-container:not(.active) .sliding-panel-container { transform: translateX(-100%); }
+.main-sliding-container.active .sliding-panel-container {
+    transform: translateX(0);
+}
+
+.main-sliding-container:not(.active) .sliding-panel-container {
+    transform: translateX(-100%);
+}
 
 .sliding-panel {
     background: linear-gradient(135deg, #020335 0%, #040669 100%);
@@ -91,9 +123,18 @@ body {
     transition: none;
 }
 
-.btn-custom-effect:hover { transform: scale(1.1); }
-.btn-custom-effect:hover::before { animation: shine-effect 0.8s forwards; }
-.btn-custom-effect span { position: relative; z-index: 10; }
+.btn-custom-effect:hover {
+    transform: scale(1.1);
+}
+
+.btn-custom-effect:hover::before {
+    animation: shine-effect 0.8s forwards;
+}
+
+.btn-custom-effect span {
+    position: relative;
+    z-index: 10;
+}
 
 @keyframes shine-effect {
     0% { left: -150%; }
