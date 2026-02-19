@@ -199,11 +199,6 @@ p {
     padding-bottom: 60px;
 }
 
-.section-title-dark {
-    font-size: 2.6rem;
-    padding-top: 50px;
-}
-
 .section-title-dark-centered {
     text-align: center;
     margin-bottom: 30px;
@@ -270,75 +265,72 @@ p {
     text-align: center;
 }
 
+/* --- SECCIÓN MODIFICADA ÚNICAMENTE --- */
 .info-organic-section {
-    padding-top: 0;
-}
-
-.info-blob-card p {
-    color: #576574;
-    font-size: 15px;
-    line-height: 1.5;
-    max-width: 250px;
-    margin: 0 auto;
-}
-
-.title-underline {
-    width: 50px;
-    height: 3px;
-    background: var(--rojo-principal);
-    margin: 0 auto 30px auto;
+    padding: 0;
 }
 
 .exp-blobs-container {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    padding: 40px 0;
-}
-
-.exp-cta {
-    position: relative;
-    background-image: url('../../images/imagen10.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    padding: 100px 20px;
-    text-align: center;
-    color: var(--blanco);
-    overflow: hidden;
-}
-
-.exp-cta::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+    flex-wrap: nowrap;
+    gap: 0; /* Pegados */
+    padding: 30px;
     width: 100%;
-    height: 100%;
-    background: rgba(15, 39, 73, 0.85);
-    z-index: 1;
 }
 
-.exp-cta-container {
-    position: relative;
-    z-index: 2;
-    max-width: 800px;
-    margin: 0 auto;
+.info-blob-card {
+    flex: 1;
+    padding: 60px 40px;
+    background: #ffffff;
+    border-right: 1px solid #eeeeee;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.exp-cta h2 {
-    font-size: 45px;
-    font-weight: 900;
-    margin-bottom: 20px;
+.info-blob-card:last-child {
+    border-right: none;
 }
 
-.exp-cta p {
-    font-size: 20px;
-    margin-bottom: 40px;
-    opacity: 0.95;
-    font-weight: 600 !important;
+.blob-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
 }
+
+.blob-content i {
+    font-size: 2.5rem;
+    color: var(--next-dark);
+}
+
+.text-wrapper h3 {
+    font-size: 1.4rem;
+    color: var(--next-dark);
+    font-weight: 800;
+    margin: 0 0 8px 0;
+}
+
+.text-wrapper p {
+    color: #576574;
+    font-size: 15px;
+    line-height: 1.4;
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+    .exp-blobs-container {
+        flex-wrap: wrap;
+    }
+    .info-blob-card {
+        flex: none;
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px solid #eeeeee;
+    }
+}
+/* --- FIN SECCIÓN MODIFICADA --- */
 
 .btn-whatsapp-pathway {
     background: var(--rojo-principal);
@@ -409,10 +401,6 @@ p {
 
     .exp-hero-content h1 {
         font-size: 35px !important;
-    }
-
-    .exp-cta h2 {
-        font-size: 30px;
     }
 
     .btn-whatsapp-pathway {

@@ -167,36 +167,34 @@
     </section>
 
     <section class="info-organic-section">
-        <div class="info-header">
-            <h2 class="section-title-dark">SESEGURIDAD Y TRANQUILIDAD</h2>
-            <div class="title-underline"></div>
-        </div>
         <div class="exp-blobs-container">
             <div class="info-blob-card">
-                <div class="blob-wrapper"><div class="blob-shape shape-1"><i class="fa-solid fa-shield-halved"></i></div></div>
-                <h3>Cámaras 24/7</h3>
-                <p>Monitoreo constante en todos los niveles.</p>
+                <div class="blob-content">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <div class="text-wrapper">
+                        <h3>Cámaras 24/7</h3>
+                        <p>Monitoreo constante en todos los niveles.</p>
+                    </div>
+                </div>
             </div>
             <div class="info-blob-card">
-                <div class="blob-wrapper"><div class="blob-shape shape-2"><i class="fa-solid fa-mobile-screen-button"></i></div></div>
-                <h3>Control Digital</h3>
-                <p>App para padres con asistencia en tiempo real.</p>
+                <div class="blob-content">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <div class="text-wrapper">
+                        <h3>Control Digital</h3>
+                        <p>App para padres con asistencia en tiempo real.</p>
+                    </div>
+                </div>
             </div>
             <div class="info-blob-card">
-                <div class="blob-wrapper"><div class="blob-shape shape-3"><i class="fa-solid fa-location-crosshairs"></i></div></div>
-                <h3>Entorno Seguro</h3>
-                <p>Ubicación estratégica y control de accesos.</p>
+                <div class="blob-content">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    <div class="text-wrapper">
+                        <h3>Entorno Seguro</h3>
+                        <p>Ubicación estratégica y control de accesos.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </section>
-
-    <section class="exp-cta">
-        <div class="exp-cta-container">
-            <h2>¡VEN A CONOCERNOS!</h2>
-            <p>Estamos listos para recibirte este 2 de marzo. Agenda una visita guiada hoy mismo.</p>
-            <a href="https://wa.me/51923317625?text=Hola%20Next%20Level,%20deseo%20información.%20Me%20interesa:%0A%0A1.%20Matrícula%20Colegio%20%0A2.%20Ciclos%20Academia%20%0A3.%20Agendar%20Visita%20Guiada%0A4.%20Costos%20y%20Pensiones%0A%0APor%20favor,%20bríndeme%20detalles." class="btn-whatsapp-pathway">
-                <i class="fa-brands fa-whatsapp"></i> Chatea con nosotros
-            </a>
         </div>
     </section>
 
