@@ -36,9 +36,9 @@
             <ul class="nav-menu">
                 <li><a href="{{ route('web.inicio') }}">INICIO</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-trigger active">NOSOTROS <span class="arrow-icon">&#9662;</span></a>
+                    <a href="#" class="dropdown-trigger">NOSOTROS <span class="arrow-icon">&#9662;</span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="{{ route('experiencia') }}">La Experiencia</a></li>
+                        <li><a href="#">Qué ofrecemos</a></li>
                         <li><a href="#">Quiénes Somos</a></li>
                     </ul>
                 </li>
@@ -145,16 +145,16 @@
         <div class="welcome-container">
             <div class="welcome-grid">
                 <div class="welcome-text-side">
-                    <h2 class="welcome-title">El Día a Día en Next Level</h2>
+                    <h2 class="welcome-title">EL DÍA A DÍA EN NEXT LEVEL</h2>
                     <div class="welcome-line"></div>
                     <ul class="welcome-list">
                         <li><i class="fa-solid fa-bolt"></i> <strong>Mañanas de Retos:</strong> Iniciamos el día resolviendo problemas reales.</li>
                         <li><i class="fa-solid fa-users"></i> <strong>Talleres de Liderazgo:</strong> Habilidades blandas para el éxito profesional.</li>
-                        <li><i class="fa-solid fa-robot"></i> <strong>Uso Ético de IA:</strong> Aprendizaje asistido por tecnología de vanguardia.</li>
+                        <li><i class="fa-solid fa-pen-to-square"></i> <strong>Hábitos de Estudio:</strong> Métodos prácticos para aprender mejor.</li>
                         <li><i class="fa-solid fa-swimmer"></i> <strong>Deporte Integral:</strong> Natación y desarrollo físico constante.</li>
-                        <li><i class="fa-solid fa-flask-vial"></i> <strong>Ciencia y Tech:</strong> Experimentación en laboratorios modernos.</li>
+                        <li><i class="fa-solid fa-handshake-simple"></i> <strong>Convivencia Activa:</strong> Fomentamos el respeto y el trabajo en equipo diario.</li>
                         <li><i class="fa-solid fa-palette"></i> <strong>Arte y Cultura:</strong> Espacios para la expresión y creatividad.</li>
-                        <li><i class="fa-solid fa-shield-heart"></i> <strong>Valores Novus:</strong> Formación con ética y sentido de propósito.</li>
+                        <li><i class="fa-solid fa-trophy"></i> <strong>Vida Activa:</strong> Deporte y recreación en nuestras canchas propias.</li>
                     </ul>
                 </div>
                 <div class="welcome-image-side">
