@@ -27,9 +27,13 @@
 
     <nav class="main-nav">
         <div class="nav-container">
-            <a href="#" class="nav-brand">
+            <a href="{{ route('web.inicio') }}" class="nav-brand">
                 <img src="{{ asset('images/logo_letras.png') }}" alt="Next Level" class="nav-logo-full">
             </a>
+
+            <button class="mobile-menu-toggle" id="menuOpen" type="button">
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
             <ul class="nav-menu">
                 <li><a href="#" class="active">INICIO</a></li>
@@ -54,6 +58,48 @@
             </ul>
         </div>
     </nav>
+
+    <div class="mobile-menu-overlay" id="menuOverlay"></div>
+    <div class="mobile-side-menu" id="sideMenu">
+        <div class="menu-header">
+            <span>MENÚ</span>
+            <button class="close-menu" id="menuClose" type="button"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div class="menu-panels-container">
+            <div class="menu-panel active" id="mainPanel">
+                <ul class="mobile-nav-list">
+                    <li><a href="{{ route('web.inicio') }}">INICIO</a></li>
+                    <li class="has-submenu" data-target="submenu-nosotros">
+                        <span>NOSOTROS</span> <i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                    <li class="has-submenu" data-target="submenu-niveles">
+                        <span>NIVELES</span> <i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                    <li><a href="#">UBICACIÓN</a></li>
+                    <li><a href="#">MATRICULAS</a></li>
+                    <li><a href="#">CONCURSOS</a></li>
+                    <li><a href="{{ route('portal') }}">INTRANET</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-panel" id="submenu-nosotros">
+                <button class="back-btn" type="button"><i class="fa-solid fa-chevron-left"></i> REGRESAR</button>
+                <ul class="mobile-nav-list">
+                    <li><a href="#">Qué ofrecemos</a></li>
+                    <li><a href="#">Quiénes Somos</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-panel" id="submenu-niveles">
+                <button class="back-btn" type="button"><i class="fa-solid fa-chevron-left"></i> REGRESAR</button>
+                <ul class="mobile-nav-list">
+                    <li><a href="#">Colegio</a></li>
+                    <li><a href="#">Academia</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <section class="hero-full-width">
         <div class="hero-slide active">
@@ -414,6 +460,7 @@
     <script src="{{ asset('js/hero-slider.js') }}"></script>
     <script src="{{ asset('js/carrusel-pilares.js') }}"></script>
     <script src="{{ asset('js/carrusel-docentes.js') }}"></script>
+    <script src="{{ asset('js/menu-mobile.js') }}"></script>
 </body>
 
 </html>
