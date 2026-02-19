@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
     const track = document.getElementById('carruselTrack');
-    const nextBtn = document.getElementById('nextBtn');
-    const prevBtn = document.getElementById('prevBtn');
 
     let index = 0;
     const totalCards = 8;
@@ -16,31 +14,31 @@ document.addEventListener('DOMContentLoaded', () => {
         const cardsPerView = getCardsPerView();
         const maxIndex = totalCards - cardsPerView;
 
-        if (index > maxIndex) index = 0;
-        if (index < 0) index = maxIndex;
+        if (index > maxIndex) {
+            index = 0;
+        }
 
-        const percentage = -(index * (100 / cardsPerView));
+        const percentage = -(index * (100 / totalCards));
         track.style.transform = `translateX(${percentage}%)`;
     };
-
-    nextBtn.addEventListener('click', () => {
-        index++;
-        moveCarrusel();
-    });
-
-    prevBtn.addEventListener('click', () => {
-        index--;
-        moveCarrusel();
-    });
 
     let autoPlay = setInterval(() => {
         index++;
         moveCarrusel();
     }, 4000);
 
-    const stopAutoPlay = () => clearInterval(autoPlay);
-    nextBtn.addEventListener('mouseenter', stopAutoPlay);
-    prevBtn.addEventListener('mouseenter', stopAutoPlay);
+    const container = document.querySelector('.info-organic-section');
+    container.addEventListener('mouseenter', () => clearInterval(autoPlay));
 
-    window.addEventListener('resize', moveCarrusel);
+    container.addEventListener('mouseleave', () => {
+        autoPlay = setInterval(() => {
+            index++;
+            moveCarrusel();
+        }, 4000);
+    });
+
+    window.addEventListener('resize', () => {
+        index = 0;
+        moveCarrusel();
+    });
 });

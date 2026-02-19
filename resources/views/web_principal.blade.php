@@ -213,66 +213,6 @@
         </div>
     </section>
 
-    <section class="info-organic-section">
-        <div class="info-container">
-            <div class="info-header">
-                <h2 class="section-title-dark">¡CONSTRUIMOS EL FUTURO EDUCATIVO CONTIGO!</h2>
-                <p class="info-intro">Ocho razones por las que somos la mejor opción para iniciar este camino escolar en marzo.</p>
-                <div class="title-underline"></div>
-            </div>
-
-            <div class="carrusel-wrapper">
-                <button class="carrusel-btn prev" id="prevBtn"><i class="fa-solid fa-chevron-left"></i></button>
-
-                <div class="carrusel-container">
-                    <div class="info-grid-carrusel" id="carruselTrack">
-                        <div class="info-blob-card">
-                            <div class="blob-wrapper"><div class="blob-shape shape-1"><i class="fa-solid fa-rocket"></i></div></div>
-                            <h3>Enfoque Innovador</h3>
-                            <p>Educación de vanguardia basada en proyectos y tecnología aplicada.</p>
-                        </div>
-                        <div class="info-blob-card">
-                            <div class="blob-wrapper"><div class="blob-shape shape-2"><i class="fa-solid fa-seedling"></i></div></div>
-                            <h3>Crecimiento Conjunto</h3>
-                            <p>Iniciamos este camino en marzo, creando una comunidad donde el alumno es protagonista.</p>
-                        </div>
-                        <div class="info-blob-card">
-                            <div class="blob-wrapper"><div class="blob-shape shape-3"><i class="fa-solid fa-hand-holding-heart"></i></div></div>
-                            <h3>Valores y Liderazgo</h3>
-                            <p>Formación ética y liderazgo para los retos del mañana.</p>
-                        </div>
-                        <div class="info-blob-card">
-                            <div class="blob-wrapper"><div class="blob-shape shape-4"><i class="fa-solid fa-school"></i></div></div>
-                            <h3>Infraestructura</h3>
-                            <p>Ambientes modernos y seguros diseñados para potenciar el aprendizaje.</p>
-                        </div>
-                        <div class="info-blob-card">
-                            <div class="blob-wrapper"><div class="blob-shape shape-5"><i class="fa-solid fa-user-graduate"></i></div></div>
-                            <h3>Plana Docente</h3>
-                            <p>Profesores con amplia trayectoria académica y compromiso humano.</p>
-                        </div>
-                        <div class="info-blob-card">
-                            <div class="blob-wrapper"><div class="blob-shape shape-6"><i class="fa-solid fa-language"></i></div></div>
-                            <h3>Inglés Intensivo</h3>
-                            <p>Dominio del idioma inglés como herramienta clave para el mundo global.</p>
-                        </div>
-                        <div class="info-blob-card">
-                            <div class="blob-wrapper"><div class="blob-shape shape-7"><i class="fa-solid fa-palette"></i></div></div>
-                            <h3>Talleres Creativos</h3>
-                            <p>Desarrollo artístico y deportivo para una formación integral.</p>
-                        </div>
-                        <div class="info-blob-card">
-                            <div class="blob-wrapper"><div class="blob-shape shape-8"><i class="fa-solid fa-lock"></i></div></div>
-                            <h3>Seguridad 24/7</h3>
-                            <p>Tranquilidad total para los padres con sistemas de seguridad avanzados.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <button class="carrusel-btn next" id="nextBtn"><i class="fa-solid fa-chevron-right"></i></button>
-            </div>
-        </div>
-    </section>
 
     <section class="docentes-carousel-section">
         <div class="info-container">
@@ -339,6 +279,87 @@
                 </div>
 
                 <button class="doc-nav-btn next" id="docNextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section class="info-organic-section">
+        <div class="carrusel-wrapper">
+            <div class="carrusel-container">
+                <div class="info-grid-carrusel" id="carruselTrack">
+                    <div class="info-blob-card">
+                        <div class="blob-content">
+                            <i class="fa-solid fa-rocket"></i>
+                            <div class="text-wrapper">
+                                <h3>Enfoque Innovador</h3>
+                                <p>Educación de vanguardia basada en proyectos y tecnología aplicada.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-blob-card">
+                        <div class="blob-content">
+                            <i class="fa-solid fa-seedling"></i>
+                            <div class="text-wrapper">
+                                <h3>Crecimiento Conjunto</h3>
+                                <p>Iniciamos este camino en marzo, creando una comunidad activa.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-blob-card">
+                        <div class="blob-content">
+                            <i class="fa-solid fa-hand-holding-heart"></i>
+                            <div class="text-wrapper">
+                                <h3>Valores y Liderazgo</h3>
+                                <p>Formación ética y liderazgo para los retos del mañana.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-blob-card">
+                        <div class="blob-content">
+                            <i class="fa-solid fa-school"></i>
+                            <div class="text-wrapper">
+                                <h3>Infraestructura</h3>
+                                <p>Ambientes modernos y seguros diseñados para el aprendizaje.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-blob-card">
+                        <div class="blob-content">
+                            <i class="fa-solid fa-user-graduate"></i>
+                            <div class="text-wrapper">
+                                <h3>Plana Docente</h3>
+                                <p>Profesores con amplia trayectoria académica y compromiso humano.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-blob-card">
+                        <div class="blob-content">
+                            <i class="fa-solid fa-language"></i>
+                            <div class="text-wrapper">
+                                <h3>Inglés Intensivo</h3>
+                                <p>Dominio del idioma inglés como herramienta clave global.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-blob-card">
+                        <div class="blob-content">
+                            <i class="fa-solid fa-palette"></i>
+                            <div class="text-wrapper">
+                                <h3>Talleres Creativos</h3>
+                                <p>Desarrollo artístico y deportivo para formación integral.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-blob-card">
+                        <div class="blob-content">
+                            <i class="fa-solid fa-lock"></i>
+                            <div class="text-wrapper">
+                                <h3>Seguridad 24/7</h3>
+                                <p>Tranquilidad total para los padres con sistemas avanzados.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
