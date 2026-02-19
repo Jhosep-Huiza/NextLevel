@@ -40,7 +40,7 @@
                 <div class="social-icons-wrapper !mt-8">
                     <a href="https://www.tiktok.com/@next_level_novus" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fab fa-tiktok"></i></a>
                     <a href="https://www.instagram.com/next_level_novus/" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fab fa-instagram"></i></a>
-                    <a href="https://wa.me/51923317625" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://wa.me/51923317625?text=Hola%20Next%20Level,%20deseo%20información.%20Me%20interesa:%0A%0A1.%20Matrícula%20Colegio%20%0A2.%20Ciclos%20Academia%20%0A3.%20Agendar%20Visita%20Guiada%0A4.%20Costos%20y%20Pensiones%0A%0APor%20favor,%20bríndeme%20detalles." target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fab fa-whatsapp"></i></a>
                     <a href="https://www.facebook.com/profile.php?id=61581492196914" target="_blank" rel="noopener noreferrer" class="social-btn"><i class="fab fa-facebook"></i></a>
                 </div>
 
@@ -105,7 +105,7 @@
                 <div class="social-icons-wrapper !mt-8">
                     <a href="https://www.tiktok.com/@next_level_novus" class="social-btn"><i class="fab fa-tiktok"></i></a>
                     <a href="https://www.instagram.com/next_level_novus/" class="social-btn"><i class="fab fa-instagram"></i></a>
-                    <a href="https://wa.me/51923317625" class="social-btn"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://wa.me/51923317625?text=Hola%20Next%20Level,%20deseo%20información.%20Me%20interesa:%0A%0A1.%20Matrícula%20Colegio%20%0A2.%20Ciclos%20Academia%20%0A3.%20Agendar%20Visita%20Guiada%0A4.%20Costos%20y%20Pensiones%0A%0APor%20favor,%20bríndeme%20detalles." class="social-btn"><i class="fab fa-whatsapp"></i></a>
                     <a href="https://www.facebook.com/profile.php?id=61581492196914" class="social-btn"><i class="fab fa-facebook"></i></a>
                 </div>
 

@@ -17,7 +17,7 @@
             <div class="marquee-track" id="marqueeTrack">
                 <div class="marquee-item">
                     🧑🏻‍🎓 ¡MATRÍCULA 2026! &nbsp;&nbsp;&nbsp;&nbsp;
-                    📕 INICIO DE CLASES: 4 DE MARZO &nbsp;&nbsp;&nbsp;&nbsp;
+                    📕 INICIO DE CLASES: 2 DE MARZO &nbsp;&nbsp;&nbsp;&nbsp;
                 </div>
             </div>
         </div>
@@ -172,7 +172,7 @@
                     <div class="footer-social-icons">
                         <a href="https://www.tiktok.com/@next_level_novus" target="_blank" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
                         <a href="https://www.instagram.com/next_level_novus/" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://wa.me/51923317625" target="_blank" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://wa.me/51923317625?text=Hola%20Next%20Level,%20deseo%20información.%20Me%20interesa:%0A%0A1.%20Matrícula%20Colegio%20%0A2.%20Ciclos%20Academia%20%0A3.%20Agendar%20Visita%20Guiada%0A4.%20Costos%20y%20Pensiones%0A%0APor%20favor,%20bríndeme%20detalles." target="_blank" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
                         <a href="https://www.facebook.com/profile.php?id=61581492196914" target="_blank" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
                     </div>
                 </div>

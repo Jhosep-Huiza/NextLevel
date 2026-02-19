@@ -34,8 +34,17 @@ p {
         padding: 10px 15px !important;
         box-sizing: border-box !important;
     }
-    .nav-brand { flex: 0 1 auto; max-width: 70%; }
-    .nav-logo-full { max-width: 100%; height: auto; max-height: 35px; }
+
+    .nav-brand {
+        flex: 0 1 auto;
+        max-width: 70%;
+    }
+
+    .nav-logo-full {
+        max-width: 100%;
+        height: auto;
+        max-height: 35px;
+    }
 }
 
 .mobile-side-menu {
@@ -160,6 +169,7 @@ p {
 .welcome-tag {
     color: white;
     font-weight: 600;
+    font-weight: 1000;
 }
 
 .welcome-title-hero {
@@ -189,12 +199,18 @@ p {
     padding-bottom: 60px;
 }
 
+.section-title-dark {
+    font-size: 2.6rem;
+    padding-top: 50px;
+}
+
 .section-title-dark-centered {
     text-align: center;
     margin-bottom: 30px;
     color: var(--next-dark);
     font-weight: 800;
     font-size: 2.6rem;
+    padding-top: 30px;
 }
 
 .exp-cards-grid {
@@ -213,7 +229,7 @@ p {
 
 .welcome-section {
     background: #f8fafc;
-    padding: 30px 0;
+    padding: 75px 0;
 }
 
 .welcome-text-side .welcome-title {
@@ -258,6 +274,14 @@ p {
     padding-top: 0;
 }
 
+.info-blob-card p {
+    color: #576574;
+    font-size: 15px;
+    line-height: 1.5;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
 .title-underline {
     width: 50px;
     height: 3px;
@@ -274,11 +298,35 @@ p {
 }
 
 .exp-cta {
-    background-color: var(--next-blue);
-    padding: 80px 20px;
+    position: relative;
+    background-image: url('../../images/imagen10.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 100px 20px;
     text-align: center;
     color: var(--blanco);
+    overflow: hidden;
 }
+
+.exp-cta::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 39, 73, 0.85);
+    z-index: 1;
+}
+
+.exp-cta-container {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 .exp-cta h2 {
     font-size: 45px;
     font-weight: 900;
@@ -288,21 +336,32 @@ p {
 .exp-cta p {
     font-size: 20px;
     margin-bottom: 40px;
-    opacity: 0.9;
+    opacity: 0.95;
+    font-weight: 600 !important;
 }
 
 .btn-whatsapp-pathway {
-    background: var(--next-dark);
+    background: var(--rojo-principal);
     margin: 0 auto;
     text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
     width: fit-content;
-    gap: 10px;
+    gap: 12px;
     color: white;
-    padding: 12px 25px;
-    border-radius: 30px;
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(176, 16, 48, 0.3);
+}
+
+.btn-whatsapp-pathway:hover {
+    transform: translateY(-3px);
+    background: #900d28;
+    box-shadow: 0 6px 20px rgba(176, 16, 48, 0.5);
 }
 
 @media (max-width: 768px) {
@@ -354,6 +413,11 @@ p {
 
     .exp-cta h2 {
         font-size: 30px;
+    }
+
+    .btn-whatsapp-pathway {
+        padding: 15px 30px;
+        font-size: 1rem;
     }
 
     .welcome-text-side .welcome-title {
