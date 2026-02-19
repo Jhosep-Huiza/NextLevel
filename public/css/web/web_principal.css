@@ -268,7 +268,7 @@ html, body {
 }
 
 .info-organic-section {
-    padding: 25px;
+    padding: 0;
     background-color: var(--blanco);
     width: 100%;
     overflow: hidden;
@@ -605,7 +605,6 @@ html, body {
     background: var(--blanco);
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
     transition: all 0.3s ease;
     border-bottom: 4px solid transparent;
     min-height: 520px;
@@ -616,7 +615,6 @@ html, body {
 .docente-card-modern:hover {
     transform: translateY(-10px);
     border-bottom: 4px solid var(--rojo-principal);
-    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
 }
 
 .docente-img-box {
