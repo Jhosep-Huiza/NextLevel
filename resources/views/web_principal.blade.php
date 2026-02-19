@@ -217,7 +217,7 @@
     <section class="docentes-carousel-section">
         <div class="info-container">
             <div class="info-header">
-                <h2 class="section-title-dark">Nuestro Cuerpo de Docentes</h2>
+                <h2 class="section-title-dark">NUESTRO CUERPO DE DOCENTES</h2>
                 <p class="info-intro">Liderazgo y trayectoria al servicio de la formación de nuestros alumnos.</p>
                 <div class="title-underline"></div>
             </div>
