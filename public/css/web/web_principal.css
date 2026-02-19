@@ -268,7 +268,7 @@ html, body {
 }
 
 .info-organic-section {
-    padding: 0;
+    padding: 25px;
     background-color: var(--blanco);
     width: 100%;
     overflow: hidden;
@@ -474,6 +474,7 @@ html, body {
     background-attachment: fixed;
     min-height: auto;
     width: 100%;
+    margin-top: 90px;
 }
 
 .valores-overlay {
@@ -566,6 +567,8 @@ html, body {
 .docentes-carousel-section {
     padding: 90px 0;
     background-color: #f8fafc;
+    margin-top: 30px;
+    margin-bottom: 50px;
 }
 
 .docentes-carrusel-wrapper {

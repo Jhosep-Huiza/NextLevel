@@ -265,7 +265,7 @@ p {
     text-align: center;
 }
 
-/* --- SECCIÓN MODIFICADA ÚNICAMENTE --- */
+
 .info-organic-section {
     padding: 0;
 }
@@ -274,7 +274,7 @@ p {
     display: flex;
     justify-content: center;
     flex-wrap: nowrap;
-    gap: 0; /* Pegados */
+    gap: 0;
     padding: 30px;
     width: 100%;
 }
