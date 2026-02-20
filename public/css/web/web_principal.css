@@ -938,18 +938,18 @@ html, body {
 
 .btn-welcome {
     display: inline-block;
-    padding: 18px 40px;
+    padding: 18px 75px;
     background: var(--rojo-principal);
     color: var(--blanco);
     text-decoration: none;
     font-weight: 700;
-    border-radius: 50px;
+    border-radius: 12px;
     transition: all 0.3s ease;
 }
 
 .btn-welcome:hover {
     background: var(--rojo-oscuro);
-    transform: translateY(-5px);
+    transform: translateY(-3px);
 }
 
 
@@ -1433,7 +1433,7 @@ html, body {
         display: block;
         width: fit-content;
         margin: 0 auto;
-        padding: 15px 40px;
+        padding: 17px 70px;
         margin-top: -25px;
     }
 
