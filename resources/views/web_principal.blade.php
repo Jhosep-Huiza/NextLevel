@@ -147,7 +147,7 @@
 
     <section class="welcome-section">
         <div class="welcome-container">
-            <div class="welcome-grid">
+            <div class="welcome-grid reorder-mobile">
                 <div class="welcome-image-side">
                     <div class="image-frame">
                         <img src="{{ asset('images/imagen10.jpg') }}" alt="Educación Next Level">
