@@ -888,7 +888,7 @@ html, body {
 .welcome-tag {
     color: var(--rojo-principal);
     font-weight: 800;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: 2px;
     display: block;
     margin-bottom: 15px;
@@ -948,7 +948,7 @@ html, body {
 }
 
 .btn-welcome:hover {
-    background: var(--azul-noche);
+    background: var(--rojo-oscuro);
     transform: translateY(-5px);
 }
 
@@ -1353,21 +1353,61 @@ html, body {
         font-size: 9px !important;
     }
 
+    .welcome-section {
+        padding: 50px 0;
+    }
+
     .welcome-grid {
-        grid-template-columns: 1fr !important;
-        gap: 40px !important;
+        display: flex !important;
+        flex-direction: column !important; /* Apila los bloques verticalmente */
+        gap: 35px !important;
+        align-items: center;
     }
 
     .welcome-text-side {
+        order: 1; /* Mueve el texto a la primera posición visual */
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .welcome-title {
+        font-size: 28px !important;
+        line-height: 1.2;
+        margin-bottom: 15px;
     }
 
     .welcome-line {
+        margin: 0 auto 25px;
+    }
+
+    .welcome-description {
+        font-size: 15px !important;
+        line-height: 1.7;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .welcome-list {
+        display: inline-block;
+        text-align: left; /* Alinea los checks internamente a la izquierda */
         margin: 0 auto 30px;
     }
 
     .welcome-list li {
-        justify-content: center;
+        justify-content: flex-start !important;
+        font-size: 12px !important;
+        gap: 12px;
+    }
+
+    .welcome-image-side {
+        order: 2; /* Mueve la imagen debajo del texto descriptivo */
+        width: 100%;
+        max-width: 380px;
+        margin: 0 auto;
+        position: relative; /* Mantiene tu badge en su sitio */
     }
 
     .pathway-visuals {
