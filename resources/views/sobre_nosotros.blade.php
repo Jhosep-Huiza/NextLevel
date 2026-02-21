@@ -213,26 +213,38 @@
     <main>
 
     <section class="mision-vision-section">
-            <div class="container cards-grid">
-                <div class="card-sobre">
-                    <div class="icon-circle"><i class="fa-solid fa-bullseye"></i></div>
+    <div class="exp-blobs-container container-blocks">
+        <div class="info-blob-card">
+            <div class="blob-content">
+                <i class="fa-solid fa-bullseye"></i>
+                <div class="text-wrapper">
                     <h3>MISIÓN</h3>
                     <p>Formar estudiantes íntegros con alto nivel académico, liderazgo y valores sólidos.</p>
                 </div>
+            </div>
+        </div>
 
-                <div class="card-sobre">
-                    <div class="icon-circle"><i class="fa-solid fa-eye"></i></div>
+        <div class="info-blob-card">
+            <div class="blob-content">
+                <i class="fa-solid fa-eye"></i>
+                <div class="text-wrapper">
                     <h3>VISIÓN</h3>
                     <p>Consolidarnos como una institución educativa referente por nuestra innovación constante.</p>
                 </div>
+            </div>
+        </div>
 
-                <div class="card-sobre">
-                    <div class="icon-circle"><i class="fa-solid fa-hand-holding-heart"></i></div>
+        <div class="info-blob-card">
+            <div class="blob-content">
+                <i class="fa-solid fa-hand-holding-heart"></i>
+                <div class="text-wrapper">
                     <h3>VALORES</h3>
                     <p>Disciplina, respeto, ética, responsabilidad, superación constante y excelencia.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
     </main> <footer class="footer">
         <div class="footer-container">
