@@ -287,7 +287,7 @@ html, body {
 }
 
 .info-intro {
-    color: #64748b;
+    color: #0F2749;
     font-size: 18px;
     margin-top: 10px;
     text-align: center;
@@ -659,7 +659,7 @@ html, body {
 }
 
 .docente-content p {
-    color: #64748b;
+    color: #0F2749;
     font-size: 14px;
     line-height: 1.6;
 }
@@ -1449,6 +1449,8 @@ html, body {
     .pathway-section {
         padding: 50px 20px !important;
         background-color: #f8fafc;
+        padding-bottom: 15px !important;
+
     }
 
     .pathway-container {
@@ -1515,7 +1517,7 @@ html, body {
 
     .pathway-visuals {
         height: auto !important;
-        margin-top: 10px;
+        margin-top: -10px;
         width: 100%;
     }
 
@@ -1561,5 +1563,179 @@ html, body {
     .path-card-overlay p {
         font-size: 13px !important;
         font-weight: 600;
+    }
+
+    .valores-modern-section {
+        margin-top: 60px !important;
+        background-attachment: scroll !important;
+        background-position: center center;
+    }
+
+    .valores-overlay {
+        padding: 60px 20px !important;
+    }
+
+    .section-title-light {
+        font-size: 32px !important;
+        margin-bottom: 50px !important;
+        line-height: 1.2;
+    }
+
+    .section-title-light::after {
+        width: 60px !important;
+        height: 4px !important;
+        margin-top: 15px !important;
+    }
+
+    .valores-grid-custom {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 45px !important;
+        align-items: center;
+    }
+
+    .valor-item {
+        width: 100% !important;
+        max-width: 300px !important;
+    }
+
+    .icon-circle {
+        width: 95px !important;
+        height: 95px !important;
+        font-size: 35px !important;
+        margin-bottom: 20px !important;
+        border-width: 2px !important;
+    }
+
+    .valor-item h3 {
+        font-size: 22px !important;
+        font-weight: 700 !important;
+        margin-bottom: 12px !important;
+    }
+
+    .valor-item p {
+        font-size: 15.5px !important;
+        line-height: 1.6 !important;
+        color: rgba(255, 255, 255, 0.9) !important;
+        margin: 0 auto !important;
+    }
+
+    .docentes-carousel-section {
+        padding: 10px 0 !important;
+        background-color: #f8fafc;
+        margin-top: 30px !important;
+        margin-bottom: 50px !important;
+    }
+
+    .docentes-carrusel-wrapper {
+        position: relative;
+        max-width: 100%;
+        margin: 40px auto 0;
+        padding: 0 60px !important;
+        display: flex;
+        align-items: center;
+    }
+
+    .docentes-overflow {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .docentes-track {
+        display: flex;
+        gap: 25px;
+        transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .docente-card-modern {
+        flex: 0 0 100% !important;
+        background: var(--blanco);
+        border-radius: 20px;
+        overflow: hidden;
+        min-height: 520px !important;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 4px solid transparent;
+    }
+
+    .docente-img-box {
+        height: 350px !important;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .docente-img-box img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .docente-content {
+        padding: 25px;
+        text-align: center;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .docente-content h3 {
+        color: var(--azul-noche);
+        font-size: 20px !important;
+        font-weight: 800;
+        margin-bottom: 8px;
+    }
+
+    .doc-tag {
+        color: var(--rojo-principal);
+        font-weight: 700;
+        font-size: 14px !important;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 12px;
+    }
+
+    .docente-content p {
+        color: #0F2749;
+        font-size: 14px !important;
+        line-height: 1.6;
+    }
+
+    .doc-nav-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: var(--blanco);
+        border: none;
+        width: 45px !important;
+        height: 45px !important;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 10;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        color: var(--azul-noche);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .doc-nav-btn.prev {
+        left: 5px !important;
+    }
+
+    .doc-nav-btn.next {
+        right: 5px !important;
+    }
+
+    .section-title-dark {
+        font-size: 2.0rem !important;
+        text-align: center;
+        font-weight: 800;
+    }
+
+    .info-intro {
+        font-size: 18px !important;
+        text-align: center;
+        color: #0F2749;
     }
 }
