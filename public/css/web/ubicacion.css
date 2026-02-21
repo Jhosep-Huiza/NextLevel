@@ -1,0 +1,220 @@
+/* --- SECCIÓN HERO (CABECERA) --- */
+.hero-sobre {
+    position: relative;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(15, 39, 73, 0.9) 0%, rgba(27, 58, 107, 0.7) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.hero-bg-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero-content {
+    text-align: center;
+    color: #ffffff;
+    max-width: 850px;
+    padding: 0 25px;
+    z-index: 3;
+}
+
+.section-tag {
+    display: inline-block;
+    background: #B01030;
+    color: #ffffff;
+    padding: 5px 24px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero-content h1 {
+    font-size: clamp(32px, 6vw, 65px);
+    font-weight: 900;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+.hero-content p {
+    font-size: 20px;
+    opacity: 0.95;
+    line-height: 1.5;
+}
+
+/* --- SECCIÓN DE INFORMACIÓN Y GRID --- */
+.ubicacion-section {
+    padding: 100px 0;
+    background: #f8fafc;
+}
+
+.ubicacion-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 80px;
+    align-items: center;
+}
+
+.ubicacion-info h2 {
+    font-size: 44px;
+    color: #00235a;
+    font-weight: 800;
+    line-height: 1.1;
+}
+
+.section-line {
+    width: 70px;
+    height: 6px;
+    background: #e30613;
+    margin: 20px 0 35px;
+    border-radius: 3px;
+}
+
+.ubicacion-info p {
+    margin-bottom: 30px;
+    color: #001a44;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.info-box {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 20px 50px rgba(15, 39, 73, 0.08);
+    border-left: 6px solid #e30613;
+    margin-bottom: 10px;
+}
+
+.info-box p {
+    margin-bottom: 20px;
+    font-size: 16.5px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 600;
+    color: #00235a;
+}
+
+.info-box p:last-child {
+    margin-bottom: 0;
+}
+
+.info-box i {
+    color: #e30613;
+    font-size: 20px;
+    width: 25px;
+    text-align: center;
+}
+
+/* --- MAPA DINÁMICO (SISTEMA EN TIEMPO REAL) --- */
+.ubicacion-mapa {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+/* Reemplaza el estilo del iframe por el contenedor #map */
+#map {
+    width: 100%;
+    height: 500px;
+    border-radius: 30px;
+    box-shadow: 20px 20px 60px rgba(0,0,0,0.1);
+    border: none;
+    display: block;
+    transition: transform 0.4s ease;
+    background-color: #f0f0f0; /* Fondo de carga */
+}
+
+.ubicacion-mapa:hover #map {
+    transform: scale(1.01);
+}
+
+/* --- RESPONSIVE / ADAPTACIÓN MÓVIL --- */
+@media (max-width: 1024px) {
+    .ubicacion-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .section-line {
+        margin: 20px auto 35px;
+    }
+
+    .info-box {
+        text-align: left;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    #map {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-sobre {
+        height: 380px;
+    }
+
+    .ubicacion-section {
+        padding: 60px 20px;
+    }
+
+    .ubicacion-info h2 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 17px;
+    }
+
+    .info-box {
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-sobre {
+        height: 320px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .section-tag {
+        font-size: 12px;
+        padding: 8px 18px;
+    }
+
+    #map {
+        width: 100%;
+        min-height: 500px; /* Usa min-height para forzar la visibilidad */
+        height: 500px;
+        border-radius: 30px;
+        background-color: #e5e3df; /* Color gris de carga de Google */
+        display: block !important; /* Evita que otros estilos lo oculten */
+    }
+}

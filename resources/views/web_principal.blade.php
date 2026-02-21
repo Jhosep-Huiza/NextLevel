@@ -51,7 +51,7 @@
                         <li><a href="#">Academia</a></li>
                     </ul>
                 </li>
-                <li><a href="#">UBICACIÓN</a></li>
+                <li><a href="{{ route('ubicacion') }}">UBICACIÓN</a></li>
                 <li><a href="#">MATRICULAS</a></li>
                 <li><a href="#">CONCURSOS</a></li>
                 <li><a href="{{ route('portal') }}">INTRANET</a></li>
@@ -76,7 +76,7 @@
                     <li class="has-submenu" data-target="submenu-niveles">
                         <span>NIVELES</span> <i class="fa-solid fa-chevron-right"></i>
                     </li>
-                    <li><a href="#">UBICACIÓN</a></li>
+                    <li><a href="{{ route('ubicacion') }}">UBICACIÓN</a></li>
                     <li><a href="#">MATRICULAS</a></li>
                     <li><a href="#">CONCURSOS</a></li>
                     <li><a href="{{ route('portal') }}">INTRANET</a></li>
@@ -423,21 +423,21 @@
 
             <div class="footer-right">
                 <div class="footer-column">
-                    <a href="#">UBICACIÓN</a>
+                    <a href="{{ route('ubicacion') }}">UBICACIÓN</a>
                     <a href="#">CONTÁCTANOS</a>
                     <a href="#">ADMISIÓN 2026</a>
-                    <a href="#">SOBRE NOSOTROS</a>
-                    <a href="#">NUESTROS VALORES</a>
+                    <a href="{{ route('sobre.nosotros') }}">SOBRE NOSOTROS</a>
+                    <a href="{{ route('nuestros.valores') }}">NUESTROS VALORES</a>
                 </div>
                 <div class="footer-column">
                     <a href="#">NIVELES</a>
-                    <a href="#">ACADEMIA</a>
+                    <a href="{{ route('academia') }}">ACADEMIA</a>
                     <a href="#">PAGOS EN LÍNEA</a>
                     <a href="#">MATRICULA 2026</a>
                     <a href="#">HORARIO DE CLASE</a>
                 </div>
                 <div class="footer-column social-align">
-                    <a href="#">INTRANET</a>
+                    <a href="{{ route('portal') }}">INTRANET</a>
                     <a href="#">PROTECCIÓN DE DATOS</a>
                     <a href="#">LIBRO DE RECLAMACIONES</a>
 

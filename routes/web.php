@@ -25,3 +25,19 @@ Route::get('/propuesta-educativa', function () {
 Route::get('/experiencia-next-level', function () {
     return view('experiencia');
 })->name('experiencia');
+
+Route::get('/ubicacion', function () {
+    return view('ubicacion');
+})->name('ubicacion');
+
+Route::get('/nuestros-valores', function () {
+    return view('nuestros_valores');
+})->name('nuestros.valores');
+
+Route::get('/sobre-nosotros', function () {
+    return view('sobre_nosotros');
+})->name('sobre.nosotros');
+
+Route::get('/academia', function () {
+    return view('academia');
+})->name('academia');
