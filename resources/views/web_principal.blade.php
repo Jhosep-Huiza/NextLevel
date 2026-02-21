@@ -186,9 +186,9 @@
                         ¿Buscas una educación escolar innovadora o potenciar tus conocimientos para la universidad? Contamos con la metodología exacta para lo que necesitas hoy.
                     </p>
                     <ul class="pathway-list">
-                        <li><i class="fa-regular fa-circle-check"></i> Plan curricular actualizado.</li>
-                        <li><i class="fa-regular fa-circle-check"></i> Docentes especializados por área.</li>
-                        <li><i class="fa-regular fa-circle-check"></i> Seguimiento personalizado.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Plan curricular actualizado.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Docentes especializados por área.</li>
+                        <li><i class="fa-solid fa-circle-check"></i> Seguimiento personalizado.</li>
                     </ul>
 
                     <div class="pathway-actions">
