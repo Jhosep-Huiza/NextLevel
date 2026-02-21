@@ -38,7 +38,7 @@
             </button>
 
             <ul class="nav-menu">
-                <li><a href="#" class="active">INICIO</a></li>
+                <li><a href="{{ route('web.inicio') }}">INICIO</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-trigger">NOSOTROS <span class="arrow-icon">&#9662;</span></a>
                     <ul class="dropdown-menu">
@@ -108,7 +108,7 @@
             <div class="hero-overlay">
                 <div class="hero-content">
                     <span class="section-tag">FILOSOFÍA INSTITUCIONAL</span>
-                    <h1>Nuestros Valores</h1>
+                    <h1>NUESTROS VALORES</h1>
                     <p>
                         La base que sostiene nuestra excelencia académica
                         y forma estudiantes con liderazgo, ética y propósito.
@@ -122,37 +122,37 @@
 
                 <div class="card-sobre">
                     <div class="icon-circle"><i class="fa-solid fa-graduation-cap"></i></div>
-                    <h3>Excelencia Académica</h3>
+                    <h3>EXCELENCIA ACADÉMICA</h3>
                     <p>Promovemos altos estándares educativos y mejora continua en cada proceso formativo.</p>
                 </div>
 
                 <div class="card-sobre">
                     <div class="icon-circle"><i class="fa-solid fa-lightbulb"></i></div>
-                    <h3>Innovación</h3>
+                    <h3>INNOVACIÓN</h3>
                     <p>Integramos tecnología y metodologías modernas que potencian el aprendizaje significativo.</p>
                 </div>
 
                 <div class="card-sobre">
                     <div class="icon-circle"><i class="fa-solid fa-hand-holding-heart"></i></div>
-                    <h3>Respeto</h3>
+                    <h3>RESPETO</h3>
                     <p>Fomentamos la empatía, convivencia sana y ética en toda nuestra comunidad educativa.</p>
                 </div>
 
                 <div class="card-sobre">
                     <div class="icon-circle"><i class="fa-solid fa-scale-balanced"></i></div>
-                    <h3>Responsabilidad</h3>
+                    <h3>RESPONSABILIDAD</h3>
                     <p>Asumimos compromisos académicos y humanos con disciplina y constancia.</p>
                 </div>
 
                 <div class="card-sobre">
                     <div class="icon-circle"><i class="fa-solid fa-users"></i></div>
-                    <h3>Trabajo en Equipo</h3>
+                    <h3>TRABAJO EN EQUIPO</h3>
                     <p>Creemos en la colaboración como herramienta clave para el crecimiento colectivo.</p>
                 </div>
 
                 <div class="card-sobre">
                     <div class="icon-circle"><i class="fa-solid fa-trophy"></i></div>
-                    <h3>Liderazgo</h3>
+                    <h3>LIDERAZGO</h3>
                     <p>Desarrollamos estudiantes capaces de influir, dirigir y transformar su entorno.</p>
                 </div>
 
@@ -160,7 +160,18 @@
         </section>
     </main>
 
-    <div class="footer-right">
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="{{ asset('images/logo_footer.png') }}" alt="Next Level Logo" class="footer-logo-img">
+                <div class="footer-contact">
+                    <p><i class="fa-solid fa-phone"></i> 923 317 626</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Carretera Federico Basadre Km. 6 (Al costado de la UNU)</p>
+                    <p><i class="fa-solid fa-envelope"></i> contacto@nextlevel.edu.pe</p>
+                </div>
+            </div>
+
+            <div class="footer-right">
                 <div class="footer-column">
                     <a href="{{ route('ubicacion') }}">UBICACIÓN</a>
                     <a href="#">CONTÁCTANOS</a>
