@@ -208,17 +208,18 @@
                     <p><i class="fa-solid fa-envelope"></i> contacto@nextlevel.edu.pe</p>
                 </div>
             </div>
+
             <div class="footer-right">
                 <div class="footer-column">
-                    <a href="#">UBICACIÓN</a>
+                    <a href="{{ route('ubicacion') }}">UBICACIÓN</a>
                     <a href="#">CONTÁCTANOS</a>
                     <a href="#">ADMISIÓN 2026</a>
-                    <a href="#">SOBRE NOSOTROS</a>
-                    <a href="#">NUESTROS VALORES</a>
+                    <a href="{{ route('sobre.nosotros') }}">SOBRE NOSOTROS</a>
+                    <a href="{{ route('nuestros.valores') }}">NUESTROS VALORES</a>
                 </div>
                 <div class="footer-column">
                     <a href="#">NIVELES</a>
-                    <a href="#">ACADEMIA</a>
+                    <a href="{{ route('academia') }}">ACADEMIA</a>
                     <a href="#">PAGOS EN LÍNEA</a>
                     <a href="#">MATRICULA 2026</a>
                     <a href="#">HORARIO DE CLASE</a>
@@ -227,6 +228,7 @@
                     <a href="{{ route('portal') }}">INTRANET</a>
                     <a href="#">PROTECCIÓN DE DATOS</a>
                     <a href="#">LIBRO DE RECLAMACIONES</a>
+
                     <div class="footer-social-icons">
                         <a href="https://www.tiktok.com/@next_level_novus" target="_blank" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
                         <a href="https://www.instagram.com/next_level_novus/" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>

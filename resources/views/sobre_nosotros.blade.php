@@ -162,7 +162,57 @@
             </div>
         </section>
 
-        <section class="mision-vision-section">
+        <section class="metodologia-section">
+            <div class="container metodologia-grid">
+                <div class="metodologia-img">
+                    <img src="{{ asset('images/imagen10.jpg') }}" alt="Metodología Next Level">
+                    <div class="img-badge">METODOLOGÍA 360°</div>
+                </div>
+                <div class="metodologia-content-box">
+                    <span class="upper-title">Nuestra Forma de Enseñar</span>
+                    <h2>NUESTRA METODOLOGÍA</h2>
+                    <div class="section-line"></div>
+
+                    <p class="metodologia-intro">
+                        Nuestro modelo garantiza resultados sostenibles mediante el acompañamiento constante y el uso de herramientas de vanguardia.
+                    </p>
+
+                    <ul class="metodologia-list-new">
+                        <li>
+                            <div class="list-icon"><i class="fa-solid fa-brain"></i></div>
+                            <div class="list-text">
+                                <strong>Aprendizaje Basado en Retos</strong>
+                                <span>Enfrentamos a los alumnos a situaciones reales.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                            <div class="list-text">
+                                <strong>Evaluación Continua</strong>
+                                <span>Seguimiento personalizado de cada avance.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-icon"><i class="fa-solid fa-microchip"></i></div>
+                            <div class="list-text">
+                                <strong>Integración Tecnológica</strong>
+                                <span>Uso de plataformas digitales en el aula.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="list-icon"><i class="fa-solid fa-users-gear"></i></div>
+                            <div class="list-text">
+                                <strong>Desarrollo Integral</strong>
+                                <span>Equilibrio entre lo académico y lo humano.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    <main>
+
+    <section class="mision-vision-section">
             <div class="container cards-grid">
                 <div class="card-sobre">
                     <div class="icon-circle"><i class="fa-solid fa-bullseye"></i></div>
@@ -183,28 +233,6 @@
                 </div>
             </div>
         </section>
-
-        <section class="metodologia-section">
-            <div class="container metodologia-grid">
-                <div class="metodologia-img">
-                    <img src="{{ asset('images/imagen10.jpg') }}" alt="Metodología Next Level">
-                </div>
-                <div class="metodologia-text">
-                    <h2>NUESTRA METODOLOGÍA</h2>
-                    <div class="section-line"></div>
-                    <ul class="metodologia-list">
-                        <li><i class="fa-solid fa-circle-check"></i> Aprendizaje basado en retos reales</li>
-                        <li><i class="fa-solid fa-circle-check"></i> Evaluación continua y personalizada</li>
-                        <li><i class="fa-solid fa-circle-check"></i> Integración tecnológica en el aula</li>
-                        <li><i class="fa-solid fa-circle-check"></i> Desarrollo integral académico y humano</li>
-                    </ul>
-                    <p>
-                        Nuestro modelo garantiza resultados sostenibles mediante el acompañamiento constante.
-                    </p>
-                </div>
-            </div>
-        </section>
-    </main>
 
     </main> <footer class="footer">
         <div class="footer-container">

@@ -46,7 +46,7 @@
 }
 
 .sobre-section {
-    padding: 100px 20px;
+    padding: 80px 20px;
     background: #ffffff;
 }
 
@@ -209,24 +209,108 @@
 }
 
 .metodologia-section {
-    padding: 80px 20px;
+    padding: 5px 20px;
+    background: #f8fafc;
 }
 
 .metodologia-grid {
     display: grid;
     grid-template-columns: 1fr 1.2fr;
-    gap: 50px;
+    gap: 80px;
     align-items: center;
+}
+
+.metodologia-img {
+    position: relative;
 }
 
 .metodologia-img img {
     width: 100%;
+    border-radius: 30px;
+    box-shadow: 20px 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+.img-badge {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    background: #B01030;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 15px;
+    font-weight: 800;
+    font-size: 14px;
+    box-shadow: 0 10px 20px rgba(176, 16, 48, 0.3);
+}
+
+.metodologia-content-box {
+    padding: 20px;
+}
+
+.metodologia-content-box h2 {
+    font-size: 42px;
+    color: #00235a;
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.metodologia-intro {
+    font-size: 17px;
+    color: #00235a;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.metodologia-list-new {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.metodologia-list-new li {
+    display: flex;
+    gap: 15px;
+    align-items: flex-start;
+}
+
+.list-icon {
+    width: 45px;
+    height: 45px;
+    background: rgba(27, 58, 107, 0.1);
+    color: #00235a;
     border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.list-text strong {
+    display: block;
+    color: #00235a;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.list-text span {
+    font-size: 13px;
+    color: #00235a;
+    line-height: 1.4;
 }
 
 @media (max-width: 992px) {
     .sobre-grid,
     .metodologia-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .metodologia-list-new {
         grid-template-columns: 1fr;
     }
 
