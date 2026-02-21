@@ -937,21 +937,24 @@ html, body {
 }
 
 .btn-welcome {
-    display: inline-block;
-    padding: 18px 75px;
-    background: var(--rojo-principal);
-    color: var(--blanco);
-    text-decoration: none;
-    font-weight: 700;
+    align-items: center;
+    background-color: #B01030;
     border-radius: 12px;
-    transition: all 0.3s ease;
+    color: white;
+    display: flex;
+    font-size: 17px;
+    font-weight: 700;
+    gap: 12px;
+    padding: 18px 73px;
+    text-decoration: none;
+    transition: 0.3s;
+    width: fit-content;
 }
 
 .btn-welcome:hover {
-    background: var(--rojo-oscuro);
+    box-shadow: 0 10px 20px rgba(184, 92, 92, 0.3);
     transform: translateY(-3px);
 }
-
 
 .pathway-section {
     background-color: #f8fafc;
@@ -1354,98 +1357,99 @@ html, body {
     }
 
     .welcome-section {
-        padding: 50px 0;
+        padding: 40px 15px;
     }
 
+    .welcome-container {
+        padding: 0 10px;
+    }
+
+    /* Cambiamos Grid por Flex para que el contenido empuje al siguiente */
     .welcome-grid {
-        display: grid !important;
-        grid-template-columns: 1fr !important;
-        gap: 20px !important;
-        width: 100%;
+        display: flex !important;
+        flex-direction: column !important; /* Apilado vertical */
+        gap: 25px !important; /* Espacio constante entre bloques */
+        align-items: center;
     }
 
+    /* Lado del Texto: Ahora es un contenedor flexible */
     .welcome-text-side {
-        display: contents;
-    }
-
-    .welcome-tag, .welcome-title, .welcome-line {
-        display: block;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center;
         text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%;
+        gap: 15px; /* Espacio automático entre títulos, descripción y lista */
     }
 
-    .welcome-tag{
-        margin-top: 20px;
-        margin-bottom: -10px;
+    /* Reset de márgenes manuales para que no se descuadre al agrandar */
+    .welcome-tag {
+        font-size: 13px;
+        margin-top: 5px;
+        margin-bottom: -5px;
+        order: 1;
     }
 
     .welcome-title {
-        font-size: 31px !important;
-        line-height: 1.2;
-        max-width: 90%;
+        font-size: 2.2rem !important; /* Puedes subirlo a 3rem y todo bajará solo */
+        line-height: 1.1;
+        margin: 0;
+        width: 100%;
+        order: 2;
     }
 
     .welcome-line {
-        margin-top: -15px;
+        margin: 5px auto;
+        order: 3;
     }
 
     .welcome-description {
-        grid-row: 4;
-        text-align: center;
-        font-size: 15px !important;
+        font-size: 16px !important;
         line-height: 1.6;
-        padding: 100 20px;
-        margin-bottom: 10px;
-        margin-top: -10px;
+        margin: 0;
+        order: 4;
     }
 
+    /* Imagen: Ahora se posiciona sola en el flujo */
     .welcome-image-side {
-        grid-row: 5;
-        width: 90%;
-        max-width: 350px;
-        margin: 10px auto 30px;
-        position: relative;
-    }
-
-    .image-frame {
-        border-radius: 20px;
+        width: 85%;
+        max-width: 320px;
+        margin: 10px auto;
+        order: 5; /* Aparece después del texto principal */
     }
 
     .welcome-list {
-        grid-row: 6;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-        width: fit-content;
-        margin: 0 auto 30px;
-        padding-left: 0;
+        margin: 10px 0;
+        gap: 12px;
+        order: 6;
     }
 
     .welcome-list li {
-        font-size: 13px !important;
-        margin-bottom: 12px;
-        text-align: left;
+        font-size: 15px !important; /* Agrandado un poco para legibilidad */
+        margin: 0;
     }
 
     .btn-welcome {
-        grid-row: 7;
-        display: block;
-        width: fit-content;
-        margin: 0 auto;
-        padding: 17px 70px;
-        margin-top: -25px;
-    }
+        /* Tu código original con 3 ajustes clave */
+        width: 90% !important;
+        max-width: 260px;
+        padding: 18px 0 !important; /* El !important asegura que ignore los 73px de PC */
+        margin: 10px auto 0 !important; /* El auto lo centra horizontalmente */
+        text-align: center;
+        order: 7;
 
+        /* Añadimos esto para que el texto no se mueva de su sitio */
+        justify-content: center;
+        display: flex !important;
+    }
+    /* Ajuste del Badge para que no se pierda al agrandar imagen */
     .experience-badge {
-        padding: 15px !important;
-        bottom: -20px !important;
+        padding: 12px 18px !important;
+        bottom: -15px !important;
         right: -10px !important;
-        border-radius: 15px !important;
-    }
-
-    .experience-badge .number {
-        font-size: 22px !important;
     }
     .pathway-visuals {
         height: auto !important;
