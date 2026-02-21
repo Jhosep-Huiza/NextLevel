@@ -77,7 +77,7 @@
                     <li class="has-submenu" data-target="submenu-niveles">
                         <span>NIVELES</span> <i class="fa-solid fa-chevron-right"></i>
                     </li>
-                    <li><a href="{{ route('ubicacion') }}">UBICACIÓN</a></li>
+                    <li><a href="{{ route('ubicacion') }}" class="active">UBICACIÓN</a></li>
                     <li><a href="#">MATRICULAS</a></li>
                     <li><a href="#">CONCURSOS</a></li>
                     <li><a href="{{ route('portal') }}">INTRANET</a></li>
