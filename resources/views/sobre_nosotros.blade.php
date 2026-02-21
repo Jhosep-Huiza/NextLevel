@@ -121,30 +121,42 @@
         <section class="sobre-section">
             <div class="container sobre-grid">
                 <div class="sobre-text">
+                    <span class="upper-title">Nuestra Esencia</span>
                     <h2>NUESTRA IDENTIDAD</h2>
                     <div class="section-line"></div>
-                    <p>
-                        En <strong>Next Level</strong>, entendemos que la educación no solo
-                        transmite conocimientos, sino que construye carácter, disciplina y liderazgo.
+                    <p class="p-highlight">
+                        En <strong>Next Level</strong>, entendemos que la educación no solo transmite conocimientos, sino que construye carácter, disciplina y liderazgo.
                     </p>
                     <p>
-                        Nuestro enfoque integra excelencia académica, tecnología, innovación
-                        pedógica y formación en valores, preparando estudiantes para competir en un entorno global.
+                        Nuestro enfoque integra excelencia académica, tecnología de vanguardia y una sólida formación en valores, preparando a nuestros estudiantes para destacar y competir en un entorno global altamente exigente.
                     </p>
+                    <div class="sobre-features">
+                        <span><i class="fa-solid fa-check-double"></i> Mentalidad Ganadora</span>
+                        <span><i class="fa-solid fa-check-double"></i> Visión Global</span>
+                    </div>
                 </div>
 
                 <div class="sobre-stats">
-                    <div class="stat-box">
-                        <h3>+10</h3>
-                        <span>Años proyectando excelencia</span>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="stat-info">
+                            <h3>100%</h3>
+                            <span>Educación vanguardista desde el primer día</span>
+                        </div>
                     </div>
-                    <div class="stat-box">
-                        <h3>100%</h3>
-                        <span>Compromiso académico</span>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fa-solid fa-user-shield"></i></div>
+                        <div class="stat-info">
+                            <h3>24/7</h3>
+                            <span>Seguimiento formativo y disciplinario</span>
+                        </div>
                     </div>
-                    <div class="stat-box">
-                        <h3>24/7</h3>
-                        <span>Seguimiento formativo</span>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <div class="stat-info">
+                            <h3>100%</h3>
+                            <span>Compromiso con el éxito del alumno</span>
+                        </div>
                     </div>
                 </div>
             </div>
