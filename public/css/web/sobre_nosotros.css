@@ -1,6 +1,6 @@
 .hero-sobre {
     position: relative;
-    height: 420px;
+    height: 450px;
     background: url("../images/imagen10.jpg") center/cover no-repeat;
     display: flex;
     align-items: center;
@@ -26,11 +26,11 @@
 .section-tag {
     display: inline-block;
     background: #B01030;
-    padding: 8px 18px;
-    border-radius: 35px;
-    font-size: 15px;
-    font-weight: 900;
-    letter-spacing: 1px;
+    padding: 5px 18px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
     margin-bottom: 10px;
 }
 
