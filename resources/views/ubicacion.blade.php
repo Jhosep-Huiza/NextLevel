@@ -107,6 +107,7 @@
             <div class="hero-content">
                 <span class="section-tag">VISÍTANOS</span>
                 <h1>NUESTRA UBICACIÓN</h1>
+                <div class="hero-line"></div>
                 <p>Estamos estratégicamente ubicados para brindar comodidad, seguridad y fácil acceso.</p>
             </div>
         </div>

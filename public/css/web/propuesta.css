@@ -18,13 +18,21 @@
     font-weight: bold;
     text-transform: uppercase;
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .propuesta-hero h1 {
     font-size: 2.8rem;
     margin-bottom: 20px;
     font-weight: 800;
+}
+
+.propuesta-line{
+    width: 90px;
+    height: 5px;
+    background: var(--rojo-principal);
+    margin: 10px auto;
+    margin-top: 25px;
 }
 
 .propuesta-hero p {
@@ -156,6 +164,13 @@
         max-width: 100%;
         height: auto;
         max-height: 35px;
+    }
+
+    .propuesta-line{
+        width: 70px;
+        height: 5px;
+        background: var(--rojo-principal);
+        margin: 0 auto 25px auto;
     }
 }
 

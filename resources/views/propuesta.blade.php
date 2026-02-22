@@ -102,6 +102,7 @@
     <header class="propuesta-hero">
         <span class="launch-badge">Inauguración Marzo 2026</span>
         <h1>Nuestra Propuesta Educativa</h1>
+        <div class="propuesta-line"></div>
         <p>En Next Level, nos enfocamos en una formación cercana y de calidad para Pucallpa. Creemos que la base del éxito está en el esfuerzo compartido, el respeto y una enseñanza práctica que prepare a nuestros alumnos para la vida real.</p>
     </header>
 

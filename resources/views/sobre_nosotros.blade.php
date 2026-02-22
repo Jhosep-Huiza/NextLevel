@@ -110,6 +110,7 @@
                 <div class="hero-content">
                     <span class="section-tag">INSTITUCIÓN EDUCATIVA</span>
                     <h1>SOBRE NOSOTROS</h1>
+                    <div class="hero-line"></div>
                     <p>
                         Transformamos la educación en una experiencia de alto impacto,
                         formando estudiantes con mentalidad ganadora y visión global.
