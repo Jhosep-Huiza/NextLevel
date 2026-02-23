@@ -116,6 +116,7 @@
     <section class="pathway-section">
         <div class="pathway-container">
             <h2 class="section-title-dark-centered">AMBIENTES QUE INSPIRAN</h2>
+            <div class="section-line"></div>
             <div class="exp-cards-grid">
                 <div class="path-card">
                     <img src="{{ asset('images/imagen10.jpg') }}" alt="Laboratorio">
