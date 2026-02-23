@@ -197,27 +197,37 @@
             </div>
         </section>
 
-        <section class="academia-presentacion">
-            <div class="container academia-presentacion-grid">
-                <div class="academia-presentacion-text">
-                    <h2>NUESTRA PROPUESTA</h2>
-                    <div class="title-line-left"></div>
-                    <p>
-                        Brindamos el más alto nivel académico y la mejor preparación preuniversitaria,
-                        actualizada a las exigencias de las universidades de nuestra región.
-                    </p>
-                    <div class="propuesta-callout">
-                        <i class="fa-solid fa-award"></i>
-                        <p>Alto estándar de exigencia para asegurar el ingreso de nuestros estudiantes.</p>
+        <section class="academia-propuesta-v2">
+            <div class="container">
+                <div class="propuesta-container-full">
+                    <div class="propuesta-image-side">
+                        <img src="{{ asset('images/imagen10.jpg') }}" alt="Propuesta Next Level">
+                        <div class="propuesta-overlay-badge">
+                            <i class="fa-solid fa-bolt"></i>
+                            <span>ALTO RENDIMIENTO</span>
+                        </div>
                     </div>
-                </div>
 
-                <div class="academia-presentacion-img">
-                    <img src="{{ asset('images/imagen10.jpg') }}" alt="Academia Next Level">
+                    <div class="propuesta-content-box">
+                        <span class="label-preu">METODOLOGÍA AVANZADA</span>
+                        <h2 class="title-blue">NUESTRA PROPUESTA</h2>
+                        <div class="separator-line"></div>
+                        <p>
+                            Brindamos el más alto nivel académico y la mejor preparación preuniversitaria,
+                            actualizada a las exigencias de las universidades de nuestra región y del país.
+                        </p>
+                        <ul class="propuesta-list-modern">
+                            <li><i class="fa-solid fa-circle-check"></i> Clases magistrales con expertos.</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Simulacros semanales calificados.</li>
+                            <li><i class="fa-solid fa-circle-check"></i> Tutoría y seguimiento individual.</li>
+                        </ul>
+                        <a href="https://wa.me/51923317625" class="btn-propuesta-whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i> ¡ASEGURA TU VACANTE!
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
-    </main>
 
     <section class="simulacros-section">
         <div class="container">
