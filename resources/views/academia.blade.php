@@ -133,19 +133,65 @@
                     </div>
 
                     <div class="academia-text">
-                        <h2>QUIÉNES SOMOS</h2>
+                        <span class="academy-label">MÉTODO NEXT LEVEL</span>
+                        <h2 class="title-blue">QUIÉNES SOMOS</h2>
                         <p>
-                            Somos una academia de prestigio y trayectoria intachable,
-                            gracias al trabajo esmerado y responsable de nuestro equipo docente y administrativo.
-                            Acompañamos a nuestros estudiantes en cada etapa de su preparación,
-                            brindándoles una formación sólida, disciplina constante y orientación académica
-                            para afrontar con seguridad el próximo examen de admisión.
+                        Somos una academia de prestigio y trayectoria intachable, gracias al
+                        trabajo esmerado y responsable de nuestro equipo docente y administrativo.
+                        Acompañamos a nuestros estudiantes en cada etapa de su preparación.
                         </p>
                         <p>
-                            Gracias a la confianza de nuestros alumnos y padres de familia,
-                            desde el inicio seguimos fortaleciendo la formación académica en la región,
-                            promoviendo valores, compromiso y excelencia en cada uno de nuestros procesos educativos.
+                            Brindamos una formación sólida, disciplina constante y orientación académica
+                            para afrontar con seguridad el próximo examen de admisión, fortaleciendo la
+                            excelencia en la región.
                         </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ciclos-section">
+            <div class="container">
+                <div class="section-header-centered">
+                    <h2>Programas de Preparación 2026</h2>
+                    <div class="title-line-red"></div>
+                </div>
+
+                <div class="ciclos-grid">
+                    <div class="ciclo-card">
+                        <div class="ciclo-badge">DISPONIBLE</div>
+                        <i class="fa-solid fa-calendar-check ciclo-icon"></i>
+                        <h3>CICLO ANUAL</h3>
+                        <p>Base sólida desde cero. Ideal para dominar todo el prospecto con calma y seguridad.</p>
+                        <ul class="ciclo-features">
+                            <li><i class="fa-solid fa-check"></i> Todas las áreas</li>
+                            <li><i class="fa-solid fa-check"></i> Material impreso</li>
+                        </ul>
+                        <a href="#" class="btn-ciclo">Ver Informes</a>
+                    </div>
+
+                    <div class="ciclo-card featured">
+                        <div class="ciclo-badge highlight">MÁS BUSCADO</div>
+                        <i class="fa-solid fa-rocket ciclo-icon"></i>
+                        <h3>CICLO SEMESTRAL</h3>
+                        <p>Intensivo y avanzado. Para quienes ya tienen base y buscan asegurar su ingreso directo.</p>
+                        <ul class="ciclo-features">
+                            <li><i class="fa-solid fa-check"></i> Nivel Exigencia</li>
+                            <li><i class="fa-solid fa-check"></i> Seminarios Nocturnos</li>
+                        </ul>
+                        <a href="#" class="btn-ciclo btn-red">Inscribirme</a>
+                    </div>
+
+                    <div class="ciclo-card">
+                        <div class="ciclo-badge">VACACIONES</div>
+                        <i class="fa-solid fa-sun ciclo-icon"></i>
+                        <h3>CICLO VERANO</h3>
+                        <p>Adelanto académico y reforzamiento para iniciar el año escolar con ventaja.</p>
+                        <ul class="ciclo-features">
+                            <li><i class="fa-solid fa-check"></i> 100% Práctico</li>
+                            <li><i class="fa-solid fa-check"></i> Talleres Dinámicos</li>
+                        </ul>
+                        <a href="#" class="btn-ciclo">Ver Informes</a>
                     </div>
                 </div>
             </div>
@@ -155,22 +201,15 @@
             <div class="container academia-presentacion-grid">
                 <div class="academia-presentacion-text">
                     <h2>NUESTRA PROPUESTA</h2>
+                    <div class="title-line-left"></div>
                     <p>
-                        Nuestra academia renueva su compromiso de brindar el más alto
-                        nivel académico y la mejor preparación preuniversitaria,
-                        actualizada a las exigencias de las universidades de nuestra región y del país.
+                        Brindamos el más alto nivel académico y la mejor preparación preuniversitaria,
+                        actualizada a las exigencias de las universidades de nuestra región.
                     </p>
-                    <p>
-                        Nuestra propuesta integral, basada en resultados y en brindar
-                        un servicio de calidad, se desarrolla en beneficio de los miles
-                        de jóvenes que año tras año buscan su ingreso a un centro superior de estudios.
-                    </p>
-                    <p>
-                        En la <strong>Academia Next Level</strong> complementamos esta formación
-                        de manera continua con un alto estándar de exigencia que
-                        permite la interacción y preparación oportuna para asegurar
-                        el ingreso de nuestros estudiantes.
-                    </p>
+                    <div class="propuesta-callout">
+                        <i class="fa-solid fa-award"></i>
+                        <p>Alto estándar de exigencia para asegurar el ingreso de nuestros estudiantes.</p>
+                    </div>
                 </div>
 
                 <div class="academia-presentacion-img">
@@ -179,6 +218,127 @@
             </div>
         </section>
     </main>
+
+    <section class="simulacros-section">
+        <div class="container">
+            <div class="simulacros-grid">
+                <div class="simulacros-content">
+                    <span class="academy-label">ALTO RENDIMIENTO</span>
+                    <h2 class="title-blue">ENTRENAMIENTO TIPO ADMISIÓN</h2>
+                    <p>Nuestro sistema de evaluación está diseñado para simular la presión y el nivel de exigencia de los exámenes reales. No solo medimos conocimientos, entrenamos la velocidad y precisión del postulante.</p>
+
+                    <div class="simulacros-features">
+                        <div class="sim-item">
+                            <div class="sim-icon"><i class="fa-solid fa-trophy"></i></div>
+                            <div class="sim-text">
+                                <h4>Ranking General</h4>
+                                <p>Mide tu nivel frente a otros postulantes con nuestro cuadro de méritos actualizado.</p>
+                            </div>
+                        </div>
+                        <div class="sim-item">
+                            <div class="sim-icon"><i class="fa-solid fa-chart-line"></i></div>
+                            <div class="sim-text">
+                                <h4>Estadísticas por Área</h4>
+                                <p>Identifica tus fortalezas y debilidades en cada curso del prospecto.</p>
+                            </div>
+                        </div>
+                        <div class="sim-item">
+                            <div class="sim-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                            <div class="sim-text">
+                                <h4>Solucionarios en Vivo</h4>
+                                <p>Al finalizar cada simulacro, nuestros docentes resuelven las preguntas clave.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="simulacros-visual">
+                    <div class="sim-card-floating">
+                        <div class="sim-header">
+                            <i class="fa-solid fa-file-pen"></i>
+                            <span>Próximo Simulacro</span>
+                        </div>
+                        <div class="sim-body">
+                            <span class="date">DOMINGO 15 DE MARZO</span>
+                            <span class="location">Campus Principal</span>
+                            <div class="sim-line"></div>
+                            <p>Abierto para alumnos y público en general</p>
+                        </div>
+                    </div>
+                    <img src="{{ asset('images/imagen10.jpg') }}" alt="Simulacro Next Level" class="sim-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="docentes-carousel-section">
+        <div class="info-container">
+            <div class="info-header">
+                <h2 class="section-title-dark">NUESTRA PLANA DOCENTE</h2>
+                <p class="info-intro">Liderazgo y trayectoria al servicio de la formación de nuestros alumnos.</p>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="docentes-carrusel-wrapper">
+                <button class="doc-nav-btn prev" id="docPrevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+
+                <div class="docentes-overflow">
+                    <div class="docentes-track" id="docentesTrack">
+                        <div class="docente-card-modern">
+                            <div class="docente-img-box"><img src="{{ asset('images/imagen10.jpg') }}" alt="Docente Academia"></div>
+                            <div class="docente-content">
+                                <h3>Nombre del Docente</h3>
+                                <span class="doc-tag">Especialidad</span>
+                                <p>Docente con amplia trayectoria en formación académica y valores para el éxito de nuestros alumnos.</p>
+                            </div>
+                        </div>
+                        <div class="docente-card-modern">
+                            <div class="docente-img-box"><img src="{{ asset('images/imagen10.jpg') }}" alt="Docente Academia"></div>
+                            <div class="docente-content">
+                                <h3>Nombre del Docente</h3>
+                                <span class="doc-tag">Especialidad</span>
+                                <p>Docente con amplia trayectoria en formación académica y valores para el éxito de nuestros alumnos.</p>
+                            </div>
+                        </div>
+                        <div class="docente-card-modern">
+                            <div class="docente-img-box"><img src="{{ asset('images/imagen10.jpg') }}" alt="Docente Academia"></div>
+                            <div class="docente-content">
+                                <h3>Nombre del Docente</h3>
+                                <span class="doc-tag">Especialidad</span>
+                                <p>Docente con amplia trayectoria en formación académica y valores para el éxito de nuestros alumnos.</p>
+                            </div>
+                        </div>
+                        <div class="docente-card-modern">
+                            <div class="docente-img-box"><img src="{{ asset('images/imagen10.jpg') }}" alt="Docente Academia"></div>
+                            <div class="docente-content">
+                                <h3>Nombre del Docente</h3>
+                                <span class="doc-tag">Especialidad</span>
+                                <p>Docente con amplia trayectoria en formación académica y valores para el éxito de nuestros alumnos.</p>
+                            </div>
+                        </div>
+                        <div class="docente-card-modern">
+                            <div class="docente-img-box"><img src="{{ asset('images/imagen10.jpg') }}" alt="Docente Academia"></div>
+                            <div class="docente-content">
+                                <h3>Nombre del Docente</h3>
+                                <span class="doc-tag">Especialidad</span>
+                                <p>Docente con amplia trayectoria en formación académica y valores para el éxito de nuestros alumnos.</p>
+                            </div>
+                        </div>
+                        <div class="docente-card-modern">
+                            <div class="docente-img-box"><img src="{{ asset('images/imagen10.jpg') }}" alt="Docente Academia"></div>
+                            <div class="docente-content">
+                                <h3>Nombre del Docente</h3>
+                                <span class="doc-tag">Especialidad</span>
+                                <p>Docente con amplia trayectoria en formación académica y valores para el éxito de nuestros alumnos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="doc-nav-btn next" id="docNextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
 
     <footer class="footer">
         <div class="footer-container">
@@ -228,6 +388,6 @@
     <script src="{{ asset('js/marquee_principal.js') }}"></script>
     <script src="{{ asset('js/nav-scroll.js') }}"></script>
     <script src="{{ asset('js/menu-mobile.js') }}"></script>
-
+    <script src="{{ asset('js/carrusel-docentes.js') }}"></script>
 </body>
 </html>
