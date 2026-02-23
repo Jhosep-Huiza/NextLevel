@@ -153,7 +153,7 @@
         <section class="ciclos-section">
             <div class="container">
                 <div class="section-header-centered">
-                    <h2>Programas de Preparación 2026</h2>
+                    <h2>PROGRAMAS DE PREPARACIÓN 2026</h2>
                     <div class="title-line-red"></div>
                 </div>
 
@@ -171,7 +171,7 @@
                     </div>
 
                     <div class="ciclo-card featured">
-                        <div class="ciclo-badge highlight">MÁS BUSCADO</div>
+                        <div class="ciclo-badge">MÁS BUSCADO</div>
                         <i class="fa-solid fa-rocket ciclo-icon"></i>
                         <h3>CICLO SEMESTRAL</h3>
                         <p>Intensivo y avanzado. Para quienes ya tienen base y buscan asegurar su ingreso directo.</p>
@@ -179,7 +179,7 @@
                             <li><i class="fa-solid fa-check"></i> Nivel Exigencia</li>
                             <li><i class="fa-solid fa-check"></i> Seminarios Nocturnos</li>
                         </ul>
-                        <a href="#" class="btn-ciclo btn-red">Inscribirme</a>
+                        <a href="#" class="btn-ciclo">Inscribirme</a>
                     </div>
 
                     <div class="ciclo-card">

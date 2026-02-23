@@ -68,7 +68,7 @@
 }
 
 .academia-intro {
-    padding: 60px 0;
+    padding: 80px 0;
     background: #ffffff;
 }
 
@@ -251,9 +251,8 @@
     display: block;
 }
 
-/* ===== SECCIÓN CICLOS - CORREGIDA ===== */
 .ciclos-section {
-    padding: 100px 0;
+    padding: 10px 0;
     background: #f8fafc;
 }
 
@@ -263,7 +262,7 @@
 }
 
 .section-header-centered h2 {
-    font-size: 2.5rem;
+    font-size: 2.9rem;
     color: #0F2749;
     font-weight: 800;
     margin-bottom: 15px;
@@ -299,25 +298,22 @@
     flex-direction: column;
 }
 
-/* Efecto hover SOLO para el borde de la tarjeta */
 .ciclo-card:hover {
     border: 4px solid #B01030;
     z-index: 2;
     box-shadow: 0 20px 40px rgba(176, 16, 48, 0.1);
 }
 
-/* Resetear cualquier cambio de color en los textos */
 .ciclo-card:hover h3,
 .ciclo-card:hover p,
 .ciclo-card:hover li,
 .ciclo-card:hover .ciclo-icon,
 .ciclo-card:hover .ciclo-features i,
 .ciclo-card:hover .ciclo-badge {
-    color: inherit !important;
+    color:#0F2749 !important;
     background: inherit !important;
 }
 
-/* Mantener colores específicos que deben permanecer */
 .ciclo-card:hover .ciclo-icon {
     color: #B01030 !important;
 }
@@ -391,7 +387,6 @@
     font-size: 14px;
 }
 
-/* Estilos para los botones de ciclo - estado normal */
 .btn-ciclo {
     display: block;
     padding: 12px 20px;
@@ -405,12 +400,6 @@
     border: 1px solid transparent;
 }
 
-.btn-ciclo.btn-red {
-    background: #B01030;
-    color: #fff;
-}
-
-/* SOLO el botón cambia cuando el mouse está en la tarjeta */
 .ciclo-card:hover .btn-ciclo {
     background: #B01030 !important;
     color: #fff !important;
@@ -508,7 +497,6 @@
     font-weight: 800;
 }
 
-/* ===== SECCIÓN SIMULACROS ===== */
 .simulacros-section {
     padding: 100px 0;
     background-color: #f1f5f9;
@@ -633,7 +621,6 @@
     margin: 12px 0;
 }
 
-/* ===== MEDIA QUERIES ===== */
 @media (max-width: 992px) {
     .hero-sobre {
         height: 450px;
