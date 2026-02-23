@@ -94,7 +94,7 @@
 }
 
 .academia-text h2 {
-    font-size: 40px;
+    font-size: 50px;
     margin-bottom: 20px;
     color: #B01030;
 }
@@ -102,7 +102,7 @@
 .academia-text p {
     margin-bottom: 20px;
     line-height: 1.8;
-    color: #444;
+    color: #576574;
     font-size: 16px;
 }
 
@@ -245,7 +245,7 @@
     font-weight: 800;
     font-size: 13px;
     letter-spacing: 2px;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
     display: block;
 }
 
