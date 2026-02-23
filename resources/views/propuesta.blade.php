@@ -161,16 +161,16 @@
                     <a href="{{ route('nuestros.valores') }}">NUESTROS VALORES</a>
                 </div>
                 <div class="footer-column">
-                    <a href="#">NIVELES</a>
+                    <a href="{{ route('portal') }}">INTRANET</a>
                     <a href="{{ route('academia') }}">ACADEMIA</a>
                     <a href="#">PAGOS EN LÍNEA</a>
                     <a href="#">MATRICULA 2026</a>
-                    <a href="#">HORARIO DE CLASE</a>
+                    <a href="#">LIBRO RECLAMACIONES</a>
                 </div>
                 <div class="footer-column social-align">
-                    <a href="{{ route('portal') }}">INTRANET</a>
-                    <a href="#">PROTECCIÓN DE DATOS</a>
-                    <a href="#">LIBRO DE RECLAMACIONES</a>
+                    <a href="#">POLÍTICA COOKIES</a>
+                    <a href="#">POLÍTICA PRIVACIDAD</a>
+                    <a href="#">TERMINOS Y CONDICIONES</a>
 
                     <div class="footer-social-icons">
                         <a href="https://www.tiktok.com/@next_level_novus" target="_blank" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>
