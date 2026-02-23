@@ -107,7 +107,7 @@
         <section class="hero-sobre">
             <div class="hero-overlay">
                 <div class="hero-content">
-                    <div class="hero-text-container"> <span class="section-tag">FILOSOFÍA INSTITUCIONAL</span>
+                    <span class="section-tag">FILOSOFÍA INSTITUCIONAL</span>
                     <h1>NUESTROS VALORES</h1>
                     <div class="hero-line"></div>
                     <p>
