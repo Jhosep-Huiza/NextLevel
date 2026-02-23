@@ -111,6 +111,7 @@
                 <p>Estamos estratégicamente ubicados para brindar comodidad, seguridad y fácil acceso.</p>
             </div>
         </div>
+        <img src="{{ asset('images/imagen10.jpg') }}" alt="Fondo" class="hero-bg-img">
     </section>
 
     <section class="ubicacion-section">

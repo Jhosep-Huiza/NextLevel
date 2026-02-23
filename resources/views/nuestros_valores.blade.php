@@ -116,6 +116,7 @@
                     </p>
                 </div>
             </div>
+            <img src="{{ asset('images/imagen10.jpg') }}" alt="Fondo" class="hero-bg-img">
         </section>
 
         <section class="values-grid-section">
