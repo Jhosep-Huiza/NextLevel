@@ -236,7 +236,7 @@ html, body {
 
 .diagonal-white p {
     font-size: 20px;
-    color: #444;
+    color: #576574;
     max-width: 500px;
 }
 
@@ -287,7 +287,7 @@ html, body {
 }
 
 .info-intro {
-    color: #0F2749;
+    color: #576574;
     font-size: 18px;
     margin-top: 10px;
     text-align: center;
@@ -659,7 +659,7 @@ html, body {
 }
 
 .docente-content p {
-    color: #0F2749;
+    color: #576574;
     font-size: 14px;
     line-height: 1.6;
 }
@@ -911,7 +911,7 @@ html, body {
 
 .welcome-description {
     font-size: 18px;
-    color: #0F2749;
+    color: #576574;
     line-height: 1.8;
     margin-bottom: 30px;
 }
@@ -984,7 +984,7 @@ html, body {
 }
 
 .pathway-description {
-    color: #0F2749;
+    color: #576574;
     font-size: 23px;
     line-height: 1.6;
     margin-bottom: 35px;
@@ -1696,7 +1696,7 @@ html, body {
     }
 
     .docente-content p {
-        color: #0F2749;
+        color: #576574;
         font-size: 14px !important;
         line-height: 1.6;
     }
@@ -1736,7 +1736,7 @@ html, body {
     .info-intro {
         font-size: 18px !important;
         text-align: center;
-        color: #0F2749;
+        color: #576574;
     }
 
     .info-organic-section {

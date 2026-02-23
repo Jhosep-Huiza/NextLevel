@@ -107,7 +107,7 @@
         <section class="hero-sobre" style="background: url('{{ asset('images/imagen10.jpg') }}') center/cover no-repeat;">
             <div class="hero-overlay">
                 <div class="hero-content">
-                    <span class="section-tag">FILOSOFÍA INSTITUCIONAL</span>
+                    <div class="hero-text-container"> <span class="section-tag">FILOSOFÍA INSTITUCIONAL</span>
                     <h1>NUESTROS VALORES</h1>
                     <p>
                         La base que sostiene nuestra excelencia académica
@@ -117,7 +117,11 @@
             </div>
         </section>
 
-        <section class="mision-vision-section">
+        <section class="values-grid-section">
+            <div class="values-intro">
+                <h2 class="section-title">FORMANDO CON PROPÓSITO</h2>
+                <div class="title-line"></div>
+            </div>
             <div class="container cards-grid">
 
                 <div class="card-sobre">
