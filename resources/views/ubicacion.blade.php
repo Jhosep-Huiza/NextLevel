@@ -49,7 +49,7 @@
                     <a href="#" class="dropdown-trigger">NIVELES <span class="arrow-icon">▾</span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Colegio</a></li>
-                        <li><a href="#">Academia</a></li>
+                        <li><a href="{{ route('academia') }}">Academia</a></li>
                     </ul>
                 </li>
                 <li><a href="{{ route('ubicacion') }}" class="active">UBICACIÓN</a></li>
@@ -96,7 +96,7 @@
                 <button class="back-btn" type="button"><i class="fa-solid fa-chevron-left"></i> REGRESAR</button>
                 <ul class="mobile-nav-list">
                     <li><a href="#">Colegio</a></li>
-                    <li><a href="#">Academia</a></li>
+                    <li><a href="{{ route('academia') }}">Academia</a></li>
                 </ul>
             </div>
         </div>
@@ -111,7 +111,6 @@
                 <p>Estamos estratégicamente ubicados para brindar comodidad, seguridad y fácil acceso.</p>
             </div>
         </div>
-        <img src="{{ asset('images/imagen10.jpg') }}" alt="Fondo" class="hero-bg-img">
     </section>
 
     <section class="ubicacion-section">

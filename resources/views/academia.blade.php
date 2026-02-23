@@ -38,7 +38,7 @@
             </button>
 
             <ul class="nav-menu">
-                <li><a href="#" class="active">INICIO</a></li>
+                <li><a href="{{ route('web.inicio') }}">INICIO</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-trigger">NOSOTROS <span class="arrow-icon">&#9662;</span></a>
                     <ul class="dropdown-menu">
@@ -50,7 +50,7 @@
                     <a href="#" class="dropdown-trigger">NIVELES <span class="arrow-icon">&#9662;</span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Colegio</a></li>
-                        <li><a href="#">Academia</a></li>
+                        <li><a href="{{ route('academia') }}">Academia</a></li>
                     </ul>
                 </li>
                 <li><a href="{{ route('ubicacion') }}">UBICACIÓN</a></li>
@@ -97,7 +97,7 @@
                 <button class="back-btn" type="button"><i class="fa-solid fa-chevron-left"></i> REGRESAR</button>
                 <ul class="mobile-nav-list">
                     <li><a href="#">Colegio</a></li>
-                    <li><a href="#">Academia</a></li>
+                    <li><a href="{{ route('academia') }}">Academia</a></li>
                 </ul>
             </div>
         </div>
@@ -108,7 +108,8 @@
             <div class="hero-overlay">
                 <div class="hero-content">
                     <span class="section-tag">PREPARACIÓN PREUNIVERSITARIA</span>
-                    <h1>Academia Next Level</h1>
+                    <h1>ACADEMIA NEXT LEVEL</h1>
+                    <div class="hero-line"></div>
                     <p>
                         Formación estratégica de alto rendimiento para ingresar
                         a las universidades más exigentes del país.
@@ -131,15 +132,18 @@
                     </div>
 
                     <div class="academia-text">
-                        <h2>Quiénes Somos</h2>
+                        <h2>QUIÉNES SOMOS</h2>
                         <p>
-                            Somos una academia de prestigio y trayectoria intachable, gracias al trabajo esmerado de nuestro equipo.
-                            Brindamos una formación sólida, disciplina constante y orientación estratégica para afrontar con seguridad
-                            cada examen de admisión.
+                            Somos una academia de prestigio y trayectoria intachable,
+                            gracias al trabajo esmerado y responsable de nuestro equipo docente y administrativo.
+                            Acompañamos a nuestros estudiantes en cada etapa de su preparación,
+                            brindándoles una formación sólida, disciplina constante y orientación académica
+                            para afrontar con seguridad el próximo examen de admisión.
                         </p>
                         <p>
-                            Desde nuestros inicios, seguimos fortaleciendo la formación académica en la región,
-                            promoviendo valores y excelencia en cada proceso educativo.
+                            Gracias a la confianza de nuestros alumnos y padres de familia,
+                            desde el inicio seguimos fortaleciendo la formación académica en la región,
+                            promoviendo valores, compromiso y excelencia en cada uno de nuestros procesos educativos.
                         </p>
                     </div>
                 </div>
@@ -149,25 +153,44 @@
         <section class="academia-presentacion">
             <div class="container academia-presentacion-grid">
                 <div class="academia-presentacion-text">
-                    <h2>Nuestra Propuesta</h2>
+                    <h2>NUESTRA PROPUESTA</h2>
                     <p>
-                        Actualizada a las exigencias de las universidades locales y nacionales, nuestra propuesta integral
-                        se desarrolla en beneficio de los jóvenes que buscan asegurar su vacante.
+                        Nuestra academia renueva su compromiso de brindar el más alto
+                        nivel académico y la mejor preparación preuniversitaria,
+                        actualizada a las exigencias de las universidades de nuestra región y del país.
                     </p>
                     <p>
-                        En <strong>Academia Next Level</strong> complementamos la formación con un alto estándar de exigencia
-                        y una interacción constante que garantiza la preparación oportuna de nuestros estudiantes.
+                        Nuestra propuesta integral, basada en resultados y en brindar
+                        un servicio de calidad, se desarrolla en beneficio de los miles
+                        de jóvenes que año tras año buscan su ingreso a un centro superior de estudios.
+                    </p>
+                    <p>
+                        En la <strong>Academia Next Level</strong> complementamos esta formación
+                        de manera continua con un alto estándar de exigencia que
+                        permite la interacción y preparación oportuna para asegurar
+                        el ingreso de nuestros estudiantes.
                     </p>
                 </div>
 
                 <div class="academia-presentacion-img">
-                    <img src="{{ asset('images/imagen10.jpg') }}" alt="Estudiantes Academia Next Level">
+                    <img src="{{ asset('images/imagen10.jpg') }}" alt="Academia Next Level">
                 </div>
             </div>
         </section>
     </main>
 
-    <div class="footer-right">
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="{{ asset('images/logo_footer.png') }}" alt="Next Level Logo" class="footer-logo-img">
+                <div class="footer-contact">
+                    <p><i class="fa-solid fa-phone"></i> 923 317 626</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Carretera Federico Basadre Km. 6 (Al costado de la UNU)</p>
+                    <p><i class="fa-solid fa-envelope"></i> contacto@nextlevel.edu.pe</p>
+                </div>
+            </div>
+
+            <div class="footer-right">
                 <div class="footer-column">
                     <a href="{{ route('ubicacion') }}">UBICACIÓN</a>
                     <a href="#">CONTÁCTANOS</a>

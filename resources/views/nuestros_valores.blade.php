@@ -50,7 +50,7 @@
                     <a href="#" class="dropdown-trigger">NIVELES <span class="arrow-icon">&#9662;</span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Colegio</a></li>
-                        <li><a href="#">Academia</a></li>
+                        <li><a href="{{ route('academia') }}">Academia</a></li>
                     </ul>
                 </li>
                 <li><a href="{{ route('ubicacion') }}">UBICACIÓN</a></li>
@@ -97,18 +97,19 @@
                 <button class="back-btn" type="button"><i class="fa-solid fa-chevron-left"></i> REGRESAR</button>
                 <ul class="mobile-nav-list">
                     <li><a href="#">Colegio</a></li>
-                    <li><a href="#">Academia</a></li>
+                    <li><a href="{{ route('academia') }}">Academia</a></li>
                 </ul>
             </div>
         </div>
     </div>
 
     <main>
-        <section class="hero-sobre" style="background: url('{{ asset('images/imagen10.jpg') }}') center/cover no-repeat;">
+        <section class="hero-sobre">
             <div class="hero-overlay">
                 <div class="hero-content">
                     <div class="hero-text-container"> <span class="section-tag">FILOSOFÍA INSTITUCIONAL</span>
                     <h1>NUESTROS VALORES</h1>
+                    <div class="hero-line"></div>
                     <p>
                         La base que sostiene nuestra excelencia académica
                         y forma estudiantes con liderazgo, ética y propósito.

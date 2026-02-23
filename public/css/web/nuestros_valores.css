@@ -1,19 +1,21 @@
 .hero-sobre {
     position: relative;
-    height: 480px;
+    height: 450px;
+    background-image: url('../../images/imagen10.jpg');
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
 }
 
 .hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(135deg, rgba(15, 39, 73, 0.92) 0%, rgba(27, 58, 107, 0.8) 100%);
+    background: rgba(15, 39, 73, 0.85);
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    padding: 0 20px;
 }
 
 .hero-text-container {
@@ -26,13 +28,14 @@
 .section-tag {
     display: inline-block;
     background: #B01030;
-    padding: 7px 22px;
+    color: #ffffff;
+    padding: 5px 24px;
     border-radius: 50px;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 800;
-    letter-spacing: 2.5px;
-    margin-bottom: 25px;
-    box-shadow: 0 4px 15px rgba(176, 16, 48, 0.3);
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 .hero-content h1 {
@@ -41,6 +44,13 @@
     margin-bottom: 20px;
     letter-spacing: -1.5px;
     line-height: 1.1;
+}
+
+.hero-line{
+    width: 90px;
+    height: 5px;
+    background: var(--rojo-principal);
+    margin: 10px auto;
 }
 
 .hero-content p {
@@ -137,11 +147,41 @@
 }
 
 @media (max-width: 992px) {
-    .cards-grid {
-        grid-template-columns: 1fr;
+    .hero-sobre {
+        height: 400px; /* Altura estable para evitar saltos al hacer scroll */
+    }
+
+    .hero-text-container {
+        padding: 0 15px;
+        width: 100%;
+    }
+
+    .section-tag {
+        font-size: 11px;
+        padding: 6px 16px;
+        margin-bottom: 20px;
+        letter-spacing: 1.5px;
     }
 
     .hero-content h1 {
-        font-size: 38px;
+        font-size: 34px !important; /* Ajustado para que no se corte en iPhone */
+        letter-spacing: -0.5px;
+        margin-bottom: 15px;
+        font-weight: 800;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+        line-height: 1.4;
+        max-width: 100%;
+        opacity: 0.9;
+    }
+
+    /* ==========================================
+       RESPONSIVO: GRID DE VALORES
+       ========================================== */
+    .cards-grid {
+        grid-template-columns: 1fr; /* Una sola columna para móvil */
+        gap: 25px;
     }
 }
