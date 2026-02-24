@@ -671,33 +671,6 @@
         opacity: 0.9;
     }
 
-    .propuesta-container-full {
-        flex-direction: column;
-        min-height: auto;
-    }
-
-    .propuesta-image-side {
-        width: 100%;
-        height: 350px;
-        border-radius: 30px;
-    }
-
-    .propuesta-content-box {
-        position: relative;
-        width: 90%;
-        margin: -60px auto 0;
-        padding: 40px 30px;
-        text-align: center;
-    }
-
-    .separator-line {
-        margin: 20px auto;
-    }
-
-    .propuesta-list-modern li {
-        justify-content: center;
-    }
-
     .ciclos-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
@@ -769,11 +742,6 @@
         text-align: center;
     }
 
-    .simulacros-content .title-blue {
-        font-size: 1.8rem;
-        text-align: center;
-    }
-
     .simulacros-features {
         text-align: left;
         max-width: 500px;
@@ -830,5 +798,118 @@
     .sim-body p {
         font-size: 10px !important;
         line-height: 1.2;
+    }
+    .ciclos-section {
+        padding: 50px 0;
+    }
+
+    .section-header-centered h2 {
+        font-size: 2.4rem;
+        padding: 0 20px;
+    }
+
+    .ciclos-grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 0 25px;
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    .ciclo-card {
+        padding: 40px 25px;
+    }
+
+    .ciclo-card:hover {
+        transform: translateY(-5px);
+        z-index: 2;
+    }
+
+    .ciclo-card h3 {
+        font-size: 1.6rem;
+    }
+
+    .ciclo-features {
+        margin-bottom: 20px;
+    }
+
+    .ciclo-features li {
+        font-size: 15px;
+    }
+
+    .academia-propuesta-v2 {
+        padding: 60px 0;
+        margin-top: -20px;
+    }
+
+    .propuesta-container-full {
+        flex-direction: column;
+        min-height: auto;
+        display: flex;
+        padding: 0 20px;
+    }
+
+    .propuesta-image-side {
+        width: 100%;
+        height: 300px;
+        border-radius: 25px;
+        order: 1;
+    }
+
+    .propuesta-overlay-badge {
+        top: 20px;
+        left: 20px;
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    .propuesta-content-box {
+        position: relative;
+        width: 100%;
+        right: auto;
+        margin: -40px auto 0;
+        padding: 30px 20px;
+        border-radius: 25px;
+        box-shadow: 0 15px 40px rgba(15, 39, 73, 0.1);
+        z-index: 10;
+        order: 2;
+    }
+
+    .label-preu {
+        text-align: center;
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .propuesta-content-box h2 {
+        font-size: 2.4rem !important;
+        text-align: center;
+    }
+
+    .separator-line {
+        margin: 15px auto;
+    }
+
+    .propuesta-content-box p {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .propuesta-list-modern {
+        margin: 25px 0;
+    }
+
+    .propuesta-list-modern li {
+        font-size: 16px;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .btn-propuesta-whatsapp {
+        padding: 15px;
+        font-size: 16px;
+        width: 100%;
     }
 }
