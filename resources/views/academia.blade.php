@@ -150,6 +150,58 @@
             </div>
         </section>
 
+        <section class="simulacros-section">
+            <div class="container">
+                <div class="simulacros-grid">
+                    <div class="simulacros-content">
+                        <span class="academy-label">ALTO RENDIMIENTO</span>
+                        <h2 class="title-blue">ENTRENAMIENTO TIPO ADMISIÓN</h2>
+                        <p>Nuestro sistema de evaluación está diseñado para simular la presión y el nivel de exigencia de los exámenes reales. No solo medimos conocimientos, entrenamos la velocidad y precisión del postulante.</p>
+
+                        <div class="simulacros-features">
+                            <div class="sim-item">
+                                <div class="sim-icon"><i class="fa-solid fa-trophy"></i></div>
+                                <div class="sim-text">
+                                    <h4>Ranking General</h4>
+                                    <p>Mide tu nivel frente a otros postulantes con nuestro cuadro de méritos actualizado.</p>
+                                </div>
+                            </div>
+                            <div class="sim-item">
+                                <div class="sim-icon"><i class="fa-solid fa-chart-line"></i></div>
+                                <div class="sim-text">
+                                    <h4>Estadísticas por Área</h4>
+                                    <p>Identifica tus fortalezas y debilidades en cada curso del prospecto.</p>
+                                </div>
+                            </div>
+                            <div class="sim-item">
+                                <div class="sim-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                                <div class="sim-text">
+                                    <h4>Solucionarios en Vivo</h4>
+                                    <p>Al finalizar cada simulacro, nuestros docentes resuelven las preguntas clave.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="simulacros-visual">
+                        <div class="sim-card-floating">
+                            <div class="sim-header">
+                                <i class="fa-solid fa-file-pen"></i>
+                                <span>Próximo Simulacro</span>
+                            </div>
+                            <div class="sim-body">
+                                <span class="date">DOMINGO 15 DE MARZO</span>
+                                <span class="location">Campus Principal</span>
+                                <div class="sim-line"></div>
+                                <p>Abierto para alumnos y público en general</p>
+                            </div>
+                        </div>
+                        <img src="{{ asset('images/imagen10.jpg') }}" alt="Simulacro Next Level" class="sim-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="ciclos-section">
             <div class="container">
                 <div class="section-header-centered">
@@ -229,62 +281,10 @@
             </div>
         </section>
 
-    <section class="simulacros-section">
-        <div class="container">
-            <div class="simulacros-grid">
-                <div class="simulacros-content">
-                    <span class="academy-label">ALTO RENDIMIENTO</span>
-                    <h2 class="title-blue">ENTRENAMIENTO TIPO ADMISIÓN</h2>
-                    <p>Nuestro sistema de evaluación está diseñado para simular la presión y el nivel de exigencia de los exámenes reales. No solo medimos conocimientos, entrenamos la velocidad y precisión del postulante.</p>
-
-                    <div class="simulacros-features">
-                        <div class="sim-item">
-                            <div class="sim-icon"><i class="fa-solid fa-trophy"></i></div>
-                            <div class="sim-text">
-                                <h4>Ranking General</h4>
-                                <p>Mide tu nivel frente a otros postulantes con nuestro cuadro de méritos actualizado.</p>
-                            </div>
-                        </div>
-                        <div class="sim-item">
-                            <div class="sim-icon"><i class="fa-solid fa-chart-line"></i></div>
-                            <div class="sim-text">
-                                <h4>Estadísticas por Área</h4>
-                                <p>Identifica tus fortalezas y debilidades en cada curso del prospecto.</p>
-                            </div>
-                        </div>
-                        <div class="sim-item">
-                            <div class="sim-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
-                            <div class="sim-text">
-                                <h4>Solucionarios en Vivo</h4>
-                                <p>Al finalizar cada simulacro, nuestros docentes resuelven las preguntas clave.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="simulacros-visual">
-                    <div class="sim-card-floating">
-                        <div class="sim-header">
-                            <i class="fa-solid fa-file-pen"></i>
-                            <span>Próximo Simulacro</span>
-                        </div>
-                        <div class="sim-body">
-                            <span class="date">DOMINGO 15 DE MARZO</span>
-                            <span class="location">Campus Principal</span>
-                            <div class="sim-line"></div>
-                            <p>Abierto para alumnos y público en general</p>
-                        </div>
-                    </div>
-                    <img src="{{ asset('images/imagen10.jpg') }}" alt="Simulacro Next Level" class="sim-img">
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section class="docentes-carousel-section">
         <div class="info-container">
             <div class="info-header">
-                <h2 class="section-title-dark">NUESTRA PLANA DOCENTE</h2>
+                <h2 class="section-title-dark">NUESTRA PLANA DE DOCENTE</h2>
                 <p class="info-intro">Liderazgo y trayectoria al servicio de la formación de nuestros alumnos.</p>
                 <div class="title-underline"></div>
             </div>

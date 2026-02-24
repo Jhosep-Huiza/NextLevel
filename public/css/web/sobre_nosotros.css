@@ -365,19 +365,20 @@
 }
 
 @media (max-width: 992px) {
-    .hero-content h1 {
-        font-size: 39px;
+    .hero-sobre{
+        height: 400px;
     }
-
-    .hero-line{
-        width: 70px;
-        height: 5px;
-        background: var(--rojo-principal);
-        margin: 0 auto 25px auto;
+    .hero-content h1 {
+        font-size: 34px !important;
+        letter-spacing: -0.5px;
+        margin-bottom: 15px;
+        font-weight: 800;
     }
 
     .hero-content p{
-        font-size: 18px;
+        font-size: 15px;
+        line-height: 1.4;
+        max-width: 100%;
         opacity: 0.9;
     }
 

@@ -235,7 +235,7 @@
                         <div class="icon-circle">
                             <i class="fa-solid fa-graduation-cap"></i>
                         </div>
-                        <h3>Excelencia Académica</h3>
+                        <h3>EXCELENCIA ACADÉMICA</h3>
                         <p>Compromiso con la calidad educativa y el desarrollo integral de nuestros estudiantes</p>
                     </div>
 
@@ -243,7 +243,7 @@
                         <div class="icon-circle">
                             <i class="fa-solid fa-lightbulb"></i>
                         </div>
-                        <h3>Innovación</h3>
+                        <h3>INNOVACIÓNn</h3>
                         <p>Métodos educativos modernos y tecnología de vanguardia para el aprendizaje</p>
                     </div>
 
@@ -251,7 +251,7 @@
                         <div class="icon-circle">
                             <i class="fa-solid fa-hand-holding-heart"></i>
                         </div>
-                        <h3>Valores Humanos</h3>
+                        <h3>VALORES HUMANOS</h3>
                         <p>Formación en ética, respeto y responsabilidad social</p>
                     </div>
                 </div>
