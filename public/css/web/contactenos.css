@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.contact-hero{
+    padding: 30px 20px 60px;
+    background:#f5f6f8;
+}
+
+.contact-hero-container{
+    max-width:1200px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.contact-hero-img{
+    position:relative;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.contact-hero-img img{
+    width:100%;
+    height:600px;
+    object-fit:cover;
+    display:block;
+}
+
+.contact-hero-img{
+    position:relative;
+    overflow:hidden;
+    border-radius:20px;
+}
+
+.img-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:.4s ease;
+}
+
+.overlay-box{
+    background:rgba(255, 255, 255, 0.781);
+    color:#1e2a44;
+    padding:25px 35px;
+    border-radius:14px;
+    font-size:22px;
+    font-weight:bold;
+    text-align:center;
+    max-width:80%;
+    opacity:0;
+    transform:translateY(30px);
+    transition:.4s ease;
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+}
+
+.contact-hero-img:hover .img-overlay{
+    background:rgba(0,0,0,.45);
+}
+
+.contact-hero-img:hover .overlay-box{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.contact-hero-info{
+    background:white;
+    padding:35px;
+    border-radius:18px;
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+    color: #0F2749;
+}
+
+.info-contacto {
+    margin-bottom: 30px;
+    line-height: 1.6;
+
+}
+
+.form-contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.form-contacto input,
+.form-contacto select,
+.form-contacto textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 14px;
+    border-color: #1f3c88;
+    background-color: aliceblue;
+    outline: 0;
+    color: #0F2749;
+}
+
+.form-contacto select{
+    appearance:none;
+    background:aliceblue;
+    color: #0F2749;
+    cursor:pointer;
+}
+
+.form-contacto select{
+    background-image:url("data:image/svg+xml;utf8,<svg fill='%23666' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat:no-repeat;
+    background-position:right 10px center;
+    background-size:16px;
+    padding-right:35px;
+}
+
+.form-contacto textarea {
+    grid-column: span 2;
+    resize: none;
+}
+
+.form-contacto button {
+    background-color: #162c63;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-contacto button:hover {
+    background-color: #132656;
+}
+
+@media (hover:none){
+    .img-overlay{
+        background:rgba(0,0,0,.25);
+    }
+
+    .overlay-box{
+        opacity:1;
+        transform:translateY(0);
+        font-size:18px;
+        padding:18px;
+    }
+}
+
+@media (max-width: 992px){
+    .contact-hero-container{
+        grid-template-columns:1fr;
+    }
+
+    .contact-hero-img img{
+        height:320px;
+    }
+}
+
+@media (max-width: 576px){
+    .contact-hero{
+        padding:100px 15px 40px;
+    }
+
+    .contact-hero-img img{
+        height:240px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .form-contacto {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-contacto textarea {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-contacto {
+        grid-template-columns: 1fr;
+    }
+
+    .form-contacto textarea {
+        grid-column: span 1;
+    }
+}
+
+@media (max-width:768px){
+
+    section{
+        padding: 10px;
+    }
+
+    .container-contacto{
+        padding: 15px;
+    }
+
+    .info-contacto{
+        margin-bottom: 15px;
+    }
+
+    h3{
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+}

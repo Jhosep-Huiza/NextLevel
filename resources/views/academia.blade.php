@@ -364,7 +364,7 @@
             <div class="footer-right">
                 <div class="footer-column">
                     <a href="{{ route('ubicacion') }}">UBICACIÓN</a>
-                    <a href="#">CONTÁCTANOS</a>
+                    <a href="{{ route('contactenos') }}">CONTÁCTANOS</a>
                     <a href="#">ADMISIÓN 2026</a>
                     <a href="{{ route('sobre.nosotros') }}">SOBRE NOSOTROS</a>
                     <a href="{{ route('nuestros.valores') }}">NUESTROS VALORES</a>

@@ -171,7 +171,7 @@
             <div class="footer-left">
                 <img src="{{ asset('images/logo_footer.png') }}" alt="Next Level Logo" class="footer-logo-img">
                 <div class="footer-contact">
-                    <p><i class="fa-solid fa-phone"></i> 923 317 626</p>
+                    <p><i class="fa-solid fa-phone"></i> +51 923 317 626</p>
                     <p><i class="fa-solid fa-location-dot"></i> Carretera Federico Basadre Km. 6 (Al costado de la UNU)</p>
                     <p><i class="fa-solid fa-envelope"></i> contacto@nextlevel.edu.pe</p>
                 </div>
@@ -180,7 +180,7 @@
             <div class="footer-right">
                 <div class="footer-column">
                     <a href="{{ route('ubicacion') }}">UBICACIÓN</a>
-                    <a href="#">CONTÁCTANOS</a>
+                    <a href="{{ route('contactenos') }}">CONTÁCTANOS</a>
                     <a href="#">ADMISIÓN 2026</a>
                     <a href="{{ route('sobre.nosotros') }}">SOBRE NOSOTROS</a>
                     <a href="{{ route('nuestros.valores') }}">NUESTROS VALORES</a>

@@ -41,3 +41,7 @@ Route::get('/sobre-nosotros', function () {
 Route::get('/academia', function () {
     return view('academia');
 })->name('academia');
+
+Route::get('/contactenos', function (){
+    return view('contactenos');
+})->name('contactenos');
