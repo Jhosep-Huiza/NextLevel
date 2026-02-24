@@ -156,7 +156,7 @@
                     <a href="{{ route('nuestros.valores') }}">NUESTROS VALORES</a>
                 </div>
                 <div class="footer-column">
-                    <a href="{{ route('portal') }}">INTRANET</a>
+                    <a href="#">GALERÍA</a>
                     <a href="{{ route('academia') }}">ACADEMIA</a>
                     <a href="#">PAGOS EN LÍNEA</a>
                     <a href="#">MATRICULA 2026</a>
