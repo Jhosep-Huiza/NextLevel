@@ -754,7 +754,7 @@
 
     .simulacros-section {
         padding: 50px 0;
-        margin-top: 0;
+        margin-top: -30px;
     }
 
     .simulacros-grid {
@@ -787,10 +787,12 @@
     .simulacros-visual {
         order: 2;
         width: 100%;
-        max-width: 320px;
+        max-width: 330px;
         margin: 20px auto 0;
         position: relative;
         padding-left: 10px;
+        margin-top: -4px;
+        left: -2%;
     }
 
     .sim-img {
@@ -803,7 +805,7 @@
     .sim-card-floating {
         position: absolute;
         top: -20px;
-        left: 0;
+        left: -1%;
         width: 170px;
         padding: 12px;
         border-radius: 15px;
@@ -811,8 +813,22 @@
         transform: none;
     }
 
-    .sim-header { font-size: 11px; margin-bottom: 8px; }
-    .sim-body .date { font-size: 12px; font-weight: 800; }
-    .sim-body .location { font-size: 10px; }
-    .sim-body p { font-size: 10px !important; line-height: 1.2; }
+    .sim-header {
+        font-size: 11px;
+        margin-bottom: 8px;
+    }
+
+    .sim-body .date {
+        font-size: 12px;
+        font-weight: 800;
+    }
+
+    .sim-body .location {
+        font-size: 10px;
+    }
+
+    .sim-body p {
+        font-size: 10px !important;
+        line-height: 1.2;
+    }
 }
