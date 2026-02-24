@@ -671,14 +671,6 @@
         opacity: 0.9;
     }
 
-    .academia-video {
-        justify-content: center;
-    }
-
-    .video-wrapper {
-        max-width: 100%;
-    }
-
     .propuesta-container-full {
         flex-direction: column;
         min-height: auto;
@@ -711,24 +703,116 @@
         gap: 20px;
     }
 
+    .academia-intro {
+        margin-top: -10px;
+        padding: 60px 0;
+    }
+
+    .academia-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        text-align: center;
+        padding: 0 25px;
+    }
+
+    .academia-video {
+        order: 2;
+        width: 100%;
+        justify-content: center;
+        margin-top: -20px;
+    }
+
+    .video-wrapper {
+        margin-left: 0;
+        max-width: 100%;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    .academia-text {
+        order: 1;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .academia-text h2 {
+        font-size: 2.2rem;
+        margin-bottom: 15px;
+    }
+
+    .title-blue {
+        font-size: 2.4rem !important;
+        margin-bottom: 15px;
+    }
+
+    .academia-text p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .simulacros-section {
+        padding: 50px 0;
+        margin-top: 0;
+    }
+
     .simulacros-grid {
-        grid-template-columns: 1fr;
-        gap: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
         padding: 0 20px;
     }
 
+    .simulacros-content {
+        order: 1;
+        text-align: center;
+    }
+
     .simulacros-content .title-blue {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .simulacros-features {
+        text-align: left;
+        max-width: 500px;
+        margin: 30px auto 0;
+    }
+
+    .sim-item {
+        margin-bottom: 20px;
+    }
+
+    .simulacros-visual {
+        order: 2;
+        width: 100%;
+        max-width: 320px;
+        margin: 20px auto 0;
+        position: relative;
+        padding-left: 10px;
     }
 
     .sim-img {
-        max-width: 100%;
+        width: 100%;
+        height: auto;
+        border-radius: 25px;
+        display: block;
     }
 
     .sim-card-floating {
+        position: absolute;
         top: -20px;
-        left: -20px;
-        width: 180px;
+        left: 0;
+        width: 170px;
         padding: 12px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(176, 16, 48, 0.25);
+        transform: none;
     }
+
+    .sim-header { font-size: 11px; margin-bottom: 8px; }
+    .sim-body .date { font-size: 12px; font-weight: 800; }
+    .sim-body .location { font-size: 10px; }
+    .sim-body p { font-size: 10px !important; line-height: 1.2; }
 }
