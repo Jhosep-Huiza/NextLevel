@@ -273,7 +273,7 @@
                             <li><i class="fa-solid fa-circle-check"></i> Simulacros semanales calificados.</li>
                             <li><i class="fa-solid fa-circle-check"></i> Tutoría y seguimiento individual.</li>
                         </ul>
-                        <a href="https://wa.me/51923317625" class="btn-propuesta-whatsapp">
+                        <a href="https://wa.me/51923317625?text=Hola%20Next%20Level,%20deseo%20información.%20Me%20interesa:%0A%0A1.%20Matrícula%20Colegio%20%0A2.%20Ciclos%20Academia%20%0A3.%20Agendar%20Visita%20Guiada%0A4.%20Costos%20y%20Pensiones%0A%0APor%20favor,%20bríndeme%20detalles." class="btn-propuesta-whatsapp">
                             <i class="fa-brands fa-whatsapp"></i> ¡ASEGURA TU VACANTE!
                         </a>
                     </div>
