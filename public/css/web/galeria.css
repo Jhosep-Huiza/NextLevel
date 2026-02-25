@@ -212,14 +212,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    /* Zona de seguridad para el contador (5/44) */
     padding-bottom: 60px;
     box-sizing: border-box;
 }
 
 .lightbox-image-container img {
     max-width: 100%;
-    /* Reducimos el alto máximo al 70% para asegurar que no choque arriba ni abajo */
     max-height: 70vh;
     object-fit: contain;
     border-radius: 8px;
@@ -231,7 +229,7 @@
     top: 20px;
     right: 30px;
     color: white;
-    font-size: 28px; /* Un poco más pequeño ayuda a que el centrado se vea mejor */
+    font-size: 28px;
     font-weight: bold;
     cursor: pointer;
     z-index: 10000;
@@ -240,13 +238,9 @@
     background: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
     border: 2px solid white;
-
-    /* CENTRADO ABSOLUTO */
     display: flex;
     align-items: center;
     justify-content: center;
-
-    /* RESET DE TEXTO (Esto quita el desfase hacia abajo) */
     line-height: 0;
     padding: 0;
     text-indent: 0;
@@ -268,19 +262,17 @@
     background: rgba(0, 0, 0, 0.5);
     color: white;
     border: 2px solid white;
-    font-size: 24px; /* Ajustado para mejor visibilidad */
+    font-size: 24px;
     cursor: pointer;
     transition: all 0.3s ease;
     border-radius: 50%;
     width: 60px;
     height: 60px;
     z-index: 10000;
-
-    /* CENTRADO PERFECTO */
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0;     /* IMPORTANTE: quitamos el padding para que flex centre bien */
+    padding: 0;
     line-height: 0;
 }
 
