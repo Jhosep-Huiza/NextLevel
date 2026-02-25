@@ -181,3 +181,69 @@ html, body {
     text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
     white-space: nowrap;
 }
+
+@media (max-width: 992px) {
+    html, body {
+        overflow-y: auto;
+        height: auto;
+    }
+
+    .main-split-viewport {
+        flex-direction: column;
+        height: auto;
+        min-height: 100vh;
+    }
+
+    .portal-section {
+        height: auto;
+        min-height: 50vh;
+        padding-bottom: 60px;
+    }
+
+    .central-divider {
+        display: none;
+    }
+
+    .image-header {
+        height: 250px;
+    }
+
+    .info-container {
+        padding: 40px 20px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-title {
+        font-size: 2.5rem;
+    }
+
+    .main-description {
+        max-width: 100%;
+        font-size: 1rem;
+    }
+
+    .btn-main {
+        padding: 18px 0;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .footer-copyright {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        transform: none;
+        padding: 20px;
+        text-align: center;
+        background: #000;
+        width: 100%;
+    }
+
+    .back-home-btn {
+        top: 15px;
+        left: 15px;
+        width: 40px;
+        height: 40px;
+    }
+}
