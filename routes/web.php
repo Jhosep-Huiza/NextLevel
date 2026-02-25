@@ -45,3 +45,11 @@ Route::get('/academia', function () {
 Route::get('/contactenos', function (){
     return view('contactenos');
 })->name('contactenos');
+
+Route::get('/admision', function (){
+    return view('admision');
+})->name('admision');
+
+Route::get('/galeria', function () {
+    return view('galeria');
+})->name('galeria');

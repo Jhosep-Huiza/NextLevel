@@ -1,0 +1,224 @@
+.hero-sobre {
+    position: relative;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(15, 39, 73, 0.9) 0%, rgba(27, 58, 107, 0.7) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.hero-bg-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero-content {
+    text-align: center;
+    color: #fff;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.section-tag {
+    display: inline-block;
+    background: #B01030;
+    color: #ffffff;
+    padding: 5px 24px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.hero-content h1 {
+    font-size: 3.8rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    letter-spacing: -1.5px;
+    line-height: 1.1;
+}
+
+.hero-line{
+    width: 90px;
+    height: 5px;
+    background: var(--rojo-principal);
+    margin: 10px auto;
+}
+
+.hero-content p {
+    font-size: 17px;
+    opacity: 0.9;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    margin-left: 1.5rem;
+}
+
+.btn-outline:hover {
+    background: white;
+    color: var(--primary-navy);
+}
+
+.alternating-section {
+    margin: 6rem 0;
+}
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    align-items: start;
+}
+.text-side {
+    padding: 2rem;
+    background: #f9faff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    line-height: 1.7;
+}
+.text-side h2 {
+    color: var(--primary-navy);
+    margin-bottom: 1.5rem;
+}
+.image-side img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.reverse .text-side { order: 2; }
+.reverse .image-side { order: 1; }
+.check-list li {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 1.8rem;
+}
+.check-list li::before {
+    content: "✓";
+    color: #28a745;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+details summary {
+    list-style: none;
+    outline: none;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
+}
+
+details[open] summary {
+    margin-bottom: 0.8rem;
+}
+
+@media (max-width: 1023px) {
+    .content-grid {
+        grid-template-columns: 1fr !important;
+        gap: 3.5rem;
+    }
+
+    .text-side {
+        padding: 1.8rem 1.2rem;
+    }
+
+    .pensiones-side {
+        order: 1;
+    }
+    .faq-side {
+        order: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-grid {
+        padding: 0 1rem;
+    }
+    section.alternating-section {
+        margin: 3.5rem 0;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero{
+        min-height: auto;
+        padding: 100px 0 8px;
+        height: auto;
+
+    }
+    .hero-content {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin: auto;
+        text-align: center;
+    }
+    .hero-title{
+        font-size: 2.8rem;
+    }
+    .hero-subtitle{
+        font-size: 1.8rem;
+    }
+    .hero-description{
+        font-size: 1.1rem;
+    }
+    .hero-features{
+        text-align: left;
+        display: inline-block;
+        margin: 0 auto 2rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .hero-title{
+        font-size: 2.4rem;
+    }
+    .hero-subtitle{
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        margin-top: 1rem;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .hero {
+        min-height: 90vh;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+}

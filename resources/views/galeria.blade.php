@@ -3,16 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nosotros | Next Level</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Galería | Next Level</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
     <link rel="stylesheet" href="{{ asset('css/web/web_principal.css') }}">
     <link rel="stylesheet" href="{{ asset('css/web/marquee_principal.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/web/ubicacion.css') }}">
     <link rel="stylesheet" href="{{ asset('css/web/propuesta.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/web/sobre_nosotros.css') }}">
 
+    <link rel="stylesheet" href="{{ asset('css/web/galeria.css') }}">
 </head>
 
 <body>
@@ -21,8 +21,8 @@
         <div class="marquee-wrapper">
             <div class="marquee-track" id="marqueeTrack">
                 <div class="marquee-item">
-                    🧑🏻‍🎓 ¡MATRÍCULA 2026! &nbsp;&nbsp;&nbsp;&nbsp;
-                    📕 INICIO DE CLASES: 2 DE MARZO &nbsp;&nbsp;&nbsp;&nbsp;
+                    🧑🏻‍🎓 ¡MATRÍCULA 2026!
+                    📕 INICIO DE CLASES: 2 DE MARZO
                 </div>
             </div>
         </div>
@@ -104,151 +104,72 @@
         </div>
     </div>
 
-    <main>
-        <section class="hero-sobre">
-            <div class="hero-overlay">
-                <div class="hero-content">
-                    <span class="section-tag">INSTITUCIÓN EDUCATIVA</span>
-                    <h1>SOBRE NOSOTROS</h1>
-                    <div class="hero-line"></div>
-                    <p>
-                        Transformamos la educación en una experiencia de alto impacto,
-                        formando estudiantes con mentalidad ganadora y visión global.
-                    </p>
-                </div>
-            </div>
-            <img src="{{ asset('images/imagen10.jpg') }}" alt="Fondo" class="hero-bg-img">
-        </section>
-
-        <section class="sobre-section">
-            <div class="container sobre-grid">
-                <div class="sobre-text">
-                    <span class="upper-title">Nuestra Esencia</span>
-                    <h2>NUESTRA IDENTIDAD</h2>
-                    <div class="section-line"></div>
-                    <p class="p-highlight">
-                        En <strong>Next Level</strong>, entendemos que la educación no solo transmite conocimientos, sino que construye carácter, disciplina y liderazgo.
-                    </p>
-                    <p>
-                        Nuestro enfoque integra excelencia académica, tecnología de vanguardia y una sólida formación en valores, preparando a nuestros estudiantes para destacar y competir en un entorno global altamente exigente.
-                    </p>
-                    <div class="sobre-features">
-                        <span><i class="fa-solid fa-check-double"></i> Mentalidad Ganadora</span>
-                        <span><i class="fa-solid fa-check-double"></i> Visión Global</span>
-                    </div>
-                </div>
-
-                <div class="sobre-stats">
-                    <div class="stat-card">
-                        <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-                        <div class="stat-info">
-                            <h3>100%</h3>
-                            <span>Educación vanguardista desde el primer día</span>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon"><i class="fa-solid fa-user-shield"></i></div>
-                        <div class="stat-info">
-                            <h3>24/7</h3>
-                            <span>Seguimiento formativo y disciplinario</span>
-                        </div>
-                    </div>
-                    <div class="stat-card">
-                        <div class="stat-icon"><i class="fa-solid fa-chart-line"></i></div>
-                        <div class="stat-info">
-                            <h3>100%</h3>
-                            <span>Compromiso con el éxito del alumno</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="metodologia-section">
-            <div class="container metodologia-grid">
-                <div class="metodologia-img">
-                    <img src="{{ asset('images/imagen10.jpg') }}" alt="Metodología Next Level">
-                    <div class="img-badge">METODOLOGÍA 360°</div>
-                </div>
-                <div class="metodologia-content-box">
-                    <span class="upper-title">Nuestra Forma de Enseñar</span>
-                    <h2>NUESTRA METODOLOGÍA</h2>
-                    <div class="section-line"></div>
-
-                    <p class="metodologia-intro">
-                        Nuestro modelo garantiza resultados sostenibles mediante el acompañamiento constante y el uso de herramientas de vanguardia.
-                    </p>
-
-                    <ul class="metodologia-list-new">
-                        <li>
-                            <div class="list-icon"><i class="fa-solid fa-brain"></i></div>
-                            <div class="list-text">
-                                <strong>Aprendizaje Basado en Retos</strong>
-                                <span>Enfrentamos a los alumnos a situaciones reales.</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="list-icon"><i class="fa-solid fa-chart-pie"></i></div>
-                            <div class="list-text">
-                                <strong>Evaluación Continua</strong>
-                                <span>Seguimiento personalizado de cada avance.</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="list-icon"><i class="fa-solid fa-microchip"></i></div>
-                            <div class="list-text">
-                                <strong>Integración Tecnológica</strong>
-                                <span>Uso de plataformas digitales en el aula.</span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="list-icon"><i class="fa-solid fa-users-gear"></i></div>
-                            <div class="list-text">
-                                <strong>Desarrollo Integral</strong>
-                                <span>Equilibrio entre lo académico y lo humano.</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-    <main>
-
-    <section class="mision-vision-section">
-    <div class="exp-blobs-container container-blocks">
-        <div class="info-blob-card">
-            <div class="blob-content">
-                <i class="fa-solid fa-bullseye"></i>
-                <div class="text-wrapper">
-                    <h3>MISIÓN</h3>
-                    <p>Formar estudiantes íntegros con alto nivel académico, liderazgo y valores sólidos.</p>
-                </div>
+    <section class="hero-sobre">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <span class="section-tag">Ver fotos</span>
+                <h1>GALERÍA</h1>
+                <div class="hero-line"></div>
+                <p>Momentos que se vivieron en Next Level</p>
             </div>
         </div>
+        <img src="{{ asset('images/imagen10.jpg') }}" alt="Fondo" class="hero-bg-img">
+    </section>
 
-        <div class="info-blob-card">
-            <div class="blob-content">
-                <i class="fa-solid fa-eye"></i>
-                <div class="text-wrapper">
-                    <h3>VISIÓN</h3>
-                    <p>Consolidarnos como una institución educativa referente por nuestra innovación constante.</p>
-                </div>
+    <section class="galeria-pinterest">
+        <div class="galeria-container">
+            <div class="galeria-titulo">
+                <h2>NUESTROS MOMENTOS</h2>
+            </div>
+            <div class="galeria-grid" id="galeriaGrid">
+                <div class="grid-item"><img src="{{ asset('images/g1.jpeg') }}" alt="Galería 1" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/g2.jpeg') }}" alt="Galería 2" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/g3.jpeg') }}" alt="Galería 3" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/g4.jpeg') }}" alt="Galería 4" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/g5.jpeg') }}" alt="Galería 5" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/g6.jpeg') }}" alt="Galería 6" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/g7.jpeg') }}" alt="Galería 7" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/g8.jpeg') }}" alt="Galería 8" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/g9.jpeg') }}" alt="Galería 9" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/g10.jpeg') }}" alt="Galería 10" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/g11.jpeg') }}" alt="Galería 11" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/g12.jpeg') }}" alt="Galería 12" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/g13.jpeg') }}" alt="Galería 13" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/g14.jpeg') }}" alt="Galería 14" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/g15.jpeg') }}" alt="Galería 15" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/g16.jpeg') }}" alt="Galería 16" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/g17.jpeg') }}" alt="Galería 17" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/g18.jpeg') }}" alt="Galería 18" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/g19.jpeg') }}" alt="Galería 19" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/g20.jpeg') }}" alt="Galería 20" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/imagen10.jpg') }}" alt="Galería 21" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/imagen10.jpg') }}" alt="Galería 22" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/imagen10.jpg') }}" alt="Galería 23" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/imagen10.jpg') }}" alt="Galería 24" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/imagen10.jpg') }}" alt="Galería 25" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/imagen10.jpg') }}" alt="Galería 26" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/imagen10.jpg') }}" alt="Galería 27" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/imagen10.jpg') }}" alt="Galería 28" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/imagen10.jpg') }}" alt="Galería 29" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/imagen10.jpg') }}" alt="Galería 30" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/imagen10.jpg') }}" alt="Galería 31" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/imagen10.jpg') }}" alt="Galería 32" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/imagen10.jpg') }}" alt="Galería 33" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/imagen10.jpg') }}" alt="Galería 34" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/imagen10.jpg') }}" alt="Galería 35" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/imagen10.jpg') }}" alt="Galería 36" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/imagen10.jpg') }}" alt="Galería 37" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/imagen10.jpg') }}" alt="Galería 38" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/imagen10.jpg') }}" alt="Galería 39" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/imagen10.jpg') }}" alt="Galería 40" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/imagen10.jpg') }}" alt="Galería 41" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/imagen10.jpg') }}" alt="Galería 42" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/imagen10.jpg') }}" alt="Galería 43" loading="lazy"></div>
+                <div class="grid-item"><img src="{{ asset('images/imagen10.jpg') }}" alt="Galería 44" loading="lazy"></div>
             </div>
         </div>
+    </section>
 
-        <div class="info-blob-card">
-            <div class="blob-content">
-                <i class="fa-solid fa-hand-holding-heart"></i>
-                <div class="text-wrapper">
-                    <h3>VALORES</h3>
-                    <p>Disciplina, respeto, ética, responsabilidad, superación constante y excelencia.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-    </main>
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-left">
@@ -297,5 +218,8 @@
     <script src="{{ asset('js/marquee_principal.js') }}"></script>
     <script src="{{ asset('js/nav-scroll.js') }}"></script>
     <script src="{{ asset('js/menu-mobile.js') }}"></script>
+    <script src="{{ asset('js/galeria.js') }}"></script>
+    <script src="{{ asset('js/mapa_ruta.js') }}"></script>
 </body>
+
 </html>
