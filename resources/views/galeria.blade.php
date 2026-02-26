@@ -107,8 +107,8 @@
     <section class="hero-sobre">
         <div class="hero-overlay">
             <div class="hero-content">
-                <span class="section-tag">Ver fotos</span>
-                <h1>GALERÍA</h1>
+                <span class="section-tag">VER FOTOS</span>
+                <h1>NUESTRA GALERÍA</h1>
                 <div class="hero-line"></div>
                 <p>Momentos que se vivieron en Next Level</p>
             </div>
@@ -120,6 +120,7 @@
         <div class="galeria-container">
             <div class="galeria-titulo">
                 <h2>NUESTROS MOMENTOS</h2>
+                <div class="section-line"></div>
             </div>
             <div class="galeria-grid" id="galeriaGrid">
                 <div class="grid-item"><img src="{{ asset('images/g1.jpeg') }}" alt="Galería 1" loading="lazy"></div>

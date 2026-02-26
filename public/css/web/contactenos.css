@@ -28,15 +28,15 @@
 
 .hero-content {
     text-align: center;
-    color: #fff;
+    color: var(--blanco);
     max-width: 800px;
     padding: 0 20px;
 }
 
 .section-tag {
     display: inline-block;
-    background: #B01030;
-    color: #ffffff;
+    background: var(--rojo-principal);
+    color: var(--blanco);
     padding: 5px 24px;
     border-radius: 50px;
     font-size: 14px;
@@ -69,7 +69,7 @@
 
 .contact-hero{
     padding: 30px 20px 60px;
-    background:#f5f6f8;
+    background:var(--blanco);
 }
 
 .contact-hero-container{
@@ -106,7 +106,7 @@
 
 .overlay-box{
     background:rgba(255, 255, 255, 0.781);
-    color:#1e2a44;
+    color:var(--azul-oscuro);
     padding:25px 35px;
     border-radius:14px;
     font-size:22px;
@@ -129,11 +129,11 @@
 }
 
 .contact-hero-info{
-    background:white;
+    background:var(--blanco);
     padding:35px;
     border-radius:18px;
     box-shadow:0 15px 40px rgba(0,0,0,.08);
-    color: #0F2749;
+    color: var(--azul-oscuro);
 }
 
 .info-contacto {
@@ -152,20 +152,20 @@
 .form-contacto select,
 .form-contacto textarea {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--blanco);
     border-radius: 6px;
     width: 100%;
     font-size: 14px;
-    border-color: #1f3c88;
-    background-color: aliceblue;
+    border-color: var(--azul-oscuro);
+    background-color: var(--blanco);
     outline: 0;
-    color: #0F2749;
+    color: var(--azul-oscuro);
 }
 
 .form-contacto select{
     appearance:none;
-    background:aliceblue;
-    color: #0F2749;
+    background: var(--blanco);
+    color: var(--azul-oscuro);
     cursor:pointer;
 }
 
@@ -183,8 +183,8 @@
 }
 
 .form-contacto button {
-    background-color: #162c63;
-    color: white;
+    background-color: var(--azul-oscuro);
+    color: var(--blanco);
     border: none;
     padding: 12px;
     border-radius: 6px;
@@ -193,7 +193,7 @@
 }
 
 .form-contacto button:hover {
-    background-color: #132656;
+    background-color: var(--azul-oscuro);
 }
 
 @media (max-width: 992px) {
@@ -201,7 +201,7 @@
         height: 400px;
     }
     .hero-content h1 {
-        font-size: 34px !important;
+        font-size: 39px !important;
         letter-spacing: -0.5px;
         margin-bottom: 15px;
         font-weight: 800;

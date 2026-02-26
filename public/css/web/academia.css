@@ -27,7 +27,7 @@
 
 .hero-content {
     text-align: center;
-    color: #ffffff;
+    color: var(--blanco);
     max-width: 800px;
     padding: 0 25px;
     z-index: 3;
@@ -56,8 +56,8 @@
 
 .section-tag {
     display: inline-block;
-    background: #B01030;
-    color: #ffffff;
+    background: var(--rojo-principal);
+    color: var(--blanco);
     padding: 5px 24px;
     border-radius: 50px;
     font-size: 14px;
@@ -69,7 +69,7 @@
 
 .academia-intro {
     padding: 80px 0;
-    background: #ffffff;
+    background: var(--blanco);
 }
 
 .academia-grid {
@@ -83,7 +83,7 @@
 }
 
 .title-blue {
-    color: #0F2749 !important;
+    color: var(--azul-oscuro) !important;
     font-weight: 800;
     margin-bottom: 25px;
     text-transform: uppercase;
@@ -98,7 +98,7 @@
 .academia-text h2 {
     font-size: 2.9rem;
     margin-bottom: 20px;
-    color: #B01030;
+    color: var(--rojo-principal);
 }
 
 .academia-text p {
@@ -131,7 +131,7 @@
 
 .academia-propuesta-v2 {
     padding: 100px 0;
-    background: #ffffff;
+    background: var(--blanco);
 }
 
 .propuesta-container-full {
@@ -161,9 +161,9 @@
     position: absolute;
     top: 30px;
     left: 30px;
-    background: #B01030;
+    background: var(--rojo-principal);
     backdrop-filter: blur(10px);
-    color: white;
+    color: var(--blanco);
     padding: 12px 25px;
     border-radius: 50px;
     display: flex;
@@ -178,7 +178,7 @@
     position: absolute;
     right: 0;
     width: 45%;
-    background: #ffffff;
+    background: var(--blanco);
     padding: 60px;
     border-radius: 35px;
     box-shadow: -20px 20px 60px rgba(15, 39, 73, 0.15);
@@ -186,7 +186,7 @@
 }
 
 .label-preu {
-    color: #B01030;
+    color: var(--rojo-principal);
     font-weight: 900;
     font-size: 12px;
     letter-spacing: 3px;
@@ -197,7 +197,7 @@
 .separator-line {
     width: 50px;
     height: 5px;
-    background: #B01030;
+    background: var(--rojo-principal);
     margin: 20px 0;
     border-radius: 10px;
 }
@@ -213,13 +213,13 @@
     align-items: center;
     gap: 15px;
     font-weight: 645;
-    color: #0F2749;
+    color: var(--azul-oscuro);
     margin-bottom: 15px;
     font-size: 20px;
 }
 
 .propuesta-list-modern i {
-    color: #B01030;
+    color: var(--rojo-principal);
     font-size: 18px;
 }
 
@@ -228,8 +228,8 @@
     align-items: center;
     justify-content: center;
     gap: 12px;
-    background: #DC143C;
-    color: white;
+    background: var(--rojo-principal);
+    color: var(--blanco);
     text-decoration: none;
     padding: 20px;
     border-radius: 15px;
@@ -239,12 +239,12 @@
 }
 
 .btn-propuesta-whatsapp:hover {
-    background: #B01030;
+    background: var(--rojo-principal);
     transform: translateY(-5px);
 }
 
 .academy-label {
-    color: #B01030;
+    color: var(--rojo-principal);
     font-weight: 800;
     font-size: 13px;
     letter-spacing: 2px;
@@ -254,7 +254,7 @@
 
 .ciclos-section {
     padding: 10px 0;
-    background: #f8fafc;
+    background: var(--blanco);
 }
 
 .section-header-centered {
@@ -264,7 +264,7 @@
 
 .section-header-centered h2 {
     font-size: 2.9rem;
-    color: #0F2749;
+    color: var(--azul-oscuro);
     font-weight: 800;
     margin-bottom: 15px;
 }
@@ -272,7 +272,7 @@
 .title-line-red {
     width: 70px;
     height: 5px;
-    background: #B01030;
+    background: var(--rojo-principal);
     margin: 0 auto;
     border-radius: 10px;
 }
@@ -287,7 +287,7 @@
 }
 
 .ciclo-card {
-    background: #fff;
+    background: #fafafa;
     padding: 30px 20px;
     border-radius: 20px;
     text-align: center;
@@ -304,7 +304,7 @@
     transform: scale(1.07);
     z-index: 10;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-    border: 3px solid #B01030
+    border: 3px solid var(--rojo-principal);
 }
 
 .ciclo-card:hover h3,
@@ -313,21 +313,21 @@
 .ciclo-card:hover .ciclo-icon,
 .ciclo-card:hover .ciclo-features i,
 .ciclo-card:hover .ciclo-badge {
-    color:#0F2749 !important;
+    color:var(--azul-oscuro) !important;
     background: inherit !important;
 }
 
 .ciclo-card:hover .ciclo-icon {
-    color: #B01030 !important;
+    color: var(--rojo-principal) !important;
 }
 
 .ciclo-card:hover .ciclo-features i {
-    color: #B01030 !important;
+    color: var(--rojo-principal) !important;
 }
 
 .ciclo-card:hover .ciclo-badge.highlight {
-    background: #B01030 !important;
-    color: #fff !important;
+    background: var(--rojo-principal) !important;
+    color: var(--blanco) !important;
 }
 
 .ciclo-badge {
@@ -336,25 +336,25 @@
     right: 20px;
     font-size: 10px;
     font-weight: 800;
-    background: #f1f5f9;
+    background: var(--blanco);
     padding: 5px 12px;
     border-radius: 50px;
     color: #64748b;
 }
 
 .ciclo-badge.highlight {
-    background: #B01030;
-    color: #fff;
+    background: var(--rojo-principal);
+    color: var(--blanco);
 }
 
 .ciclo-icon {
     font-size: 3rem;
-    color: #B01030;
+    color: var(--rojo-principal);
     margin-bottom: 20px;
 }
 
 .ciclo-card h3 {
-    color: #0F2749;
+    color: var(--azul-oscuro);
     font-size: 1.8rem;
     font-weight: 800;
     margin-bottom: 15px;
@@ -391,7 +391,7 @@
 }
 
 .ciclo-features i {
-    color: #B01030;
+    color: var(--rojo-principal);
     font-size: 14px;
     width: 18px;
     text-align: center;
@@ -404,48 +404,48 @@
 .btn-ciclo {
     display: block;
     padding: 12px 20px;
-    background: #f1f5f9;
-    color: #B01030;
+    background: var(--blanco);
+    color: var(--rojo-principal);
     border-radius: 50px;
     text-decoration: none;
     font-weight: 700;
     transition: 0.3s;
     margin-top: auto;
-    border: 1px solid transparent;
+    border: 2px solid var(--rojo-principal);
 }
 
 .ciclo-card:hover .btn-ciclo {
-    background: #B01030 !important;
-    color: #fff !important;
+    background: var(--rojo-principal) !important;
+    color: var(--blanco) !important;
 }
 
 .ciclo-card:hover .btn-ciclo.btn-red {
-    background: #B01030 !important;
-    color: #fff !important;
+    background: var(--rojo-principal) !important;
+    color: var(--blanco) !important;
 }
 
 .propuesta-callout {
     margin-top: 35px;
-    background: #0F2749;
+    background: var(--azul-oscuro);
     padding: 25px;
     border-radius: 15px;
     display: flex;
     align-items: center;
     gap: 20px;
-    color: #fff;
+    color: var(--blanco);
 }
 
 .propuesta-content-box p{
-    color: #0F2749;
+    color: var(--azul-oscuro);
 }
 
 .propuesta-callout i {
     font-size: 2.5rem;
-    color: #B01030;
+    color: var(--rojo-principal);
 }
 
 .propuesta-callout p {
-    color: #fff !important;
+    color: var(--blanco) !important;
     margin-bottom: 0 !important;
     font-weight: 600;
 }
@@ -456,7 +456,7 @@
 }
 
 .section-title-dark{
-    color: #0F2749;
+    color: var(--azul-oscuro);
     font-size: 2.9rem;
 }
 
@@ -495,7 +495,7 @@
 
 .docente-card-modern:hover {
     transform: translateY(-10px);
-    border-bottom: 4px solid #B01030;
+    border-bottom: 4px solid var(--rojo-principal);
 }
 
 .docente-img-box {
@@ -515,7 +515,7 @@
 }
 
 .docente-content h3 {
-    color: #0F2749;
+    color: var(--azul-oscuro);
     font-size: 20px;
     font-weight: 800;
 }
@@ -564,8 +564,8 @@
 .sim-icon {
     width: 50px;
     height: 50px;
-    background: #B01030;
-    color: white;
+    background: var(--rojo-principal);
+    color:var(--blanco);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -575,7 +575,7 @@
 }
 
 .sim-text h4 {
-    color: #0F2749;
+    color: var(--azul-oscuro);
     font-size: 18px;
     font-weight: 800;
     margin-bottom: 6px;
@@ -606,8 +606,8 @@
     position: absolute;
     top: -25px;
     left: -30px;
-    background: #B01030;
-    color: white;
+    background: var(--rojo-principal);
+    color: var(--blanco);
     padding: 15px;
     border-radius: 18px;
     width: 200px;
@@ -651,7 +651,7 @@
     }
 
     .hero-content h1 {
-        font-size: 44px !important;
+        font-size: 41px !important;
         letter-spacing: -0.5px;
         margin-bottom: 15px;
         font-weight: 800;
