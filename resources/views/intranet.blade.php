@@ -36,7 +36,7 @@
                 <span class="badge">Preparación Universitaria</span>
                 <h1 class="main-title">Academia</h1>
                 <p class="main-description">
-                    Portal para estudiantes preuniversitarios. Accede a tus simulacros, clases y material de estudio.
+                    Accede al portal para estudiantes preuniversitarios.<br>Accede a tus simulacros, clases y material de estudio.
                 </p>
                 <a href="{{ route('login.academia') }}" class="btn-main">
                     <span>Ingresar</span>

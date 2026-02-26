@@ -107,7 +107,7 @@ html, body {
 .btn-main {
     position: relative;
     display: inline-block;
-    padding: 18px 100px;
+    padding: 18px 150px;
     background-color: white;
     text-decoration: none;
     font-weight: 800;
@@ -164,6 +164,84 @@ html, body {
     transform: rotate(-10deg) scale(1.1);
 }
 
+.academia .info-container {
+    align-items: flex-end;
+}
+
+.academia .badge {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.academia .badge:hover {
+    transform: translateX(-5px);
+}
+
+.academia .main-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+    line-height: 1;
+}
+
+.academia .main-description {
+    max-width: 463px;
+    margin-left: auto;
+    margin-right: 0;
+    text-align: right;
+    line-height: 1.4;
+    font-size: 1.15rem;
+    margin-bottom: 35px;
+}
+
+.academia .btn-main {
+    position: relative;
+    display: inline-block;
+    padding: 18px 150px;
+    background-color: white;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 1.2rem;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+.academia .btn-main::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+}
+
+.academia .btn-main:hover::after {
+    left: 100%;
+    transition: all 0.6s ease;
+}
+
+.academia .btn-main:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
 .footer-copyright {
     position: fixed;
     bottom: 20px;
@@ -174,7 +252,7 @@ html, body {
 }
 
 .footer-copyright p {
-    color: rgba(255, 255, 255, 0.7);
+    color: #ffffff;
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 0.5px;
@@ -196,7 +274,7 @@ html, body {
 
     .portal-section {
         height: auto;
-        min-height: 50vh;
+        min-height: 65vh; /* Un poco más alto para que respire el contenido */
         padding-bottom: 60px;
     }
 
@@ -205,28 +283,48 @@ html, body {
     }
 
     .image-header {
-        height: 250px;
+        height: 310px; /* Reducimos altura de imagen para dar prioridad al texto */
     }
 
-    .info-container {
-        padding: 40px 20px;
-        align-items: center;
-        text-align: center;
+    /* Contenedor unificado para ambas secciones en móvil */
+    .info-container,
+    .academia .info-container {
+        padding: 40px 25px;
+        align-items: center !important; /* Forzamos el centro en móvil */
+        text-align: center !important;  /* Forzamos el centro en móvil */
+        flex: none;
     }
 
-    .main-title {
-        font-size: 2.5rem;
+    .main-title,
+    .academia .main-title {
+        font-size: 2.8rem;
     }
 
-    .main-description {
-        max-width: 100%;
-        font-size: 1rem;
+    .main-description,
+    .academia .main-description {
+        max-width: 320px; /* Controlamos el ancho para forzar el salto a 3 líneas */
+        font-size: 1.05rem;
+        line-height: 1.5;
+        margin: 0 auto 35px auto;
+        opacity: 0.9;
+        text-align: center !important;
     }
 
-    .btn-main {
+    .btn-main,
+    .academia .btn-main {
         padding: 18px 0;
         width: 100%;
-        max-width: 300px;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+
+    /* Botón de retroceso más accesible */
+    .back-home-btn {
+        top: 15px;
+        left: 15px;
+        width: 45px;
+        height: 45px;
+        background: rgba(0, 0, 0, 0.3); /* Más contraste sobre imágenes */
     }
 
     .footer-copyright {
@@ -234,16 +332,9 @@ html, body {
         bottom: 0;
         left: 0;
         transform: none;
-        padding: 20px;
+        padding: 25px;
         text-align: center;
         background: #000;
         width: 100%;
-    }
-
-    .back-home-btn {
-        top: 15px;
-        left: 15px;
-        width: 40px;
-        height: 40px;
     }
 }
