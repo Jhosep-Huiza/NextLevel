@@ -1,6 +1,6 @@
 .top-bar{
     width: 100%;
-    background: rgb(255, 255, 255);
+    background: var(--blanco);
     backdrop-filter: blur(6px);
     height: 53px;
     display: flex;
@@ -25,7 +25,7 @@
 
 .marquee-item{
     display: inline-block;
-    color: #0F2749;
+    color: var(--azul-oscuro);
     font-size: 18px;
     font-weight: 600;
     font-family: "Poppins", "Segoe UI", sans-serif;

@@ -26,15 +26,15 @@
 
 .hero-content {
     text-align: center;
-    color: #ffffff;
+    color: var(--blanco);
     max-width: 800px;
     padding: 0 20px;
 }
 
 .section-tag {
     display: inline-block;
-    background: #B01030;
-    color: #ffffff;
+    background: var(--rojo-principal);
+    color: var(--blanco);
     padding: 5px 24px;
     border-radius: 50px;
     font-size: 14px;
@@ -66,7 +66,7 @@
 
 .ubicacion-section {
     padding: 100px 0;
-    background: #f8fafc;
+    background: var(--blanco);
 }
 
 .ubicacion-grid {
@@ -78,7 +78,7 @@
 
 .ubicacion-info h2 {
     font-size: 44px;
-    color: #00235a;
+    color: var(--azul-oscuro);
     font-weight: 800;
     line-height: 1.1;
 }
@@ -86,7 +86,7 @@
 .section-line {
     width: 70px;
     height: 6px;
-    background: #e30613;
+    background: var(--rojo-principal);
     margin: 20px 0 35px;
     border-radius: 3px;
 }
@@ -99,11 +99,11 @@
 }
 
 .info-box {
-    background: #ffffff;
+    background: var(--blanco);
     padding: 40px;
     border-radius: 25px;
     box-shadow: 0 20px 50px rgba(15, 39, 73, 0.08);
-    border-left: 6px solid #e30613;
+    border-left: 6px solid var(--rojo-principal);
     margin-bottom: 10px;
 }
 
@@ -114,7 +114,7 @@
     align-items: center;
     gap: 15px;
     font-weight: 600;
-    color: #00235a;
+    color: var(--azul-oscuro);
 }
 
 .info-box p:last-child {
@@ -122,7 +122,7 @@
 }
 
 .info-box i {
-    color: #e30613;
+    color: var(--rojo-principal);
     font-size: 20px;
     width: 25px;
     text-align: center;
@@ -142,7 +142,7 @@
     border: none;
     display: block;
     transition: transform 0.4s ease;
-    background-color: #f0f0f0;
+    background-color: var(--blanco);
 }
 
 .ubicacion-mapa:hover #map {
@@ -209,7 +209,7 @@
         min-height: 500px;
         height: 500px;
         border-radius: 30px;
-        background-color: #e5e3df;
+        background-color: var(--blanco);
         display: block !important;
     }
 }

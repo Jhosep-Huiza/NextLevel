@@ -26,15 +26,15 @@
 
 .hero-content {
     text-align: center;
-    color: #fff;
+    color: var(--blanco);
     max-width: 800px;
     padding: 0 20px;
 }
 
 .section-tag {
     display: inline-block;
-    background: #B01030;
-    color: #ffffff;
+    background: var(--rojo-principal);
+    color: var(--blanco);
     padding: 5px 24px;
     border-radius: 50px;
     font-size: 14px;
@@ -66,7 +66,7 @@
 
 .sobre-section {
     padding: 80px 20px;
-    background: #ffffff;
+    background: var(--blanco)f;
 }
 
 .sobre-grid {
@@ -77,7 +77,7 @@
 }
 
 .upper-title {
-    color: #B01030;
+    color: var(--rojo-principal);
     text-transform: uppercase;
     font-weight: 800;
     font-size: 15px;
@@ -88,7 +88,7 @@
 
 .sobre-text h2 {
     font-size: 45px;
-    color: #00235a;
+    color: var(--azul-oscuro);
     font-weight: 800;
     line-height: 1.1;
 }
@@ -96,7 +96,7 @@
 .section-line {
     width: 60px;
     height: 5px;
-    background: #B01030;
+    background: var(--rojo-principal);
     margin: 20px 0 30px;
     border-radius: 2px;
 }
@@ -124,7 +124,7 @@
 
 .sobre-features span {
     font-weight: 800;
-    color: #00235a;
+    color: var(--azul-oscuro);
     font-size: 15px;
     display: flex;
     align-items: center;
@@ -134,7 +134,7 @@
 }
 
 .sobre-features i {
-    color: #B01030;
+    color: var(--rojo-principal);
     font-size: 18px;
 }
 
@@ -145,28 +145,28 @@
 }
 
 .stat-card {
-    background: #f8fafc;
+    background: var(--blanco);
     border-radius: 20px;
     padding: 30px;
     display: flex;
     align-items: center;
     gap: 25px;
     transition: all 0.4s ease;
-    border: 1px solid #e2e8f0;
+    border: 1px solid var(--azul-noche);
 }
 
 .stat-card:hover {
     transform: translateX(-10px);
-    background: #ffffff;
+    background: var(--blanco);
     box-shadow: 0 15px 40px rgba(0, 35, 90, 0.08);
-    border-color: #00235a;
+    border-color: var(--azul-oscuro);
 }
 
 .stat-icon {
     width: 65px;
     height: 65px;
-    background: #00235a;
-    color: #fff;
+    background: var(--azul-oscuro);
+    color: var(--blanco);
     border-radius: 15px;
     display: flex;
     align-items: center;
@@ -177,21 +177,21 @@
 
 .stat-info h3 {
     font-size: 32px;
-    color: #00235a;
+    color: var(--azul-oscuro);
     font-weight: 900;
     margin-bottom: 2px;
 }
 
 .stat-info span {
     font-size: 15px;
-    color: #00235a;
+    color: var(--azul-oscuro);
     font-weight: 500;
     line-height: 1.4;
     display: block;
 }
 
 .mision-vision-section {
-    background: #f8fafc;
+    background: var(--blanco);
     padding: 100px 0 0 0;
     position: relative;
     z-index: 10;
@@ -206,7 +206,7 @@
     width: 100%;
     max-width: 100%;
     margin: 0 auto;
-    background: #ffffff;
+    background: var(--blanco);
     box-shadow: 0 15px 45px rgba(0,0,0,0.1);
     border-radius: 0;
     overflow: hidden;
@@ -217,8 +217,8 @@
 .mision-vision-section .info-blob-card {
     flex: 1;
     padding: 30px 40px;
-    background: #ffffff;
-    border-right: 1px solid #eeeeee;
+    background: var(--blanco);
+    border-right: 1px solid var(--blanco);
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
@@ -230,7 +230,7 @@
 }
 
 .mision-vision-section .info-blob-card:hover {
-    background: #fdfdfd;
+    background: var(--blanco);
     transform: translateY(-5px);
 }
 
@@ -255,7 +255,7 @@
 
 .mision-vision-section .text-wrapper h3 {
     font-size: 1.5rem;
-    color: #00235a;
+    color: var(--azul-oscuro);
     font-weight: 800;
     margin: 0 0 12px 0;
     text-transform: uppercase;
@@ -271,7 +271,7 @@
 
 .metodologia-section {
     padding: 5px 20px;
-    background: #f8fafc;
+    background: var(--blanco);
 }
 
 .metodologia-grid {
@@ -295,8 +295,8 @@
     position: absolute;
     bottom: -20px;
     right: -20px;
-    background: #B01030;
-    color: white;
+    background: var(--rojo-principal);
+    color: var(--blanco);
     padding: 15px 25px;
     border-radius: 15px;
     font-weight: 800;
@@ -310,7 +310,7 @@
 
 .metodologia-content-box h2 {
     font-size: 45px;
-    color: #00235a;
+    color: var(--azul-oscuro);
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: 5px;
@@ -342,7 +342,7 @@
     width: 45px;
     height: 45px;
     background: rgba(27, 58, 107, 0.1);
-    color: #00235a;
+    color: var(--azul-oscuro);
     border-radius: 12px;
     display: flex;
     align-items: center;
@@ -353,7 +353,7 @@
 
 .list-text strong {
     display: block;
-    color: #00235a;
+    color: var(--azul-oscuro);
     font-size: 16px;
     margin-bottom: 5px;
 }
@@ -462,7 +462,7 @@
 
     .metodologia-section {
         padding: 40px 15px;
-        background: #f8fafc;
+        background: var(--blanco);
     }
 
     .metodologia-grid {
@@ -521,12 +521,12 @@
 
     .mision-vision-section {
         padding: 40px 0 0 0;
-        background: #f8fafc;
+        background: var(--blanco);
     }
 
     .mision-vision-section {
         padding: 40px 0 0 0;
-        background: #f8fafc;
+        background: var(--blanco);
     }
 
     .mision-vision-section .exp-blobs-container {
@@ -542,8 +542,8 @@
         width: 100% !important;
         padding: 60px 25px;
         border-right: none;
-        border-bottom: 1px solid #eeeeee;
-        background: #ffffff;
+        border-bottom: 1px solid var(--blanco);
+        background: var(--blanco);
         display: flex !important;
         flex-direction: column !important;
         align-items: center !important;
@@ -565,7 +565,7 @@
 
     .mision-vision-section .blob-content i {
         font-size: 2.5rem;
-        color: #1B3A6B;
+        color: var(--azul-oscuro);
         margin: 0 auto 10px auto;
         display: block;
     }

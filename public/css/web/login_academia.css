@@ -105,7 +105,7 @@ body {
     background: linear-gradient(135deg, #8d0707 0%, #db0808 100%);
     border: none;
     cursor: pointer;
-    box-shadow: 0 25px 50px -10px rgba(219, 8, 8, 0.4);
+    box-shadow: 0 15px 30px -8px rgba(219, 8, 8, 0.3);
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -125,16 +125,27 @@ body {
 }
 
 .btn-custom-effect:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 
 .btn-custom-effect:hover::before {
     animation: shine-effect 0.8s forwards;
 }
 
+
 .btn-custom-effect span {
     position: relative;
     z-index: 10;
+}
+
+@keyframes shine-effect {
+    0% {
+        left: -150%;
+    }
+
+    100% {
+        left: 150%;
+    }
 }
 
 .btn-ghost-white {

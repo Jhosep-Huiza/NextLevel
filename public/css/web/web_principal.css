@@ -1,6 +1,6 @@
 :root {
-    --rojo-principal: #DC143C;
-    --rojo-oscuro: #B01030;
+    --rojo-principal: #db0808;
+    --rojo-oscuro: #8d0707;
     --azul-noche: #1B3A6B;
     --azul-oscuro: #0F2749;
     --blanco: #FFFFFF;
@@ -163,7 +163,7 @@ html, body {
 }
 
 .dropdown-menu li a:hover {
-    background: #f0f2f5 !important;
+    background: var(--blanco) !important;
     color: var(--rojo-principal) !important;
     padding-left: 45px !important;
 }
@@ -213,7 +213,7 @@ html, body {
 .diagonal-white {
     position: absolute;
     top: 0; left: 0;
-    background: rgba(255, 255, 255, 0.96);
+    background: var(--blanco);
     width: 65%;
     padding: 40px 100px 40px 50px;
     clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
@@ -248,7 +248,7 @@ html, body {
     height: 48%;
     padding: 80px 50px 40px;
     clip-path: polygon(0 20%, 90% 100%, 0 100%);
-    color: white;
+    color: var(--blanco);
     z-index: 6;
     display: flex;
     flex-direction: column;
@@ -272,7 +272,7 @@ html, body {
     background-color: var(--blanco);
     width: 100%;
     overflow: hidden;
-    border-top: 1px solid #eeeeee;
+    border-top: 1px solid var(--blanco);
 }
 
 .info-header {
@@ -325,8 +325,8 @@ html, body {
     flex: 0 0 12.5%;
     text-align: center;
     padding: 60px 40px;
-    background: #FFFFFF;
-    border-right: 1px solid #eeeeee;
+    background: var(--blanco);
+    border-right: 1px solid var(--blanco);
     transition: background 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -370,42 +370,42 @@ html, body {
 }
 
 .shape-1 {
-    background: linear-gradient(135deg, #1B3A6B, #B01030);
+    background: linear-gradient(135deg, var(--azul-oscuro), var(--rojo-principal));
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
 
 .shape-2 {
-    background: linear-gradient(135deg, #B01030, #1B3A6B);
+    background: linear-gradient(135deg, var(--rojo-principal), var(--azul-oscuro));
     border-radius: 50% 50% 20% 80% / 25% 80% 20% 75%;
 }
 
 .shape-3 {
-    background: linear-gradient(135deg, #1B3A6B, #B01030);
+    background: linear-gradient(135deg, var(--azul-oscuro), var(--rojo-principal));
     border-radius: 67% 33% 47% 53% / 37% 20% 80% 63%;
 }
 
 .shape-4 {
-    background: linear-gradient(135deg, #B01030, #1B3A6B);
+    background: linear-gradient(135deg, var(--rojo-principal), var(--azul-oscuro));
     border-radius: 40% 60% 74% 26% / 74% 32% 68% 26%;
 }
 
 .shape-5 {
-    background: linear-gradient(135deg, #1B3A6B, #B01030);
+    background: linear-gradient(135deg, var(--azul-oscuro), var(--rojo-principal));
     border-radius: 71% 29% 21% 79% / 52% 79% 21% 48%;
 }
 
 .shape-6 {
-    background: linear-gradient(135deg, #B01030, #1B3A6B);
+    background: linear-gradient(135deg, var(--rojo-principal), var(--azul-oscuro));
     border-radius: 20% 80% 30% 70% / 60% 30% 70% 40%;
 }
 
 .shape-7 {
-    background: linear-gradient(135deg, #1B3A6B, #B01030);
+    background: linear-gradient(135deg, var(--azul-oscuro), var(--rojo-principal));
     border-radius: 44% 56% 56% 44% / 44% 44% 56% 56%;
 }
 
 .shape-8 {
-    background: linear-gradient(135deg, #B01030, #1B3A6B);
+    background: linear-gradient(135deg, var(--rojo-principal), var(--azul-oscuro));
     border-radius: 28% 72% 44% 56% / 49% 40% 60% 51%;
 }
 
@@ -438,8 +438,8 @@ html, body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(255,255,255,0.95);
-    border: 1px solid #ddd;
+    background: var(--blanco);
+    border: 1px solid var(--blanco);
     width: 45px;
     height: 45px;
     border-radius: 50%;
@@ -560,13 +560,13 @@ html, body {
 .valor-item p {
     font-size: 15.5px;
     line-height: 1.7;
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--blanco);
     max-width: 320px;
 }
 
 .docentes-carousel-section {
     padding: 10px 0;
-    background-color: #f8fafc;
+    background-color: var(--blanco);
     margin-top: 30px;
     margin-bottom: 50px;
 }
@@ -732,7 +732,7 @@ html, body {
     gap: 12px;
     margin-bottom: 22px;
     font-size: 12.6px;
-    color: rgba(255,255,255,0.85);
+    color: var(--blanco);
     line-height: 1.5;
 }
 
@@ -759,7 +759,7 @@ html, body {
 }
 
 .footer-column a {
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--blanco);
     text-decoration: none;
     font-size: 15px;
     font-weight: 500;
@@ -801,8 +801,8 @@ html, body {
 }
 
 .footer-social-icons .social-icon:hover {
-    background: #B01030 !important;
-    border-color: #B01030 !important;
+    background: var(--rojo-principal) !important;
+    border-color: var(--rojo-principal) !important;
     padding-left: 0 !important;
 }
 
@@ -932,15 +932,15 @@ html, body {
 }
 
 .welcome-list i {
-    color: #B01030;
+    color: var(--rojo-principal);
     font-size: 20px;
 }
 
 .btn-welcome {
     align-items: center;
-    background-color: #B01030;
+    background-color: var(--rojo-principal);
     border-radius: 12px;
-    color: white;
+    color: var(--blanco);
     display: flex;
     font-size: 17px;
     font-weight: 700;
@@ -957,7 +957,7 @@ html, body {
 }
 
 .pathway-section {
-    background-color: #f8fafc;
+    background-color: var(--blanco);
     padding: 05px 0;
     width: 100%;
 }
@@ -1006,7 +1006,7 @@ html, body {
 }
 
 .pathway-list i {
-    color: #B01030;
+    color: var(--rojo-principal);
     font-size: 22px;
 }
 
@@ -1018,9 +1018,9 @@ html, body {
 
 .btn-whatsapp-pathway {
     align-items: center;
-    background-color: #B01030;
+    background-color: var(--rojo-principal);
     border-radius: 12px;
-    color: white;
+    color: var(--blanco);
     display: flex;
     font-size: 17px;
     font-weight: 700;
@@ -1078,7 +1078,7 @@ html, body {
 .path-card-overlay {
     align-items: center;
     background: rgba(15, 39, 73, 0.2);
-    color: white;
+    color: var(--blanco);
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -1250,7 +1250,7 @@ html, body {
     .info-blob-card {
         flex: 0 0 12.5%;
         border-right: none;
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid var(--blanco);
     }
 
     .blob-wrapper {
@@ -1319,7 +1319,7 @@ html, body {
     .diagonal-white {
         top: 0;
         padding: 45px 20px 35px !important;
-        background: rgba(255, 255, 255, 0.95) !important;
+        background: var(--blanco) !important;
         z-index: 10;
         clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%) !important;
     }
@@ -1448,7 +1448,7 @@ html, body {
 
     .pathway-section {
         padding: 50px 20px !important;
-        background-color: #f8fafc;
+        background-color: var(--blanco);
         padding-bottom: 15px !important;
 
     }
@@ -1488,7 +1488,7 @@ html, body {
     .pathway-list li {
         font-size: 15px !important;
         margin-bottom: 12px;
-        color: #0F2749;
+        color: var(--azul-oscuro);
         display: flex;
         align-items: center;
         gap: 12px;
@@ -1616,13 +1616,13 @@ html, body {
     .valor-item p {
         font-size: 15.5px !important;
         line-height: 1.6 !important;
-        color: rgba(255, 255, 255, 0.9) !important;
+        color: var(--blanco) !important;
         margin: 0 auto !important;
     }
 
     .docentes-carousel-section {
         padding: 10px 0 !important;
-        background-color: #f8fafc;
+        background-color: var(--blanco);
         margin-top: 30px !important;
         margin-bottom: 50px !important;
     }
@@ -1742,7 +1742,7 @@ html, body {
     .info-organic-section {
         padding: 0 !important;
         background-color: var(--blanco);
-        border-top: 1px solid #eeeeee;
+        border-top: 1px solid var(--blanco);
     }
 
     .info-grid-carrusel {
@@ -1755,8 +1755,8 @@ html, body {
     .info-blob-card {
         flex: 0 0 12.5% !important;
         padding: 60px 40px !important;
-        background: #FFFFFF;
-        border-right: 1px solid #eeeeee;
+        background: var(--blanco)F;
+        border-right: 1px solid var(--blanco);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1781,7 +1781,7 @@ html, body {
     }
 
     .info-blob-card p {
-        color: #0F2749;
+        color: var(--azul-oscuro);
         font-size: 0.95rem !important;
         line-height: 1.5;
         margin: 0;
