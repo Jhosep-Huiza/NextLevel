@@ -45,7 +45,7 @@
 
                 <footer class="legal-footer">
                     <div class="footer-links">
-                        <a href="#">Términos</a> <span>/</span> <a href="#">Protección de datos</a>
+                        <a href="#">Términos y condiciones</a> <span>/</span> <a href="#">Política de privacidad</a>
                     </div>
                     <p class="copyright">© 2026 Next Level. Todos los derechos reservados.</p>
                 </footer>
@@ -73,7 +73,7 @@
                 <form class="auth-form" method="POST" action="#">
                     <div class="input-group">
                         <label>ID</label>
-                        <input type="text" name="alumno_id" placeholder="Ej: 0020261234" required class="main-input">
+                        <input type="text" name="alumno_id" placeholder="Ej: 0020261234@nextlevel.pe" required class="main-input">
                     </div>
                     <div class="input-group">
                         <label>Contraseña</label>
@@ -102,7 +102,7 @@
 
                 <footer class="legal-footer">
                     <div class="footer-links">
-                        <a href="#">Términos</a> <span>/</span> <a href="#">Privacidad</a>
+                        <a href="#">Términos y condiciones</a> <span>/</span> <a href="#">Política de privacidad</a>
                     </div>
                     <p class="copyright">© 2026 Next Level. Todos los derechos reservados.</p>
                 </footer>
@@ -120,7 +120,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     <script src="{{ asset('js/login.js') }}"></script>
