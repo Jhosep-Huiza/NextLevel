@@ -120,7 +120,7 @@
 .grid-item:hover {
     transform: translateY(-4px);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    border-color: var(--rojo-principal);
+    border-color: var(--blanco);
 }
 
 .grid-item img {
@@ -407,6 +407,7 @@
         width: 45px;
         height: 45px;
         font-size: 20px;
+        margin-top: 240px;
     }
     .close-lightbox {
         top: 10px;

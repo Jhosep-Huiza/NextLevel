@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', function () {
             } else {
                 this.classList.remove('active');
             }
-            // ---------------------------------------
 
             if (eyeOpen && eyeClosed) {
                 eyeOpen.classList.toggle('hidden');

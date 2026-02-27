@@ -3,9 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const images = [];
     let currentImageIndex = 0;
 
-    // Crear el lightbox modal
     function createLightbox() {
-        // Verificar si ya existe
+
         if (document.getElementById('lightboxModal')) return;
 
         const modal = document.createElement('div');
@@ -25,8 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
 
         document.body.appendChild(modal);
-
-        // Event listeners del modal
         const closeBtn = modal.querySelector('.close-lightbox');
         const prevBtn = modal.querySelector('.lightbox-prev');
         const nextBtn = modal.querySelector('.lightbox-next');
@@ -35,7 +32,6 @@ document.addEventListener('DOMContentLoaded', function() {
         prevBtn.addEventListener('click', showPrevImage);
         nextBtn.addEventListener('click', showNextImage);
 
-        // Cerrar con ESC
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && modal.style.display === 'block') {
                 closeLightbox();
@@ -46,7 +42,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        // Cerrar haciendo clic fuera de la imagen
         modal.addEventListener('click', function(e) {
             if (e.target === modal) {
                 closeLightbox();
@@ -54,7 +49,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // Abrir lightbox
     function openLightbox(index) {
         const modal = document.getElementById('lightboxModal');
         const modalImg = modal.querySelector('.lightbox-image-container img');
@@ -66,29 +60,25 @@ document.addEventListener('DOMContentLoaded', function() {
         counter.textContent = `${currentImageIndex + 1}/${images.length}`;
 
         modal.style.display = 'block';
-        document.body.style.overflow = 'hidden'; // Prevenir scroll
+        document.body.style.overflow = 'hidden';
     }
 
-    // Cerrar lightbox
     function closeLightbox() {
         const modal = document.getElementById('lightboxModal');
         modal.style.display = 'none';
-        document.body.style.overflow = ''; // Restaurar scroll
+        document.body.style.overflow = '';
     }
 
-    // Mostrar imagen anterior
     function showPrevImage() {
         currentImageIndex = (currentImageIndex - 1 + images.length) % images.length;
         updateLightboxImage();
     }
 
-    // Mostrar imagen siguiente
     function showNextImage() {
         currentImageIndex = (currentImageIndex + 1) % images.length;
         updateLightboxImage();
     }
 
-    // Actualizar imagen en el lightbox
     function updateLightboxImage() {
         const modal = document.getElementById('lightboxModal');
         const modalImg = modal.querySelector('.lightbox-image-container img');
@@ -104,9 +94,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 150);
     }
 
-    // Inicializar galería
     gridItems.forEach((item, index) => {
-        // Guardar referencia de la imagen
         const img = item.querySelector('img');
         if (img) {
             images.push({
@@ -115,33 +103,29 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
 
-        // ALTURAS REDUCIDAS para el efecto Pinterest
         let rowSpan;
 
         if (index % 5 === 0) {
-            rowSpan = 22;  // REDUCIDO: de 28 a 22
+            rowSpan = 22;
         } else if (index % 4 === 0) {
-            rowSpan = 20;  // REDUCIDO: de 25 a 20
+            rowSpan = 20;
         } else if (index % 3 === 0) {
-            rowSpan = 18;  // REDUCIDO: de 22 a 18
+            rowSpan = 18;
         } else if (index % 2 === 0) {
-            rowSpan = 16;  // REDUCIDO: de 19 a 16
+            rowSpan = 16;
         } else {
-            rowSpan = 14;  // REDUCIDO: de 16 a 14
+            rowSpan = 14;
         }
 
-        // Pequeña variación aleatoria
         rowSpan += Math.floor(Math.random() * 3) - 1;
-        rowSpan = Math.max(12, Math.min(24, rowSpan));  // Rango ajustado
+        rowSpan = Math.max(12, Math.min(24, rowSpan));
 
         item.style.setProperty('--row-span', rowSpan);
 
-        // Evento click para abrir lightbox
         item.addEventListener('click', function() {
             openLightbox(index);
         });
     });
 
-    // Crear el lightbox al cargar la página
     createLightbox();
 });
