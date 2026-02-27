@@ -3,136 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intranet Academia - Acceso Unificado</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Intranet Academia - Next Level</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap">
     <link rel="stylesheet" href="{{ asset('css/web/login_academia.css') }}">
     <link rel="stylesheet" href="{{ asset('css/web/web_principal.css') }}">
 </head>
-<body class="w-full h-screen overflow-hidden bg-white">
+<body>
 
-    <div class="main-sliding-container active w-full h-full overflow-hidden" id="mainContainer">
+    <div class="main-sliding-container active" id="mainContainer">
 
         <div class="form-side family-side">
-            <div class="max-w-lg w-full mx-auto text-center">
-                <div class="mb-6">
-                    <p class="text-custom-red italic text-sm md:text-base font-bold tracking-[0.4em] uppercase mb-1">Intranet</p>
-                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-black text-custom-red tracking-tighter uppercase leading-none">Academia</h1>
-                </div>
+            <div class="form-content-wrapper">
+                <header class="login-header">
+                    <p class="intranet-tag">Intranet</p>
+                    <h1 class="brand-title">Academia</h1>
+                </header>
 
-                <h2 class="text-xl md:text-2xl font-bold text-slate-800 mb-6 italic">¡Bienvenida Familia!</h2>
+                <h2 class="welcome-msg">¡Bienvenido Familia!</h2>
 
-                <form class="space-y-4 text-left" method="POST" action="#">
-                    @csrf
-                    <div class="space-y-2">
-                        <label class="block text-slate-800 text-xs font-extrabold uppercase ml-2 tracking-widest">Nro. de documento</label>
-                        <input type="text" name="documento" placeholder="Ej: 70001234" required
-                               class="w-full bg-slate-50 border-2 border-slate-200 rounded-[2rem] py-3.5 px-8 outline-none focus:border-custom-red transition-all text-lg shadow-sm">
+                <form class="auth-form" method="POST" action="#">
+                    <div class="input-group">
+                        <label>Nro. de documento</label>
+                        <input type="text" name="documento" placeholder="Ej: 70001234" required class="main-input">
                     </div>
-                    <button type="submit" class="w-full btn-custom-effect text-white font-black py-4 rounded-[2rem] shadow-custom-red text-xl uppercase tracking-widest mt-2">
+                    <button type="submit" class="btn-custom-effect btn-submit">
                         <span>Ingresar</span>
                     </button>
                 </form>
 
-                <div class="mt-4">
-                    <a href="#" class="text-base font-bold text-slate-400 hover:text-custom-red transition-colors">¿Olvidaste tu contraseña?</a>
+                <div class="form-footer-actions">
+                    <a href="#" class="forgot-link">¿Olvidaste tu contraseña?</a>
                 </div>
 
-                <div class="social-icons-wrapper !mt-6">
-                    <a href="https://www.tiktok.com/@next_level_novus" target="_blank" rel="noopener noreferrer" class="social-btn !text-3xl"><i class="fab fa-tiktok"></i></a>
-                    <a href="https://www.instagram.com/next_level_novus/" target="_blank" rel="noopener noreferrer" class="social-btn !text-3xl"><i class="fab fa-instagram"></i></a>
-                    <a href="https://wa.me/51923317625" target="_blank" rel="noopener noreferrer" class="social-btn !text-3xl"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=61581492196914" target="_blank" rel="noopener noreferrer" class="social-btn !text-3xl"><i class="fab fa-facebook"></i></a>
+                <div class="social-icons-wrapper">
+                    <a href="https://www.tiktok.com/@next_level_novus" class="social-btn"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/next_level_novus/" class="social-btn"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/51923317625?text=Hola%20Next%20Level,%20deseo%20información.%20Me%20interesa:%0A%0A1.%20Matrícula%20Colegio%20%0A2.%20Ciclos%20Academia%20%0A3.%20Agendar%20Visita%20Guiada%0A4.%20Costos%20y%20Pensiones%0A%0APor%20favor,%20bríndeme%20detalles." class="social-btn"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61581492196914" class="social-btn"><i class="fab fa-facebook"></i></a>
                 </div>
 
-                <div class="mt-6 flex flex-col items-center">
-                    <div class="text-slate-400 text-[10px] font-bold uppercase tracking-widest flex items-center gap-3 whitespace-nowrap footer-links">
-                        <a href="#" class="hover:text-custom-red underline decoration-1 underline-offset-4 transition-colors">Términos</a>
-                        <span class="text-slate-300">/</span>
-                        <a href="#" class="hover:text-custom-red underline decoration-1 underline-offset-4 transition-colors">Protección de datos</a>
+                <footer class="legal-footer">
+                    <div class="footer-links">
+                        <a href="#">Términos</a> <span>/</span> <a href="#">Protección de datos</a>
                     </div>
-                    <p class="text-slate-400 text-[9px] font-bold uppercase tracking-[0.2em] mt-2">
-                        © 2026 Next Level. Todos los derechos reservados.
-                    </p>
-                </div>
+                    <p class="copyright">© 2026 Next Level. Todos los derechos reservados.</p>
+                </footer>
             </div>
         </div>
 
         <div class="form-side student-side">
-            <div class="absolute top-4 left-4 md:top-8 md:left-8 container-back-btn">
-                <a href="{{ route('portal') }}" class="inline-block btn-custom-effect rounded-2xl p-2.5 shadow-custom-red">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M7 8L3 12M3 12L7 16M3 12H17" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M15 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H15" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <div class="back-btn-container">
+                <a href="{{ route('portal') }}" class="btn-custom-effect back-circle">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5">
+                        <path d="M7 8L3 12M3 12L7 16M3 12H17" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M15 3H19C19.5304 3 20.4142 3.58579 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H15" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </a>
             </div>
 
-            <div class="max-w-lg w-full mx-auto text-center academy-content-wrapper">
-                <div class="mb-6">
-                    <p class="text-custom-red italic text-sm md:text-base font-bold tracking-[0.4em] uppercase mb-1">Intranet</p>
-                    <h1 class="text-5xl md:text-6xl lg:text-7xl font-black text-custom-red tracking-tighter uppercase leading-none">Academia</h1>
-                </div>
+            <div class="form-content-wrapper">
+                <header class="login-header">
+                    <p class="intranet-tag">Intranet</p>
+                    <h1 class="brand-title">Academia</h1>
+                </header>
 
-                <h2 class="text-xl md:text-2xl font-bold text-slate-800 mb-6 italic">¡Bienvenido Alumno!</h2>
+                <h2 class="welcome-msg">¡Bienvenido!</h2>
 
-                <form class="space-y-4 text-left" method="POST" action="#">
-                    @csrf
-                    <div class="space-y-2">
-                        <label class="block text-slate-800 text-xs font-extrabold uppercase ml-2 tracking-widest">ID Alumno</label>
-                        <input type="text" name="alumno_id" placeholder="Ej: 0020261234" required
-                               class="w-full bg-slate-50 border-2 border-slate-200 rounded-[2rem] py-3.5 px-8 outline-none focus:border-custom-red transition-all text-lg shadow-sm">
+                <form class="auth-form" method="POST" action="#">
+                    <div class="input-group">
+                        <label>ID</label>
+                        <input type="text" name="alumno_id" placeholder="Ej: 0020261234" required class="main-input">
                     </div>
-                    <div class="space-y-2">
-                        <label class="block text-slate-800 text-xs font-extrabold uppercase ml-2 tracking-widest">Contraseña</label>
-                        <div class="relative flex items-center">
-                            <input id="passwordInput" type="password" name="password" placeholder="••••••••" required
-                                   class="w-full bg-slate-50 border-2 border-slate-200 rounded-[2rem] py-3.5 px-8 pr-16 outline-none focus:border-custom-red transition-all text-lg shadow-sm">
-                            <button id="togglePassword" type="button" class="absolute right-6 text-slate-400 hover:text-custom-red">
-                                <svg id="eyeClosed" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"><path d="M10.584 10.587a2 2 0 0 0 2.828 2.83"></path><path d="M9.363 5.365a9.466 9.466 0 0 1 2.637 -.365c4 0 7.333 2.333 10 7c-.778 1.361 -1.612 2.524 -2.503 3.488m-2.14 1.861a9.41 9.41 0 0 1 -5.357 1.651c-4 0 -7.333 -2.333 -10 -7c1.369 -2.395 2.913 -4.175 4.632 -5.341"></path><path d="M3 3l18 18"></path></svg>
+                    <div class="input-group">
+                        <label>Contraseña</label>
+                        <div class="pass-relative">
+                            <input id="passwordInput" type="password" name="password" placeholder="••••••••" required class="main-input">
+                            <button id="togglePassword" type="button" class="eye-btn">
+                                <i class="fas fa-eye-slash"></i>
                             </button>
                         </div>
                     </div>
-                    <button type="submit" class="w-full btn-custom-effect text-white font-black py-4 rounded-[2rem] shadow-custom-red text-xl uppercase tracking-widest mt-2">
+                    <button type="submit" class="btn-custom-effect btn-submit">
                         <span>Ingresar</span>
                     </button>
                 </form>
 
-                <div class="mt-4">
-                    <a href="#" class="text-base font-bold text-slate-400 hover:text-custom-red transition-colors">¿Olvidaste tu contraseña?</a>
+                <div class="form-footer-actions">
+                    <a href="#" class="forgot-link">¿Olvidaste tu contraseña?</a>
                 </div>
 
-                <div class="social-icons-wrapper !mt-6">
-                    <a href="https://www.tiktok.com/@next_level_novus" class="social-btn !text-3xl"><i class="fab fa-tiktok"></i></a>
-                    <a href="https://www.instagram.com/next_level_novus/" class="social-btn !text-3xl"><i class="fab fa-instagram"></i></a>
-                    <a href="https://wa.me/51923317625" class="social-btn !text-3xl"><i class="fab fa-whatsapp"></i></a>
-                    <a href="https://www.facebook.com/profile.php?id=61581492196914" class="social-btn !text-3xl"><i class="fab fa-facebook"></i></a>
+                <div class="social-icons-wrapper">
+                    <a href="https://www.tiktok.com/@next_level_novus" class="social-btn"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/next_level_novus/" class="social-btn"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/51923317625?text=Hola%20Next%20Level,%20deseo%20información.%20Me%20interesa:%0A%0A1.%20Matrícula%20Colegio%20%0A2.%20Ciclos%20Academia%20%0A3.%20Agendar%20Visita%20Guiada%0A4.%20Costos%20y%20Pensiones%0A%0APor%20favor,%20bríndeme%20detalles." class="social-btn"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=61581492196914" class="social-btn"><i class="fab fa-facebook"></i></a>
                 </div>
 
-                <div class="mt-6 flex flex-col items-center">
-                    <div class="text-slate-400 text-[10px] font-bold uppercase tracking-widest flex items-center gap-3 footer-links">
-                        <a href="#" class="hover:text-custom-red underline transition-colors">Términos</a>
-                        <span class="text-slate-300">/</span>
-                        <a href="#" class="hover:text-custom-red underline transition-colors">Privacidad</a>
+                <footer class="legal-footer">
+                    <div class="footer-links">
+                        <a href="#">Términos</a> <span>/</span> <a href="#">Privacidad</a>
                     </div>
-                    <p class="text-slate-400 text-[9px] font-bold uppercase tracking-[0.2em] mt-2">
-                        © 2026 Next Level. Todos los derechos reservados.
-                    </p>
-                </div>
+                    <p class="copyright">© 2026 Next Level. Todos los derechos reservados.</p>
+                </footer>
             </div>
         </div>
 
         <div class="sliding-panel-container">
             <div class="sliding-panel">
-                <div class="text-white text-center px-8 md:px-12">
-                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-black mb-6 uppercase tracking-tighter" id="overlayTitle">¿Eres Familia?</h1>
-                    <p class="text-lg md:text-xl opacity-90 mb-10 font-medium" id="overlayText">Accede con tu documento para el <br class="hidden md:block"> seguimiento de tus hijos.</p>
-                    <button class="btn-ghost-white btn-custom-effect !py-4 !px-10 !text-lg !rounded-2xl" id="toggleBtn">
+                <div class="overlay-text-content">
+                    <h1 id="overlayTitle">¿Eres Familia?</h1>
+                    <p id="overlayText">Accede con tu documento de identidad para el <br> seguimiento de tus hijos.</p>
+                    <button class="btn-ghost-white btn-custom-effect" id="toggleBtn">
                         <span>Soy Familia</span>
                     </button>
                 </div>
             </div>
         </div>
+
     </div>
 
     <script src="{{ asset('js/login.js') }}"></script>

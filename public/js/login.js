@@ -10,6 +10,13 @@ document.addEventListener('DOMContentLoaded', function () {
             const isPassword = passwordInput.getAttribute('type') === 'password';
             passwordInput.setAttribute('type', isPassword ? 'text' : 'password');
 
+            if (isPassword) {
+                this.classList.add('active');
+            } else {
+                this.classList.remove('active');
+            }
+            // ---------------------------------------
+
             if (eyeOpen && eyeClosed) {
                 eyeOpen.classList.toggle('hidden');
                 eyeClosed.classList.toggle('hidden');
@@ -27,7 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
             container.classList.toggle('active');
             const isActive = container.classList.contains('active');
 
-            title.innerText = isActive ? "¿Eres Familia?" : "¿Eres Alumno?";
+            title.innerText = isActive ? "¿Eres Familia?" : "¿Eres Usuario?";
 
             const isAcademia = document.body.innerText.includes('Academia');
 
@@ -40,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 } else {
                     text.innerHTML = "Ingresa con tu código de estudiante para acceder a tus notas y cursos.";
                 }
-                toggleBtn.innerHTML = "<span>Soy Alumno</span>";
+                toggleBtn.innerHTML = "<span>Soy Usuario</span>";
             }
         });
     }
