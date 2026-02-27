@@ -1755,7 +1755,7 @@ html, body {
     .info-blob-card {
         flex: 0 0 12.5% !important;
         padding: 60px 40px !important;
-        background: var(--blanco)F;
+        background: var(--blanco);
         border-right: 1px solid var(--blanco);
         display: flex;
         flex-direction: column;

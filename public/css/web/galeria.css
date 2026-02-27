@@ -99,18 +99,6 @@
     margin-bottom: 60px;
 }
 
-.galeria-titulo h2::after {
-    content: '';
-    position: absolute;
-    bottom: -8px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 3px;
-    background: var(--rojo-principal);
-    border-radius: 2px;
-}
-
 .galeria-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));

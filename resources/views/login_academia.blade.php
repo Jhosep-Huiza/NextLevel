@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('css/web/login_academia.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/web/web_principal.css') }}">
 </head>
 <body class="w-full h-screen overflow-hidden bg-white">
 

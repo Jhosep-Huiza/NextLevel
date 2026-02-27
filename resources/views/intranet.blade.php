@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Next Level - Portal Educativo</title>
     <link rel="stylesheet" href="{{ asset('css/web/intranet.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/web/web_principal.css') }}">
 </head>
 <body>
     <a href="{{ route('web.inicio') }}" class="back-home-btn" title="Volver al Inicio">

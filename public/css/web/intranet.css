@@ -31,11 +31,11 @@ html, body {
 }
 
 .portal-section.colegio {
-    background-color: #0F2749;
+    background-color: var(--azul-oscuro);
 }
 
 .portal-section.academia {
-    background-color: #B01030;
+    background-color: var(--rojo-principal);
 }
 
 .central-divider {
@@ -73,7 +73,7 @@ html, body {
     justify-content: center;
     align-items: flex-start;
     padding: 0 10%;
-    color: white;
+    color: var(--blanco);
 }
 
 .badge {
@@ -89,7 +89,7 @@ html, body {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    color: white;
+    color: var(--blanco);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
 }
@@ -118,7 +118,7 @@ html, body {
     position: relative;
     display: inline-block;
     padding: 18px 150px;
-    background-color: white;
+    background-color: var(--blanco);
     text-decoration: none;
     font-weight: 800;
     font-size: 1.2rem;
@@ -129,8 +129,8 @@ html, body {
     text-align: center;
 }
 
-.colegio .btn-main { color: #0F2749; }
-.academia .btn-main { color: #B01030; }
+.colegio .btn-main { color: var(--azul-oscuro); }
+.academia .btn-main { color: var(--rojo-principal); }
 
 .btn-main::after {
     content: '';
@@ -191,7 +191,7 @@ html, body {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    color: white;
+    color: var(--blanco);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
 }
@@ -221,7 +221,7 @@ html, body {
     position: relative;
     display: inline-block;
     padding: 18px 150px;
-    background-color: white;
+    background-color: var(--blanco);
     text-decoration: none;
     font-weight: 800;
     font-size: 1.2rem;
@@ -262,7 +262,7 @@ html, body {
 }
 
 .footer-copyright p {
-    color: #ffffff;
+    color: var(--blanco);
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 0.5px;

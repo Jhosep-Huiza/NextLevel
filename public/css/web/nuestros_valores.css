@@ -120,7 +120,7 @@
 .icon-circle {
     width: 85px;
     height: 85px;
-    background: var(--blanco);
+    background: #f6f6f6;
     border-radius: 22px;
     display: flex;
     align-items: center;

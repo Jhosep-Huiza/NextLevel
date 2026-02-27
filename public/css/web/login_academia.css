@@ -12,11 +12,11 @@ body {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-color: #ffffff;
+    background-color: var(--blanco);
 }
 
 .main-sliding-container {
-    background: #ffffff;
+    background: var(--blanco);
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -33,7 +33,7 @@ body {
     flex-direction: column;
     justify-content: center;
     padding: 0 10%;
-    background: white;
+    background: var(--blanco);
 }
 
 .family-side {
@@ -92,7 +92,7 @@ body {
 }
 
 .sliding-panel {
-    background: linear-gradient(135deg, #8d0707 0%, #db0808 100%);
+    background: linear-gradient(135deg, var(--rojo-principal) 0%, var(--rojo-principal) 100%);
     height: 100%; width: 100%;
     display: flex;
     align-items: center;
@@ -102,7 +102,7 @@ body {
 .btn-custom-effect {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(135deg, #8d0707 0%, #db0808 100%);
+    background: linear-gradient(135deg, var(--rojo-principal) 0%, var(--rojo-principal) 100%);
     border: none;
     cursor: pointer;
     box-shadow: 0 15px 30px -8px rgba(219, 8, 8, 0.3);
@@ -150,8 +150,8 @@ body {
 
 .btn-ghost-white {
     background: transparent !important;
-    border: 5px solid #ffffff !important;
-    color: white !important;
+    border: 5px solid var(--blanco) !important;
+    color: var(--blanco) !important;
     padding: 30px 90px;
     border-radius: 30px;
     font-weight: 800;
@@ -161,8 +161,8 @@ body {
 }
 
 .btn-ghost-white:hover {
-    background: white !important;
-    color: #db0808 !important;
+    background: var(--blanco) !important;
+    color: var(--rojo-principal) !important;
 }
 
 .social-icons-wrapper {
@@ -180,7 +180,7 @@ body {
 }
 
 .social-btn:hover {
-    color: #db0808;
+    color: var(--rojo-principal);
     transform: translateY(-10px) scale(1.2);
 }
 
@@ -190,5 +190,5 @@ body {
 }
 
 .text-custom-red {
-    color: #db0808;
+    color: var(--rojo-principal);
 }
