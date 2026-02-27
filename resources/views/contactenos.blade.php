@@ -129,13 +129,13 @@
 
             <div class="contact-hero-info">
                 <div class="info-contacto">
-                    <h3><strong>Información de contacto</strong></h3><br>
+                    <h3 class="titulo-contacto">INFORMACIÓN DE CONTACTO</h3>
                     Dirección: Carretera Federico Basadre Km. 6 (Al costado de la UNU) <br>
                     Teléfono: +51 923 317 626 <br>
                     Correo: contacto@nextlevel.edu.pe
                 </div>
 
-                <h3>Solicita más Información</h3>
+                <h3 class="titulo-formulario">SOLICITA MÁS INFORMACIÓN</h3>
 
                 <form class="form-contacto" id="formWhatsapp">
                     <input type="text" id="dni" placeholder="DNI" required>
@@ -143,12 +143,18 @@
                     <input type="text" id="apellido_paterno" placeholder="Apellido Paterno" required>
                     <input type="text" id="apellido_materno" placeholder="Apellido Materno" required>
                     <input type="number" id="edad" placeholder="Edad" required>
-                    <select id="sexo" name="sexo" required>
-                        <option value="" disabled selected>Sexo</option>
-                        <option value="M">Masculino</option>
-                        <option value="F">Femenino</option>
-                        <option value="O">Prefiero no decirlo</option>
-                    </select>
+                    <div class="custom-dropdown" id="dropdownSexo">
+                        <div class="dropdown-selected">
+                            <span id="selectedText">Sexo</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <ul class="dropdown-list">
+                            <li data-value="M">Masculino</li>
+                            <li data-value="F">Femenino</li>
+                            <li data-value="O">Prefiero no decirlo</li>
+                        </ul>
+                        <input type="hidden" name="sexo" id="inputSexo" required>
+                    </div>
                     <input type="email" id="email" placeholder="Email">
                     <input type="text" id="celular" placeholder="Celular" required>
                     <textarea rows="4" id="mensaje" placeholder="Mensaje" required></textarea>
@@ -211,6 +217,7 @@
     <script src="{{ asset('js/hero-slider.js') }}"></script>
     <script src="{{ asset('js/menu-mobile.js') }}"></script>
     <script src="{{ asset('js/contac-whatsapp.js') }}"></script>
+    <script src="{{ asset('js/select-contacto.js') }}"></script>
 </body>
 
 </html>

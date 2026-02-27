@@ -130,15 +130,16 @@
 
 .contact-hero-info{
     background:var(--blanco);
-    padding:35px;
+    padding:30px;
     border-radius:18px;
     box-shadow:0 15px 40px rgba(0,0,0,.08);
     color: var(--azul-oscuro);
 }
 
 .info-contacto {
-    margin-bottom: 30px;
-    line-height: 1.6;
+    margin-bottom: 35px;
+    font-size: 16px;
+    line-height: 1.8;
 
 }
 
@@ -149,7 +150,6 @@
 }
 
 .form-contacto input,
-.form-contacto select,
 .form-contacto textarea {
     padding: 10px;
     border: 1px solid var(--blanco);
@@ -162,38 +162,116 @@
     color: var(--azul-oscuro);
 }
 
-.form-contacto select{
-    appearance:none;
-    background: var(--blanco);
-    color: var(--azul-oscuro);
-    cursor:pointer;
-}
-
-.form-contacto select{
-    background-image:url("data:image/svg+xml;utf8,<svg fill='%23666' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
-    background-repeat:no-repeat;
-    background-position:right 10px center;
-    background-size:16px;
-    padding-right:35px;
-}
-
 .form-contacto textarea {
     grid-column: span 2;
     resize: none;
 }
 
 .form-contacto button {
-    background-color: var(--azul-oscuro);
+    background-color: var(--azul-noche);
     color: var(--blanco);
     border: none;
     padding: 12px;
+    font-weight: 700;
     border-radius: 6px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+    grid-column: span 2;
 }
 
 .form-contacto button:hover {
     background-color: var(--azul-oscuro);
+}
+
+.titulo-contacto {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--azul-oscuro);
+    margin-bottom: 1px;
+}
+
+.titulo-formulario {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--azul-oscuro);
+    margin-bottom: 20px;
+}
+
+.form-contacto select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: var(--blanco) !important;
+    color: var(--azul-oscuro) !important;
+    color-scheme: light !important;
+    -webkit-tap-highlight-color: transparent;
+    padding: 10px;
+    border: 1px solid var(--azul-oscuro);
+    border-radius: 6px;
+    width: 100%;
+    font-size: 14px;
+    outline: 0;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%231a3a63' height='20' viewBox='0 0 24 24' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    padding-right: 35px;
+}
+
+.form-contacto select option {
+    background-color: var(--blanco) !important;
+    color: var(--azul-oscuro) !important;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.custom-dropdown {
+    position: relative;
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+}
+
+.dropdown-selected {
+    padding: 10px;
+    border: 1px solid var(--azul-oscuro);
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: var(--azul-oscuro);
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-list {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid var(--azul-oscuro);
+    border-radius: 6px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.dropdown-list li {
+    padding: 10px;
+    color: var(--azul-oscuro);
+    transition: background 0.2s;
+}
+
+.dropdown-list li:hover {
+    background-color: #e9f2fc;
+}
+
+.custom-dropdown.active .dropdown-list {
+    display: block;
 }
 
 @media (max-width: 992px) {
@@ -278,12 +356,18 @@
     }
 
     .info-contacto {
-        margin-bottom: 15px;
+        text-align: center;
+        margin-bottom: 25px;
     }
 
-    h3 {
-        margin-top: 15px;
-        margin-bottom: 10px;
+    .titulo-contacto,
+    .titulo-formulario {
+        font-size: 20px;
         text-align: center;
+    }
+
+    .form-contacto button {
+        grid-column: span 1;
+        font-size: 1rem;
     }
 }

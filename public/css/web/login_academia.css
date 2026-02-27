@@ -384,29 +384,27 @@ body {
 
 @media (max-width: 992px) {
     body {
-        overflow-y: auto; /* Permite scroll si el contenido es alto en móviles */
+        overflow-y: auto;
         height: auto;
     }
 
     .main-sliding-container {
-        flex-direction: column; /* Apilamos verticalmente */
+        flex-direction: column;
         height: auto;
         min-height: 100vh;
     }
 
-    /* Ajuste de las secciones de formulario */
     .form-side {
-        position: relative; /* Cambiamos de absolute para que ocupen espacio real */
+        position: relative;
         width: 100%;
         height: auto;
         padding: 60px 20px;
         opacity: 1 !important;
-        display: none; /* Controlado por JS, oculto por defecto */
+        display: none;
         left: 0;
         right: 0;
     }
 
-    /* Mantenemos tu lógica de clases .active para mostrar el formulario correcto */
     .main-sliding-container.active .student-side {
         display: flex;
     }
@@ -415,22 +413,20 @@ body {
         display: flex;
     }
 
-    /* Panel Rojo (Overlay) ahora arriba */
     .sliding-panel-container {
         position: relative;
         width: 100%;
         height: auto;
         min-height: 350px;
         left: 0;
-        transform: none !important; /* Anulamos desplazamiento lateral */
-        order: -1; /* Lo posiciona al principio de la columna */
+        transform: none !important;
+        order: -1;
     }
 
     .sliding-panel {
         padding: 50px 20px;
     }
 
-    /* Ajustes de Títulos y Textos para pantallas menores a 992px */
     .brand-title {
         font-size: 3.5rem;
         margin-bottom: 25px;
@@ -443,16 +439,15 @@ body {
     #overlayText {
         font-size: 18px;
         max-width: 90%;
-        min-width: unset; /* Quitamos restricciones de ancho fijo de escritorio */
+        min-width: unset;
     }
 
     .btn-ghost-white {
-        width: 100%; /* Botón de ancho completo para facilitar clics táctiles */
+        width: 100%;
         max-width: 320px;
         padding: 15px 30px;
     }
 
-    /* Footer y Social */
     .social-icons-wrapper {
         margin-top: 30px;
         margin-bottom: 0;
@@ -461,7 +456,7 @@ body {
     .back-btn-container {
         top: 20px;
         left: 20px;
-        z-index: 101; /* Aseguramos que se vea sobre el panel */
+        z-index: 101;
     }
 
     .form-content-wrapper {

@@ -129,8 +129,12 @@ html, body {
     text-align: center;
 }
 
-.colegio .btn-main { color: var(--azul-oscuro); }
-.academia .btn-main { color: var(--rojo-principal); }
+.colegio .btn-main {
+    color: var(--azul-oscuro);
+}
+.academia .btn-main {
+    color: var(--rojo-principal);
+}
 
 .btn-main::after {
     content: '';
