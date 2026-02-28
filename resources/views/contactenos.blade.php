@@ -13,12 +13,13 @@
 
 </head>
 <body>
+
     <div class="top-bar">
         <div class="marquee-wrapper">
             <div class="marquee-track" id="marqueeTrack">
                 <div class="marquee-item">
-                    🧑🏻‍🎓 ¡MATRÍCULA 2026! &nbsp;&nbsp;&nbsp;&nbsp;
-                    📕 INICIO DE CLASES: 4 DE MARZO &nbsp;&nbsp;&nbsp;&nbsp;
+                    ¡Matrícula 2026! &nbsp;&nbsp;&nbsp;&nbsp;
+                    ☀️🏊‍♂️ Inicio de Clases: 2 Marzo &nbsp;&nbsp;&nbsp;&nbsp;
                 </div>
             </div>
         </div>

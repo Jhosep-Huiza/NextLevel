@@ -12,12 +12,13 @@
     <link rel="stylesheet" href="{{ asset('css/web/experiencia.css') }}">
 </head>
 <body>
+
     <div class="top-bar">
         <div class="marquee-wrapper">
             <div class="marquee-track" id="marqueeTrack">
                 <div class="marquee-item">
-                    🧑🏻‍🎓 ¡MATRÍCULA 2026! &nbsp;&nbsp;&nbsp;&nbsp;
-                    📕 INICIO DE CLASES: 4 DE MARZO &nbsp;&nbsp;&nbsp;&nbsp;
+                    ¡Matrícula 2026! &nbsp;&nbsp;&nbsp;&nbsp;
+                    ☀️🏊‍♂️ Inicio de Clases: 2 Marzo &nbsp;&nbsp;&nbsp;&nbsp;
                 </div>
             </div>
         </div>
@@ -102,12 +103,13 @@
     <section class="hero-sobre">
         <div class="hero-overlay">
             <div class="hero-content">
-                <span class="section-tag">INSTITUCIÓN EDUCATIVA</span>
-                    <h1>SOBRE NOSOTROS</h1>
+                <span class="section-tag">ADMISIONES 2026</span>
+                    <h1>TU CAMINO AL ÉXITO COMIENZA AQUÍ</h1>
                     <div class="hero-line"></div>
                     <p>
-                        Transformamos la educación en una experiencia de alto impacto,
-                        formando estudiantes con mentalidad ganadora y visión global.
+                        Únete a nuestra comunidad educativa.
+                        Abrimos nuestras puertas para formar a la próxima
+                        generación de líderes con valores y excelencia académica.
                     </p>
                 </div>
             </div>

@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="{{ asset('css/web/marquee_principal.css') }}">
     <link rel="stylesheet" href="{{ asset('css/web/ubicacion.css') }}">
     <link rel="stylesheet" href="{{ asset('css/web/propuesta.css') }}">
-
     <link rel="stylesheet" href="{{ asset('css/web/galeria.css') }}">
 </head>
 
@@ -21,8 +20,8 @@
         <div class="marquee-wrapper">
             <div class="marquee-track" id="marqueeTrack">
                 <div class="marquee-item">
-                    🧑🏻‍🎓 ¡MATRÍCULA 2026!
-                    📕 INICIO DE CLASES: 2 DE MARZO
+                    ¡Matrícula 2026! &nbsp;&nbsp;&nbsp;&nbsp;
+                    ☀️🏊‍♂️ Inicio de Clases: 2 Marzo &nbsp;&nbsp;&nbsp;&nbsp;
                 </div>
             </div>
         </div>
