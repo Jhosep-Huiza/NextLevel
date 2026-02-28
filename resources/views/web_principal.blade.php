@@ -431,7 +431,7 @@
                 </div>
                 <div class="footer-column">
                     <a href="{{ route('academia') }}">ACADEMIA</a>
-                    <a href="#">PAGOS EN LÍNEA</a>
+                    <a href="{{ route('pagos') }}">PAGOS EN LÍNEA</a>
                     <a href="#">MATRíCULA 2026</a>
                     <a href="#">MATRÍCULA ONLINE</a>
                     <a href="#">LIBRO RECLAMACIONES</a>

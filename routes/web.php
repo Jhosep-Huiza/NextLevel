@@ -46,10 +46,10 @@ Route::get('/contactenos', function (){
     return view('contactenos');
 })->name('contactenos');
 
-Route::get('/admision', function (){
-    return view('admision');
-})->name('admision');
-
 Route::get('/galeria', function () {
     return view('galeria');
 })->name('galeria');
+
+Route::get('/pagos', function (){
+    return view('pagos');
+})->name('pagos');
