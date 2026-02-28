@@ -294,38 +294,33 @@
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     position: relative;
-    border: 1px solid rgba(0, 0, 0, 0.05);
+    border: 3px solid transparent;
     display: flex;
     flex-direction: column;
     z-index: 1;
 }
 
-.ciclo-card:hover {
-    transform: scale(1.07);
+.ciclo-card.active-highlight {
+    transform: scale(1.05);
     z-index: 10;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
     border: 3px solid var(--rojo-principal);
+    background: #fff;
 }
 
-.ciclo-card:hover h3,
-.ciclo-card:hover p,
-.ciclo-card:hover li,
-.ciclo-card:hover .ciclo-icon,
-.ciclo-card:hover .ciclo-features i,
-.ciclo-card:hover .ciclo-badge {
-    color:var(--azul-oscuro) !important;
-    background: inherit !important;
+.ciclo-card.active-highlight h3,
+.ciclo-card.active-highlight p,
+.ciclo-card.active-highlight li,
+.ciclo-card.active-highlight .ciclo-badge {
+    color: var(--azul-oscuro) !important;
 }
 
-.ciclo-card:hover .ciclo-icon {
+.ciclo-card.active-highlight .ciclo-icon,
+.ciclo-card.active-highlight .ciclo-features i {
     color: var(--rojo-principal) !important;
 }
 
-.ciclo-card:hover .ciclo-features i {
-    color: var(--rojo-principal) !important;
-}
-
-.ciclo-card:hover .ciclo-badge.highlight {
+.ciclo-card.active-highlight .btn-ciclo {
     background: var(--rojo-principal) !important;
     color: var(--blanco) !important;
 }
@@ -412,16 +407,6 @@
     transition: 0.3s;
     margin-top: auto;
     border: 2px solid var(--rojo-principal);
-}
-
-.ciclo-card:hover .btn-ciclo {
-    background: var(--rojo-principal) !important;
-    color: var(--blanco) !important;
-}
-
-.ciclo-card:hover .btn-ciclo.btn-red {
-    background: var(--rojo-principal) !important;
-    color: var(--blanco) !important;
 }
 
 .propuesta-callout {
@@ -671,10 +656,6 @@
         opacity: 0.9;
     }
 
-    .ciclos-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
 
     .academia-intro {
         margin-top: -10px;
