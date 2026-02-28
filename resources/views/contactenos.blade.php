@@ -101,6 +101,7 @@
         </div>
     </div>
 
+    <main>
     <section class="hero-sobre">
         <div class="hero-overlay">
             <div class="hero-content">
@@ -162,10 +163,9 @@
                     <button type="submit" id="enviar">Enviar mensaje</button>
                 </form>
             </div>
-
         </div>
-
     </section>
+    </main>
 
     <footer class="footer">
         <div class="footer-container">
@@ -180,17 +180,17 @@
 
             <div class="footer-right">
                 <div class="footer-column">
+                    <a href="{{ route('galeria') }}">GALERIA</a>
                     <a href="{{ route('ubicacion') }}">UBICACIÓN</a>
                     <a href="{{ route('contactenos') }}">CONTÁCTANOS</a>
-                    <a href="{{ route('admision') }}">ADMISIÓN 2026</a>
                     <a href="{{ route('sobre.nosotros') }}">SOBRE NOSOTROS</a>
                     <a href="{{ route('nuestros.valores') }}">NUESTROS VALORES</a>
                 </div>
                 <div class="footer-column">
-                    <a href="{{ route('galeria') }}">GALERIA</a>
                     <a href="{{ route('academia') }}">ACADEMIA</a>
                     <a href="#">PAGOS EN LÍNEA</a>
-                    <a href="#">MATRICULA 2026</a>
+                    <a href="#">MATRíCULA 2026</a>
+                    <a href="#">MATRÍCULA ONLINE</a>
                     <a href="#">LIBRO RECLAMACIONES</a>
                 </div>
                 <div class="footer-column social-align">

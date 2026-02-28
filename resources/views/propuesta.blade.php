@@ -99,6 +99,7 @@
         </div>
     </div>
 
+    <main>
     <header class="propuesta-hero">
         <span class="launch-badge">Inauguración Marzo 2026</span>
         <h1>NUESTRA PROPUESTA EDUCATIVA</h1>
@@ -106,7 +107,7 @@
         <p>En Next Level, nos enfocamos en una formación cercana y de calidad para Pucallpa. Creemos que la base del éxito está en el esfuerzo compartido, el respeto y una enseñanza práctica que prepare a nuestros alumnos para la vida real.</p>
     </header>
 
-    <main class="propuesta-main">
+    <section class="propuesta-main">
         <div class="modern-grid">
             <div class="feature-card">
                 <div class="icon-wrapper color-1"><i class="fa-solid fa-person-walking"></i></div>
@@ -139,6 +140,7 @@
                 <p>Nuestro equipo está comprometido con inspirar el deseo de aprender y superar metas académicas.</p>
             </div>
         </div>
+    </section>
     </main>
 
     <footer class="footer">
@@ -154,17 +156,17 @@
 
             <div class="footer-right">
                 <div class="footer-column">
+                    <a href="{{ route('galeria') }}">GALERIA</a>
                     <a href="{{ route('ubicacion') }}">UBICACIÓN</a>
                     <a href="{{ route('contactenos') }}">CONTÁCTANOS</a>
-                    <a href="{{ route('admision') }}">ADMISIÓN 2026</a>
                     <a href="{{ route('sobre.nosotros') }}">SOBRE NOSOTROS</a>
                     <a href="{{ route('nuestros.valores') }}">NUESTROS VALORES</a>
                 </div>
                 <div class="footer-column">
-                    <a href="{{ route('galeria') }}">GALERIA</a>
                     <a href="{{ route('academia') }}">ACADEMIA</a>
                     <a href="#">PAGOS EN LÍNEA</a>
-                    <a href="#">MATRICULA 2026</a>
+                    <a href="#">MATRíCULA 2026</a>
+                    <a href="#">MATRÍCULA ONLINE</a>
                     <a href="#">LIBRO RECLAMACIONES</a>
                 </div>
                 <div class="footer-column social-align">

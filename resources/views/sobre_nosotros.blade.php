@@ -212,7 +212,6 @@
                 </div>
             </div>
         </section>
-    <main>
 
     <section class="mision-vision-section">
     <div class="exp-blobs-container container-blocks">
@@ -239,16 +238,16 @@
         <div class="info-blob-card">
             <div class="blob-content">
                 <i class="fa-solid fa-hand-holding-heart"></i>
-                <div class="text-wrapper">
-                    <h3>VALORES</h3>
-                    <p>Disciplina, respeto, ética, responsabilidad, superación constante y excelencia.</p>
+                    <div class="text-wrapper">
+                        <h3>VALORES</h3>
+                        <p>Disciplina, respeto, ética, responsabilidad, superación constante y excelencia.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
+    </section>
     </main>
+
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-left">
@@ -262,17 +261,17 @@
 
             <div class="footer-right">
                 <div class="footer-column">
+                    <a href="{{ route('galeria') }}">GALERIA</a>
                     <a href="{{ route('ubicacion') }}">UBICACIÓN</a>
                     <a href="{{ route('contactenos') }}">CONTÁCTANOS</a>
-                    <a href="{{ route('admision') }}">ADMISIÓN 2026</a>
                     <a href="{{ route('sobre.nosotros') }}">SOBRE NOSOTROS</a>
                     <a href="{{ route('nuestros.valores') }}">NUESTROS VALORES</a>
                 </div>
                 <div class="footer-column">
-                    <a href="{{ route('galeria') }}">GALERIA</a>
                     <a href="{{ route('academia') }}">ACADEMIA</a>
                     <a href="#">PAGOS EN LÍNEA</a>
-                    <a href="#">MATRICULA 2026</a>
+                    <a href="#">MATRíCULA 2026</a>
+                    <a href="#">MATRÍCULA ONLINE</a>
                     <a href="#">LIBRO RECLAMACIONES</a>
                 </div>
                 <div class="footer-column social-align">
