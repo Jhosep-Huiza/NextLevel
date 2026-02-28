@@ -187,4 +187,8 @@
         grid-template-columns: 1fr;
         gap: 25px;
     }
+
+    .section-title{
+        font-size: 34px;
+    }
 }

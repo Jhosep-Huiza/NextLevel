@@ -111,10 +111,7 @@
                     <span class="section-tag">PAGOS EN LÍNEA</span>
                     <h1>GUÍA DE PAGOS</h1>
                     <div class="hero-line"></div>
-                    <p>
-                        Gestiona tus pensiones y servicios académicos
-                        de forma rápida, segura y sin salir de casa.
-                    </p>
+                    <p>Gestiona tus pensiones y servicios académicos de forma rápida, segura y sin salir de casa.</p>
                 </div>
             </div>
             <img src="{{ asset('images/imagen10.jpg') }}" alt="Fondo" class="hero-bg-img">
@@ -122,7 +119,6 @@
 
         <section class="pagos-section">
             <div class="pagos-container">
-
                 <div class="pagos-intro">
                     <h2>SELECCIONA TU ENTIDAD FINANCIERA</h2>
                     <div class="hero-line"></div>

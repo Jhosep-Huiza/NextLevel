@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('css/web/web_principal.css') }}">
     <link rel="stylesheet" href="{{ asset('css/web/marquee_principal.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/web/ubicacion.css') }}">
     <link rel="stylesheet" href="{{ asset('css/web/propuesta.css') }}">
     <link rel="stylesheet" href="{{ asset('css/web/galeria.css') }}">
 </head>
@@ -113,7 +112,7 @@
                 <p>Momentos que se vivieron en Next Level</p>
             </div>
         </div>
-        <img src="{{ asset('images/imagen10.jpg') }}" alt="Fondo" class="hero-bg-img">
+            <img src="{{ asset('images/imagen10.jpg') }}" alt="Fondo" class="hero-bg-img">
     </section>
 
     <section class="galeria-pinterest">

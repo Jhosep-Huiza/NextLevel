@@ -420,10 +420,12 @@
         flex-direction: column !important;
         padding: 0 25px !important;
     }
+
     .footer-right {
         flex-direction: column !important;
         gap: 30px !important;
     }
+
     .footer-column {
         align-items: flex-start !important;
         text-align: left !important;

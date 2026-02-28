@@ -1,9 +1,10 @@
 .hero-sobre {
     position: relative;
-    height: 450px;
+    height: 500px;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .hero-overlay {
@@ -78,10 +79,11 @@
 .pagos-intro {
     text-align: center;
     margin-bottom: 80px;
+    margin-top: -20px;
 }
 
 .pagos-intro h2 {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     color: var(--azul-oscuro);
     font-weight: 800;
 }
@@ -97,7 +99,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .banco-col {
@@ -123,7 +125,7 @@
 }
 
 .logo-filter {
-    max-height: 75px;
+    max-height: 55px;
     width: auto;
     filter: grayscale(0%);
     opacity: 1;
@@ -131,7 +133,7 @@
 }
 
 .logo-yape {
-    max-height: 190px !important;
+    max-height: 180px !important;
 }
 
 .logo-muted {
@@ -143,4 +145,76 @@
     filter: grayscale(0%) !important;
     opacity: 1 !important;
     transform: none !important;
+}
+
+@media (max-width: 992px) {
+    .hero-sobre{
+        height: 400px;
+    }
+    .hero-content h1 {
+        font-size: 34px !important;
+        letter-spacing: -0.5px;
+        margin-bottom: 15px;
+        font-weight: 800;
+    }
+
+    .hero-content p{
+        font-size: 15px;
+        line-height: 1.4;
+        max-width: 100%;
+        opacity: 0.9;
+    }
+
+    .section-tag {
+        font-size: 10px;
+        padding: 8px 11px;
+        display: inline-block;
+        margin-bottom: 12px;
+    }
+
+    .pagos-section {
+        padding: 60px 0;
+    }
+
+    .pagos-intro h2 {
+        font-size: 34px;
+    }
+
+    .pagos-intro p {
+        font-size: 1.1rem;
+        padding: 0 15px;
+    }
+
+    .bancos-grid-minimal {
+        flex-direction: column;
+        margin-top: 50px;
+        gap: 30px;
+    }
+
+    .vertical-divider {
+        display: none;
+    }
+
+    .banco-col {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .banco-link {
+        height: auto;
+        min-height: 100px;
+        padding: 20px;
+    }
+
+    .logo-filter {
+        max-height: 45px;
+    }
+
+    .logo-yape {
+        max-height: 130px !important;
+    }
+
+    .logo-yape {
+    max-height: 160px !important;
+    }
 }
