@@ -7,7 +7,7 @@
     <title>Academia | Next Level</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="{{ asset('css/web/web_principal.css') }}">
     <link rel="stylesheet" href="{{ asset('css/web/marquee_principal.css') }}">
     <link rel="stylesheet" href="{{ asset('css/web/propuesta.css') }}">
@@ -202,52 +202,117 @@
             </div>
         </section>
 
-        <section class="ciclos-section">
-            <div class="container">
+        <section class="ciclos-section-carrusel">
+            <div class="curve-divider top">
+                <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="#ffffff"></path>
+                </svg>
+            </div>
+
+            <div class="container content-wrapper">
                 <div class="section-header-centered">
-                    <h2>PROGRAMAS DE PREPARACIÓN 2026</h2>
+                    <h2 class="title-white">PROGRAMAS DE PREPARACIÓN 2026</h2>
                     <div class="title-line-red"></div>
                 </div>
 
-                <div class="ciclos-grid">
-                    <div class="ciclo-card">
-                        <div class="ciclo-badge">DISPONIBLE</div>
-                        <i class="fa-solid fa-calendar-check ciclo-icon"></i>
-                        <h3>CICLO ANUAL</h3>
-                        <p>Base sólida desde cero. Ideal para dominar todo el prospecto con calma y seguridad.</p>
-                        <ul class="ciclo-features">
-                            <li><i class="fa-solid fa-check"></i> Todas las áreas</li>
-                            <li><i class="fa-solid fa-check"></i> Material impreso</li>
-                        </ul>
-                        <a href="#" class="btn-ciclo">Ver Informes</a>
-                    </div>
+                <div class="swiper ciclos-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="ciclo-card">
+                                <div class="ciclo-badge">DISPONIBLE</div>
+                                <i class="fa-solid fa-calendar-check ciclo-icon"></i>
+                                <h3>CICLO ANUAL</h3>
+                                <p>Base sólida desde cero. Ideal para dominar todo el prospecto con calma y seguridad.</p>
+                                <ul class="ciclo-features">
+                                    <li><i class="fa-solid fa-check"></i> Todas las áreas</li>
+                                    <li><i class="fa-solid fa-check"></i> Material impreso</li>
+                                </ul>
+                                <a href="#" class="btn-ciclo">Ver Informes</a>
+                            </div>
+                        </div>
 
-                    <div class="ciclo-card featured">
-                        <div class="ciclo-badge">MÁS BUSCADO</div>
-                        <i class="fa-solid fa-rocket ciclo-icon"></i>
-                        <h3>CICLO SEMESTRAL</h3>
-                        <p>Intensivo y avanzado. Para quienes ya tienen base y buscan asegurar su ingreso directo.</p>
-                        <ul class="ciclo-features">
-                            <li><i class="fa-solid fa-check"></i> Nivel Exigencia</li>
-                            <li><i class="fa-solid fa-check"></i> Seminarios Nocturnos</li>
-                        </ul>
-                        <a href="#" class="btn-ciclo">Inscribirme</a>
-                    </div>
+                        <div class="swiper-slide">
+                            <div class="ciclo-card featured">
+                                <div class="ciclo-badge highlight">MÁS BUSCADO</div>
+                                <i class="fa-solid fa-rocket ciclo-icon"></i>
+                                <h3>CICLO SEMESTRAL</h3>
+                                <p>Intensivo y avanzado. Para quienes ya tienen base y buscan asegurar su ingreso directo.</p>
+                                <ul class="ciclo-features">
+                                    <li><i class="fa-solid fa-check"></i> Nivel Exigencia</li>
+                                    <li><i class="fa-solid fa-check"></i> Seminarios Nocturnos</li>
+                                </ul>
+                                <a href="#" class="btn-ciclo btn-red">Inscribirme</a>
+                            </div>
+                        </div>
 
-                    <div class="ciclo-card">
-                        <div class="ciclo-badge">VACACIONES</div>
-                        <i class="fa-solid fa-sun ciclo-icon"></i>
-                        <h3>CICLO VERANO</h3>
-                        <p>Adelanto académico y reforzamiento para iniciar el año escolar con ventaja.</p>
-                        <ul class="ciclo-features">
-                            <li><i class="fa-solid fa-check"></i> 100% Práctico</li>
-                            <li><i class="fa-solid fa-check"></i> Talleres Dinámicos</li>
-                        </ul>
-                        <a href="#" class="btn-ciclo">Ver Informes</a>
+                        <div class="swiper-slide">
+                            <div class="ciclo-card">
+                                <div class="ciclo-badge">VACACIONES</div>
+                                <i class="fa-solid fa-sun ciclo-icon"></i>
+                                <h3>CICLO VERANO</h3>
+                                <p>Adelanto académico y reforzamiento para iniciar el año escolar con ventaja.</p>
+                                <ul class="ciclo-features">
+                                    <li><i class="fa-solid fa-check"></i> 100% Práctico</li>
+                                    <li><i class="fa-solid fa-check"></i> Talleres Dinámicos</li>
+                                </ul>
+                                <a href="#" class="btn-ciclo">Ver Informes</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="ciclo-card">
+                                <div class="ciclo-badge">DISPONIBLE</div>
+                                <i class="fa-solid fa-calendar-check ciclo-icon"></i>
+                                <h3>CICLO ANUAL</h3>
+                                <p>Base sólida desde cero. Ideal para dominar todo el prospecto con calma y seguridad.</p>
+                                <ul class="ciclo-features">
+                                    <li><i class="fa-solid fa-check"></i> Todas las áreas</li>
+                                    <li><i class="fa-solid fa-check"></i> Material impreso</li>
+                                </ul>
+                                <a href="#" class="btn-ciclo">Ver Informes</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="ciclo-card featured">
+                                <div class="ciclo-badge highlight">MÁS BUSCADO</div>
+                                <i class="fa-solid fa-rocket ciclo-icon"></i>
+                                <h3>CICLO SEMESTRAL</h3>
+                                <p>Intensivo y avanzado. Para quienes ya tienen base y buscan asegurar su ingreso directo.</p>
+                                <ul class="ciclo-features">
+                                    <li><i class="fa-solid fa-check"></i> Nivel Exigencia</li>
+                                    <li><i class="fa-solid fa-check"></i> Seminarios Nocturnos</li>
+                                </ul>
+                                <a href="#" class="btn-ciclo btn-red">Inscribirme</a>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="ciclo-card">
+                                <div class="ciclo-badge">VACACIONES</div>
+                                <i class="fa-solid fa-sun ciclo-icon"></i>
+                                <h3>CICLO VERANO</h3>
+                                <p>Adelanto académico y reforzamiento para iniciar el año escolar con ventaja.</p>
+                                <ul class="ciclo-features">
+                                    <li><i class="fa-solid fa-check"></i> 100% Práctico</li>
+                                    <li><i class="fa-solid fa-check"></i> Talleres Dinámicos</li>
+                                </ul>
+                                <a href="#" class="btn-ciclo">Ver Informes</a>
+                            </div>
+                        </div>
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
+
+            <div class="curve-divider bottom">
+                <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" fill="#ffffff"></path>
+                </svg>
+            </div>
         </section>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
         <section class="academia-propuesta-v2">
             <div class="container">

@@ -252,10 +252,7 @@
     display: block;
 }
 
-.ciclos-section {
-    padding: 10px 0;
-    background: var(--blanco);
-}
+
 
 .section-header-centered {
     text-align: center;
@@ -277,137 +274,6 @@
     border-radius: 10px;
 }
 
-.ciclos-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.ciclo-card {
-    background: #fafafa;
-    padding: 30px 20px;
-    border-radius: 20px;
-    text-align: center;
-    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    position: relative;
-    border: 3px solid transparent;
-    display: flex;
-    flex-direction: column;
-    z-index: 1;
-}
-
-.ciclo-card.active-highlight {
-    transform: scale(1.05);
-    z-index: 10;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
-    border: 3px solid var(--rojo-principal);
-    background: #fff;
-}
-
-.ciclo-card.active-highlight h3,
-.ciclo-card.active-highlight p,
-.ciclo-card.active-highlight li,
-.ciclo-card.active-highlight .ciclo-badge {
-    color: var(--azul-oscuro) !important;
-}
-
-.ciclo-card.active-highlight .ciclo-icon,
-.ciclo-card.active-highlight .ciclo-features i {
-    color: var(--rojo-principal) !important;
-}
-
-.ciclo-card.active-highlight .btn-ciclo {
-    background: var(--rojo-principal) !important;
-    color: var(--blanco) !important;
-}
-
-.ciclo-badge {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 10px;
-    font-weight: 800;
-    background: var(--blanco);
-    padding: 5px 12px;
-    border-radius: 50px;
-    color: #64748b;
-}
-
-.ciclo-badge.highlight {
-    background: var(--rojo-principal);
-    color: var(--blanco);
-}
-
-.ciclo-icon {
-    font-size: 3rem;
-    color: var(--rojo-principal);
-    margin-bottom: 20px;
-}
-
-.ciclo-card h3 {
-    color: var(--azul-oscuro);
-    font-size: 1.8rem;
-    font-weight: 800;
-    margin-bottom: 15px;
-}
-
-.ciclo-card p {
-    color: #576574;
-    font-size: 14px;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.ciclo-features {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto 25px;
-    width: 100%;
-}
-
-.ciclo-features li {
-    font-size: 14px;
-    margin-bottom: 10px;
-    color: #475569;
-    font-weight: 500;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 8px;
-    width: fit-content;
-    text-align: left;
-}
-
-.ciclo-features i {
-    color: var(--rojo-principal);
-    font-size: 14px;
-    width: 18px;
-    text-align: center;
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.btn-ciclo {
-    display: block;
-    padding: 12px 20px;
-    background: var(--blanco);
-    color: var(--rojo-principal);
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: 700;
-    transition: 0.3s;
-    margin-top: auto;
-    border: 2px solid var(--rojo-principal);
-}
 
 .propuesta-callout {
     margin-top: 35px;
@@ -630,6 +496,140 @@
     margin: 12px 0;
 }
 
+.ciclos-section-carrusel {
+    position: relative;
+    background-color: var(--azul-oscuro);
+    padding: 120px 0;
+    overflow: hidden;
+}
+
+.title-white {
+    color: var(--blanco) !important;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.curve-divider {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    z-index: 2;
+}
+
+.curve-divider.top {
+    top: 0;
+}
+
+.curve-divider.bottom {
+    bottom: 0;
+    transform: rotate(180deg);
+}
+
+.curve-divider svg {
+    height: 80px;
+    width: 100%;
+}
+
+.ciclos-swiper {
+    padding: 40px 0 80px;
+    overflow: visible !important;
+}
+
+.swiper-slide {
+    transition: all 0.5s ease;
+    opacity: 0.4;
+    transform: scale(0.8);
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-slide-active {
+    opacity: 1;
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+.ciclo-card {
+    background: var(--blanco);
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 380px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    position: relative;
+}
+
+.ciclo-icon {
+    font-size: 3rem;
+    color: var(--rojo-principal);
+    margin-bottom: 20px;
+    display: block;
+}
+
+.ciclo-card h3 {
+    color: var(--azul-oscuro);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.ciclo-card p {
+    color: #576574;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.ciclo-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+    text-align: left;
+    display: inline-block;
+}
+
+.ciclo-features li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #475569;
+}
+
+.ciclo-features i {
+    color: var(--rojo-principal);
+    margin-right: 8px;
+}
+
+.btn-ciclo {
+    display: block;
+    padding: 12px;
+    border: 2px solid var(--rojo-principal);
+    color: var(--rojo-principal);
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.swiper-slide-active .btn-ciclo {
+    background: var(--rojo-principal);
+    color: var(--blanco);
+}
+
+.ciclo-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 10px;
+    background: #f1f5f9;
+    padding: 4px 12px;
+    border-radius: 50px;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--blanco) !important;
+    opacity: 1;
+}
+
 @media (max-width: 992px) {
     .hero-sobre {
         height: 400px;
@@ -781,42 +781,9 @@
         line-height: 1.2;
     }
 
-    .ciclos-section {
-        padding: 50px 0;
-    }
-
     .section-header-centered h2 {
         font-size: 2.4rem;
         padding: 0 20px;
-    }
-
-    .ciclos-grid {
-        grid-template-columns: 1fr;
-        gap: 25px;
-        padding: 0 25px;
-        max-width: 450px;
-        margin: 0 auto;
-    }
-
-    .ciclo-card {
-        padding: 40px 25px;
-    }
-
-    .ciclo-card:hover {
-        transform: translateY(-5px);
-        z-index: 2;
-    }
-
-    .ciclo-card h3 {
-        font-size: 1.6rem;
-    }
-
-    .ciclo-features {
-        margin-bottom: 20px;
-    }
-
-    .ciclo-features li {
-        font-size: 15px;
     }
 
     .academia-propuesta-v2 {
@@ -955,5 +922,48 @@
     .docente-content p {
         font-size: 14px;
         line-height: 1.5;
+    }
+
+    .ciclos-section-carrusel {
+        padding: 80px 0;
+    }
+
+    .section-header-centered h2 {
+        font-size: 2.1rem;
+        padding: 0 15px;
+        margin-top: 30px;
+    }
+
+    .ciclo-card {
+        padding: 30px 20px;
+        max-width: 320px;
+        margin-top: -25px;
+    }
+
+    .ciclo-card h3 {
+        font-size: 1.5rem;
+    }
+
+    .ciclo-icon {
+        font-size: 2.5rem;
+    }
+
+    .ciclos-swiper {
+        padding: 30px 0 60px;
+        width: 100%;
+        overflow: hidden !important;
+
+    }
+
+    .swiper-slide {
+        transform: scale(0.85);
+    }
+
+    .swiper-slide-active {
+        transform: scale(1) !important;
+    }
+
+    .swiper-pagination {
+        margin-bottom: 15px;
     }
 }

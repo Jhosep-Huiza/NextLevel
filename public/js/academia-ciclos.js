@@ -1,26 +1,17 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const grid = document.querySelector('.ciclos-grid');
-    const cards = document.querySelectorAll('.ciclo-card');
-    const defaultFeatured = document.querySelector('.ciclo-card.featured');
-
-    const setHighlight = (targetCard) => {
-        cards.forEach(card => card.classList.remove('active-highlight'));
-        if (targetCard) {
-            targetCard.classList.add('active-highlight');
-        }
-    };
-
-    setHighlight(defaultFeatured);
-
-    cards.forEach(card => {
-        card.addEventListener('mouseenter', () => {
-            setHighlight(card);
-        });
-    });
-
-    if (grid) {
-        grid.addEventListener('mouseleave', () => {
-            setHighlight(defaultFeatured);
-        });
+const swiper = new Swiper('.ciclos-swiper', {
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    centeredSlides: true,
+    slideToClickedSlide: true,
+    slidesPerView: 1,
+    breakpoints: {
+        1200: { slidesPerView: 3, spaceBetween: 40 }
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
     }
 });

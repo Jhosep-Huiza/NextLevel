@@ -236,7 +236,7 @@
     padding: 10px;
     border: 1px solid var(--azul-oscuro);
     border-radius: 6px;
-    background-color: #ffffff;
+    background-color: var(--blanco);
     color: var(--azul-oscuro);
     font-size: 14px;
     display: flex;
@@ -249,7 +249,7 @@
     top: 110%;
     left: 0;
     width: 100%;
-    background-color: #ffffff;
+    background-color: var(--blanco);
     border: 1px solid var(--azul-oscuro);
     border-radius: 6px;
     list-style: none;
