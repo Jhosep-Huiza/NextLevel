@@ -119,83 +119,93 @@
             <img src="{{ asset('images/imagen10.jpg') }}" alt="Fondo" class="hero-bg-img">
         </section>
 
-        <section class="ciclos-container">
-        <div class="ciclos-wrapper">
-            <div class="ciclo-acordeon active">
-                <div class="acordeon-header header-unu">
-                    <span>UNU (UCAYALI)</span>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </div>
-                <div class="acordeon-content">
-                    <div class="ciclo-item">
-                        <div class="ciclo-info">
-                            <span class="ciclo-name">Anual UNU</span>
-                            <span class="badge-nuevo">Nuevo</span>
-                        </div>
-                    </div>
-                    <div class="ciclo-item">
-                        <div class="ciclo-info">
-                            <span class="ciclo-name">Semestral UNU</span>
-                            <span class="badge-nuevo">Nuevo</span>
-                        </div>
-                    </div>
-                    <div class="ciclo-item">
-                        <div class="ciclo-info">
-                            <span class="ciclo-name">Verano Pre UNU</span>
-                            <span class="badge-nuevo">Nuevo</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <section class="ciclos-section">
+            <div class="ciclos-container">
 
-            <div class="ciclo-acordeon">
-                <div class="acordeon-header header-unia">
-                    <span>UNIA (INTERCULTURAL)</span>
-                    <i class="fa-solid fa-chevron-down"></i>
+                <div class="ciclos-header">
+                    <span class="sub-header">PROCESO DE ADMISIÓN 2026</span>
+                    <h2>EXPLORA NUESTROS PROGRAMAS</h2>
+                    <p>Selecciona tu universidad de interés para conocer los ciclos disponibles y potenciar tu preparación.</p>
                 </div>
-                <div class="acordeon-content">
-                    <div class="ciclo-item">
-                        <div class="ciclo-info">
-                            <span class="ciclo-name">Anual UNIA</span>
-                            <span class="badge-nuevo">Nuevo</span>
-                        </div>
-                    </div>
-                    <div class="ciclo-item">
-                        <div class="ciclo-info">
-                            <span class="ciclo-name">Semestral UNIA</span>
-                            <span class="badge-nuevo">Nuevo</span>
-                        </div>
-                    </div>
-                    <div class="ciclo-item">
-                        <div class="ciclo-info">
-                            <span class="ciclo-name">Verano Pre UNIA</span>
-                            <span class="badge-nuevo">Nuevo</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="ciclo-acordeon">
-                <div class="acordeon-header header-otros">
-                    <span>OTRAS UNIVERSIDADES</span>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </div>
-                <div class="acordeon-content">
-                    <p class="empty-msg">Próximamente más universidades.</p>
-                </div>
-            </div>
+                <div class="ciclos-wrapper">
+                    <div class="ciclo-acordeon">
+                        <div class="acordeon-header header-unu">
+                            <span>UNU (UCAYALI)</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="acordeon-content">
+                            <div class="ciclo-item">
+                                <div class="ciclo-info">
+                                    <span class="ciclo-name">Anual UNU</span>
+                                    <span class="badge-nuevo">NUEVO</span>
+                                </div>
+                            </div>
+                            <div class="ciclo-item">
+                                <div class="ciclo-info">
+                                    <span class="ciclo-name">Semestral UNU</span>
+                                    <span class="badge-nuevo">NUEVO</span>
+                                </div>
+                            </div>
+                            <div class="ciclo-item">
+                                <div class="ciclo-info">
+                                    <span class="ciclo-name">Verano Pre UNU</span>
+                                    <span class="badge-nuevo">NUEVO</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-            <div class="ciclo-acordeon">
-                <div class="acordeon-header header-servicios">
-                    <span>OTROS SERVICIOS</span>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </div>
-                <div class="acordeon-content">
-                    <p class="empty-msg">Próximamente nuevos servicios.</p>
+                    <div class="ciclo-acordeon">
+                        <div class="acordeon-header header-unia">
+                            <span>UNIA (INTERCULTURAL)</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="acordeon-content">
+                            <div class="ciclo-item">
+                                <div class="ciclo-info">
+                                    <span class="ciclo-name">Anual UNIA</span>
+                                    <span class="badge-nuevo">NUEVO</span>
+                                </div>
+                            </div>
+                            <div class="ciclo-item">
+                                <div class="ciclo-info">
+                                    <span class="ciclo-name">Semestral UNIA</span>
+                                    <span class="badge-nuevo">NUEVO</span>
+                                </div>
+                            </div>
+                            <div class="ciclo-item">
+                                <div class="ciclo-info">
+                                    <span class="ciclo-name">Verano Pre UNIA</span>
+                                    <span class="badge-nuevo">NUEVO</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ciclo-acordeon">
+                        <div class="acordeon-header header-otros">
+                            <span>OTRAS UNIVERSIDADES</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="acordeon-content">
+                            <p class="empty-msg">Próximamente más universidades.</p>
+                        </div>
+                    </div>
+
+                    <div class="ciclo-acordeon">
+                        <div class="acordeon-header header-servicios">
+                            <span>OTROS SERVICIOS</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </div>
+                        <div class="acordeon-content">
+                            <p class="empty-msg">Próximamente nuevos servicios.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
     </main>
 
