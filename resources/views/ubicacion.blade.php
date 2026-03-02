@@ -125,7 +125,7 @@
 
                     <div class="info-box">
                         <p><i class="fa-solid fa-location-dot"></i> Carretera Federico Basadre Km. 6 (Al costado de la UNU)</p>
-                        <p><i class="fa-solid fa-phone"></i> 923 317 626</p>
+                        <p><i class="fa-solid fa-phone"></i> +51 923 317 626</p>
                         <p><i class="fa-solid fa-envelope"></i> contacto@nextlevel.edu.pe</p>
                     </div>
                 </div>
