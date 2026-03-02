@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Ciclo Anual | Next Level</title>
+    <title>Ciclo Anual UNIA| Next Level</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('css/web/web_principal.css') }}">
     <link rel="stylesheet" href="{{ asset('css/web/marquee_principal.css') }}">
     <link rel="stylesheet" href="{{ asset('css/web/propuesta.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/web/ciclo_anual.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/web/ciclo_anual_unia.css') }}">
 </head>
 
 <body>
@@ -105,63 +105,14 @@
 
     <section class="hero-sobre">
         <div class="hero-overlay">
-            <div class="hero-content">
+       <!-- <div class="hero-content">
                 <span class="section-tag">MATRÍCULA 2026</span>
                 <h1>CICLO ANUAL</h1>
                 <div class="hero-line"></div>
                 <p>La preparación más completa para asegurar tu ingreso. Desde lo básico hasta el nivel avanzado con el método Next Level.</p>
-            </div>
+            </div> -->
         </div>
         <img src="{{ asset('images/imagen10.jpg') }}" alt="Fondo" class="hero-bg-img">
-    </section>
-
-    <section class="academic-benefits">
-        <div class="anual-container">
-            <div class="header-section">
-                <span class="sub-title">BENEFICIOS EXCLUSIVOS</span>
-                <h2>¿Por qué prepararte con nosotros?</h2>
-            </div>
-
-            <div class="benefits-grid">
-                <div class="benefit-card">
-                    <i class="fa-solid fa-graduation-cap"></i>
-                    <h3>Nivel Académico</h3>
-                    <p>Enseñanza basada en los prospectos actualizados de las principales universidades.</p>
-                </div>
-                <div class="benefit-card">
-                    <i class="fa-solid fa-file-signature"></i>
-                    <h3>Simulacros Tipo Admisión</h3>
-                    <p>Evaluamos tu progreso cada semana con exámenes idénticos a los reales.</p>
-                </div>
-                <div class="benefit-card">
-                    <i class="fa-solid fa-users-gear"></i>
-                    <h3>Asesoría Psicopedagógica</h3>
-                    <p>Control de ansiedad y orientación vocacional para que vayas seguro al examen.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="anual-info-details">
-        <div class="anual-container split-view">
-            <div class="info-text">
-                <h2>Detalles del Programa</h2>
-                <div class="small-line"></div>
-                <p>Nuestro Ciclo Anual está diseñado para estudiantes que terminaron el colegio y buscan una base sólida en todas las materias.</p>
-
-                <ul class="check-list">
-                    <li><i class="fa-solid fa-circle-check"></i> <strong>Inicio:</strong> 02 de Marzo 2026</li>
-                    <li><i class="fa-solid fa-circle-check"></i> <strong>Turno:</strong> Mañana (07:30 am - 01:30 pm)</li>
-                    <li><i class="fa-solid fa-circle-check"></i> <strong>Duración:</strong> 10 meses intensivos</li>
-                </ul>
-            </div>
-            <div class="info-graphic">
-                <div class="floating-box">
-                    <span>¡Inscripciones Abiertas!</span>
-                </div>
-                <img src="{{ asset('images/logo_letras.png') }}" alt="Academia Next Level" class="img-promo">
-            </div>
-        </div>
     </section>
 
     </main>

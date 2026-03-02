@@ -227,7 +227,7 @@
                                     <li><i class="fa-solid fa-check"></i> Todas las áreas</li>
                                     <li><i class="fa-solid fa-check"></i> Material impreso</li>
                                 </ul>
-                                <a href="{{ route('ciclo-anual') }}" class="btn-ciclo">Ver Informes</a>
+                                <a href="{{ route('ciclos') }}" class="btn-ciclo">VER INFORMES</a>
                             </div>
                         </div>
 
@@ -241,7 +241,7 @@
                                     <li><i class="fa-solid fa-check"></i> Nivel Exigencia</li>
                                     <li><i class="fa-solid fa-check"></i> Seminarios Nocturnos</li>
                                 </ul>
-                                <a href="#" class="btn-ciclo btn-red">Inscribirme</a>
+                                <a href="{{ route('ciclos') }}" class="btn-ciclo btn-red">VER INFORMES</a>
                             </div>
                         </div>
 
@@ -255,7 +255,7 @@
                                     <li><i class="fa-solid fa-check"></i> 100% Práctico</li>
                                     <li><i class="fa-solid fa-check"></i> Talleres Dinámicos</li>
                                 </ul>
-                                <a href="#" class="btn-ciclo">Ver Informes</a>
+                                <a href="{{ route('ciclos') }}" class="btn-ciclo">VER INFORMES</a>
                             </div>
                         </div>
 
@@ -269,7 +269,7 @@
                                     <li><i class="fa-solid fa-check"></i> Todas las áreas</li>
                                     <li><i class="fa-solid fa-check"></i> Material impreso</li>
                                 </ul>
-                                <a href="{{ route('ciclo-anual') }}" class="btn-ciclo">Ver Informes</a>
+                                <a href="{{ route('ciclos') }}" class="btn-ciclo">VER INFORMES</a>
                             </div>
                         </div>
 
@@ -283,7 +283,7 @@
                                     <li><i class="fa-solid fa-check"></i> Nivel Exigencia</li>
                                     <li><i class="fa-solid fa-check"></i> Seminarios Nocturnos</li>
                                 </ul>
-                                <a href="#" class="btn-ciclo btn-red">Inscribirme</a>
+                                <a href="{{ route('ciclos') }}" class="btn-ciclo btn-red">VER INFORMES</a>
                             </div>
                         </div>
 
@@ -297,7 +297,7 @@
                                     <li><i class="fa-solid fa-check"></i> 100% Práctico</li>
                                     <li><i class="fa-solid fa-check"></i> Talleres Dinámicos</li>
                                 </ul>
-                                <a href="#" class="btn-ciclo">Ver Informes</a>
+                                <a href="{{ route('ciclos') }}" class="btn-ciclo">VER INFORMES</a>
                             </div>
                         </div>
                     </div>

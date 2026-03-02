@@ -24,6 +24,7 @@
     z-index: 1;
 }
 
+/*
 .hero-content {
     text-align: center;
     color: var(--blanco);
@@ -63,7 +64,7 @@
     font-size: 17px;
     opacity: 0.9;
 }
-
+*/
 .ciclos-container {
     width: 100%;
     margin: 500px auto;
@@ -232,7 +233,19 @@
     font-size: 0.9rem;
 }
 
+.ciclo-link {
+    text-decoration: none;
+    display: block; /* Para que ocupe todo el ancho del item */
+    color: inherit;
+}
+
+.ciclo-link:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
 @media (max-width: 992px) {
+    /*
     .hero-sobre{
         height: 400px;
     }
@@ -256,6 +269,7 @@
         display: inline-block;
         margin-bottom: 12px;
     }
+    */
 
     .ciclos-container {
         width: 100%;

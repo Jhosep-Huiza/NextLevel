@@ -3,16 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ciclos | Next Level</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Ciclo Anual UNU | Next Level</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-
     <link rel="stylesheet" href="{{ asset('css/web/web_principal.css') }}">
     <link rel="stylesheet" href="{{ asset('css/web/marquee_principal.css') }}">
     <link rel="stylesheet" href="{{ asset('css/web/propuesta.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/web/ciclos.css') }}">
-
+    <link rel="stylesheet" href="{{ asset('css/web/ciclo_anual_unu.css') }}">
 </head>
 
 <body>
@@ -41,14 +38,14 @@
             <ul class="nav-menu">
                 <li><a href="{{ route('web.inicio') }}">INICIO</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-trigger">NOSOTROS <span class="arrow-icon">▾</span></a>
+                    <a href="#" class="dropdown-trigger">NOSOTROS <span class="arrow-icon">&#9662;</span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Qué ofrecemos</a></li>
                         <li><a href="#">Quiénes Somos</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-trigger">NIVELES <span class="arrow-icon">▾</span></a>
+                    <a href="#" class="dropdown-trigger">NIVELES <span class="arrow-icon">&#9662;</span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Colegio</a></li>
                         <li><a href="{{ route('academia') }}">Academia</a></li>
@@ -105,111 +102,18 @@
     </div>
 
     <main>
-        <section class="hero-sobre">
-            <div class="hero-overlay">
-           <!-- <div class="hero-content">
-                    <span class="section-tag">PREPARACIÓN DE ALTO NIVEL</span>
-                    <h1>NUESTROS CICLOS</h1>
-                    <div class="hero-line"></div>
-                    <p>
-                        Elige tu ciclo de preparación preuniversitaria según tu objetivo.
-                    </p>
-                </div> -->
-            </div>
-            <img src="{{ asset('images/imagen10.jpg') }}" alt="Fondo" class="hero-bg-img">
-        </section>
 
-        <section class="ciclos-section">
-            <div class="ciclos-container">
-
-                <div class="ciclos-header">
-                    <span class="sub-header">PROCESO DE ADMISIÓN 2026</span>
-                    <h2>EXPLORA NUESTROS PROGRAMAS</h2>
-                    <p>Selecciona tu universidad de interés para conocer los ciclos disponibles y potenciar tu preparación.</p>
-                </div>
-
-                <div class="ciclos-wrapper">
-                    <div class="ciclo-acordeon">
-                        <div class="acordeon-header header-unu">
-                            <span>UNU (UCAYALI)</span>
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </div>
-                        <div class="acordeon-content">
-                            <a href="{{ route('ciclo-anual-unu') }}" class="ciclo-link">
-                            <div class="ciclo-item">
-                                <div class="ciclo-info">
-                                    <span class="ciclo-name">Anual UNU</span>
-                                    <span class="badge-nuevo">NUEVO</span>
-                                </div>
-                            </div>
-                            </a>
-                            <div class="ciclo-item">
-                                <div class="ciclo-info">
-                                    <span class="ciclo-name">Semestral UNU</span>
-                                    <span class="badge-nuevo">NUEVO</span>
-                                </div>
-                            </div>
-                            <div class="ciclo-item">
-                                <div class="ciclo-info">
-                                    <span class="ciclo-name">Verano Pre UNU</span>
-                                    <span class="badge-nuevo">NUEVO</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="ciclo-acordeon">
-                        <div class="acordeon-header header-unia">
-                            <span>UNIA (INTERCULTURAL)</span>
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </div>
-                        <div class="acordeon-content">
-                            <a href="{{ route('ciclo-anual-unia') }}" class="ciclo-link">
-                            <div class="ciclo-item">
-                                <div class="ciclo-info">
-                                    <span class="ciclo-name">Anual UNIA</span>
-                                    <span class="badge-nuevo">NUEVO</span>
-                                </div>
-                            </div>
-                            </a>
-                            <div class="ciclo-item">
-                                <div class="ciclo-info">
-                                    <span class="ciclo-name">Semestral UNIA</span>
-                                    <span class="badge-nuevo">NUEVO</span>
-                                </div>
-                            </div>
-                            <div class="ciclo-item">
-                                <div class="ciclo-info">
-                                    <span class="ciclo-name">Verano Pre UNIA</span>
-                                    <span class="badge-nuevo">NUEVO</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="ciclo-acordeon">
-                        <div class="acordeon-header header-otros">
-                            <span>OTRAS UNIVERSIDADES</span>
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </div>
-                        <div class="acordeon-content">
-                            <p class="empty-msg">Próximamente más universidades.</p>
-                        </div>
-                    </div>
-
-                    <div class="ciclo-acordeon">
-                        <div class="acordeon-header header-servicios">
-                            <span>OTROS SERVICIOS</span>
-                            <i class="fa-solid fa-chevron-down"></i>
-                        </div>
-                        <div class="acordeon-content">
-                            <p class="empty-msg">Próximamente nuevos servicios.</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
+    <section class="hero-sobre">
+        <div class="hero-overlay">
+       <!-- <div class="hero-content">
+                <span class="section-tag">MATRÍCULA 2026</span>
+                <h1>CICLO ANUAL</h1>
+                <div class="hero-line"></div>
+                <p>La preparación más completa para asegurar tu ingreso. Desde lo básico hasta el nivel avanzado con el método Next Level.</p>
+            </div> -->
+        </div>
+        <img src="{{ asset('images/imagen10.jpg') }}" alt="Fondo" class="hero-bg-img">
+    </section>
 
     </main>
 
@@ -261,6 +165,7 @@
     <script src="{{ asset('js/marquee_principal.js') }}"></script>
     <script src="{{ asset('js/nav-scroll.js') }}"></script>
     <script src="{{ asset('js/menu-mobile.js') }}"></script>
-    <script src="{{ asset('js/ciclos.js') }}"></script>
+
 </body>
+
 </html>
