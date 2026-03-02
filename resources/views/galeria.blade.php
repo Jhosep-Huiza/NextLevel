@@ -184,8 +184,8 @@
 
             <div class="footer-right">
                 <div class="footer-column">
+                    <a href="{{ route('ciclos') }}">CICLOS</a>
                     <a href="{{ route('galeria') }}">GALERIA</a>
-                    <a href="{{ route('ubicacion') }}">UBICACIÓN</a>
                     <a href="{{ route('contactenos') }}">CONTÁCTANOS</a>
                     <a href="{{ route('sobre.nosotros') }}">SOBRE NOSOTROS</a>
                     <a href="{{ route('nuestros.valores') }}">NUESTROS VALORES</a>

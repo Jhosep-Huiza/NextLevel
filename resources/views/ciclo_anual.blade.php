@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Propuesta Educativa - Next Level</title>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Ciclo Anual | Next Level</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="{{ asset('css/web/web_principal.css') }}">
     <link rel="stylesheet" href="{{ asset('css/web/marquee_principal.css') }}">
     <link rel="stylesheet" href="{{ asset('css/web/propuesta.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/web/ciclo_anual.css') }}">
 </head>
+
 <body>
 
     <div class="top-bar">
@@ -49,7 +51,7 @@
                         <li><a href="{{ route('academia') }}">Academia</a></li>
                     </ul>
                 </li>
-                <li><a href="#">UBICACIÓN</a></li>
+                <li><a href="{{ route('ubicacion') }}">UBICACIÓN</a></li>
                 <li><a href="#">MATRICULAS</a></li>
                 <li><a href="#">CONCURSOS</a></li>
                 <li><a href="{{ route('portal') }}">INTRANET</a></li>
@@ -74,7 +76,7 @@
                     <li class="has-submenu" data-target="submenu-niveles">
                         <span>NIVELES</span> <i class="fa-solid fa-chevron-right"></i>
                     </li>
-                    <li><a href="#">UBICACIÓN</a></li>
+                    <li><a href="{{ route('ubicacion') }}">UBICACIÓN</a></li>
                     <li><a href="#">MATRICULAS</a></li>
                     <li><a href="#">CONCURSOS</a></li>
                     <li><a href="{{ route('portal') }}">INTRANET</a></li>
@@ -100,47 +102,68 @@
     </div>
 
     <main>
-    <header class="propuesta-hero">
-        <span class="launch-badge">Inauguración Marzo 2026</span>
-        <h1>NUESTRA PROPUESTA EDUCATIVA</h1>
-        <div class="propuesta-line"></div>
-        <p>En Next Level, nos enfocamos en una formación cercana y de calidad para Pucallpa. Creemos que la base del éxito está en el esfuerzo compartido, el respeto y una enseñanza práctica que prepare a nuestros alumnos para la vida real.</p>
-    </header>
 
-    <section class="propuesta-main">
-        <div class="modern-grid">
-            <div class="feature-card">
-                <div class="icon-wrapper color-1"><i class="fa-solid fa-person-walking"></i></div>
-                <h3>Metodología Activa</h3>
-                <p>Aprendizaje basado en la participación directa. Nuestros alumnos aprenden haciendo y resolviendo retos prácticos.</p>
+    <section class="hero-sobre">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <span class="section-tag">MATRÍCULA 2026</span>
+                <h1>CICLO ANUAL</h1>
+                <div class="hero-line"></div>
+                <p>La preparación más completa para asegurar tu ingreso. Desde lo básico hasta el nivel avanzado con el método Next Level.</p>
             </div>
-            <div class="feature-card">
-                <div class="icon-wrapper color-2"><i class="fa-solid fa-users-rectangle"></i></div>
-                <h3>Enseñanza Cercana</h3>
-                <p>Garantizamos grupos reducidos que permiten conocer a cada estudiante y acompañar su progreso de forma personalizada.</p>
+        </div>
+        <img src="{{ asset('images/imagen10.jpg') }}" alt="Fondo" class="hero-bg-img">
+    </section>
+
+    <section class="academic-benefits">
+        <div class="anual-container">
+            <div class="header-section">
+                <span class="sub-title">BENEFICIOS EXCLUSIVOS</span>
+                <h2>¿Por qué prepararte con nosotros?</h2>
             </div>
-            <div class="feature-card">
-                <div class="icon-wrapper color-3"><i class="fa-solid fa-hand-holding-heart"></i></div>
-                <h3>Formación en Valores</h3>
-                <p>Priorizamos la ética, la disciplina y el respeto mutuo para formar ciudadanos responsables y empáticos.</p>
-            </div>
-            <div class="feature-card">
-                <div class="icon-wrapper color-4"><i class="fa-solid fa-brain"></i></div>
-                <h3>Mentalidad Ganadora</h3>
-                <p>Fomentamos la autoconfianza y perseverancia, enseñando a gestionar emociones para superar cualquier desafío.</p>
-            </div>
-            <div class="feature-card">
-                <div class="icon-wrapper color-5"><i class="fa-solid fa-book-open"></i></div>
-                <h3>Material Didáctico</h3>
-                <p>Contamos con guías y recursos de estudio diseñados para facilitar la comprensión de cada materia.</p>
-            </div>
-            <div class="feature-card">
-                <div class="icon-wrapper color-6"><i class="fa-solid fa-chalkboard-user"></i></div>
-                <h3>Docentes Motivadores</h3>
-                <p>Nuestro equipo está comprometido con inspirar el deseo de aprender y superar metas académicas.</p>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h3>Nivel Académico</h3>
+                    <p>Enseñanza basada en los prospectos actualizados de las principales universidades.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fa-solid fa-file-signature"></i>
+                    <h3>Simulacros Tipo Admisión</h3>
+                    <p>Evaluamos tu progreso cada semana con exámenes idénticos a los reales.</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fa-solid fa-users-gear"></i>
+                    <h3>Asesoría Psicopedagógica</h3>
+                    <p>Control de ansiedad y orientación vocacional para que vayas seguro al examen.</p>
+                </div>
             </div>
         </div>
     </section>
+
+    <section class="anual-info-details">
+        <div class="anual-container split-view">
+            <div class="info-text">
+                <h2>Detalles del Programa</h2>
+                <div class="small-line"></div>
+                <p>Nuestro Ciclo Anual está diseñado para estudiantes que terminaron el colegio y buscan una base sólida en todas las materias.</p>
+
+                <ul class="check-list">
+                    <li><i class="fa-solid fa-circle-check"></i> <strong>Inicio:</strong> 02 de Marzo 2026</li>
+                    <li><i class="fa-solid fa-circle-check"></i> <strong>Turno:</strong> Mañana (07:30 am - 01:30 pm)</li>
+                    <li><i class="fa-solid fa-circle-check"></i> <strong>Duración:</strong> 10 meses intensivos</li>
+                </ul>
+            </div>
+            <div class="info-graphic">
+                <div class="floating-box">
+                    <span>¡Inscripciones Abiertas!</span>
+                </div>
+                <img src="{{ asset('images/logo_letras.png') }}" alt="Academia Next Level" class="img-promo">
+            </div>
+        </div>
+    </section>
+
     </main>
 
     <footer class="footer">
@@ -191,5 +214,7 @@
     <script src="{{ asset('js/marquee_principal.js') }}"></script>
     <script src="{{ asset('js/nav-scroll.js') }}"></script>
     <script src="{{ asset('js/menu-mobile.js') }}"></script>
+
 </body>
+
 </html>

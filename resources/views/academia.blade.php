@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Academia | Next Level</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -50,7 +50,7 @@
                     <a href="#" class="dropdown-trigger">NIVELES <span class="arrow-icon">&#9662;</span></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Colegio</a></li>
-                        <li><a href="{{ route('academia') }}">Academia</a></li>
+                        <li><a href="{{ route('academia') }}" class="active">Academia</a></li>
                     </ul>
                 </li>
                 <li><a href="{{ route('ubicacion') }}">UBICACIÓN</a></li>
@@ -227,7 +227,7 @@
                                     <li><i class="fa-solid fa-check"></i> Todas las áreas</li>
                                     <li><i class="fa-solid fa-check"></i> Material impreso</li>
                                 </ul>
-                                <a href="#" class="btn-ciclo">Ver Informes</a>
+                                <a href="{{ route('ciclo-anual') }}" class="btn-ciclo">Ver Informes</a>
                             </div>
                         </div>
 
@@ -269,7 +269,7 @@
                                     <li><i class="fa-solid fa-check"></i> Todas las áreas</li>
                                     <li><i class="fa-solid fa-check"></i> Material impreso</li>
                                 </ul>
-                                <a href="#" class="btn-ciclo">Ver Informes</a>
+                                <a href="{{ route('ciclo-anual') }}" class="btn-ciclo">Ver Informes</a>
                             </div>
                         </div>
 
@@ -429,8 +429,8 @@
 
             <div class="footer-right">
                 <div class="footer-column">
+                    <a href="{{ route('ciclos') }}">CICLOS</a>
                     <a href="{{ route('galeria') }}">GALERIA</a>
-                    <a href="{{ route('ubicacion') }}">UBICACIÓN</a>
                     <a href="{{ route('contactenos') }}">CONTÁCTANOS</a>
                     <a href="{{ route('sobre.nosotros') }}">SOBRE NOSOTROS</a>
                     <a href="{{ route('nuestros.valores') }}">NUESTROS VALORES</a>

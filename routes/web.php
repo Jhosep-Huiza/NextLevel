@@ -53,3 +53,11 @@ Route::get('/galeria', function () {
 Route::get('/pagos', function (){
     return view('pagos');
 })->name('pagos');
+
+Route::get('/ciclo-anual', function (){
+    return view('ciclo_anual');
+})->name('ciclo-anual');
+
+Route::get('/ciclos', function (){
+    return view('ciclos');
+})->name('ciclos');
