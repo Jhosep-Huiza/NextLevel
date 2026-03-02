@@ -260,71 +260,67 @@
     </section>
 
 
-    <section class="docentes-carousel-section">
+    <section class="alumnos-carousel-section">
         <div class="info-container">
             <div class="info-header">
-                <h2 class="section-title-dark">NUESTRO CUERPO DE DOCENTES</h2>
-                <p class="info-intro">Liderazgo y trayectoria al servicio de la formación de nuestros alumnos.</p>
+                <h2 class="section-title-dark">VOCES QUE INSPIRAN</h2>
+                <p class="info-intro">Ellos comparten su experiencia y cómo Next Level está transformando su futuro.</p>
                 <div class="title-underline"></div>
             </div>
 
-            <div class="docentes-carrusel-wrapper">
-                <button class="doc-nav-btn prev" id="docPrevBtn"><i class="fa-solid fa-chevron-left"></i></button>
+            <div class="alumnos-carrusel-wrapper">
+                <button class="alu-nav-btn prev" id="aluPrevBtn"><i class="fa-solid fa-chevron-left"></i></button>
 
-                <div class="docentes-overflow">
-                    <div class="docentes-track" id="docentesTrack">
-                        <div class="docente-card-modern">
-                            <div class="docente-img-box"><img src="{{ asset('images/imagen10.jpg') }}" alt="Docente"></div>
-                            <div class="docente-content">
-                                <h3>Nombre del Docente</h3>
-                                <span class="doc-tag">Especialidad</span>
-                                <p>Docente con amplia trayectoria en formación académica y valores para el éxito de nuestros alumnos.</p>
+                <div class="alumnos-overflow">
+                    <div class="alumnos-track" id="alumnosTrack">
+                        <div class="alumno-card-modern">
+                            <div class="alumno-video-box">
+                                <video controls preload="metadata">
+                                    <source src="{{ asset('videos/video1.mp4') }}" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="alumno-content">
+                                <span class="alumno-tag">COLEGIO</span>
+                                <p class="testimonio-text"><span class="quote">"</span>Next Level me ha preparado no solo académicamente, sino también para la vida.<span class="quote">"</span></p>
                             </div>
                         </div>
-                        <div class="docente-card-modern">
-                            <div class="docente-img-box"><img src="{{ asset('images/imagen10.jpg') }}" alt="Docente"></div>
-                            <div class="docente-content">
-                                <h3>Nombre del Docente</h3>
-                                <span class="doc-tag">Especialidad</span>
-                                <p>Docente con amplia trayectoria en formación académica y valores para el éxito de nuestros alumnos.</p>
+                        <div class="alumno-card-modern">
+                            <div class="alumno-video-box">
+                                <video controls preload="metadata">
+                                    <source src="{{ asset('videos/video2.mp4') }}" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="alumno-content">
+                                <span class="alumno-tag">ACADEMIA</span>
+                                <p class="testimonio-text"><span class="quote">"</span>La metodología de enseñanza es increíble. Aprendemos de manera práctica.<span class="quote">"</span></p>
                             </div>
                         </div>
-                        <div class="docente-card-modern">
-                            <div class="docente-img-box"><img src="{{ asset('images/imagen10.jpg') }}" alt="Docente"></div>
-                            <div class="docente-content">
-                                <h3>Nombre del Docente</h3>
-                                <span class="doc-tag">Especialidad</span>
-                                <p>Docente con amplia trayectoria en formación académica y valores para el éxito de nuestros alumnos.</p>
+                        <div class="alumno-card-modern">
+                            <div class="alumno-video-box">
+                                <video controls preload="metadata">
+                                    <source src="{{ asset('videos/video3.mp4') }}" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="alumno-content">
+                                <span class="alumno-tag">ACADEMIA</span>
+                                <p class="testimonio-text"><span class="quote">"</span>Estoy muy agradecida con Next Level. El ambiente me motiva a estudiar cada día.<span class="quote">"</span></p>
                             </div>
                         </div>
-                        <div class="docente-card-modern">
-                            <div class="docente-img-box"><img src="{{ asset('images/imagen10.jpg') }}" alt="Docente"></div>
-                            <div class="docente-content">
-                                <h3>Nombre del Docente</h3>
-                                <span class="doc-tag">Especialidad</span>
-                                <p>Docente con amplia trayectoria en formación académica y valores para el éxito de nuestros alumnos.</p>
+                        <div class="alumno-card-modern">
+                            <div class="alumno-video-box">
+                                <video controls preload="metadata">
+                                    <source src="{{ asset('videos/video4.mp4') }}" type="video/mp4">
+                                </video>
                             </div>
-                        </div>
-                        <div class="docente-card-modern">
-                            <div class="docente-img-box"><img src="{{ asset('images/imagen10.jpg') }}" alt="Docente"></div>
-                            <div class="docente-content">
-                                <h3>Nombre del Docente</h3>
-                                <span class="doc-tag">Especialidad</span>
-                                <p>Docente con amplia trayectoria en formación académica y valores para el éxito de nuestros alumnos.</p>
-                            </div>
-                        </div>
-                        <div class="docente-card-modern">
-                            <div class="docente-img-box"><img src="{{ asset('images/imagen10.jpg') }}" alt="Docente"></div>
-                            <div class="docente-content">
-                                <h3>Nombre del Docente</h3>
-                                <span class="doc-tag">Especialidad</span>
-                                <p>Docente con amplia trayectoria en formación académica y valores para el éxito de nuestros alumnos.</p>
+                            <div class="alumno-content">
+                                <span class="alumno-tag">COLEGIO</span>
+                                <p class="testimonio-text"><span class="quote">"</span>Gracias a la preparación en Next Level, me siento seguro para la universidad.<span class="quote">"</span></p>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <button class="doc-nav-btn next" id="docNextBtn"><i class="fa-solid fa-chevron-right"></i></button>
+                <button class="alu-nav-btn next" id="aluNextBtn"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
         </div>
     </section>

@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const track = document.getElementById('docentesTrack');
-    const next = document.getElementById('docNextBtn');
-    const prev = document.getElementById('docPrevBtn');
-    const originalCards = Array.from(track.querySelectorAll('.docente-card-modern'));
+    const track = document.getElementById('alumnosTrack');
+    const next = document.getElementById('aluNextBtn');
+    const prev = document.getElementById('aluPrevBtn');
+    const originalCards = Array.from(track.querySelectorAll('.alumno-card-modern'));
     const totalOriginal = originalCards.length;
 
     originalCards.forEach(card => {
@@ -11,32 +11,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     let index = 0;
-    let autoPlayInterval;
     let isTransitioning = false;
-
-    const getVisibleCards = () => {
-        if (window.innerWidth <= 600) return 1;
-        if (window.innerWidth <= 900) return 2;
-        if (window.innerWidth <= 1200) return 3;
-        return 4;
-    };
+    let autoPlayInterval;
+    let isVideoPlaying = false;
 
     const moveNext = () => {
-        if (isTransitioning) return;
+        if (isTransitioning || isVideoPlaying) return;
         index++;
         updateTrack(true);
     };
 
     const movePrev = () => {
-        if (isTransitioning) return;
-
+        if (isTransitioning || isVideoPlaying) return;
         if (index <= 0) {
             index = totalOriginal;
             updateTrack(false);
-            setTimeout(() => {
-                index--;
-                updateTrack(true);
-            }, 10);
+            setTimeout(() => { index--; updateTrack(true); }, 10);
         } else {
             index--;
             updateTrack(true);
@@ -44,50 +34,61 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     function updateTrack(animate = true) {
-        const card = track.querySelector('.docente-card-modern');
-        if (!card) return;
-
+        const card = track.querySelector('.alumno-card-modern');
         const gap = 25;
         const cardWidth = card.offsetWidth;
 
-        if (animate) {
-            track.style.transition = "transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)";
-            isTransitioning = true;
-        } else {
-            track.style.transition = "none";
-        }
-
+        track.style.transition = animate ? "transform 0.6s cubic-bezier(0.4, 0, 0.2, 1)" : "none";
         track.style.transform = `translateX(-${index * (cardWidth + gap)}px)`;
 
         if (animate) {
+            isTransitioning = true;
             track.addEventListener('transitionend', function handler() {
                 track.removeEventListener('transitionend', handler);
                 isTransitioning = false;
-
                 if (index >= totalOriginal) {
-                    track.style.transition = "none";
                     index = 0;
-                    track.style.transform = `translateX(0)`;
+                    updateTrack(false);
                 }
             });
         }
     }
 
-    next.addEventListener('click', () => {
-        moveNext();
-        resetAutoPlay();
+    const allVideos = track.querySelectorAll('video');
+
+    allVideos.forEach(video => {
+
+        video.addEventListener('play', () => {
+            isVideoPlaying = true;
+            stopAutoPlay();
+
+            allVideos.forEach(v => { if(v !== video) v.pause(); });
+        });
+
+        video.addEventListener('ended', () => {
+            isVideoPlaying = false;
+            startAutoPlay();
+        });
+
+        video.addEventListener('pause', () => {
+            isVideoPlaying = false;
+            startAutoPlay();
+        });
     });
 
-    prev.addEventListener('click', () => {
-        movePrev();
-        resetAutoPlay();
-    });
+    next.addEventListener('click', () => { moveNext(); resetAutoPlay(); });
+    prev.addEventListener('click', () => { movePrev(); resetAutoPlay(); });
 
     const startAutoPlay = () => {
-        autoPlayInterval = setInterval(moveNext, 4000);
+        if (!autoPlayInterval && !isVideoPlaying) {
+            autoPlayInterval = setInterval(moveNext, 4000);
+        }
     };
 
-    const stopAutoPlay = () => clearInterval(autoPlayInterval);
+    const stopAutoPlay = () => {
+        clearInterval(autoPlayInterval);
+        autoPlayInterval = null;
+    };
 
     const resetAutoPlay = () => {
         stopAutoPlay();
@@ -97,7 +98,9 @@ document.addEventListener('DOMContentLoaded', () => {
     startAutoPlay();
 
     track.parentElement.addEventListener('mouseenter', stopAutoPlay);
-    track.parentElement.addEventListener('mouseleave', startAutoPlay);
+    track.parentElement.addEventListener('mouseleave', () => {
+        if (!isVideoPlaying) startAutoPlay();
+    });
 
     window.addEventListener('resize', () => {
         track.style.transition = "none";
