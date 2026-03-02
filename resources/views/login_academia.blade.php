@@ -24,8 +24,8 @@
 
                 <form class="auth-form" method="POST" action="#">
                     <div class="input-group">
-                        <label>Nro. de documento</label>
-                        <input type="text" name="documento" placeholder="Ej: 70001234" required class="main-input">
+                        <label for="doc_academia">Nro. de documento</label>
+                        <input type="text" id="doc_academia" name="documento" placeholder="Ej: 70001234" required class="main-input">
                     </div>
                     <button type="submit" class="btn-custom-effect btn-submit">
                         <span>Ingresar</span>
@@ -72,11 +72,11 @@
 
                 <form class="auth-form" method="POST" action="#">
                     <div class="input-group">
-                        <label>ID</label>
-                        <input type="text" name="alumno_id" placeholder="Ej: 0020261234@nextlevel.pe" required class="main-input">
+                        <label for="alumno_id">ID</label>
+                        <input type="text" id="alumno_id" name="alumno_id" placeholder="Ej: 0020261234@nextlevel.pe" required class="main-input">
                     </div>
                     <div class="input-group">
-                        <label>Contraseña</label>
+                        <label for="passwordInput">Contraseña</label>
                         <div class="pass-relative">
                             <input id="passwordInput" type="password" name="password" placeholder="••••••••" required class="main-input">
                             <button id="togglePassword" type="button" class="eye-btn">

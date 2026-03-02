@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-
-    const passwordInput = document.getElementById('passwordInput');
-    const togglePassword = document.getElementById('togglePassword');
+    const passwordInput = document.getElementById('passwordInput') || document.getElementById('passwordInputCol');
+    const togglePassword = document.getElementById('togglePassword') || document.getElementById('togglePasswordCol');
     const eyeOpen = document.getElementById('eyeOpen');
     const eyeClosed = document.getElementById('eyeClosed');
 
@@ -19,6 +18,15 @@ document.addEventListener('DOMContentLoaded', function () {
             if (eyeOpen && eyeClosed) {
                 eyeOpen.classList.toggle('hidden');
                 eyeClosed.classList.toggle('hidden');
+            } else {
+                const icon = this.querySelector('i');
+                if (icon) {
+                    if (isPassword) {
+                        icon.classList.replace('fa-eye-slash', 'fa-eye');
+                    } else {
+                        icon.classList.replace('fa-eye', 'fa-eye-slash');
+                    }
+                }
             }
         });
     }
