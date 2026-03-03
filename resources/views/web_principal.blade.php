@@ -269,8 +269,6 @@
             </div>
 
             <div class="alumnos-carrusel-wrapper">
-                <button class="alu-nav-btn prev" id="aluPrevBtn"><i class="fa-solid fa-chevron-left"></i></button>
-
                 <div class="alumnos-overflow">
                     <div class="alumnos-track" id="alumnosTrack">
                         <div class="alumno-card-modern">
@@ -281,7 +279,7 @@
                             </div>
                             <div class="alumno-content">
                                 <span class="alumno-tag">COLEGIO</span>
-                                <p class="testimonio-text"><span class="quote">"</span>Next Level me ha preparado no solo académicamente, sino también para la vida.<span class="quote">"</span></p>
+                                <p class="testimonio-text"><span class="quote">"</span>Next Level me ha preparado no solo académicamente, sino también para la vida. Los profesores realmente se preocupan por nuestro éxito.<span class="quote">"</span></p>
                             </div>
                         </div>
                         <div class="alumno-card-modern">
@@ -292,7 +290,7 @@
                             </div>
                             <div class="alumno-content">
                                 <span class="alumno-tag">ACADEMIA</span>
-                                <p class="testimonio-text"><span class="quote">"</span>La metodología de enseñanza es increíble. Aprendemos de manera práctica.<span class="quote">"</span></p>
+                                <p class="testimonio-text"><span class="quote">"</span>La metodología de enseñanza es increíble. Aprendemos de manera práctica y siempre nos motivan a dar lo mejor de nosotros.<span class="quote">"</span></p>
                             </div>
                         </div>
                         <div class="alumno-card-modern">
@@ -303,7 +301,7 @@
                             </div>
                             <div class="alumno-content">
                                 <span class="alumno-tag">ACADEMIA</span>
-                                <p class="testimonio-text"><span class="quote">"</span>Estoy muy agradecida con Next Level. El ambiente me motiva a estudiar cada día.<span class="quote">"</span></p>
+                                <p class="testimonio-text"><span class="quote">"</span>Estoy muy agradecida con Next Level. Las instalaciones y el ambiente me hacen sentir motivada para venir a estudiar cada día.<span class="quote">"</span></p>
                             </div>
                         </div>
                         <div class="alumno-card-modern">
@@ -314,13 +312,11 @@
                             </div>
                             <div class="alumno-content">
                                 <span class="alumno-tag">COLEGIO</span>
-                                <p class="testimonio-text"><span class="quote">"</span>Gracias a la preparación en Next Level, me siento seguro para la universidad.<span class="quote">"</span></p>
+                                <p class="testimonio-text"><span class="quote">"</span>Gracias a la preparación en Next Level, me siento seguro para enfrentar los retos universitarios. ¡Es la mejor decisión!<span class="quote">"</span></p>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <button class="alu-nav-btn next" id="aluNextBtn"><i class="fa-solid fa-chevron-right"></i></button>
             </div>
         </div>
     </section>
