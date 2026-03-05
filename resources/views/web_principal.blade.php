@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    @extends('layouts.app')
 
     <div class="top-bar">
         <div class="marquee-wrapper">
@@ -424,14 +425,14 @@
                 <div class="footer-column">
                     <a href="{{ route('academia') }}">ACADEMIA</a>
                     <a href="{{ route('pagos') }}">PAGOS EN LÍNEA</a>
-                    <a href="#">MATRíCULA 2026</a>
+                    <a href="{{ route('matricula') }}">MATRíCULA 2026</a>
                     <a href="#">MATRÍCULA ONLINE</a>
                     <a href="#">LIBRO RECLAMACIONES</a>
                 </div>
                 <div class="footer-column social-align">
-                    <a href="#">POLÍTICA COOKIES</a>
-                    <a href="#">POLÍTICA PRIVACIDAD</a>
-                    <a href="#">TERMINOS Y CONDICIONES</a>
+                    <a href="{{ route('politica.cookies') }}">POLÍTICA COOKIES</a>
+                    <a href="{{ route('politica.privacidad') }}">POLÍTICA PRIVACIDAD</a>
+                    <a href="{{ route('terminos.condiciones') }}">TERMINOS Y CONDICIONES</a>
 
                     <div class="footer-social-icons">
                         <a href="https://www.tiktok.com/@next_level_novus" target="_blank" class="social-icon"><i class="fa-brands fa-tiktok"></i></a>

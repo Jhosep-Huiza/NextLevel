@@ -65,3 +65,24 @@ Route::get('/ciclo-anual-unu', function (){
 Route::get('/ciclo-anual-unia', function (){
     return view('ciclo_anual_unia');
 })->name('ciclo-anual-unia');
+
+Route::get('/matricula', function (){
+    return view('matricula');
+})->name('matricula');
+
+use App\Http\Controllers\MatriculaController;
+
+Route::post('/matricula/enviar', [MatriculaController::class, 'enviar'])->name('matricula.enviar');
+
+Route::get('/terminos-condiciones', function (){
+    return view('terminos_condiciones');
+})->name('terminos.condiciones');
+
+Route::get('/politica-privacidad', function (){
+    return view('politica_privacidad');
+})->name('politica.privacidad');
+
+Route::get('/politica-cookies', function (){
+    return view('politica_cookies');
+})->name('politica.cookies');
+
