@@ -2,7 +2,7 @@
 header('Content-Type: application/json');
 
 // Connect to DB
-$mysqli = new mysqli('localhost', 'root', 'jhosep_582006', 'proyect_next_level');
+$mysqli = new mysqli('localhost', 'root', '', 'proyect_next_level');
 if ($mysqli->connect_error) {
   error_log("Login DB error: " . $mysqli->connect_error);
   echo json_encode(['success' => false, 'error' => 'DB connection failed']);
